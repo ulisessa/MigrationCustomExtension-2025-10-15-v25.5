@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-GB" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="TableExtension 2715702705 - Field 1364372129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Post accrued export benefits and withholgings</source>
+          <target>Post accrued export benefits and withholgings</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50432 - Field Post accrued export benefits - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2715702705 - Field 1364372129 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>On invoice posting,On periodic task execution</source>
+          <target>On invoice posting,On periodic task execution</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50432 - Field Post accrued export benefits - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2749649832 - Field 4185955450 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Boarding permission</source>
+          <target>Boarding permission</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50475 - Field Permiso de embarque - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1094185731 - Field 37505041 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment terms</source>
+          <target>Payment terms</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cab. Reparto - Field Payment terms - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1094185731 - Field 1324401967 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Beneficiary bank</source>
+          <target>Beneficiary bank</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cab. Reparto - Field Beneficiary bank - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1094185731 - Field 3810380453 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Corresponsal bank</source>
+          <target>Corresponsal bank</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cab. Reparto - Field Corresponsal bank - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2662725482 - Field 3116738003 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Units</source>
+          <target>Units</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Lín. reparto - Field Reservar - UMB - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

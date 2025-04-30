@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Page 3538210097 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Navigate</source>
+          <target>Navigate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Property 2019332006" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New,Process,Report,Find By</source>
+          <target>New,Process,Report,Find By</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Property PromotedActionCategories</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 1167507281 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document</source>
+          <target>Document</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 2262961179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <target>Document No.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control DocNoFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 3808248797 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill No.</source>
+          <target>Bill No.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control CarteraDocNoFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 447285968 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <target>Posting Date</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control PostingDateFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 3371330418 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Contact</source>
+          <target>Business Contact</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control Business Contact - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 4269414180 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Contact Type</source>
+          <target>Business Contact Type</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control ContactType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 4269414180 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Vendor,Customer</source>
+          <target> ,Vendor,Customer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control ContactType - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 478168899 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Contact No.</source>
+          <target>Business Contact No.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control ContactNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 3087351764 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Document No.</source>
+          <target>External Document No.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control ExtDocNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 1067425594 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Reference</source>
+          <target>Item Reference</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control Item Reference - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 1067981715 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Serial No.</source>
+          <target>Serial No.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control SerialNoFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 3438490602 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lot No.</source>
+          <target>Lot No.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control LotNoFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 342756159 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Notification</source>
+          <target>Notification</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control Notification - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 342756159 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The filter has been changed. Choose Find to update the list of related entries.</source>
+          <target>The filter has been changed. Choose Find to update the list of related entries.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control Notification - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 3808951907 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Related Entries</source>
+          <target>Related Entries</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control Table Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 2065755396 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. of Entries</source>
+          <target>No. of Entries</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control No. of Records - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 3977511492 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source</source>
+          <target>Source</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control Origen - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 3819526884 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Type</source>
+          <target>Document Type</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control DocType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 3996861631 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Type</source>
+          <target>Source Type</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control SourceType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 1900957152 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source No.</source>
+          <target>Source No.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control SourceNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Control 34717358 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Name</source>
+          <target>Source Name</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Control SourceName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Action 2675496269 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Process</source>
+          <target>Process</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Action Process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Action 366713437 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Show Related Entries</source>
+          <target>&amp;Show Related Entries</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Action Show - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Action 67628679 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fi&amp;nd</source>
+          <target>Fi&amp;nd</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Action Find - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Action 1002420131 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Print</source>
+          <target>&amp;Print</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Action Print - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Action 825173014 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Find by</source>
+          <target>Find by</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Action FindGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Action 1309719963 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Find by Document</source>
+          <target>Find by Document</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Action FindByDocument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Action 1112181476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Find by Business Contact</source>
+          <target>Find by Business Contact</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Action FindByBusinessContact - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - Action 1388385396 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Find by Item Reference</source>
+          <target>Find by Item Reference</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - Action FindByItemReference - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The business contact type was not specified.</source>
+          <target>The business contact type was not specified.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There are no posted records with this external document number.</source>
+          <target>There are no posted records with this external document number.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Counting records...</source>
+          <target>Counting records...</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Sales Invoice</source>
+          <target>Posted Sales Invoice</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Sales Credit Memo</source>
+          <target>Posted Sales Credit Memo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text004</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 1370456556" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Sales Shipment</source>
+          <target>Posted Sales Shipment</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text005</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 2008153173" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Issued Reminder</source>
+          <target>Issued Reminder</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text006</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 2645849790" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Issued Finance Charge Memo</source>
+          <target>Issued Finance Charge Memo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text007</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 3283546407" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Purchase Invoice</source>
+          <target>Posted Purchase Invoice</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text008</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 3921243024" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Purchase Credit Memo</source>
+          <target>Posted Purchase Credit Memo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text009</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 1664139952" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Purchase Receipt</source>
+          <target>Posted Purchase Receipt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text010</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 1026443335" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The document number has been used more than once.</source>
+          <target>The document number has been used more than once.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text011</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 2939533186" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This combination of document number and posting date has been used more than once.</source>
+          <target>This combination of document number and posting date has been used more than once.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text012</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 2301836569" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There are no posted records with this document number.</source>
+          <target>There are no posted records with this document number.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text013</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 4214926420" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There are no posted records with this combination of document number and posting date.</source>
+          <target>There are no posted records with this combination of document number and posting date.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text014</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 3577229803" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The search results in too many external documents. Please specify a business contact no.</source>
+          <target>The search results in too many external documents. Please specify a business contact no.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text015</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 1195352358" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The search results in too many external documents. Please use Navigate from the relevant ledger entries.</source>
+          <target>The search results in too many external documents. Please use Navigate from the relevant ledger entries.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text016</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 557655741" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Return Receipt</source>
+          <target>Posted Return Receipt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text017</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 857534312" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Return Shipment</source>
+          <target>Posted Return Shipment</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text018</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 219837695" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Transfer Shipment</source>
+          <target>Posted Transfer Shipment</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text019</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 1940672225" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Transfer Receipt</source>
+          <target>Posted Transfer Receipt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text020</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 2578368842" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Order</source>
+          <target>Sales Order</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text021</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 665278991" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Invoice</source>
+          <target>Sales Invoice</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text022</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 1302975608" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Return Order</source>
+          <target>Sales Return Order</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text023</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 196491397" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Credit Memo</source>
+          <target>Sales Credit Memo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text024</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 834188014" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Assembly Order</source>
+          <target>Posted Assembly Order</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text025</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 3216065459" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Withholding Invoice Buffer</source>
+          <target>Withholding Invoice Buffer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text026</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 58842943" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Service Invoice</source>
+          <target>Posted Service Invoice</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType sText003</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 227751966" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Service Credit Memo</source>
+          <target>Posted Service Credit Memo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType sText004</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 3885022645" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Service Shipment</source>
+          <target>Posted Service Shipment</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType sText005</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 1870504719" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Service Order</source>
+          <target>Service Order</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType sText021</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 3783594570" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Service Invoice</source>
+          <target>Service Invoice</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType sText022</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 764020508" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Service Credit Memo</source>
+          <target>Service Credit Memo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType sText024</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 134040679" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Production Order</source>
+          <target>Production Order</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType Text99000000</note>
+        </trans-unit>
+        <trans-unit id="Page 3538210097 - NamedType 690053247" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Selected - %1</source>
+          <target>Selected - %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navigate - NamedType PageCaptionTxt</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

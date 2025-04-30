@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Logo">
+          <DataField>Logo</DataField>
+        </Field>
+        <Field Name="Proyecto">
+          <DataField>Proyecto</DataField>
+        </Field>
+        <Field Name="Clasificación">
+          <DataField>Clasificación</DataField>
+        </Field>
+        <Field Name="UM">
+          <DataField>UM</DataField>
+        </Field>
+        <Field Name="Cantidad">
+          <DataField>Cantidad</DataField>
+        </Field>
+        <Field Name="CantidadFormat">
+          <DataField>CantidadFormat</DataField>
+        </Field>
+        <Field Name="KN">
+          <DataField>KN</DataField>
+        </Field>
+        <Field Name="KNFormat">
+          <DataField>KNFormat</DataField>
+        </Field>
+        <Field Name="KB">
+          <DataField>KB</DataField>
+        </Field>
+        <Field Name="KBFormat">
+          <DataField>KBFormat</DataField>
+        </Field>
+        <Field Name="Buque">
+          <DataField>Buque</DataField>
+        </Field>
+        <Field Name="Marea">
+          <DataField>Marea</DataField>
+        </Field>
+        <Field Name="Salida">
+          <DataField>Salida</DataField>
+        </Field>
+        <Field Name="Llegada">
+          <DataField>Llegada</DataField>
+        </Field>
+        <Field Name="Patron">
+          <DataField>Patron</DataField>
+        </Field>
+        <Field Name="Subfamilia">
+          <DataField>Subfamilia</DataField>
+        </Field>
+        <Field Name="ClasDesc">
+          <DataField>ClasDesc</DataField>
+        </Field>
+        <Field Name="SubfDesc">
+          <DataField>SubfDesc</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

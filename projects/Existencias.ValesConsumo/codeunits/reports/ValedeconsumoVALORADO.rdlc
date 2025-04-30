@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Logo">
+          <DataField>Logo</DataField>
+        </Field>
+        <Field Name="COMPANYNAME">
+          <DataField>COMPANYNAME</DataField>
+        </Field>
+        <Field Name="USERID">
+          <DataField>USERID</DataField>
+        </Field>
+        <Field Name="TODAY">
+          <DataField>TODAY</DataField>
+        </Field>
+        <Field Name="NombreLibroSolicitud_CabValeconsumo">
+          <DataField>NombreLibroSolicitud_CabValeconsumo</DataField>
+        </Field>
+        <Field Name="Nodocumento_CabValeconsumo">
+          <DataField>Nodocumento_CabValeconsumo</DataField>
+        </Field>
+        <Field Name="Fecharegistro_CabValeconsumo">
+          <DataField>Fecharegistro_CabValeconsumo</DataField>
+        </Field>
+        <Field Name="Descripción_CabValeconsumo">
+          <DataField>Descripción_CabValeconsumo</DataField>
+        </Field>
+        <Field Name="Usuario_CabValeconsumo">
+          <DataField>Usuario_CabValeconsumo</DataField>
+        </Field>
+        <Field Name="NoSerie_CabValeconsumo">
+          <DataField>NoSerie_CabValeconsumo</DataField>
+        </Field>
+        <Field Name="Estado_CabValeconsumo">
+          <DataField>Estado_CabValeconsumo</DataField>
+        </Field>
+        <Field Name="Ndocumento_Línvaleconsumo">
+          <DataField>Ndocumento_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="Nlínea_Línvaleconsumo">
+          <DataField>Nlínea_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="N_Línvaleconsumo">
+          <DataField>N_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="Descripción_Línvaleconsumo">
+          <DataField>Descripción_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="Cantidad_Línvaleconsumo">
+          <DataField>Cantidad_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="Cantidad_LínvaleconsumoFormat">
+          <DataField>Cantidad_LínvaleconsumoFormat</DataField>
+        </Field>
+        <Field Name="Descripción2_Línvaleconsumo">
+          <DataField>Descripción2_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="Tipo_Línvaleconsumo">
+          <DataField>Tipo_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="ShortcutDimension1Code_Línvaleconsumo">
+          <DataField>ShortcutDimension1Code_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="ShortcutDimension2Code_Línvaleconsumo">
+          <DataField>ShortcutDimension2Code_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="ShortcutDimension3Code_Línvaleconsumo">
+          <DataField>ShortcutDimension3Code_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="ShortcutDimension4Code_Línvaleconsumo">
+          <DataField>ShortcutDimension4Code_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="ShortcutDimension5Code_Línvaleconsumo">
+          <DataField>ShortcutDimension5Code_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="ShortcutDimension6Code_Línvaleconsumo">
+          <DataField>ShortcutDimension6Code_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="ShortcutDimension7Code_Línvaleconsumo">
+          <DataField>ShortcutDimension7Code_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="Conceptoproyecto_Línvaleconsumo">
+          <DataField>Conceptoproyecto_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="Códunidadmedida_Línvaleconsumo">
+          <DataField>Códunidadmedida_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="Códdepósito_Línvaleconsumo">
+          <DataField>Códdepósito_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="Usuario_Línvaleconsumo">
+          <DataField>Usuario_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="Noproyecto_Línvaleconsumo">
+          <DataField>Noproyecto_Línvaleconsumo</DataField>
+        </Field>
+        <Field Name="Precio">
+          <DataField>Precio</DataField>
+        </Field>
+        <Field Name="PrecioFormat">
+          <DataField>PrecioFormat</DataField>
+        </Field>
+        <Field Name="Importe">
+          <DataField>Importe</DataField>
+        </Field>
+        <Field Name="ImporteFormat">
+          <DataField>ImporteFormat</DataField>
+        </Field>
+        <Field Name="PesoUnitario">
+          <DataField>PesoUnitario</DataField>
+        </Field>
+        <Field Name="PesoUnitarioFormat">
+          <DataField>PesoUnitarioFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
