@@ -1,4 +1,4 @@
-tableextension 50286 tableextension50286 extends "VAT Assisted Setup Templates"
+tableextension 50286 "VAT Assisted Setup Temp. Ext." extends "VAT Assisted Setup Templates"
 {
     Caption = 'VAT Assisted Setup Templates';
     fields

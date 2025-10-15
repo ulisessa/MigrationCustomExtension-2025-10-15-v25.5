@@ -1,16 +1,18 @@
 {
   "id": "a423950b-02e9-4ee0-ab32-61517ce330cb",
-  "name": "Final Version Customization Extension",
+  "name": "Final Version Customization Extension - Tables Only",
   "publisher": "Grupo Arbumasa",
   "version": "2.0.0.0",
   "platform": "25.2.0.0",
-  "application": "25.5.0.0",
+  "application": "25.0.23364.25445",
   "target": "OnPrem",
   "resourceExposurePolicy": {
     "allowDebugging": true,
     "allowDownloadingSource": true,
     "includeSourceInSymbolFile": true
   },
-  "features": [],
+  "features": [
+    "TranslationFile"
+  ],
   "dependencies": []
 }

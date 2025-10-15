@@ -6,7 +6,7 @@ tableextension 39 "Purchase Line Extension" extends "Purchase Line" //OriginalId
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
 
             trigger OnValidate()
             begin
@@ -17,7 +17,7 @@ tableextension 39 "Purchase Line Extension" extends "Purchase Line" //OriginalId
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
 
             trigger OnValidate()
             begin
@@ -28,7 +28,7 @@ tableextension 39 "Purchase Line Extension" extends "Purchase Line" //OriginalId
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
 
             trigger OnValidate()
             begin
@@ -39,7 +39,7 @@ tableextension 39 "Purchase Line Extension" extends "Purchase Line" //OriginalId
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
 
             trigger OnValidate()
             begin
@@ -50,7 +50,7 @@ tableextension 39 "Purchase Line Extension" extends "Purchase Line" //OriginalId
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
 
             trigger OnValidate()
             begin
@@ -388,7 +388,7 @@ tableextension 39 "Purchase Line Extension" extends "Purchase Line" //OriginalId
         }
         field(50507; "Actividad AFIP"; Code[10])
         {
-            TableRelation = "Actividad proveedor"."No. actividad" WHERE("No. proveedor" = FIELD("Buy-from Vendor No."),
+            TableRelation = "Actividad proveedor"."No. actividad" WHERE("No. proveedor" = FIELD("Pay-to Vendor No."),
                                                                          "Tipo actividad" = FILTER(Actividad));
 
         }
@@ -618,25 +618,4 @@ tableextension 39 "Purchase Line Extension" extends "Purchase Line" //OriginalId
         //US.ARBU - 2007-11-29 - Fin modificación
     end;
 
-    trigger OnAfterInsert()
-    begin
-        ImporteenUSD();
-        clear(cduGestExis);
-        cduGestExis.UpdatePuchItemTrackingLines(Rec);
-    end;
-
-    trigger OnAfterModify()
-    begin
-        ImporteenUSD();
-        cduGestExis.UpdatePuchItemTrackingLines(Rec);
-    end;
-
-    trigger OnBeforeDelete()
-    begin
-        ImporteenUSD();
-        cduGestExis.UpdatePuchItemTrackingLines(Rec);
-    end;
-
-    var
-        cduGestExis: Codeunit GestionExistencias;
 }

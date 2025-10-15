@@ -204,7 +204,7 @@ tableextension 50900 tableextension50900 extends "Service Item Line"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
 
             trigger OnValidate()
             begin
@@ -215,18 +215,18 @@ tableextension 50900 tableextension50900 extends "Service Item Line"
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
 
             trigger OnValidate()
             begin
-                ValidateShortcutDimCode(2, "Shortcut Dimension 2 Code");
+                ValidateShortcutDimCode(4, "Shortcut Dimension 4 Code");
             end;
         }
         field(50505; "Shortcut Dimension 5 Code"; Code[20])
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
 
             trigger OnValidate()
             begin
@@ -237,18 +237,18 @@ tableextension 50900 tableextension50900 extends "Service Item Line"
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
 
             trigger OnValidate()
             begin
-                ValidateShortcutDimCode(2, "Shortcut Dimension 2 Code");
+                ValidateShortcutDimCode(6, "Shortcut Dimension 6 Code");
             end;
         }
         field(50507; "Shortcut Dimension 7 Code"; Code[20])
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
 
             trigger OnValidate()
             begin

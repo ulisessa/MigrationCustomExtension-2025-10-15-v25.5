@@ -1,4 +1,4 @@
-tableextension 50244 tableextension50244 extends "Payroll Import Buffer"
+tableextension 50244 "Payroll Import Buffer Ext." extends "Payroll Import Buffer"
 {
     Caption = 'Payroll Import Buffer';
     fields

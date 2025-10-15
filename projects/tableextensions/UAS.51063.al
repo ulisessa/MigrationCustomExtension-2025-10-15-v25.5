@@ -318,7 +318,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 2 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50503; "Lote origen"; Code[10])
         {

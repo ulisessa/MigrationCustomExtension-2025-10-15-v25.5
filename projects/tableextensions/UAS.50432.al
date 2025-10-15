@@ -302,7 +302,7 @@ tableextension 50432 tableextension50432 extends "Sales & Receivables Setup"
         field(50031; "Production date limit"; Code[10])
         {
             DataClassification = ToBeClassified;
-            CaptionML = ENU = 'Production date limit', ESP = 'Límite fecha producción';
+            Caption = 'Production date limit';
         }
         field(50700; "No. serie ND registrada"; Code[10])
         {

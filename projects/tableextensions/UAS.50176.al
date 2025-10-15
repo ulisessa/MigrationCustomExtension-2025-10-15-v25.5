@@ -1,4 +1,4 @@
-tableextension 50176 tableextension50176 extends "Named Forward Link"
+tableextension 50176 "Named Forward Link Ext." extends "Named Forward Link"
 {
     Caption = 'Named Forward Link';
     fields

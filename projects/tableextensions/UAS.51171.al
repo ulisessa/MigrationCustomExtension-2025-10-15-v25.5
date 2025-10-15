@@ -682,7 +682,7 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
 
             trigger OnValidate()
             begin
@@ -693,7 +693,7 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 4 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
 
             trigger OnValidate()
             begin
@@ -704,7 +704,7 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 5 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
 
             trigger OnValidate()
             begin
@@ -715,7 +715,7 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 6 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
 
             trigger OnValidate()
             begin
@@ -726,7 +726,7 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 7 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
 
             trigger OnValidate()
             begin
@@ -829,6 +829,9 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         field(50705; "Tipo fiscal"; Code[10])
         {
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('TIPO FISCAL'));
+            ObsoleteTag = '12/2025';
+            ObsoleteState = Pending;
+            ObsoleteReason = 'Reemplazado por campo Grupo Registro IVA Negocio';
         }
         field(50706; "Punto de venta"; Code[10])
         {

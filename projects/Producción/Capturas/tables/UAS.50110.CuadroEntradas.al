@@ -111,9 +111,14 @@ table 50110 "Cuadro entradas"
         }
         field(18; "Kilos descargados x actividad"; Decimal)
         {
-            CalcFormula = Sum("Lín. descarga"."Net weight" WHERE(Actividad = FIELD("Global Dimension 2 Code"),
+            CalcFormula = Sum("Lín. descarga"."Net weight" WHERE(Actividad = FIELD(Actividad),
                                                                   "Fecha remito" = FIELD("Filtro fecha")));
             FieldClass = FlowField;
+        }
+        field(19; "Actividad"; Code[20])
+        {
+            CaptionClass = '1,2,3';
+            Caption = 'Actividad';
         }
         field(100; Proyecto; Code[20])
         {

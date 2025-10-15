@@ -124,8 +124,8 @@ table 50514 "Hist. Lín. solicitud"
         }
         field(50000; "Global Dimension 3"; Code[10])
         {
-            CaptionClass = '1,1,3';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+            CaptionClass = '1,2,3';
+
 
             trigger OnValidate()
             begin
@@ -134,23 +134,23 @@ table 50514 "Hist. Lín. solicitud"
         }
         field(50001; "Global Dimension 4"; Code[10])
         {
-            CaptionClass = '1,1,4';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+            CaptionClass = '1,2,4';
+
         }
         field(50002; "Global Dimension 5"; Code[20])
         {
-            CaptionClass = '1,1,5';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+            CaptionClass = '1,2,5';
+
         }
         field(50003; "Global Dimension 6"; Code[20])
         {
-            CaptionClass = '1,1,6';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+            CaptionClass = '1,2,6';
+
         }
         field(50004; "Global Dimension 7"; Code[20])
         {
-            CaptionClass = '1,1,7';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+            CaptionClass = '1,2,7';
+
         }
         field(50005; "No. Documento"; Code[30])
         {

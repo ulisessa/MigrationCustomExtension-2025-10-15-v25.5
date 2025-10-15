@@ -1,4 +1,4 @@
-tableextension 50155 tableextension50155 extends "Incoming Documents Setup"
+tableextension 50155 "Incoming Documents Setup Ext." extends "Incoming Documents Setup"
 {
     Caption = 'Incoming Documents Setup';
     fields

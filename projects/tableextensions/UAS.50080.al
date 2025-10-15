@@ -1,4 +1,4 @@
-tableextension 50080 tableextension50080 extends "User Task"
+tableextension 50080 "User Task Ext." extends "User Task"
 {
     fields
     {

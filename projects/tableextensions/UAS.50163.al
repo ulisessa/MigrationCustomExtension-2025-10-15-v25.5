@@ -1,4 +1,4 @@
-tableextension 50163 tableextension50163 extends "Trial Balance Cache"
+tableextension 50163 "Trial Balance Cache Ext." extends "Trial Balance Cache"
 {
     Caption = 'Trial Balance Cache';
     fields

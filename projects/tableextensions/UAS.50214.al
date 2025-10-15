@@ -1,4 +1,4 @@
-tableextension 50214 tableextension50214 extends "Workflow Response"
+tableextension 50214 "Workflow Response Ext." extends "Workflow Response"
 {
     fields
     {

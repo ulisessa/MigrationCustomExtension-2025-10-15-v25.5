@@ -1,4 +1,4 @@
-tableextension 50170 tableextension50170 extends "Inc. Doc. Attachment Overview"
+tableextension 50170 "Inc. Doc. Att. Overview Ext." extends "Inc. Doc. Attachment Overview"
 {
     fields
     {

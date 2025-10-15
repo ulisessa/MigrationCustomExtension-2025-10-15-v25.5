@@ -1,4 +1,4 @@
-tableextension 50273 tableextension50273 extends "Assisted Company Setup Status"
+tableextension 50273 "Ass. Company Setup Status Ext." extends "Assisted Company Setup Status"
 {
     Caption = 'Assisted Company Setup Status';
     fields

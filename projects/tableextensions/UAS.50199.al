@@ -1,4 +1,4 @@
-tableextension 50199 tableextension50199 extends "Workflow - Table Relation"
+tableextension 50199 "Workflow - Table Relation Ext." extends "Workflow - Table Relation"
 {
     Caption = 'Workflow - Table Relation';
     fields

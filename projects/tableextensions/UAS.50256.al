@@ -1,4 +1,4 @@
-tableextension 50256 tableextension50256 extends "Deferral Posting Buffer"
+tableextension 50256 "Deferral Posting Buffer Ext." extends "Deferral Posting Buffer"
 {
     fields
     {

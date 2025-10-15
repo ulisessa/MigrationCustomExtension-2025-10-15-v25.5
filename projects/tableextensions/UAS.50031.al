@@ -1,4 +1,4 @@
-tableextension 50031 tableextension50031 extends "Statistical Code"
+tableextension 50031 "Statistical Code Extension" extends "Statistical Code"
 {
     Caption = 'Statistical Code';
     fields

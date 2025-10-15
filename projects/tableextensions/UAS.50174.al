@@ -1,4 +1,4 @@
-tableextension 50174 tableextension50174 extends "ECSL VAT Report Line Relation"
+tableextension 50174 "ECSL VAT Report Line Rel. Ext." extends "ECSL VAT Report Line Relation"
 {
     Caption = 'ECSL VAT Report Line Relation';
     fields

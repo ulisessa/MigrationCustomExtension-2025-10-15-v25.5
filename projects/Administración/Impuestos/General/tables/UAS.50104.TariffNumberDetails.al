@@ -9,7 +9,7 @@ table 50104 "Tariff Number Details"
         {
             Caption = 'No.';
             NotBlank = true;
-            TableRelation = "Tariff Number"."No." WHERE ("No." = FIELD ("No."));
+            TableRelation = "Tariff Number"."No." WHERE("No." = FIELD("No."));
         }
         field(2; "Starting date"; Date)
         {
@@ -24,6 +24,10 @@ table 50104 "Tariff Number Details"
         field(50000; "Tipo producto"; Option)
         {
             OptionMembers = Consumo,Pesca;
+        }
+        field(50003; "Reintegro Sello Argentino"; Decimal)
+        {
+            DataClassification = ToBeClassified;
         }
         field(50004; "Anticipo ganancias"; Decimal)
         {

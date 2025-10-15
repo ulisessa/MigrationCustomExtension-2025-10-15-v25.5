@@ -1,4 +1,4 @@
-tableextension 50140 tableextension50140 extends "Applied Payment Entry"
+tableextension 50140 "Applied Payment Entry Ext." extends "Applied Payment Entry"
 {
     fields
     {

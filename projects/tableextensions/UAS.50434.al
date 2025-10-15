@@ -485,9 +485,9 @@ tableextension 50434 tableextension50434 extends "Inventory Setup"
         }
         field(50582; "Produccion Mix"; Code[10])
         {
-            CaptionClass = '1,1,3';
+            CaptionClass = '1,2,3';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50583; "Dimensión FAO"; Code[10])
         {

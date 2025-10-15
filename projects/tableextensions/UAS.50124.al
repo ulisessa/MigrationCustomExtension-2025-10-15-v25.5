@@ -1,4 +1,4 @@
-tableextension 50124 tableextension50124 extends "Bank Statement Matching Buffer"
+tableextension 50124 "Bank Stmt. Match. Buffer Ext." extends "Bank Statement Matching Buffer"
 {
     Caption = 'Bank Statement Matching Buffer';
     fields

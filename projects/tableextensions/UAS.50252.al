@@ -1,4 +1,4 @@
-tableextension 50252 tableextension50252 extends "Deferral Line"
+tableextension 50252 "Deferral Line Ext." extends "Deferral Line"
 {
     Caption = 'Deferral Line';
     fields

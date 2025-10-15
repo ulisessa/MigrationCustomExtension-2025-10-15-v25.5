@@ -1,4 +1,4 @@
-tableextension 50195 tableextension50195 extends "Workflow Buffer"
+tableextension 50195 "Workflow Buffer Ext." extends "Workflow Buffer"
 {
     Caption = 'Workflow Buffer';
     fields

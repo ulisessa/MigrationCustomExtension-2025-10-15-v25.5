@@ -1,4 +1,4 @@
-tableextension 50066 tableextension50066 extends "Cost Accounting Setup"
+tableextension 50066 "Cost Accounting Setup Ext." extends "Cost Accounting Setup"
 {
     Caption = 'Cost Accounting Setup';
     fields

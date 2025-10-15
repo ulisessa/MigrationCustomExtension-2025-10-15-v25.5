@@ -162,7 +162,7 @@ tableextension 50838 tableextension50838 extends "Transfer Header"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
 
             trigger OnValidate()
             begin
@@ -173,7 +173,7 @@ tableextension 50838 tableextension50838 extends "Transfer Header"
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
 
             trigger OnValidate()
             begin
@@ -184,7 +184,7 @@ tableextension 50838 tableextension50838 extends "Transfer Header"
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
 
             trigger OnValidate()
             begin
@@ -195,7 +195,7 @@ tableextension 50838 tableextension50838 extends "Transfer Header"
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
 
             trigger OnValidate()
             begin
@@ -206,7 +206,7 @@ tableextension 50838 tableextension50838 extends "Transfer Header"
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
 
             trigger OnValidate()
             begin

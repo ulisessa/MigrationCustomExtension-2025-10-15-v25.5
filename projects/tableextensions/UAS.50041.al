@@ -1,4 +1,4 @@
-tableextension 50041 tableextension50041 extends "Selected Gen. Prod. Post. Gr."
+tableextension 50041 "Sel. Gen. Prod. Post. Gr. Ext." extends "Selected Gen. Prod. Post. Gr."
 {
     fields
     {

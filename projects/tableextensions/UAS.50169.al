@@ -1,4 +1,4 @@
-tableextension 50169 tableextension50169 extends "Acc. Sched. KPI Web Srv. Line"
+tableextension 50169 "Acc. Sched. KPI Web Srv. Ext." extends "Acc. Sched. KPI Web Srv. Line"
 {
     Caption = 'Acc. Sched. KPI Web Srv. Line';
     fields

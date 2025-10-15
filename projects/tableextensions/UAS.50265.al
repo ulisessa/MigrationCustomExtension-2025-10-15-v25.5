@@ -1,4 +1,4 @@
-tableextension 50265 tableextension50265 extends "Reversal Entry"
+tableextension 50265 "Reversal Entry Ext." extends "Reversal Entry"
 {
     Caption = 'Reversal Entry';
     fields

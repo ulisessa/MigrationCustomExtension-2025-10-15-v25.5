@@ -23,6 +23,9 @@ tableextension 50439 tableextension50439 extends "Tax Area"
         field(50700; "Tipo fiscal"; Code[10])
         {
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('TIPO FISCAL'));
+            ObsoleteTag = '12/2025';
+            ObsoleteState = Pending;
+            ObsoleteReason = 'Reemplazado por campo Grupo Registro IVA Negocio';
         }
     }
 

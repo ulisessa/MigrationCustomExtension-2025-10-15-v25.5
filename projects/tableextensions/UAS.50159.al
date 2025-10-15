@@ -1,4 +1,4 @@
-tableextension 50159 tableextension50159 extends "Activities Cue"
+tableextension 50159 "Activities Cue Ext." extends "Activities Cue"
 {
     fields
     {

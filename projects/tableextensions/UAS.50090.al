@@ -1,4 +1,4 @@
-tableextension 50090 tableextension50090 extends "Credit Transfer Entry"
+tableextension 50090 "Credit Transfer Entry Ext." extends "Credit Transfer Entry"
 {
     Caption = 'Credit Transfer Entry';
     fields

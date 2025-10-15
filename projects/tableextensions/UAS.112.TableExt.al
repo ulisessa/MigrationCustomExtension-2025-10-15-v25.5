@@ -5,27 +5,27 @@ tableextension 115 tableextension115 extends "Sales Cr.Memo Line"
         field(50000; "Shortcut Dimension 3 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50001; "Shortcut Dimension 4 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
         }
         field(50002; "Shortcut Dimension 5 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
         }
         field(50003; "Shortcut Dimension 6 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
         }
         field(50004; "Shortcut Dimension 7 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
         field(50005; Facturado; Boolean)
         {
@@ -311,6 +311,10 @@ tableextension 115 tableextension115 extends "Sales Cr.Memo Line"
             DataClassification = ToBeClassified;
         }
         field(50080; "Importe DL"; Decimal)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(50081; "Sello Argentino"; Boolean)
         {
             DataClassification = ToBeClassified;
         }

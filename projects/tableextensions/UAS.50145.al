@@ -1,4 +1,4 @@
-tableextension 50145 tableextension50145 extends "Incoming Document"
+tableextension 50145 "Incoming Document Ext." extends "Incoming Document"
 {
     fields
     {

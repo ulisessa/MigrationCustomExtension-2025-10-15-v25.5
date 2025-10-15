@@ -1,4 +1,4 @@
-tableextension 50255 tableextension50255 extends "Posted Deferral Line"
+tableextension 50255 "Posted Deferral Line Ext." extends "Posted Deferral Line"
 {
     Caption = 'Posted Deferral Line';
     fields

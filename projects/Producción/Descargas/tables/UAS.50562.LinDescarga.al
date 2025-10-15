@@ -13,7 +13,7 @@ table 50562 "Lín. descarga"
                 Clear(rstProyecto);
                 rstProyecto.Get("No. proyecto");
                 Buque := rstProyecto."Global Dimension 1 Code";
-                Marea := rstProyecto."Global Dimension 3 Code";
+                Marea := rstProyecto."Global Dimension 2 Code";
             end;
         }
         field(2; "No. remito"; Code[20])
@@ -40,7 +40,7 @@ table 50562 "Lín. descarga"
 
                     Description := rstProducto.Description;
                     "Unidad medida" := rstProducto."Base Unit of Measure";
-                    Actividad := rstProducto."Global Dimension 2 Code";
+                    Actividad := rstProducto."Global Dimension 3 Code";
                     Familia := rstProducto.Familia;
                     Subfamilia := rstProducto.Subfamilia;
 
@@ -125,7 +125,7 @@ table 50562 "Lín. descarga"
         }
         field(20; Marea; Code[10])
         {
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(21; Puerto; Code[10])
         {

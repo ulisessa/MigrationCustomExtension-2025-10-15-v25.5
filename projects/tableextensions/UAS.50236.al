@@ -1,4 +1,4 @@
-tableextension 50236 tableextension50236 extends "Office Job Journal"
+tableextension 50236 "Office Job Journal Ext." extends "Office Job Journal"
 {
     fields
     {

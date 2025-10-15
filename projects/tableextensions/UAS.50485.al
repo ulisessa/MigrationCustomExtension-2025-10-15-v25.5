@@ -700,7 +700,7 @@ tableextension 50485 tableextension50485 extends "Sales Line"
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 3 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
 
             trigger OnValidate()
             begin
@@ -715,7 +715,7 @@ tableextension 50485 tableextension50485 extends "Sales Line"
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 4 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
 
             trigger OnValidate()
             begin
@@ -730,7 +730,7 @@ tableextension 50485 tableextension50485 extends "Sales Line"
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 5 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
 
             trigger OnValidate()
             begin
@@ -745,7 +745,7 @@ tableextension 50485 tableextension50485 extends "Sales Line"
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 6 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
 
             trigger OnValidate()
             begin
@@ -760,7 +760,7 @@ tableextension 50485 tableextension50485 extends "Sales Line"
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 7 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
 
             trigger OnValidate()
             begin
@@ -1297,6 +1297,10 @@ tableextension 50485 tableextension50485 extends "Sales Line"
             DataClassification = ToBeClassified;
         }
         field(50080; "Importe DL"; Decimal)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(50081; "Sello Argentino"; Boolean)
         {
             DataClassification = ToBeClassified;
         }
@@ -2688,14 +2692,12 @@ tableextension 50485 tableextension50485 extends "Sales Line"
             exit("Job No.")
         else begin
 
-            if ("Shortcut Dimension 1 Code" <> '') and (("Shortcut Dimension 3 Code" <> '') or ("Shortcut Dimension 3 Code" <> '')) then begin
+            if ("Shortcut Dimension 1 Code" <> '') and (("Shortcut Dimension 2 Code" <> '') or ("Shortcut Dimension 2 Code" <> '')) then begin
 
                 Clear(rstJob);
                 rstJob.SetRange("Global Dimension 1 Code", "Shortcut Dimension 1 Code");
-                if "Shortcut Dimension 3 Code" <> '' then
-                    rstJob.SetRange("Global Dimension 3 Code", "Shortcut Dimension 3 Code")
-                else
-                    rstJob.SetRange("Global Dimension 3 Code", "Shortcut Dimension 3 Code");
+                if "Shortcut Dimension 2 Code" <> '' then
+                    rstJob.SetRange("Global Dimension 2 Code", "Shortcut Dimension 2 Code");
                 rstJob.FindFirst;
                 exit(rstJob."No.");
 

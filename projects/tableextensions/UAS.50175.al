@@ -1,4 +1,4 @@
-tableextension 50175 tableextension50175 extends "Role Center Notifications"
+tableextension 50175 "Role Center Notifications Ext." extends "Role Center Notifications"
 {
     Caption = 'Role Center Notifications';
     fields

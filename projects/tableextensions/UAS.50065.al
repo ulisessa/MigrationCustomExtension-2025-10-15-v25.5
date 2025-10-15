@@ -1,4 +1,4 @@
-tableextension 50065 tableextension50065 extends "Cost Allocation Target"
+tableextension 50065 "Cost Allocation Target Ext." extends "Cost Allocation Target"
 {
     Caption = 'Cost Allocation Target';
     fields

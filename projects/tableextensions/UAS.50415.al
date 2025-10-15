@@ -113,44 +113,44 @@ tableextension 50415 tableextension50415 extends "Issued Reminder Header"
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
-            CaptionClass = '1,1,7';
+            CaptionClass = '1,2,7';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
         field(50505; "Shortcut Dimension 3 Code"; Code[20])
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50506; "Shortcut Dimension 4 Code"; Code[20])
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
         }
         field(50507; "Shortcut Dimension 5 Code"; Code[20])
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
         }
         field(50508; "Shortcut Dimension 6 Code"; Code[20])
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
         }
         field(50509; "Shortcut Dimension 7 Code"; Code[20])
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
     }
 

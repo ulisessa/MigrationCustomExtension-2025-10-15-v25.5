@@ -31,7 +31,7 @@ table 50022 "Invoice Withholding Buffer"
         }
         field(6; "Tipo fiscal"; Code[10])
         {
-            TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('TIPO FISCAL'));
+            TableRelation = "VAT Business Posting Group".Code;
         }
         field(7; "Fecha pago"; Date)
         {

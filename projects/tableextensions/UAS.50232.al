@@ -1,4 +1,4 @@
-tableextension 50232 tableextension50232 extends "Exchange Object"
+tableextension 50232 "Exchange Object Ext." extends "Exchange Object"
 {
     fields
     {

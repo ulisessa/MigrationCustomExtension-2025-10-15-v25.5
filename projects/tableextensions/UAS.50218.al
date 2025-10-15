@@ -1,4 +1,4 @@
-tableextension 50218 tableextension50218 extends "Workflow - Record Change"
+tableextension 50218 "Workflow - Record Change Ext." extends "Workflow - Record Change"
 {
     fields
     {
@@ -16,7 +16,7 @@ tableextension 50218 tableextension50218 extends "Workflow - Record Change"
         }
         modify("Record ID")
         {
-            Caption = 'Record ID'; 
+            Caption = 'Record ID';
         }
         modify("Field Caption")
         {

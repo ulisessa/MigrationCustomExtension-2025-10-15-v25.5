@@ -32,8 +32,8 @@ table 50556 "Cab. remito ventas"
         }
         field(8; "Global Dimension 6"; Code[20])
         {
-            CaptionClass = '1,1,6';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+            CaptionClass = '1,2,6';
+
         }
         field(9; "Carpeta de Exportación"; Text[10])
         {

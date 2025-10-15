@@ -103,31 +103,31 @@ table 50547 "Recupero IVA Rubro 3"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(21; "Shortcut Dimension 4 Code"; Code[20])
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 4 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
         }
         field(22; "Shortcut Dimension 5 Code"; Code[20])
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 5 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
         }
         field(23; "Shortcut Dimension 6 Code"; Code[20])
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 6 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
         }
         field(24; "Shortcut Dimension 7 Code"; Code[20])
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 7 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
         field(25; "MI gravadas"; Decimal)
         {

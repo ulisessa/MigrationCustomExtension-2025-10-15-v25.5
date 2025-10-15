@@ -1,4 +1,4 @@
-tableextension 50285 tableextension50285 extends "VAT Setup Posting Groups"
+tableextension 50285 "VAT Setup Posting Groups Ext." extends "VAT Setup Posting Groups"
 {
     Caption = 'VAT Setup Posting Groups';
     fields

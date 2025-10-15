@@ -66,10 +66,11 @@ tableextension 50348 tableextension50348 extends "Gen. Journal Batch"
             trigger OnValidate()
             var
                 GenJnlTemplate: Record "Gen. Journal Template";
-                Text000: TextConst ESP = 'Sólo se debe completar el campo %1 en los diarios periódicos.';
-                Text001: TextConst ESP = 'No puede ser %1.';
+                Text000: Label 'Sólo se debe completar el campo %1 en los diarios periódicos.';
+                Text001: Label 'No puede ser %1.';
             begin
-                if "No. Series" <> '' then begin
+                if "No. Series" <> '' then
+                begin
                     GenJnlTemplate.Get("Journal Template Name");
                     if GenJnlTemplate.Recurring then
                         Error(

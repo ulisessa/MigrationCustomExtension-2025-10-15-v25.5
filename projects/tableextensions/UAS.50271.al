@@ -1,4 +1,4 @@
-tableextension 50271 tableextension50271 extends "Data Migrator Registration"
+tableextension 50271 "Data Migrator Reg. Ext." extends "Data Migrator Registration"
 {
     fields
     {

@@ -1,4 +1,4 @@
-tableextension 50211 tableextension50211 extends "Notification Context"
+tableextension 50211 "Notification Context Ext." extends "Notification Context"
 {
     Caption = 'Notification Context';
     fields

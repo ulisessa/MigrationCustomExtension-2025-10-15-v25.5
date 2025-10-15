@@ -1,4 +1,4 @@
-tableextension 50168 tableextension50168 extends "Acc. Sched. KPI Web Srv. Setup"
+tableextension 50168 "Acc. Sched.KPIWebSrv.Set. Ext." extends "Acc. Sched. KPI Web Srv. Setup"
 {
     fields
     {

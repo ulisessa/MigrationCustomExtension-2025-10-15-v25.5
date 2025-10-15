@@ -1,4 +1,4 @@
-tableextension 50030 tableextension50030 extends "AEAT Transference Format"
+tableextension 50030 "AEAT Transference Format Ext." extends "AEAT Transference Format"
 {
     fields
     {

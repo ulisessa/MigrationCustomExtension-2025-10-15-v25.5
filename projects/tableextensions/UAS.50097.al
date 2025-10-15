@@ -1,4 +1,4 @@
-tableextension 50097 tableextension50097 extends "Intermediate Data Import"
+tableextension 50097 "Intermediate Data Import Ext." extends "Intermediate Data Import"
 {
     Caption = 'Intermediate Data Import';
     fields

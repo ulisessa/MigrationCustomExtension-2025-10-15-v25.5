@@ -1,4 +1,4 @@
-tableextension 50269 tableextension50269 extends Customer
+tableextension 50269 "Customer Ext." extends Customer
 {
     fields
     {
@@ -465,8 +465,8 @@ tableextension 50269 tableextension50269 extends Customer
         //end;
         field(50000; "Global dimension 3 Code"; Code[10])
         {
-            CaptionClass = '1,1,3';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+            CaptionClass = '1,2,3';
+
 
             trigger OnValidate()
             begin
@@ -475,8 +475,8 @@ tableextension 50269 tableextension50269 extends Customer
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
-            CaptionClass = '1,1,4';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+            CaptionClass = '1,2,4';
+
 
             trigger OnValidate()
             begin
@@ -485,8 +485,8 @@ tableextension 50269 tableextension50269 extends Customer
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
-            CaptionClass = '1,1,5';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+            CaptionClass = '1,2,5';
+
 
             trigger OnValidate()
             begin
@@ -495,8 +495,8 @@ tableextension 50269 tableextension50269 extends Customer
         }
         field(50003; "Global Dimension 6 Code"; Code[10])
         {
-            CaptionClass = '1,1,6';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+            CaptionClass = '1,2,6';
+
 
             trigger OnValidate()
             begin
@@ -505,8 +505,8 @@ tableextension 50269 tableextension50269 extends Customer
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
-            CaptionClass = '1,1,7';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+            CaptionClass = '1,2,7';
+
 
             trigger OnValidate()
             begin
@@ -517,31 +517,31 @@ tableextension 50269 tableextension50269 extends Customer
         {
             CaptionClass = '1,3,3';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50006; "Global Dimension 4 filter"; Code[10])
         {
             CaptionClass = '1,3,4';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
         }
         field(50007; "Global Dimension 5 filter"; Code[10])
         {
             CaptionClass = '1,3,5';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
         }
         field(50008; "Global dimension 6 filter"; Code[10])
         {
             CaptionClass = '1,3,6';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
         }
         field(50009; "Global Dimension 7 filter"; Code[20])
         {
             CaptionClass = '1,3,7';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
         field(50023; "Cód. percepción IIBB"; Code[20])
         {
@@ -628,6 +628,9 @@ tableextension 50269 tableextension50269 extends Customer
         field(50703; "Tipo Fiscal"; Code[10])
         {
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('TIPO FISCAL'));
+            ObsoleteTag = '12/2025';
+            ObsoleteState = Pending;
+            ObsoleteReason = 'Reemplazado por campo Grupo Registro IVA Negocio';
         }
         field(50704; DigitoDeControl; Integer)
         {

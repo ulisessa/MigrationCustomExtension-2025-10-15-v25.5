@@ -1,4 +1,4 @@
-tableextension 50141 tableextension50141 extends "Posted Payment Recon. Hdr"
+tableextension 50141 "Posted Payment Recon. Hdr Ext." extends "Posted Payment Recon. Hdr"
 {
     Caption = 'Posted Payment Recon. Hdr';
     fields

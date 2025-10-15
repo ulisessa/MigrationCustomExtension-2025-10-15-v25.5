@@ -1,4 +1,4 @@
-tableextension 50243 tableextension50243 extends "Import G/L Transaction"
+tableextension 50243 "Import G/L Transaction Ext." extends "Import G/L Transaction"
 {
     Caption = 'Import G/L Transaction';
     fields

@@ -1,4 +1,4 @@
-tableextension 50202 tableextension50202 extends "Workflow Category"
+tableextension 50202 "Workflow Category Ext." extends "Workflow Category"
 {
     Caption = 'Workflow Category';
     fields

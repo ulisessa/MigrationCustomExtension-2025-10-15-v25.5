@@ -1,4 +1,4 @@
-tableextension 50059 tableextension50059 extends "Cost Journal Line"
+tableextension 50059 "Cost Journal Line Ext." extends "Cost Journal Line"
 {
     Caption = 'Cost Journal Line';
     fields

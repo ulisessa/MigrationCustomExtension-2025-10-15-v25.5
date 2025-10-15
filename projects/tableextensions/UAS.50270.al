@@ -1,4 +1,4 @@
-tableextension 50270 tableextension50270 extends "G/L Account Where-Used"
+tableextension 50270 "G/L Account Where-Used Ext." extends "G/L Account Where-Used"
 {
     fields
     {

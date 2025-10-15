@@ -496,31 +496,31 @@ tableextension 50383 tableextension50383 extends Item
         {
             CaptionClass = '1,3,3';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50001; "Global Dimension 4 filter"; Code[10])
         {
             CaptionClass = '1,3,4';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
         }
         field(50002; "Global Dimension 5 filter"; Code[10])
         {
             CaptionClass = '1,3,5';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
         }
         field(50003; "Global Dimension 6 filter"; Code[10])
         {
             CaptionClass = '1,3,6';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
         }
         field(50004; "Global Dimension 7 filter"; Code[20])
         {
             CaptionClass = '1,3,7';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
         field(50009; "Lleva No. Lote"; Boolean)
         {
@@ -638,10 +638,10 @@ tableextension 50383 tableextension50383 extends Item
             CalcFormula = Sum("Item Ledger Entry"."Gross kilos" WHERE("Item No." = FIELD("No."),
                                                                        "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
                                                                        "Global Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
-                                                                       "Global dimension 3 Code" = FIELD("Global Dimension 3 filter"),
-                                                                       "Global Dimension 4 Code" = FIELD("Global Dimension 4 filter"),
+                                                                       "Shortcut dimension 3 Code" = FIELD("Global Dimension 3 filter"),
+                                                                       "Shortcut Dimension 4 Code" = FIELD("Global Dimension 4 filter"),
                                                                        "Job concept" = FIELD("Global Dimension 5 filter"),
-                                                                       "Global dimension 6 Code" = FIELD("Global Dimension 6 filter"),
+                                                                       "Shortcut dimension 6 Code" = FIELD("Global Dimension 6 filter"),
                                                                        "Location Code" = FIELD("Location Filter"),
                                                                        "Entry/Exit Point" = FIELD("Filtro Puerto"),
                                                                        "Variant Code" = FIELD("Variant Filter"),
@@ -649,7 +649,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                        "Nombre libro diario" = FIELD("Filtro Nombre Libro Diario"),
                                                                        "Lot No." = FIELD("Lot No. Filter"),
                                                                        "Lote origen" = FIELD("Filtro Lote Origen"),
-                                                                       "Global Dimension 7 Code" = FIELD("Global Dimension 7 filter")));
+                                                                       "Shortcut Dimension 7 Code" = FIELD("Global Dimension 7 filter")));
             Editable = false;
             FieldClass = FlowField;
         }
@@ -658,10 +658,10 @@ tableextension 50383 tableextension50383 extends Item
             CalcFormula = Sum("Item Ledger Entry"."Net kilos" WHERE("Item No." = FIELD("No."),
                                                                      "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
                                                                      "Global Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
-                                                                     "Global dimension 3 Code" = FIELD("Global Dimension 3 filter"),
-                                                                     "Global Dimension 4 Code" = FIELD("Global Dimension 4 filter"),
+                                                                     "Shortcut dimension 3 Code" = FIELD("Global Dimension 3 filter"),
+                                                                     "Shortcut Dimension 4 Code" = FIELD("Global Dimension 4 filter"),
                                                                      "Job concept" = FIELD("Global Dimension 5 filter"),
-                                                                     "Global dimension 6 Code" = FIELD("Global Dimension 6 filter"),
+                                                                     "Shortcut dimension 6 Code" = FIELD("Global Dimension 6 filter"),
                                                                      "Location Code" = FIELD("Location Filter"),
                                                                      "Entry/Exit Point" = FIELD("Filtro Puerto"),
                                                                      "Variant Code" = FIELD("Variant Filter"),
@@ -669,7 +669,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                      "Nombre libro diario" = FIELD("Filtro Nombre Libro Diario"),
                                                                      "Lot No." = FIELD("Lot No. Filter"),
                                                                      "Lote origen" = FIELD("Filtro Lote Origen"),
-                                                                     "Global Dimension 7 Code" = FIELD("Global Dimension 7 filter")));
+                                                                     "Shortcut Dimension 7 Code" = FIELD("Global Dimension 7 filter")));
             Editable = false;
             FieldClass = FlowField;
         }
@@ -753,8 +753,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50512; "Global Dimension 3 Code"; Code[10])
         {
-            CaptionClass = '1,1,3';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+            CaptionClass = '1,2,3';
+
 
             trigger OnValidate()
             begin
@@ -763,8 +763,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50513; "Global Dimension 4 Code"; Code[10])
         {
-            CaptionClass = '1,1,4';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+            CaptionClass = '1,2,4';
+
 
             trigger OnValidate()
             begin
@@ -773,8 +773,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50514; "Global Dimension 5 Code"; Code[10])
         {
-            CaptionClass = '1,1,5';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+            CaptionClass = '1,2,5';
+
 
             trigger OnValidate()
             begin
@@ -783,8 +783,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50515; "Global Dimension 6 Code"; Code[10])
         {
-            CaptionClass = '1,1,6';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+            CaptionClass = '1,2,6';
+
 
             trigger OnValidate()
             begin
@@ -793,8 +793,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50516; "Global Dimension 7 Code"; Code[20])
         {
-            CaptionClass = '1,1,7';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+            CaptionClass = '1,2,7';
+
 
             trigger OnValidate()
             begin
@@ -879,10 +879,10 @@ tableextension 50383 tableextension50383 extends Item
             CalcFormula = - Sum("Item Ledger Entry"."Invoiced Quantity" WHERE("Item No." = FIELD("No."),
                                                                               "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
                                                                               "Global Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
-                                                                              "Global dimension 3 Code" = FIELD("Global Dimension 3 filter"),
-                                                                              "Global Dimension 4 Code" = FIELD("Global Dimension 4 filter"),
+                                                                              "Shortcut dimension 3 Code" = FIELD("Global Dimension 3 filter"),
+                                                                              "Shortcut Dimension 4 Code" = FIELD("Global Dimension 4 filter"),
                                                                               "Job concept" = FIELD("Global Dimension 5 filter"),
-                                                                              "Global dimension 6 Code" = FIELD("Global Dimension 6 filter"),
+                                                                              "Shortcut dimension 6 Code" = FIELD("Global Dimension 6 filter"),
                                                                               "Location Code" = FIELD("Location Filter"),
                                                                               "Entry/Exit Point" = FIELD("Filtro Puerto"),
                                                                               "Variant Code" = FIELD("Variant Filter"),
@@ -890,7 +890,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                               "Nombre libro diario" = FIELD("Filtro Nombre Libro Diario"),
                                                                               "Lot No." = FIELD("Lot No. Filter"),
                                                                               "Lote origen" = FIELD("Filtro Lote Origen"),
-                                                                              "Global Dimension 7 Code" = FIELD("Global Dimension 7 filter"),
+                                                                              "Shortcut Dimension 7 Code" = FIELD("Global Dimension 7 filter"),
                                                                               "Source No." = FIELD("Filtro Cliente"),
                                                                               "Entry Type" = CONST(Sale),
                                                                               "Document Type" = CONST("Sales Shipment")));
@@ -901,10 +901,10 @@ tableextension 50383 tableextension50383 extends Item
             CalcFormula = - Sum("Item Ledger Entry"."Net kilos" WHERE("Item No." = FIELD("No."),
                                                                       "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
                                                                       "Global Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
-                                                                      "Global dimension 3 Code" = FIELD("Global Dimension 3 filter"),
-                                                                      "Global Dimension 4 Code" = FIELD("Global Dimension 4 filter"),
+                                                                      "Shortcut dimension 3 Code" = FIELD("Global Dimension 3 filter"),
+                                                                      "Shortcut Dimension 4 Code" = FIELD("Global Dimension 4 filter"),
                                                                       "Job concept" = FIELD("Global Dimension 5 filter"),
-                                                                      "Global dimension 6 Code" = FIELD("Global Dimension 6 filter"),
+                                                                      "Shortcut dimension 6 Code" = FIELD("Global Dimension 6 filter"),
                                                                       "Location Code" = FIELD("Location Filter"),
                                                                       "Entry/Exit Point" = FIELD("Filtro Puerto"),
                                                                       "Variant Code" = FIELD("Variant Filter"),
@@ -912,7 +912,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                       "Nombre libro diario" = FIELD("Filtro Nombre Libro Diario"),
                                                                       "Lot No." = FIELD("Lot No. Filter"),
                                                                       "Lote origen" = FIELD("Filtro Lote Origen"),
-                                                                      "Global Dimension 7 Code" = FIELD("Global Dimension 7 filter"),
+                                                                      "Shortcut Dimension 7 Code" = FIELD("Global Dimension 7 filter"),
                                                                       "Source No." = FIELD("Filtro Cliente"),
                                                                       "Entry Type" = CONST(Sale),
                                                                       "Document Type" = CONST("Sales Shipment"),
@@ -1075,11 +1075,11 @@ tableextension 50383 tableextension50383 extends Item
             CalcFormula = Sum("Value Entry"."Sales Amount (Actual)" WHERE("Item No." = FIELD("No."),
                                                                            "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
                                                                            "Global Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
-                                                                           "Global Dimension 3 Code" = FIELD("Global Dimension 3 filter"),
-                                                                           "Global Dimension 4 Code" = FIELD("Global Dimension 4 filter"),
-                                                                           "Global Dimension 5 Code" = FIELD("Global Dimension 5 filter"),
-                                                                           "Global Dimension 6 Code" = FIELD("Global Dimension 6 filter"),
-                                                                           "Global Dimension 7 Code" = FIELD("Global Dimension 7 filter"),
+                                                                           "Shortcut Dimension 3 Code" = FIELD("Global Dimension 3 filter"),
+                                                                           "Shortcut Dimension 4 Code" = FIELD("Global Dimension 4 filter"),
+                                                                           "Shortcut Dimension 5 Code" = FIELD("Global Dimension 5 filter"),
+                                                                           "Shortcut Dimension 6 Code" = FIELD("Global Dimension 6 filter"),
+                                                                           "Shortcut Dimension 7 Code" = FIELD("Global Dimension 7 filter"),
                                                                            "Location Code" = FIELD("Location Filter"),
                                                                            "Variant Code" = FIELD("Variant Filter"),
                                                                            "Posting Date" = FIELD("Date Filter"),
@@ -1112,7 +1112,7 @@ tableextension 50383 tableextension50383 extends Item
         field(50559; "Filtro concepto imputación"; Code[10])
         {
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
         field(50560; "Inventory Net Kilos"; Decimal)
         {

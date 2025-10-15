@@ -1,4 +1,4 @@
-tableextension 50206 tableextension50206 extends "Notification Schedule"
+tableextension 50206 "Notification Schedule Ext." extends "Notification Schedule"
 {
     Caption = 'Notification Schedule';
     fields

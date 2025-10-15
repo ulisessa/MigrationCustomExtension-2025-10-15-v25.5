@@ -1,4 +1,4 @@
-tableextension 50152 tableextension50152 extends "O365 Device Setup Instructions"
+tableextension 50152 "O365 Device Setup Instr. Ext." extends "O365 Device Setup Instructions"
 {
     Caption = 'O365 Device Setup Instructions';
     fields

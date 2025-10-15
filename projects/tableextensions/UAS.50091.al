@@ -1,4 +1,4 @@
-tableextension 50091 tableextension50091 extends "Direct Debit Collection"
+tableextension 50091 "Direct Debit Collection Ext." extends "Direct Debit Collection"
 {
     fields
     {

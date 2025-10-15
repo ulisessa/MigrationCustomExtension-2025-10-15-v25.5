@@ -1,4 +1,4 @@
-tableextension 50120 tableextension50120 extends "Positive Pay Footer"
+tableextension 50120 "Positive Pay Footer Ext." extends "Positive Pay Footer"
 {
     Caption = 'Positive Pay Footer';
     fields

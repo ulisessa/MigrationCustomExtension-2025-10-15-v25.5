@@ -1,4 +1,4 @@
-tableextension 50258 tableextension50258 extends "Standard Customer Sales Code"
+tableextension 50258 "Standard Cust. Sales Code Ext." extends "Standard Customer Sales Code"
 {
     Caption = 'Standard Customer Sales Code';
     fields

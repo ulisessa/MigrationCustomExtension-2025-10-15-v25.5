@@ -1,4 +1,4 @@
-tableextension 50058 tableextension50058 extends "Cost Journal Template"
+tableextension 50058 "Cost Journal Template Ext." extends "Cost Journal Template"
 {
     fields
     {

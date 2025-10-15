@@ -1,4 +1,4 @@
-tableextension 50075 tableextension50075 extends "Sales Invoice Line"
+tableextension 50075 "Sales Invoice Line Ext." extends "Sales Invoice Line"
 {
     Caption = 'Sales Invoice Line';
     fields
@@ -207,31 +207,31 @@ tableextension 50075 tableextension50075 extends "Sales Invoice Line"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50001; "Shortcut Dimension 4 Code"; Code[20])
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
         }
         field(50002; "Shortcut Dimension 5 Code"; Code[20])
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
         }
         field(50003; "Shortcut Dimension 6 Code"; Code[20])
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
         }
         field(50004; "Shortcut Dimension 7 Code"; Code[20])
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
         field(50005; Facturado; Boolean)
         {
@@ -538,6 +538,10 @@ tableextension 50075 tableextension50075 extends "Sales Invoice Line"
             DataClassification = ToBeClassified;
         }
         field(50080; "Importe DL"; Decimal)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(50081; "Sello Argentino"; Boolean)
         {
             DataClassification = ToBeClassified;
         }

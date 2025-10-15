@@ -1,4 +1,4 @@
-tableextension 50171 tableextension50171 extends "Unlinked Attachment"
+tableextension 50171 "Unlinked Attachment Ext." extends "Unlinked Attachment"
 {
     fields
     {

@@ -1,4 +1,4 @@
-tableextension 50070 tableextension50070 extends "Cost Budget Register"
+tableextension 50070 "Cost Budget Register Ext." extends "Cost Budget Register"
 {
     fields
     {

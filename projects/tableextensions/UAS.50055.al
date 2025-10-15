@@ -1,4 +1,4 @@
-tableextension 50055 tableextension50055 extends "SII Purch. Doc. Scheme Code"
+tableextension 50055 "SII Purch. Doc.SchemeCode Ext" extends "SII Purch. Doc. Scheme Code"
 {
     Caption = 'SII Purch. Doc. Scheme Code';
     fields

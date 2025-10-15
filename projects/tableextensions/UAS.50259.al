@@ -1,4 +1,4 @@
-tableextension 50259 tableextension50259 extends "Standard Purchase Code"
+tableextension 50259 "Standard Purchase Code Ext." extends "Standard Purchase Code"
 {
     Caption = 'Standard Purchase Code';
     fields

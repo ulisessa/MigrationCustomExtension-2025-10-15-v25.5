@@ -1,4 +1,4 @@
-tableextension 50098 tableextension50098 extends "Purch. Inv. Header"
+tableextension 50098 "Purch. Inv. Header Ext." extends "Purch. Inv. Header"
 {
     Caption = 'Purch. Inv. Header';
     fields
@@ -280,33 +280,33 @@ tableextension 50098 tableextension50098 extends "Purch. Inv. Header"
         }
         field(50000; "Shortcut Dimension 3 Code"; Code[20])
         {
-            CaptionClass = '1,1,3';
+            CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50001; "Shortcut Dimension 4 Code"; Code[20])
         {
-            CaptionClass = '1,1,4';
+            CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 4 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
         }
         field(50002; "Shortcut Dimension 5 Code"; Code[20])
         {
-            CaptionClass = '1,1,5';
+            CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 5 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
         }
         field(50003; "Shortcut Dimension 6 Code"; Code[20])
         {
-            CaptionClass = '1,1,6';
+            CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 6 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
         }
         field(50004; "Shortcut Dimension 7 Code"; Code[20])
         {
-            CaptionClass = '1,1,7';
+            CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 7 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
         field(50005; "Concepto proyecto"; Code[10])
         {
@@ -466,6 +466,9 @@ tableextension 50098 tableextension50098 extends "Purch. Inv. Header"
         field(50702; "Tipo fiscal"; Code[20])
         {
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('TIPO FISCAL'));
+            ObsoleteTag = '12/2025';
+            ObsoleteState = Pending;
+            ObsoleteReason = 'Reemplazado por campo Grupo Registro IVA Negocio';
         }
         field(50703; Province; Code[20])
         {

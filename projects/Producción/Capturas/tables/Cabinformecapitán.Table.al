@@ -14,9 +14,9 @@ table 50559 "Cab. informe capitán"
                 if rstProyecto.Get("No. proyecto") then begin
 
                     Capitán := rstProyecto.Patron;
-                    Actividad := rstProyecto."Global Dimension 2 Code";
+                    Actividad := rstProyecto."Global Dimension 3 Code";
                     Buque := rstProyecto."Global Dimension 1 Code";
-                    Marea := rstProyecto."Global Dimension 3 Code";
+                    Marea := rstProyecto."Global Dimension 2 Code";
 
                 end;
             end;

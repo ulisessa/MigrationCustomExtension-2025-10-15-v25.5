@@ -1,4 +1,4 @@
-tableextension 50071 tableextension50071 extends "Cost Center"
+tableextension 50071 "Cost Center Ext." extends "Cost Center"
 {
     fields
     {

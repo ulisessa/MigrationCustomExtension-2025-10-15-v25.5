@@ -1,4 +1,4 @@
-tableextension 50142 tableextension50142 extends "Posted Payment Recon. Line"
+tableextension 50142 "Posted Paymnt Recon. Line Ext." extends "Posted Payment Recon. Line"
 {
     Caption = 'Posted Payment Recon. Line';
     fields

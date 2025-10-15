@@ -1,4 +1,4 @@
-tableextension 50287 tableextension50287 extends "VAT Assisted Setup Bus. Grp."
+tableextension 50287 "VAT Ass. Set. Bus. Grp. Ext." extends "VAT Assisted Setup Bus. Grp."
 {
     Caption = 'VAT Assisted Setup Bus. Grp.';
     fields

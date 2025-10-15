@@ -1,4 +1,4 @@
-tableextension 50095 tableextension50095 extends "SWIFT Code"
+tableextension 50095 "SWIFT Code Ext." extends "SWIFT Code"
 {
     Caption = 'SWIFT Code';
     fields

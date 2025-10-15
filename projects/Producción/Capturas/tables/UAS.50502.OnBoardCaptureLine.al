@@ -27,7 +27,7 @@ table 50502 "On board capture lines"
         }
         field(5; Marea; Code[10])
         {
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(6; "Fecha salida"; Date)
         {
@@ -246,8 +246,8 @@ table 50502 "On board capture lines"
         Clear(rstProyecto);
         rstProyecto.Get("Cód. proyecto");
         Buque := rstProyecto."Global Dimension 1 Code";
-        Marea := rstProyecto."Global Dimension 3 Code";
-        Actividad := rstProyecto."Global Dimension 2 Code";
+        Marea := rstProyecto."Global Dimension 2 Code";
+        Actividad := rstProyecto."Global Dimension 3 Code";
         if "Fecha registro" = 0D then
             "Fecha registro" := WorkDate;
     end;
@@ -286,8 +286,8 @@ table 50502 "On board capture lines"
         Clear(rstProyecto);
         rstProyecto.Get("Cód. proyecto");
         Buque := rstProyecto."Global Dimension 1 Code";
-        Marea := rstProyecto."Global Dimension 3 Code";
-        Actividad := rstProyecto."Global Dimension 2 Code";
+        Marea := rstProyecto."Global Dimension 2 Code";
+        Actividad := rstProyecto."Global Dimension 3 Code";
     end;
 
     var

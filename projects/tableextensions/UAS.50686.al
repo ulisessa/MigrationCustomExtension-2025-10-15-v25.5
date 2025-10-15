@@ -70,6 +70,10 @@ tableextension 50686 tableextension50686 extends "Human Resources Setup"
             DataClassification = ToBeClassified;
             TableRelation = Dimension;
         }
+        field(50011; "ID Empresa Meta4"; Code[2])
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 }
 

@@ -1,4 +1,4 @@
-tableextension 50042 tableextension50042 extends "Customer/Vendor Warning 349"
+tableextension 50042 "Customer/Vendor Warn. 349 Ext." extends "Customer/Vendor Warning 349"
 {
     fields
     {

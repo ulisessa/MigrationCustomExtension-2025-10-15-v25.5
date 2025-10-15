@@ -1,4 +1,4 @@
-tableextension 50239 tableextension50239 extends "Office Suggested Line Item"
+tableextension 50239 "Office Sugg. Line Item Ext." extends "Office Suggested Line Item"
 {
     Caption = 'Office Suggested Line Item';
     fields

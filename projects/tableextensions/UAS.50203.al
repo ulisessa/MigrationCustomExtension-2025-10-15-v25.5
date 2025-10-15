@@ -1,4 +1,4 @@
-tableextension 50203 tableextension50203 extends "WF Event/Response Combination"
+tableextension 50203 "WF Event/Response Comb. Ext." extends "WF Event/Response Combination"
 {
     Caption = 'WF Event/Response Combination';
     fields

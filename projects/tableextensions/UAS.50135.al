@@ -1,4 +1,4 @@
-tableextension 50135 tableextension50135 extends "Doc. Exch. Service Setup"
+tableextension 50135 "Doc. Exch. Service Setup Ext." extends "Doc. Exch. Service Setup"
 {
     Caption = 'Doc. Exch. Service Setup';
     fields

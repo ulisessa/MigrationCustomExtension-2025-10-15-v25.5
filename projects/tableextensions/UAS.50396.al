@@ -22,8 +22,8 @@ tableextension 50396 tableextension50396 extends "Entry/Exit Point"
             CalcFormula = Sum("Sales Invoice Line".Quantity WHERE("Posting Date" = FIELD("Filtro fecha"),
                                                                    "Job No." = FIELD("Filtro proyecto"),
                                                                    "Shortcut Dimension 1 Code" = FIELD("Filtro buque"),
-                                                                   "Shortcut Dimension 3 Code" = FIELD("Filtro marea"),
-                                                                   "Shortcut Dimension 2 Code" = FIELD("Filtro actividad"),
+                                                                   "Shortcut Dimension 2 Code" = FIELD("Filtro marea"),
+                                                                   "Shortcut Dimension 3 Code" = FIELD("Filtro actividad"),
                                                                    "Puerto destino" = FIELD(Code)));
             FieldClass = FlowField;
         }
@@ -32,8 +32,8 @@ tableextension 50396 tableextension50396 extends "Entry/Exit Point"
             CalcFormula = Sum("Sales Invoice Line"."Net kilos" WHERE("Posting Date" = FIELD("Filtro fecha"),
                                                                       "Job No." = FIELD("Filtro proyecto"),
                                                                       "Shortcut Dimension 1 Code" = FIELD("Filtro buque"),
-                                                                      "Shortcut Dimension 3 Code" = FIELD("Filtro marea"),
-                                                                      "Shortcut Dimension 2 Code" = FIELD("Filtro actividad"),
+                                                                      "Shortcut Dimension 2 Code" = FIELD("Filtro marea"),
+                                                                      "Shortcut Dimension 3 Code" = FIELD("Filtro actividad"),
                                                                       "Puerto destino" = FIELD(Code)));
             FieldClass = FlowField;
         }
@@ -42,8 +42,8 @@ tableextension 50396 tableextension50396 extends "Entry/Exit Point"
             CalcFormula = Sum("Sales Invoice Line"."Gross kilos" WHERE("Posting Date" = FIELD("Filtro fecha"),
                                                                         "Job No." = FIELD("Filtro proyecto"),
                                                                         "Shortcut Dimension 1 Code" = FIELD("Filtro buque"),
-                                                                        "Shortcut Dimension 3 Code" = FIELD("Filtro marea"),
-                                                                        "Shortcut Dimension 2 Code" = FIELD("Filtro actividad"),
+                                                                        "Shortcut Dimension 2 Code" = FIELD("Filtro marea"),
+                                                                        "Shortcut Dimension 3 Code" = FIELD("Filtro actividad"),
                                                                         "Puerto destino" = FIELD(Code)));
             FieldClass = FlowField;
         }
@@ -52,8 +52,8 @@ tableextension 50396 tableextension50396 extends "Entry/Exit Point"
             CalcFormula = Sum("Sales Invoice Line"."Importe USD" WHERE("Posting Date" = FIELD("Filtro fecha"),
                                                                         "Job No." = FIELD("Filtro proyecto"),
                                                                         "Shortcut Dimension 1 Code" = FIELD("Filtro buque"),
-                                                                        "Shortcut Dimension 3 Code" = FIELD("Filtro marea"),
-                                                                        "Shortcut Dimension 2 Code" = FIELD("Filtro actividad"),
+                                                                        "Shortcut Dimension 2 Code" = FIELD("Filtro marea"),
+                                                                        "Shortcut Dimension 3 Code" = FIELD("Filtro actividad"),
                                                                         "Puerto destino" = FIELD(Code)));
             FieldClass = FlowField;
         }
@@ -62,8 +62,8 @@ tableextension 50396 tableextension50396 extends "Entry/Exit Point"
             CalcFormula = Sum("Sales Invoice Line".Quantity WHERE("Posting Date" = FIELD("Filtro fecha"),
                                                                    "Job No." = FIELD("Filtro proyecto"),
                                                                    "Shortcut Dimension 1 Code" = FIELD("Filtro buque"),
-                                                                   "Shortcut Dimension 3 Code" = FIELD("Filtro marea"),
-                                                                   "Shortcut Dimension 2 Code" = FIELD("Filtro actividad"),
+                                                                   "Shortcut Dimension 2 Code" = FIELD("Filtro marea"),
+                                                                   "Shortcut Dimension 3 Code" = FIELD("Filtro actividad"),
                                                                    "Exit Point" = FIELD(Code)));
             FieldClass = FlowField;
         }
@@ -72,8 +72,8 @@ tableextension 50396 tableextension50396 extends "Entry/Exit Point"
             CalcFormula = Sum("Sales Invoice Line"."Net kilos" WHERE("Posting Date" = FIELD("Filtro fecha"),
                                                                       "Job No." = FIELD("Filtro proyecto"),
                                                                       "Shortcut Dimension 1 Code" = FIELD("Filtro buque"),
-                                                                      "Shortcut Dimension 3 Code" = FIELD("Filtro marea"),
-                                                                      "Shortcut Dimension 2 Code" = FIELD("Filtro actividad"),
+                                                                      "Shortcut Dimension 2 Code" = FIELD("Filtro marea"),
+                                                                      "Shortcut Dimension 3 Code" = FIELD("Filtro actividad"),
                                                                       "Exit Point" = FIELD(Code)));
             DecimalPlaces = 0 : 0;
             FieldClass = FlowField;
@@ -83,8 +83,8 @@ tableextension 50396 tableextension50396 extends "Entry/Exit Point"
             CalcFormula = Sum("Sales Invoice Line"."Gross kilos" WHERE("Posting Date" = FIELD("Filtro fecha"),
                                                                         "Job No." = FIELD("Filtro proyecto"),
                                                                         "Shortcut Dimension 1 Code" = FIELD("Filtro buque"),
-                                                                        "Shortcut Dimension 3 Code" = FIELD("Filtro marea"),
-                                                                        "Shortcut Dimension 2 Code" = FIELD("Filtro actividad"),
+                                                                        "Shortcut Dimension 2 Code" = FIELD("Filtro marea"),
+                                                                        "Shortcut Dimension 3 Code" = FIELD("Filtro actividad"),
                                                                         "Exit Point" = FIELD(Code)));
             FieldClass = FlowField;
         }
@@ -93,8 +93,8 @@ tableextension 50396 tableextension50396 extends "Entry/Exit Point"
             CalcFormula = Sum("Sales Invoice Line"."Importe USD" WHERE("Posting Date" = FIELD("Filtro fecha"),
                                                                         "Job No." = FIELD("Filtro proyecto"),
                                                                         "Shortcut Dimension 1 Code" = FIELD("Filtro buque"),
-                                                                        "Shortcut Dimension 3 Code" = FIELD("Filtro marea"),
-                                                                        "Shortcut Dimension 2 Code" = FIELD("Filtro actividad"),
+                                                                        "Shortcut Dimension 2 Code" = FIELD("Filtro marea"),
+                                                                        "Shortcut Dimension 3 Code" = FIELD("Filtro actividad"),
                                                                         "Exit Point" = FIELD(Code)));
             FieldClass = FlowField;
         }

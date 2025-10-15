@@ -1,4 +1,4 @@
-tableextension 50219 tableextension50219 extends "Workflow Record Change Archive"
+tableextension 50219 "Workflow Rec. Chng. Arch. Ext." extends "Workflow Record Change Archive"
 {
     fields
     {

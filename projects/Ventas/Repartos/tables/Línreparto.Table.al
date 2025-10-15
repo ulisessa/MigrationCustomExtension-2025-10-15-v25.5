@@ -1,6 +1,5 @@
 table 50543 "Lín. reparto"
 {
-    DrillDownPageID = "Lín. reparto";
 
     fields
     {
@@ -16,8 +15,8 @@ table 50543 "Lín. reparto"
         field(3; "No. Producto"; Code[20])
         {
             NotBlank = true;
-            TableRelation = Item."No." WHERE ("Exportación" = CONST (true),
-                                              Blocked = CONST (false));
+            TableRelation = Item."No." WHERE("Exportación" = CONST(true),
+                                              Blocked = CONST(false));
 
             trigger OnValidate()
             var
@@ -30,10 +29,10 @@ table 50543 "Lín. reparto"
                 Clear(rstProducto);
                 if rstProducto.Get("No. Producto") then begin
                     Validate(Descripcion, rstProducto.Description);
-                    Validate(Actividad, rstProducto."Global Dimension 2 Code");
+                    Validate(Actividad, rstProducto."Global Dimension 3 Code");
                     Validate("Cod. unidad medida", rstProducto."Base Unit of Measure");
                     Clear(rstDV);
-                    rstDV.Get(rstGLS."Global Dimension 2 Code", Actividad);
+                    rstDV.Get(rstGLS."Global Dimension 3 Code", Actividad);
                     "Seguimiento para trazabilidad" := rstDV."Seguimiento para trazabilidad";
                 end;
             end;
@@ -57,7 +56,7 @@ table 50543 "Lín. reparto"
         }
         field(12; "Cod. unidad medida"; Code[10])
         {
-            TableRelation = "Item Unit of Measure".Code WHERE ("Item No." = FIELD ("No. Producto"));
+            TableRelation = "Item Unit of Measure".Code WHERE("Item No." = FIELD("No. Producto"));
         }
         field(13; Puerto; Code[20])
         {
@@ -65,7 +64,7 @@ table 50543 "Lín. reparto"
         field(14; Actividad; Code[10])
         {
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE ("Global Dimension No." = CONST (2));
+            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(2));
 
             trigger OnValidate()
             var
@@ -75,7 +74,7 @@ table 50543 "Lín. reparto"
                 Clear(l_rstGLS);
                 l_rstGLS.Get();
                 Clear(l_rstDV);
-                if l_rstDV.Get(l_rstGLS."Global Dimension 2 Code", Actividad) then
+                if l_rstDV.Get(l_rstGLS."Global Dimension 3 Code", Actividad) then
                     "DCL application date formula" := l_rstDV."DCL application date formula";
             end;
         }
@@ -104,44 +103,32 @@ table 50543 "Lín. reparto"
         }
         field(20; "Total a enviar"; Decimal)
         {
-            CalcFormula = Sum ("Lín. reparto"."Cantidad a enviar" WHERE ("No. Producto" = FIELD ("No. Producto"),
-                                                                        "Tipo movimiento" = CONST (Venta)));
+            CalcFormula = Sum("Lín. reparto"."Cantidad a enviar" WHERE("No. Producto" = FIELD("No. Producto"),
+                                                                        "Tipo movimiento" = CONST(Venta)));
             DecimalPlaces = 0 : 2;
             FieldClass = FlowField;
         }
         field(22; Proyecto; Code[20])
         {
             DataClassification = ToBeClassified;
-            TableRelation = Job."No." WHERE ("Kilos netos pendientes" = FILTER (<> 0),
-                                             "Filtro producto" = FIELD ("No. Producto"),
-                                             "Filtro lote" = FIELD ("Lote origen"));
+            TableRelation = Job."No." WHERE("Kilos netos pendientes" = FILTER(<> 0),
+                                             "Filtro producto" = FIELD("No. Producto"),
+                                             "Filtro lote" = FIELD("Lote origen"));
             ValidateTableRelation = false;
 
-            trigger OnValidate()
-            begin
-                fntValidarProyecto(FieldCaption(Proyecto));
-            end;
         }
         field(23; Buque; Code[10])
         {
-            TableRelation = "Dimension Value".Code WHERE ("Global Dimension No." = CONST (1));
+            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(1));
 
-            trigger OnValidate()
-            begin
-                fntValidarProyecto(FieldCaption(Buque));
-            end;
         }
         field(24; Marea; Code[10])
         {
-            TableRelation = Job."Global Dimension 3 Code" WHERE ("Global Dimension 1 Code" = FIELD (Buque),
-                                                                 "Kilos netos pendientes" = FILTER (<> 0),
-                                                                 "Filtro producto" = FIELD ("No. Producto"));
+            TableRelation = Job."Global Dimension 2 Code" WHERE("Global Dimension 1 Code" = FIELD(Buque),
+                                                                 "Kilos netos pendientes" = FILTER(<> 0),
+                                                                 "Filtro producto" = FIELD("No. Producto"));
             ValidateTableRelation = false;
 
-            trigger OnValidate()
-            begin
-                fntValidarProyecto(FieldCaption(Marea));
-            end;
         }
         field(25; "Lote origen"; Code[10])
         {
@@ -174,21 +161,21 @@ table 50543 "Lín. reparto"
         }
         field(2000; "Existencias - KN"; Decimal)
         {
-            CalcFormula = Sum ("Item Ledger Entry"."Net kilos" WHERE ("Lote origen" = FIELD (FILTER ("Lote origen")),
-                                                                     "Item No." = FIELD (FILTER ("No. Producto")),
-                                                                     "Entry/Exit Point" = FIELD (FILTER (Puerto)),
-                                                                     "Location Code" = FIELD (FILTER ("Cod. deposito"))));
+            CalcFormula = Sum("Item Ledger Entry"."Net kilos" WHERE("Lote origen" = FIELD(FILTER("Lote origen")),
+                                                                     "Item No." = FIELD(FILTER("No. Producto")),
+                                                                     "Entry/Exit Point" = FIELD(FILTER(Puerto)),
+                                                                     "Location Code" = FIELD(FILTER("Cod. deposito"))));
             DecimalPlaces = 0 : 3;
             FieldClass = FlowField;
         }
         field(2001; "Existencias - UMB"; Decimal)
         {
-            CalcFormula = Sum ("Item Ledger Entry".Quantity WHERE ("Lote origen" = FIELD (FILTER ("Lote origen")),
-                                                                  "Item No." = FIELD (FILTER ("No. Producto")),
-                                                                  "Entry/Exit Point" = FIELD (FILTER (Puerto)),
-                                                                  "Location Code" = FIELD (FILTER ("Cod. deposito")),
-                                                                  "Global Dimension 1 Code" = FIELD (FILTER (Buque)),
-                                                                  "Global dimension 3 Code" = FIELD (FILTER (Marea))));
+            CalcFormula = Sum("Item Ledger Entry".Quantity WHERE("Lote origen" = FIELD(FILTER("Lote origen")),
+                                                                  "Item No." = FIELD(FILTER("No. Producto")),
+                                                                  "Entry/Exit Point" = FIELD(FILTER(Puerto)),
+                                                                  "Location Code" = FIELD(FILTER("Cod. deposito")),
+                                                                  "Global Dimension 1 Code" = FIELD(FILTER(Buque)),
+                                                                  "Global dimension 2 Code" = FIELD(FILTER(Marea))));
             DecimalPlaces = 0 : 2;
             FieldClass = FlowField;
 
@@ -203,12 +190,12 @@ table 50543 "Lín. reparto"
         }
         field(2002; "Comprometido - UMB"; Decimal)
         {
-            CalcFormula = Sum ("Lín. reparto"."Reservar - UMB" WHERE ("No. Producto" = FIELD (FILTER ("No. Producto")),
-                                                                     "Lote origen" = FIELD (FILTER ("Lote origen")),
-                                                                     Puerto = FIELD (FILTER (Puerto)),
-                                                                     "Cod. deposito" = FIELD (FILTER ("Cod. deposito")),
-                                                                     Proyecto = FIELD (FILTER (Proyecto)),
-                                                                     Registrado = CONST (true)));
+            CalcFormula = Sum("Lín. reparto"."Reservar - UMB" WHERE("No. Producto" = FIELD(FILTER("No. Producto")),
+                                                                     "Lote origen" = FIELD(FILTER("Lote origen")),
+                                                                     Puerto = FIELD(FILTER(Puerto)),
+                                                                     "Cod. deposito" = FIELD(FILTER("Cod. deposito")),
+                                                                     Proyecto = FIELD(FILTER(Proyecto)),
+                                                                     Registrado = CONST(true)));
             DecimalPlaces = 0 : 2;
             FieldClass = FlowField;
 
@@ -268,24 +255,24 @@ table 50543 "Lín. reparto"
         }
         field(2009; "Envío realizado - UMB"; Decimal)
         {
-            CalcFormula = Sum ("Item Ledger Entry".Quantity WHERE ("Item No." = FIELD ("No. Producto"),
-                                                                  "No. reparto" = FIELD ("No. Documento"),
-                                                                  "Linea reparto" = FIELD ("No. línea")));
+            CalcFormula = Sum("Item Ledger Entry".Quantity WHERE("Item No." = FIELD("No. Producto"),
+                                                                  "No. reparto" = FIELD("No. Documento"),
+                                                                  "Linea reparto" = FIELD("No. línea")));
             FieldClass = FlowField;
         }
         field(2010; "Envío realizado - KN"; Decimal)
         {
-            CalcFormula = Sum ("Item Ledger Entry"."Net kilos" WHERE ("Item No." = FIELD ("No. Producto"),
-                                                                     "No. reparto" = FIELD ("No. Documento"),
-                                                                     "Linea reparto" = FIELD ("No. línea")));
+            CalcFormula = Sum("Item Ledger Entry"."Net kilos" WHERE("Item No." = FIELD("No. Producto"),
+                                                                     "No. reparto" = FIELD("No. Documento"),
+                                                                     "Linea reparto" = FIELD("No. línea")));
             DecimalPlaces = 0 : 3;
             FieldClass = FlowField;
         }
         field(2011; "Envío realizado - KB"; Decimal)
         {
-            CalcFormula = Sum ("Item Ledger Entry"."Gross kilos" WHERE ("Item No." = FIELD ("No. Producto"),
-                                                                       "No. reparto" = FIELD ("No. Documento"),
-                                                                       "Linea reparto" = FIELD ("No. línea")));
+            CalcFormula = Sum("Item Ledger Entry"."Gross kilos" WHERE("Item No." = FIELD("No. Producto"),
+                                                                       "No. reparto" = FIELD("No. Documento"),
+                                                                       "Linea reparto" = FIELD("No. línea")));
             DecimalPlaces = 0 : 3;
             FieldClass = FlowField;
         }
@@ -368,61 +355,6 @@ table 50543 "Lín. reparto"
         rstCabRep: Record "Cab. Reparto";
         rstLinRep: Record "Lín. reparto";
 
-    local procedure fntValidarProyecto(ChangedFieldName: Text[100])
-    var
-        rstJob: Record Job;
-        cduFish: Codeunit Trazabilidad;
-    begin
-        case ChangedFieldName of
-            FieldCaption(Proyecto):
-                begin
-
-                    Clear(rstJob);
-                    if rstJob.Get(Proyecto) then begin
-
-                        Buque := rstJob."Global Dimension 1 Code";
-                        Marea := rstJob."Global Dimension 3 Code";
-                        "Lote origen" := cduFish.CalcLoteOrigen(rstJob);
-
-                    end
-                    else begin
-
-                        Buque := '';
-                        Marea := '';
-                        "Lote origen" := '';
-
-                    end;
-
-                end;
-
-            FieldCaption(Buque), FieldCaption(Marea):
-                begin
-
-                    if (Buque <> '') and (Marea <> '') and
-                       ((Buque <> xRec.Buque) or (Marea <> xRec.Marea)) then begin
-
-                        Clear(rstJob);
-                        rstJob.SetRange("Global Dimension 1 Code", Buque);
-                        rstJob.SetRange("Global Dimension 3 Code", Marea);
-                        if rstJob.FindFirst then begin
-
-                            Proyecto := rstJob."No.";
-                            "Lote origen" := rstJob."Lote origen";
-
-                        end
-                        else begin
-
-                            Proyecto := '';
-                            "Lote origen" := '';
-
-                        end;
-
-                    end;
-
-                end;
-
-        end;
-    end;
 
     local procedure fntTraerCabecera()
     begin

@@ -1,4 +1,4 @@
-tableextension 50225 tableextension50225 extends "Flow Service Configuration"
+tableextension 50225 "Flow Service Conf. Ext." extends "Flow Service Configuration"
 {
     Caption = 'Flow Service Configuration';
     fields

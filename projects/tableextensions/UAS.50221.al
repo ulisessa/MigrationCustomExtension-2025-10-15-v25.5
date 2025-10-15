@@ -1,4 +1,4 @@
-tableextension 50221 tableextension50221 extends "Workflow Step Argument Archive"
+tableextension 50221 "Workflow Step Arg. Arch. Ext." extends "Workflow Step Argument Archive"
 {
     fields
     {

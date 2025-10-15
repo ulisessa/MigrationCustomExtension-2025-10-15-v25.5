@@ -1,4 +1,4 @@
-tableextension 50039 tableextension50039 extends "Selected G/L Accounts"
+tableextension 50039 "Selected G/L Accounts Ext." extends "Selected G/L Accounts"
 {
     fields
     {

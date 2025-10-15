@@ -1,4 +1,4 @@
-tableextension 50148 tableextension50148 extends "Dimensions Template"
+tableextension 50148 "Dimensions Template Ext." extends "Dimensions Template"
 {
     fields
     {

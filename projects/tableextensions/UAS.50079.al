@@ -1,4 +1,4 @@
-tableextension 50079 tableextension50079 extends "Report Totals Buffer"
+tableextension 50079 "Report Totals Buffer Ext." extends "Report Totals Buffer"
 {
     Caption = 'Report Totals Buffer';
     fields

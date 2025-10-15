@@ -1,4 +1,4 @@
-tableextension 50267 tableextension50267 extends "Data Migration Parameters"
+tableextension 50267 "Data Migration Parameters Ext." extends "Data Migration Parameters"
 {
     Caption = 'Data Migration Parameters';
     fields

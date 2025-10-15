@@ -51,31 +51,31 @@ tableextension 201 "Resource Price" extends "Resource Price" //OriginalId
         {
             Caption = 'Shortcut Dimension 3 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50103; "Shortcut Dimension 4 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 2 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
         }
         field(50104; "Shortcut Dimension 5 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 1 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
         }
         field(50105; "Shortcut Dimension 6 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 2 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
         }
         field(50106; "Shortcut Dimension 7 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 1 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
     }
 }

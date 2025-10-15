@@ -1,4 +1,4 @@
-tableextension 50061 tableextension50061 extends "Cost Type"
+tableextension 50061 "Cost Type Ext." extends "Cost Type"
 {
     fields
     {

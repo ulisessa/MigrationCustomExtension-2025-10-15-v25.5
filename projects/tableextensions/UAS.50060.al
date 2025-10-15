@@ -1,4 +1,4 @@
-tableextension 50060 tableextension50060 extends "Cost Journal Batch"
+tableextension 50060 "Cost Journal Batch Ext." extends "Cost Journal Batch"
 {
     Caption = 'Cost Journal Batch';
     fields

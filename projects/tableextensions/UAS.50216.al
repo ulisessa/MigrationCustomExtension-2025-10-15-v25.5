@@ -1,4 +1,4 @@
-tableextension 50216 tableextension50216 extends "Workflow Step Argument"
+tableextension 50216 "Workflow Step Argument Ext." extends "Workflow Step Argument"
 {
     fields
     {

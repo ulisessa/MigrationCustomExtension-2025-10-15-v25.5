@@ -1,4 +1,4 @@
-tableextension 50268 tableextension50268 extends "Data Migration Status"
+tableextension 50268 "Data Migration Status Ext." extends "Data Migration Status"
 {
     Caption = 'Data Migration Status';
     fields

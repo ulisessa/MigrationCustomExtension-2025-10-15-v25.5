@@ -18,9 +18,9 @@ table 50564 "Cab. DCL"
                     Clear(rstDescarga);
                     if rstDescarga.Get("No. proyecto") then;
                     Buque := rstProyecto."Global Dimension 1 Code";
-                    Actividad := rstProyecto."Global Dimension 2 Code";
+                    Actividad := rstProyecto."Global Dimension 3 Code";
                     "Fecha de inicio de descarga" := rstDescarga."Fecha de inicio de descarga";
-                    Marea := rstProyecto."Global Dimension 3 Code";
+                    Marea := rstProyecto."Global Dimension 2 Code";
                     "Fecha y hora desembarque" := CreateDateTime(rstProyecto."Ending Date", rstProyecto."Hora ingreso a puerto");
                     "Fecha y hora zarpada" := CreateDateTime(rstProyecto."Starting Date", rstProyecto."Hora de zarpada");
 
@@ -130,9 +130,9 @@ table 50564 "Cab. DCL"
         {
             Clustered = true;
         }
-        key(Key2;"Fecha de inicio de descarga")
+        key(Key2; "Fecha de inicio de descarga")
         {
-            
+
         }
     }
 

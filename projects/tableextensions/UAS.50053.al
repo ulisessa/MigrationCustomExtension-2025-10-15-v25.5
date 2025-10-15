@@ -1,4 +1,4 @@
-tableextension 50053 tableextension50053 extends "SII Missing Entries State"
+tableextension 50053 "SII Missing Entries State Ext." extends "SII Missing Entries State"
 {
     fields
     {

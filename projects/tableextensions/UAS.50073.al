@@ -1,4 +1,4 @@
-tableextension 50073 tableextension50073 extends "Cost Budget Buffer"
+tableextension 50073 "Cost Budget Buffer Ext." extends "Cost Budget Buffer"
 {
     fields
     {

@@ -33,7 +33,7 @@ table 50529 "Lin. produccion planta"
 
                     Descripcion := rstProducto.Description;
                     "Unidad medida" := rstProducto."Base Unit of Measure";
-                    Actividad := rstProducto."Global Dimension 2 Code";
+                    Actividad := rstProducto."Global Dimension 3 Code";
                     Familia := rstProducto.Familia;
                     Subfamilia := rstProducto.Subfamilia;
                     "Lote origen" := fntLoteOrigen;
@@ -87,7 +87,7 @@ table 50529 "Lin. produccion planta"
         }
         field(15; Marea; Code[10])
         {
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(16; Puerto; Code[10])
         {
@@ -105,10 +105,10 @@ table 50529 "Lin. produccion planta"
 
                         if rstProyecto."Global Dimension 1 Code" <> '' then
                             Buque := rstProyecto."Global Dimension 1 Code";
+                        if rstProyecto."Activity code" <> '' then
+                            Actividad := rstProyecto."Activity code";
                         if rstProyecto."Global Dimension 2 Code" <> '' then
-                            Actividad := rstProyecto."Global Dimension 2 Code";
-                        if rstProyecto."Global Dimension 3 Code" <> '' then
-                            Marea := rstProyecto."Global Dimension 3 Code";
+                            Marea := rstProyecto."Global Dimension 2 Code";
                         "Lote origen" := fntLoteOrigen;
 
                     end;
@@ -176,7 +176,7 @@ table 50529 "Lin. produccion planta"
         field(32; "Cod. relacion costo"; Code[20])
         {
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
         field(33; "Bin code"; Code[20])
         {
@@ -286,8 +286,8 @@ table 50529 "Lin. produccion planta"
                 //IBdos Argentina - USS - 021202 - Inicio Modificación Arbumasa
                 //Traigo el No pallet, los niveles y el peso en kilos brutos del lote origen
                 Buque := rstMovProducto."Global Dimension 1 Code";
-                Actividad := rstMovProducto."Global Dimension 2 Code";
-                Marea := rstMovProducto."Global dimension 3 Code";
+                Actividad := rstMovProducto."Shortcut Dimension 3 Code";
+                Marea := rstMovProducto."Global dimension 2 Code";
                 if rstMovProducto."Global Dimension 7 Code" <> '' then
                     "Cod. relacion costo" := rstMovProducto."Global Dimension 7 Code";
                 "No. Pallet" := rstMovProducto."Pallet no.";
@@ -355,7 +355,7 @@ table 50529 "Lin. produccion planta"
                     MovtoProducto.SetRange("Entry Type", MovtoProducto."Entry Type"::"Positive Adjmt.");
                     MovtoProducto.SetRange("Item No.", Clasificacion);
                     MovtoProducto.SetRange(MovtoProducto."Global Dimension 1 Code", rstProy."Global Dimension 1 Code");
-                    MovtoProducto.SetRange("Global dimension 3 Code", rstProy."Global Dimension 3 Code");
+                    MovtoProducto.SetRange("Shortcut dimension 3 Code", rstProy."Activity code");
                     MovtoProducto.SetRange(Open, true);
                     decPallet := 0;
                     if MovtoProducto.FindLast then begin
@@ -392,7 +392,7 @@ table 50529 "Lin. produccion planta"
                     MovtoProducto.SetRange("Entry Type", MovtoProducto."Entry Type"::"Positive Adjmt.");
                     MovtoProducto.SetRange("Item No.", Clasificacion);
                     MovtoProducto.SetRange("Global Dimension 1 Code", rstProy."Global Dimension 1 Code");
-                    MovtoProducto.SetRange("Global dimension 3 Code", rstProy."Global Dimension 3 Code");
+                    MovtoProducto.SetRange("Shortcut dimension 3 Code", rstProy."Activity code");
                     MovtoProducto.SetRange("Pallet no.", "No. Pallet");
                     MovtoProducto.SetRange(Open, true);
                     decPallet := 0;
@@ -455,7 +455,7 @@ table 50529 "Lin. produccion planta"
         Clear(PunExi);
         PunExi.Get();
 
-        if rstJob."Global Dimension 3 Code" = PunExi."Produccion Mix" then
+        if rstJob."Activity code" = PunExi."Produccion Mix" then
             exit(true)
         else
             exit(false);

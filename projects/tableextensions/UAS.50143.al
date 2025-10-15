@@ -1,4 +1,4 @@
-tableextension 50143 tableextension50143 extends "Payment Matching Details"
+tableextension 50143 "Payment Matching Details Ext." extends "Payment Matching Details"
 {
     fields
     {

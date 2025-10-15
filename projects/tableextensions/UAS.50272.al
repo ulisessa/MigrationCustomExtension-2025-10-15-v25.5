@@ -1,4 +1,4 @@
-tableextension 50272 tableextension50272 extends "Data Migration Entity"
+tableextension 50272 "Data Migration Entity Ext." extends "Data Migration Entity"
 {
     Caption = 'Data Migration Entity';
     fields

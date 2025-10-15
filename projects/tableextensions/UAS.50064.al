@@ -1,4 +1,4 @@
-tableextension 50064 tableextension50064 extends "Cost Allocation Source"
+tableextension 50064 "Cost Allocation Source Ext." extends "Cost Allocation Source"
 {
     Caption = 'Cost Allocation Source';
     fields

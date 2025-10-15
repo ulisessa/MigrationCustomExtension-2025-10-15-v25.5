@@ -103,7 +103,7 @@ tableextension 50468 tableextension50468 extends "Dimension Value"
         }
         field(50014; "Formato codificacion lote"; Option)
         {
-            CaptionML = ENU = 'Lot code format', ESP = 'Formato de codificación de lote';
+            Caption = 'Lot code format';
             DataClassification = ToBeClassified;
             OptionCaption = ' ,Departamento+Marea+Pallet+Día+Máster,Departamento+Día+Pallet+Depto. origen+Marea origen+Máster,Departamento+Día+LoteOrigen,Planta+Fecha+Depto. origen+Marea origen+Pallet';
             OptionMembers = " ","Departamento+Marea+Pallet+Día+Máster","Departamento+Día+Pallet+Depto. origen+Marea origen+Máster","Departamento+Día+LoteOrigen","Planta+Fecha+Depto. origen+Marea origen+Pallet";
@@ -194,6 +194,10 @@ tableextension 50468 tableextension50468 extends "Dimension Value"
             DataClassification = ToBeClassified;
             OptionMembers = " ","Lote origen a DCL específico","Lote origen a DCL abierto";
         }
+        field(50031; "Sello Argentino"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
         field(50100; "Cantidad descargada"; Decimal)
         {
             CalcFormula = Sum("Lín. descarga".Cantidad WHERE(Actividad = FIELD(Code),
@@ -233,8 +237,8 @@ tableextension 50468 tableextension50468 extends "Dimension Value"
                                                                   "Item No." = FIELD("Filtro producto"),
                                                                   "Job No." = FIELD("Filtro proyecto"),
                                                                   "Global Dimension 1 Code" = FIELD("Filtro buque"),
-                                                                  "Global Dimension 2 Code" = FIELD(Code),
-                                                                  "Global dimension 3 Code" = FIELD("Filtro marea"),
+                                                                  "Global Dimension 3 Code" = FIELD(Code),
+                                                                  "Global dimension 2 Code" = FIELD("Filtro marea"),
                                                                   "Entry/Exit Point" = FIELD("Filtro puerto"),
                                                                   "Item type" = CONST(Pesca),
                                                                   Subfamily = FIELD("Filtro subfamilia")));
@@ -246,8 +250,8 @@ tableextension 50468 tableextension50468 extends "Dimension Value"
                                                                      "Item No." = FIELD("Filtro producto"),
                                                                      "Job No." = FIELD("Filtro proyecto"),
                                                                      "Global Dimension 1 Code" = FIELD("Filtro buque"),
-                                                                     "Global Dimension 2 Code" = FIELD(Code),
-                                                                     "Global dimension 3 Code" = FIELD("Filtro marea"),
+                                                                     "Global Dimension 3 Code" = FIELD(Code),
+                                                                     "Global dimension 2 Code" = FIELD("Filtro marea"),
                                                                      "Entry/Exit Point" = FIELD("Filtro puerto"),
                                                                      "Item type" = CONST(Pesca),
                                                                      Subfamily = FIELD("Filtro subfamilia")));
@@ -259,8 +263,8 @@ tableextension 50468 tableextension50468 extends "Dimension Value"
                                                                        "Item No." = FIELD("Filtro producto"),
                                                                        "Job No." = FIELD("Filtro proyecto"),
                                                                        "Global Dimension 1 Code" = FIELD("Filtro buque"),
-                                                                       "Global Dimension 2 Code" = FIELD(Code),
-                                                                       "Global dimension 3 Code" = FIELD("Filtro marea"),
+                                                                       "Global Dimension 3 Code" = FIELD(Code),
+                                                                       "Global dimension 2 Code" = FIELD("Filtro marea"),
                                                                        "Entry/Exit Point" = FIELD("Filtro puerto"),
                                                                        "Item type" = CONST(Pesca),
                                                                        Subfamily = FIELD("Filtro subfamilia")));
@@ -272,8 +276,8 @@ tableextension 50468 tableextension50468 extends "Dimension Value"
                                                                       "Posting Date" = FIELD("Filtro fecha"),
                                                                       "Job No." = FIELD("Filtro proyecto"),
                                                                       "Shortcut Dimension 1 Code" = FIELD("Filtro buque"),
-                                                                      "Shortcut Dimension 2 Code" = FIELD(Code),
-                                                                      "Shortcut Dimension 3 Code" = FIELD("Filtro marea"),
+                                                                      "Shortcut Dimension 3 Code" = FIELD(Code),
+                                                                      "Shortcut Dimension 2 Code" = FIELD("Filtro marea"),
                                                                       Subfamilia = FIELD("Filtro subfamilia")));
             FieldClass = FlowField;
         }
@@ -283,8 +287,8 @@ tableextension 50468 tableextension50468 extends "Dimension Value"
                                                                         "Posting Date" = FIELD("Filtro fecha"),
                                                                         "Job No." = FIELD("Filtro proyecto"),
                                                                         "Shortcut Dimension 1 Code" = FIELD("Filtro buque"),
-                                                                        "Shortcut Dimension 2 Code" = FIELD(Code),
-                                                                        "Shortcut Dimension 3 Code" = FIELD("Filtro marea"),
+                                                                        "Shortcut Dimension 3 Code" = FIELD(Code),
+                                                                        "Shortcut Dimension 2 Code" = FIELD("Filtro marea"),
                                                                         Subfamilia = FIELD("Filtro subfamilia")));
             FieldClass = FlowField;
         }
@@ -294,8 +298,8 @@ tableextension 50468 tableextension50468 extends "Dimension Value"
                                                                         "Posting Date" = FIELD("Filtro fecha"),
                                                                         "Job No." = FIELD("Filtro proyecto"),
                                                                         "Shortcut Dimension 1 Code" = FIELD("Filtro buque"),
-                                                                        "Shortcut Dimension 2 Code" = FIELD(Code),
-                                                                        "Shortcut Dimension 3 Code" = FIELD("Filtro marea"),
+                                                                        "Shortcut Dimension 3 Code" = FIELD(Code),
+                                                                        "Shortcut Dimension 2 Code" = FIELD("Filtro marea"),
                                                                         Subfamilia = FIELD("Filtro subfamilia")));
             FieldClass = FlowField;
         }

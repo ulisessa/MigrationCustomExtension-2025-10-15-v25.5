@@ -152,8 +152,8 @@ table 50541 "Productos por lote"
         }
         field(22; "Global Dimension 3"; Code[10])
         {
-            CaptionClass = '1,1,3';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+            CaptionClass = '1,2,3';
+
         }
         field(30; "Cantidad pendiente en pedidos"; Decimal)
         {
@@ -196,31 +196,31 @@ table 50541 "Productos por lote"
         {
             CaptionClass = '1,3,3';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(106; "Global dimension 4 filter"; Code[10])
         {
             CaptionClass = '1,3,4';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
         }
         field(107; "Global dimension 5 filter"; Code[10])
         {
             CaptionClass = '1,3,5';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
         }
         field(108; "Global dimension 6 filter"; Code[10])
         {
             CaptionClass = '1,3,6';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
         }
         field(109; "Global dimension 7 filter"; Code[10])
         {
             CaptionClass = '1,3,7';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
         field(110; "Filtro Puerto"; Code[10])
         {

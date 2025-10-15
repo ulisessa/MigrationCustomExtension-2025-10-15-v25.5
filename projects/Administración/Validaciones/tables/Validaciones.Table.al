@@ -21,38 +21,12 @@ table 50534 Validaciones
             //The property 'ValidateTableRelation' can only be set if the property 'TableRelation' is set
             //ValidateTableRelation = true;
 
-            trigger OnLookup()
-            begin
-                Clear(frmObjeto);
-                Clear(rstObjeto);
-                frmObjeto.LookupMode := true;
-                rstObjeto.SetRange(Type, rstObjeto.Type::Table);
-                frmObjeto.SetTableView(rstObjeto);
-                if frmObjeto.RunModal = ACTION::LookupOK then begin
 
-                    frmObjeto.GetRecord(rstObjeto);
-                    Tabla := rstObjeto.ID;
-
-                end;
-            end;
         }
         field(5; Campo; Integer)
         {
 
-            trigger OnLookup()
-            begin
-                Clear(frmField);
-                Clear(rstField);
-                frmField.LookupMode := true;
-                rstField.SetRange(rstField.TableNo, Tabla);
-                frmField.SetTableView(rstField);
-                if frmField.RunModal = ACTION::LookupOK then begin
 
-                    frmField.GetRecord(rstField);
-                    Campo := rstField."No.";
-
-                end;
-            end;
         }
         field(6; Valor; Text[150])
         {
@@ -486,6 +460,5 @@ table 50534 Validaciones
         rstRecursos: Record Resource;
         rstProductos: Record Item;
         rstFormulas: Record Formulas;
-        frmObjeto: Page "Lista objetos";
-        frmField: Page "Lista campos";
+
 }

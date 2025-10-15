@@ -1203,14 +1203,14 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
 
         }
         field(50526; "Shortcut Dimension 4 Code"; Code[20])
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
 
             trigger OnValidate()
             begin
@@ -1223,7 +1223,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
 
             trigger OnValidate()
             begin
@@ -1236,7 +1236,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
 
             trigger OnValidate()
             begin
@@ -1249,7 +1249,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
 
             trigger OnValidate()
             begin
@@ -1264,7 +1264,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50531; "New shortcut Dimension 4 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
 
             trigger OnValidate()
             begin
@@ -1274,7 +1274,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50532; "New shortcut Dimension 5 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
 
             trigger OnValidate()
             begin
@@ -1284,7 +1284,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50533; "New shortcut Dimension 6 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
 
             trigger OnValidate()
             begin
@@ -1294,7 +1294,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50534; "New shortcut Dimension 7 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
 
             trigger OnValidate()
             begin
@@ -1770,16 +1770,16 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
                 Validate("Shortcut Dimension 1 Code", rstMovProducto."Global Dimension 1 Code");
             if rstMovProducto."Global Dimension 2 Code" <> '' then
                 Validate("Shortcut Dimension 2 Code", rstMovProducto."Global Dimension 2 Code");
-            if rstMovProducto."Global dimension 3 Code" <> '' then
-                Validate("Shortcut Dimension 3 Code", rstMovProducto."Global dimension 3 Code");
-            if rstMovProducto."Global Dimension 4 Code" <> '' then
-                Validate("Shortcut Dimension 4 Code", rstMovProducto."Global Dimension 4 Code");
-            if rstMovProducto."Global Dimension 5 Code" <> '' then
-                Validate("Shortcut Dimension 5 Code", rstMovProducto."Global Dimension 5 Code");
-            if rstMovProducto."Global dimension 6 Code" <> '' then
-                Validate("Shortcut Dimension 6 Code", rstMovProducto."Global dimension 6 Code");
-            if rstMovProducto."Global Dimension 7 Code" <> '' then
-                Validate("Shortcut Dimension 7 Code", rstMovProducto."Global Dimension 7 Code");
+            if rstMovProducto."Shortcut dimension 3 Code" <> '' then
+                Validate("Shortcut Dimension 3 Code", rstMovProducto."Shortcut dimension 3 Code");
+            if rstMovProducto."Shortcut Dimension 4 Code" <> '' then
+                Validate("Shortcut Dimension 4 Code", rstMovProducto."Shortcut Dimension 4 Code");
+            if rstMovProducto."Shortcut Dimension 5 Code" <> '' then
+                Validate("Shortcut Dimension 5 Code", rstMovProducto."Shortcut Dimension 5 Code");
+            if rstMovProducto."Shortcut dimension 6 Code" <> '' then
+                Validate("Shortcut Dimension 6 Code", rstMovProducto."Shortcut dimension 6 Code");
+            if rstMovProducto."Shortcut Dimension 7 Code" <> '' then
+                Validate("Shortcut Dimension 7 Code", rstMovProducto."Shortcut Dimension 7 Code");
             Validate("Job No.", rstMovProducto."Job No.");
             Validate("No. Proyecto", rstMovProducto."No. proyecto");
 
@@ -1807,16 +1807,16 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
                         Validate("New Shortcut Dimension 1 Code", rstMovProducto."Global Dimension 1 Code");
                     if rstMovProducto."Global Dimension 2 Code" <> '' then
                         Validate("New Shortcut Dimension 2 Code", rstMovProducto."Global Dimension 2 Code");
-                    if rstMovProducto."Global dimension 3 Code" <> '' then
-                        Validate("New shortcut Dimension 3 Code", rstMovProducto."Global dimension 3 Code");
-                    if rstMovProducto."Global Dimension 4 Code" <> '' then
-                        Validate("New shortcut Dimension 4 Code", rstMovProducto."Global Dimension 4 Code");
-                    if rstMovProducto."Global Dimension 5 Code" <> '' then
-                        Validate("New shortcut Dimension 5 Code", rstMovProducto."Global Dimension 5 Code");
-                    if rstMovProducto."Global dimension 6 Code" <> '' then
-                        Validate("New shortcut Dimension 6 Code", rstMovProducto."Global dimension 6 Code");
-                    if rstMovProducto."Global Dimension 7 Code" <> '' then
-                        Validate("New shortcut Dimension 7 Code", rstMovProducto."Global Dimension 7 Code");
+                    if rstMovProducto."Shortcut dimension 3 Code" <> '' then
+                        Validate("New shortcut Dimension 3 Code", rstMovProducto."Shortcut dimension 3 Code");
+                    if rstMovProducto."Shortcut Dimension 4 Code" <> '' then
+                        Validate("New shortcut Dimension 4 Code", rstMovProducto."Shortcut Dimension 4 Code");
+                    if rstMovProducto."Shortcut Dimension 5 Code" <> '' then
+                        Validate("New shortcut Dimension 5 Code", rstMovProducto."Shortcut Dimension 5 Code");
+                    if rstMovProducto."Shortcut dimension 6 Code" <> '' then
+                        Validate("New shortcut Dimension 6 Code", rstMovProducto."Shortcut dimension 6 Code");
+                    if rstMovProducto."Shortcut Dimension 7 Code" <> '' then
+                        Validate("New shortcut Dimension 7 Code", rstMovProducto."Shortcut Dimension 7 Code");
                     Validate("Job No.", rstMovProducto."Job No.");
                     Validate("No. Proyecto", rstMovProducto."No. proyecto");
 
@@ -1922,8 +1922,8 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
             rstMovProducto.SetRange(rstMovProducto."Item No.", "Item No.");
             if "Shortcut Dimension 1 Code" <> '' then
                 rstMovProducto.SetRange("Global Dimension 1 Code", "Shortcut Dimension 1 Code");
-            if "Shortcut Dimension 3 Code" <> '' then
-                rstMovProducto.SetRange("Global dimension 3 Code", "Shortcut Dimension 3 Code");
+            if "Shortcut Dimension 2 Code" <> '' then
+                rstMovProducto.SetRange("Global dimension 2 Code", "Shortcut Dimension 2 Code");
             if "Location Code" <> '' then
                 rstMovProducto.SetRange("Location Code", "Location Code");
             if "No. Pallet" <> '' then
@@ -1957,16 +1957,16 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
                     Validate("Shortcut Dimension 1 Code", rstMovProducto."Global Dimension 1 Code");
                 if rstMovProducto."Global Dimension 2 Code" <> '' then
                     Validate("Shortcut Dimension 2 Code", rstMovProducto."Global Dimension 2 Code");
-                if rstMovProducto."Global dimension 3 Code" <> '' then
-                    Validate("Shortcut Dimension 3 Code", rstMovProducto."Global dimension 3 Code");
-                if rstMovProducto."Global Dimension 4 Code" <> '' then
-                    Validate("Shortcut Dimension 4 Code", rstMovProducto."Global Dimension 4 Code");
-                if rstMovProducto."Global Dimension 5 Code" <> '' then
-                    Validate("Shortcut Dimension 5 Code", rstMovProducto."Global Dimension 5 Code");
-                if rstMovProducto."Global dimension 6 Code" <> '' then
-                    Validate("Shortcut Dimension 6 Code", rstMovProducto."Global dimension 6 Code");
-                if rstMovProducto."Global Dimension 7 Code" <> '' then
-                    Validate("Shortcut Dimension 7 Code", rstMovProducto."Global Dimension 7 Code");
+                if rstMovProducto."Shortcut dimension 3 Code" <> '' then
+                    Validate("Shortcut Dimension 3 Code", rstMovProducto."Shortcut dimension 3 Code");
+                if rstMovProducto."Shortcut Dimension 4 Code" <> '' then
+                    Validate("Shortcut Dimension 4 Code", rstMovProducto."Shortcut Dimension 4 Code");
+                if rstMovProducto."Shortcut Dimension 5 Code" <> '' then
+                    Validate("Shortcut Dimension 5 Code", rstMovProducto."Shortcut Dimension 5 Code");
+                if rstMovProducto."Shortcut dimension 6 Code" <> '' then
+                    Validate("Shortcut Dimension 6 Code", rstMovProducto."Shortcut dimension 6 Code");
+                if rstMovProducto."Shortcut Dimension 7 Code" <> '' then
+                    Validate("Shortcut Dimension 7 Code", rstMovProducto."Shortcut Dimension 7 Code");
 
                 "No. Pallet" := rstMovProducto."Pallet no.";
                 "Buque Tercero" := rstMovProducto."Buque Tercero";
@@ -1992,16 +1992,16 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
                             Validate("New Shortcut Dimension 1 Code", rstMovProducto."Global Dimension 1 Code");
                         if rstMovProducto."Global Dimension 2 Code" <> '' then
                             Validate("New Shortcut Dimension 2 Code", rstMovProducto."Global Dimension 2 Code");
-                        if rstMovProducto."Global dimension 3 Code" <> '' then
-                            Validate("New shortcut Dimension 3 Code", rstMovProducto."Global dimension 3 Code");
-                        if rstMovProducto."Global Dimension 4 Code" <> '' then
-                            Validate("New shortcut Dimension 4 Code", rstMovProducto."Global Dimension 4 Code");
-                        if rstMovProducto."Global Dimension 5 Code" <> '' then
-                            Validate("New shortcut Dimension 5 Code", rstMovProducto."Global Dimension 5 Code");
-                        if rstMovProducto."Global dimension 6 Code" <> '' then
-                            Validate("New shortcut Dimension 6 Code", rstMovProducto."Global dimension 6 Code");
-                        if rstMovProducto."Global Dimension 7 Code" <> '' then
-                            Validate("New shortcut Dimension 7 Code", rstMovProducto."Global Dimension 7 Code");
+                        if rstMovProducto."Shortcut dimension 3 Code" <> '' then
+                            Validate("New shortcut Dimension 3 Code", rstMovProducto."Shortcut dimension 3 Code");
+                        if rstMovProducto."Shortcut Dimension 4 Code" <> '' then
+                            Validate("New shortcut Dimension 4 Code", rstMovProducto."Shortcut Dimension 4 Code");
+                        if rstMovProducto."Shortcut Dimension 5 Code" <> '' then
+                            Validate("New shortcut Dimension 5 Code", rstMovProducto."Shortcut Dimension 5 Code");
+                        if rstMovProducto."Shortcut dimension 6 Code" <> '' then
+                            Validate("New shortcut Dimension 6 Code", rstMovProducto."Shortcut dimension 6 Code");
+                        if rstMovProducto."Shortcut Dimension 7 Code" <> '' then
+                            Validate("New shortcut Dimension 7 Code", rstMovProducto."Shortcut Dimension 7 Code");
                         "Lote origen destino" := rstMovProducto."Lote origen";
 
                     end;

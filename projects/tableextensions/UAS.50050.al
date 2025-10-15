@@ -1,4 +1,4 @@
-tableextension 50050 tableextension50050 extends "SII Setup"
+tableextension 50050 "SII Setup Ext." extends "SII Setup"
 {
     Caption = 'SII VAT Setup';
     fields

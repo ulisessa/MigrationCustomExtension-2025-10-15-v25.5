@@ -10,7 +10,7 @@ table 50021 "Withholding setup"
         }
         field(2; "Tipo fiscal"; Code[10])
         {
-            TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('TIPO FISCAL'));
+            TableRelation = "VAT Business Posting Group".Code;
         }
         field(3; "Cod. retencion"; Code[20])
         {

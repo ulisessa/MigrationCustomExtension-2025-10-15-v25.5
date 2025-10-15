@@ -1,4 +1,4 @@
-tableextension 50234 tableextension50234 extends "Office Add-in"
+tableextension 50234 "Office Add-in Ext." extends "Office Add-in"
 {
     fields
     {

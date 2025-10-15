@@ -151,7 +151,7 @@ tableextension 51072 tableextension51072 extends "Warehouse Entry"
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 2 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
     }
 }

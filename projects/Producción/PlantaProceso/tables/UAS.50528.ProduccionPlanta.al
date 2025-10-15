@@ -63,9 +63,9 @@ table 50528 "Produccion Planta"
         }
         field(14; "Global Dimension 3"; Code[20])
         {
-            CaptionClass = '1,1,3';
+            CaptionClass = '1,2,3';
             Caption = 'Global Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
 
             trigger OnValidate()
             begin
@@ -74,15 +74,15 @@ table 50528 "Produccion Planta"
         }
         field(15; "Global Dimension 4"; Code[20])
         {
-            CaptionClass = '1,1,4';
+            CaptionClass = '1,2,4';
             Caption = 'Global Dimension 4 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
         }
         field(16; "Global Dimension 5"; Code[20])
         {
-            CaptionClass = '1,1,5';
+            CaptionClass = '1,2,5';
             Caption = 'Global Dimension 5 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
         }
         field(17; "Global Dimension 6"; Code[20])
         {
@@ -90,9 +90,9 @@ table 50528 "Produccion Planta"
         }
         field(18; "Global Dimension 7"; Code[20])
         {
-            CaptionClass = '1,1,7';
+            CaptionClass = '1,2,7';
             Caption = 'ENU=Global Dimension 7 Code;ESP=Cód. dimensión global 7';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
         field(19; "OP1 - Salida MP2"; Decimal)
         {
@@ -157,7 +157,7 @@ table 50528 "Produccion Planta"
                     "Global Dimension 2" := PunProyecto."Global Dimension 2 Code";
                     "Global Dimension 3" := PunProyecto."Global Dimension 3 Code";
                     "No. documento" := GenerarNoDoc(Rec);
-                    "Lote origen" := "Global Dimension 1" + "Global Dimension 3";
+                    "Lote origen" := "Global Dimension 1" + "Global Dimension 2";
 
                 end;
 

@@ -1,4 +1,4 @@
-tableextension 50081 tableextension50081 extends "Document Attachment"
+tableextension 50081 "Document Attachment Ext." extends "Document Attachment"
 {
     fields
     {

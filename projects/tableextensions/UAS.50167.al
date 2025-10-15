@@ -1,4 +1,4 @@
-tableextension 50167 tableextension50167 extends "Posted Docs. With No Inc. Buf."
+tableextension 50167 "Posted Docs. No Inc. Buf. Ext." extends "Posted Docs. With No Inc. Buf."
 {
     fields
     {

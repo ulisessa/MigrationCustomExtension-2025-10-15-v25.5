@@ -1,4 +1,4 @@
-tableextension 50156 tableextension50156 extends "Chart Definition"
+tableextension 50156 "Chart Definition Ext." extends "Chart Definition"
 {
     Caption = 'Chart Definition';
     fields

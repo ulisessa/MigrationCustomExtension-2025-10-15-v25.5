@@ -1,4 +1,4 @@
-tableextension 50217 tableextension50217 extends "Workflow Rule"
+tableextension 50217 "Workflow Rule Ext." extends "Workflow Rule"
 {
     fields
     {

@@ -1,6 +1,5 @@
 table 50542 "Cab. Reparto"
 {
-    LookupPageID = "Cab. reparto";
 
     fields
     {
@@ -328,93 +327,6 @@ table 50542 "Cab. Reparto"
         rstProdLote.SetRange(rstProdLote."No. documento", "No. Documento");
         rstProdLote.DeleteAll;
 
-        Clear(cduMensajeria);
-        Clear(rstConfUsu);
-        Clear(rstMensajeria);
-
-        rstConfUsu.Reset;
-        if rstConfUsu.Get(UserId) then
-            cduMensajeria.RegistrarMensaje('Reparto eliminado', '', "No. Documento", 'Reparto (ventas)', 'Eliminado', Today,
-            rstMensajeria."Tipo movimiento"::"Mensaje con Seguimiento", rstConfUsu.Grupo, '', '', '', '', '', '', '');
-    end;
-
-    trigger OnInsert()
-    var
-        l_rstD: Record Dimension;
-        l_rstDV: Record "Dimension Value";
-        l_rstSS: Record "Sales & Receivables Setup";
-        i: Integer;
-        l_rstGLS: Record "General Ledger Setup";
-    begin
-        /*intActividad := 0;
-        codActividad := '';
-        intActividad := STRMENU('Langostino de Buque,Calamar,Merluza,Langostino de Planta,Otros',1);
-        CASE intActividad OF
-        
-          1: codActividad := 'LAN';
-          2: codActividad := 'CAL';
-          3: codActividad := 'MER';
-          4: codActividad := 'FRE';
-          5: codActividad := '';
-        
-        END;
-        
-        
-        rstConfVentas.GET();
-        "N° Documento" := fntNroSerie.TraeNoSig(rstConfVentas."Nº serie repartos",TODAY,TRUE);
-        "Fecha creación" := TODAY;
-        Usuario := USERID;
-        CLEAR(fntCrearLineas);
-        fntCrearLineas.CrearLineasExistencias(rstLotes,Rec,codActividad);
-        
-        */
-
-        Clear(cduMensajeria);
-        Clear(rstConfUsu);
-        Clear(rstMensajeria);
-
-        Clear(l_rstSS);
-        l_rstSS.Get();
-
-        if l_rstSS."Dimension for sales" <> '' then begin
-
-            Clear(l_rstD);
-            l_rstD.Get(l_rstSS."Dimension for sales");
-
-            i += 1;
-            Clear(l_rstDV);
-            l_rstDV."Dimension Code" := l_rstD.Code;
-            l_rstDV.Code := "No. Documento";
-            l_rstDV.Name := Format("Fecha reparto") + ' - ' + Format(Transportista) + ' - ' + Format(Cliente);
-            l_rstDV."Dimension Value Type" := l_rstDV."Dimension Value Type"::Standard;
-
-            Clear(l_rstGLS);
-            case l_rstD.Code of
-                l_rstGLS."Global Dimension 1 Code":
-                    l_rstDV."Global Dimension No." := 1;
-                l_rstGLS."Global Dimension 2 Code":
-                    l_rstDV."Global Dimension No." := 2;
-                l_rstGLS."Global Dimension 3 Code":
-                    l_rstDV."Global Dimension No." := 3;
-                l_rstGLS."Global Dimension 4 Code":
-                    l_rstDV."Global Dimension No." := 4;
-                l_rstGLS."Global Dimension 5 Code":
-                    l_rstDV."Global Dimension No." := 5;
-                l_rstGLS."Global Dimension 6 Code":
-                    l_rstDV."Global Dimension No." := 6;
-                l_rstGLS."Global Dimension 7 Code":
-                    l_rstDV."Global Dimension No." := 7;
-            end;
-            if not l_rstDV.Insert(true) then;
-
-        end;
-
-        rstConfUsu.Reset;
-        if rstConfUsu.Get(UserId) then
-            cduMensajeria.RegistrarMensaje('Alta de Reparto', '', "No. Documento", 'Reparto (ventas)', 'Abierto', Today,
-            rstMensajeria."Tipo movimiento"::"Mensaje con Seguimiento", rstConfUsu.Grupo, '', '', '', '', '', '', '');
-
-
     end;
 
     trigger OnModify()
@@ -443,17 +355,10 @@ table 50542 "Cab. Reparto"
     end;
 
     var
-        rstConfVentas: Record "Sales & Receivables Setup";
-        fntNroSerie: Codeunit "No. Series";
-        fntCrearLineas: Codeunit "Registro diarios";
-        rstLotes: Record "Lín. reparto";
         "rstLínReparto": Record "Lín. reparto";
-        cduMensajeria: Codeunit "Mensajería";
+
         rstConfUsu: Record "User Setup";
         rstMensajeria: Record Mensajeria;
-        dlgActividad: Dialog;
-        codActividad: Code[10];
-        intActividad: Integer;
         rstProdLote: Record "Productos por lote";
         CurrExchRate: Record "Currency Exchange Rate";
         CurrencyDate: Date;

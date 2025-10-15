@@ -1,4 +1,4 @@
-tableextension 50198 tableextension50198 extends "Workflow Step Instance"
+tableextension 50198 "Workflow Step Instance Ext." extends "Workflow Step Instance"
 {
     fields
     {

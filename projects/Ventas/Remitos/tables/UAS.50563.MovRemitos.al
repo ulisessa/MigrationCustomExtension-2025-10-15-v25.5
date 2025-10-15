@@ -36,7 +36,7 @@ table 50563 "Mov. remitos"
         }
         field(10; Marea; Code[10])
         {
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(11; "Cód. depósito"; Code[10])
         {

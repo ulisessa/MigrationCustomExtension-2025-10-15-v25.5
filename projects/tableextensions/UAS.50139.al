@@ -1,4 +1,4 @@
-tableextension 50139 tableextension50139 extends "Payment Application Proposal"
+tableextension 50139 "Payment App. Proposal Ext." extends "Payment Application Proposal"
 {
     Caption = 'Payment Application Proposal';
     fields

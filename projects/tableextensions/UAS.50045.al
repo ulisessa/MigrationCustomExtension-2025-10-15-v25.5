@@ -1,4 +1,4 @@
-tableextension 50045 tableextension50045 extends "No Taxable Entry"
+tableextension 50045 "No Taxable Entry Ext." extends "No Taxable Entry"
 {
     fields
     {

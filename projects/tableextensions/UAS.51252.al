@@ -69,8 +69,8 @@ tableextension 51252 tableextension51252 extends "User Setup"
         }
         field(50208; "Global Dimension 4 Code"; Code[20])
         {
-            CaptionClass = '1,1,4';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+            CaptionClass = '1,2,4';
+
         }
         field(50209; "Show PDF previsualization"; Boolean)
         {

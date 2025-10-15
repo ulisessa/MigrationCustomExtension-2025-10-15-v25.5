@@ -1,4 +1,4 @@
-tableextension 50069 tableextension50069 extends "Cost Budget Name"
+tableextension 50069 "Cost Budget Name Ext." extends "Cost Budget Name"
 {
     fields
     {

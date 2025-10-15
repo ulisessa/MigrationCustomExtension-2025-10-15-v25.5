@@ -1,4 +1,4 @@
-tableextension 50077 tableextension50077 extends "OAuth 2.0 Setup"
+tableextension 50077 "OAuth 2.0 Setup Ext." extends "OAuth 2.0 Setup"
 {
     Caption = 'OAuth 2.0 Setup';
     fields

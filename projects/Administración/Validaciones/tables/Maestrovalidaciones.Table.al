@@ -1,7 +1,5 @@
 table 50533 "Maestro validaciones"
 {
-    DrillDownPageID = "Lista Maestro de Validaciones";
-    LookupPageID = "Lista Maestro de Validaciones";
 
     fields
     {

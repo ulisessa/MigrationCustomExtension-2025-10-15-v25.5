@@ -1,4 +1,4 @@
-tableextension 50288 tableextension50288 extends "Cust. Invoice Disc."
+tableextension 50288 "Cust. Invoice Disc. Ext." extends "Cust. Invoice Disc."
 {
     fields
     {

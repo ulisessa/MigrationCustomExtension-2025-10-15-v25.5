@@ -33,8 +33,8 @@ table 50106 "Subfamilia producto"
                                                                      "Location Code" = FIELD("Filtro depósito"),
                                                                      "Entry/Exit Point" = FIELD("Filtro puerto"),
                                                                      "Global Dimension 1 Code" = FIELD("Filtro departamento"),
-                                                                     "Global Dimension 2 Code" = FIELD("Filtro actividad"),
-                                                                     "Global dimension 3 Code" = FIELD("Filtro marea/ciudad")));
+                                                                     "Global Dimension 3 Code" = FIELD("Filtro actividad"),
+                                                                     "Global dimension 2 Code" = FIELD("Filtro marea/ciudad")));
             FieldClass = FlowField;
         }
         field(7; "Kilos brutos"; Decimal)
@@ -45,8 +45,8 @@ table 50106 "Subfamilia producto"
                                                                        "Location Code" = FIELD("Filtro depósito"),
                                                                        "Entry/Exit Point" = FIELD("Filtro puerto"),
                                                                        "Global Dimension 1 Code" = FIELD("Filtro departamento"),
-                                                                       "Global Dimension 2 Code" = FIELD("Filtro actividad"),
-                                                                       "Global dimension 3 Code" = FIELD("Filtro marea/ciudad")));
+                                                                       "Global Dimension 3 Code" = FIELD("Filtro actividad"),
+                                                                       "Global dimension 2 Code" = FIELD("Filtro marea/ciudad")));
             FieldClass = FlowField;
         }
         field(8; "Filtro fecha"; Date)
@@ -76,7 +76,7 @@ table 50106 "Subfamilia producto"
         field(13; "Filtro marea/ciudad"; Code[10])
         {
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(14; "Filtro lote"; Code[10])
         {
@@ -95,8 +95,8 @@ table 50106 "Subfamilia producto"
                                                                   "Location Code" = FIELD("Filtro depósito"),
                                                                   "Entry/Exit Point" = FIELD("Filtro puerto"),
                                                                   "Global Dimension 1 Code" = FIELD("Filtro departamento"),
-                                                                  "Global Dimension 2 Code" = FIELD("Filtro actividad"),
-                                                                  "Global dimension 3 Code" = FIELD("Filtro marea/ciudad"),
+                                                                  "Global Dimension 3 Code" = FIELD("Filtro actividad"),
+                                                                  "Global dimension 2 Code" = FIELD("Filtro marea/ciudad"),
                                                                   "No. proyecto" = FIELD("Filtro proyecto")));
             FieldClass = FlowField;
         }

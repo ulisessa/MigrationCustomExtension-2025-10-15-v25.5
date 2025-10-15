@@ -1,4 +1,4 @@
-tableextension 50266 tableextension50266 extends "Data Migration Error"
+tableextension 50266 "Data Migration Error Ext." extends "Data Migration Error"
 {
     Caption = 'Data Migration Error';
     fields

@@ -1,4 +1,4 @@
-tableextension 50281 tableextension50281 extends "Business Unit Information"
+tableextension 50281 "Business Unit Information Ext." extends "Business Unit Information"
 {
     Caption = 'Business Unit Information';
     fields

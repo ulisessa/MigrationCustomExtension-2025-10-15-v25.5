@@ -23,14 +23,14 @@ table 50212 "Modificadores Costos"
 
                     rstProyecto.CalcFields("Importe contabilizado DA", "Kilos netos descargados");
                     Buque := rstProyecto."Global Dimension 1 Code";
-                    Marea := rstProyecto."Global Dimension 3 Code";
+                    Marea := rstProyecto."Global Dimension 2 Code";
                     "Forma de reparto" := rstProyecto."Forma de reparto";
                     "Criterio de reparto" := rstProyecto."Criterio de reparto";
                     "Starting date" := rstProyecto."Starting Date";
                     "Ending date" := rstProyecto."Ending Date";
                     "Kilos capturados" := rstProyecto."Kilos netos descargados";
                     "Días de marea proyecto" := rstProyecto."Dias de mar reales";
-                    Actividad := rstProyecto."Global Dimension 2 Code";
+                    Actividad := rstProyecto."Global Dimension 3 Code";
                     if ("Starting date" <> 0D) and ("Ending date" <> 0D) then
                         "Días de marea anuales" := fntDiasAnuales;
 
@@ -46,7 +46,7 @@ table 50212 "Modificadores Costos"
         }
         field(4; Marea; Code[10])
         {
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(5; "Forma de reparto"; Option)
         {
@@ -185,27 +185,27 @@ table 50212 "Modificadores Costos"
         }
         field(34; "Global Dimension 4 Code"; Code[10])
         {
-            CaptionClass = '1,1,4';
+            CaptionClass = '1,2,4';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
         }
         field(35; "Global Dimension 5 Code"; Code[10])
         {
-            CaptionClass = '1,1,5';
+            CaptionClass = '1,2,5';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
         }
         field(36; "Global Dimension 6 Code"; Code[20])
         {
-            CaptionClass = '1,1,6';
+            CaptionClass = '1,2,6';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
         }
         field(37; "Global Dimension 7 Code"; Code[20])
         {
-            CaptionClass = '1,1,7';
+            CaptionClass = '1,2,7';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
         field(38; "Vendor no."; Code[10])
         {

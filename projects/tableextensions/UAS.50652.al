@@ -331,31 +331,31 @@ tableextension 50652 tableextension50652 extends "Purchase Header Archive"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50001; "Shortcut Dimension 4 Code"; Code[20])
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
         }
         field(50002; "Shortcut Dimension 5 Code"; Code[20])
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
         }
         field(50003; "Shortcut Dimension 6 Code"; Code[20])
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
         }
         field(50004; "Shortcut Dimension 7 Code"; Code[20])
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
         field(50005; "Concepto proyecto"; Code[10])
         {
@@ -436,6 +436,9 @@ tableextension 50652 tableextension50652 extends "Purchase Header Archive"
         field(50702; "Tipo Fiscal"; Code[20])
         {
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('TIPO FISCAL'));
+            ObsoleteTag = '12/2025';
+            ObsoleteState = Pending;
+            ObsoleteReason = 'Reemplazado por campo Grupo Registro IVA Negocio';
         }
         field(50703; Province; Code[20])
         {

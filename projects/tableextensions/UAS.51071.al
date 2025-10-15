@@ -167,7 +167,7 @@ tableextension 51071 tableextension51071 extends "Warehouse Journal Line"
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 2 Code';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50510; "Net kilos"; Decimal)
         {

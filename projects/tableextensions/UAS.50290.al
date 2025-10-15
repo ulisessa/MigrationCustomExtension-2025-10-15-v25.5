@@ -1,4 +1,4 @@
-tableextension 50290 tableextension50290 extends "Acc. Sched. KPI Buffer"
+tableextension 50290 "Acc. Sched. KPI Buffer Ext." extends "Acc. Sched. KPI Buffer"
 {
     Caption = 'Acc. Sched. KPI Buffer';
     fields

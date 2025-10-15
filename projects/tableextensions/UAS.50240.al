@@ -1,4 +1,4 @@
-tableextension 50240 tableextension50240 extends "Invoiced Booking Item"
+tableextension 50240 "Invoiced Booking Item Ext." extends "Invoiced Booking Item"
 {
     fields
     {

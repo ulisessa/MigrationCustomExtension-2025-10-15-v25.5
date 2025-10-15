@@ -1,4 +1,4 @@
-tableextension 50230 tableextension50230 extends "Office Add-in Context"
+tableextension 50230 "Office Add-in Context Ext." extends "Office Add-in Context"
 {
     fields
     {

@@ -1,7 +1,6 @@
 table 50572 "DCL Application Lines temp"
 {
-    DrillDownPageID = "DCL application lines";
-    LookupPageID = "DCL application lines";
+
 
     fields
     {
@@ -13,25 +12,10 @@ table 50572 "DCL Application Lines temp"
         {
             Caption = 'No. proyecto DCL';
             DataClassification = ToBeClassified;
-            TableRelation = Job WHERE (Tipo = CONST (Productivo),
-                                       Blocked = CONST (" "));
+            TableRelation = Job WHERE(Tipo = CONST(Productivo),
+                                       Blocked = CONST(" "));
 
-            trigger OnLookup()
-            var
-                l_rstCDCL: Record "Cab. DCL";
-                pgeDCL: Page "Cab. DCL";
-            begin
-                Clear(l_rstCDCL);
-                l_rstCDCL.SetRange("No. proyecto", "DCL Job no.");
-                if l_rstCDCL.FindFirst then begin
 
-                    Clear(pgeDCL);
-                    pgeDCL.LookupMode(true);
-                    pgeDCL.SetRecord(l_rstCDCL);
-                    pgeDCL.RunModal;
-
-                end;
-            end;
         }
         field(3; "DCL Line no."; Integer)
         {
@@ -45,7 +29,7 @@ table 50572 "DCL Application Lines temp"
         {
             Caption = 'No. mov. producto';
             DataClassification = ToBeClassified;
-            TableRelation = "Item Ledger Entry" WHERE ("Entry No." = FIELD ("Item entry no."));
+            TableRelation = "Item Ledger Entry" WHERE("Entry No." = FIELD("Item entry no."));
         }
         field(5; "Net kilos"; Decimal)
         {
@@ -71,26 +55,10 @@ table 50572 "DCL Application Lines temp"
             Caption = 'No. producción';
             DataClassification = ToBeClassified;
 
-            trigger OnLookup()
-            var
-                l_rstCDCL: Record "Produccion Planta";
-                pgeDCL: Page "Producción Planta";
-            begin
-                Clear(l_rstCDCL);
-                l_rstCDCL.SetRange("No. documento", "Production no.");
-                if l_rstCDCL.FindFirst then begin
-
-                    Clear(pgeDCL);
-                    pgeDCL.LookupMode(true);
-                    pgeDCL.SetRecord(l_rstCDCL);
-                    pgeDCL.RunModal;
-
-                end;
-            end;
         }
         field(10; "Container no."; Code[20])
         {
-            CalcFormula = Lookup ("Sales Shipment Header"."Cód. Contenedor" WHERE ("No." = FIELD ("Applied document no.")));
+            CalcFormula = Lookup("Sales Shipment Header"."Cód. Contenedor" WHERE("No." = FIELD("Applied document no.")));
             Caption = 'Cód. contenedor';
             FieldClass = FlowField;
         }
@@ -98,7 +66,7 @@ table 50572 "DCL Application Lines temp"
         {
             Caption = 'No. proyecto aplicado';
             DataClassification = ToBeClassified;
-            TableRelation = "Item Ledger Entry"."Job No." WHERE ("Entry No." = FIELD ("Item entry no."));
+            TableRelation = "Item Ledger Entry"."Job No." WHERE("Entry No." = FIELD("Item entry no."));
         }
         field(50001; "Applied document no."; Code[20])
         {
@@ -114,7 +82,7 @@ table 50572 "DCL Application Lines temp"
         }
         field(50003; "Item entry original lot"; Code[20])
         {
-            CalcFormula = Lookup ("Item Ledger Entry"."Lote origen" WHERE ("Entry No." = FIELD ("Item entry no.")));
+            CalcFormula = Lookup("Item Ledger Entry"."Lote origen" WHERE("Entry No." = FIELD("Item entry no.")));
             Caption = 'Lote origen aplicado';
             FieldClass = FlowField;
         }
@@ -122,17 +90,17 @@ table 50572 "DCL Application Lines temp"
         {
             Caption = 'No. producto';
             DataClassification = ToBeClassified;
-            TableRelation = Item WHERE ("No." = FIELD ("Item no."));
+            TableRelation = Item WHERE("No." = FIELD("Item no."));
         }
         field(50005; "Original Item no."; Code[20])
         {
             Caption = 'No. producto original';
             DataClassification = ToBeClassified;
-            TableRelation = Item WHERE ("No." = FIELD ("Original Item no."));
+            TableRelation = Item WHERE("No." = FIELD("Original Item no."));
         }
         field(50006; "Document date"; Date)
         {
-            CalcFormula = Lookup ("Item Ledger Entry"."Posting Date" WHERE ("Entry No." = FIELD ("Item entry no.")));
+            CalcFormula = Lookup("Item Ledger Entry"."Posting Date" WHERE("Entry No." = FIELD("Item entry no.")));
             Caption = 'Fecha documento';
             FieldClass = FlowField;
         }
@@ -145,7 +113,7 @@ table 50572 "DCL Application Lines temp"
         {
             Caption = 'Actividad';
             DataClassification = ToBeClassified;
-            TableRelation = "Dimension Value".Code WHERE ("Global Dimension No." = CONST (2));
+            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(2));
         }
     }
 

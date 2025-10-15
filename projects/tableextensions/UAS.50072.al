@@ -1,4 +1,4 @@
-tableextension 50072 tableextension50072 extends "Cost Object"
+tableextension 50072 "Cost Object Ext." extends "Cost Object"
 {
     fields
     {

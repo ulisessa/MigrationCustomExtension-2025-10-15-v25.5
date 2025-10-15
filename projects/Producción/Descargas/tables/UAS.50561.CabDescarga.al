@@ -15,11 +15,11 @@ table 50561 "Cab. descarga"
                 if rstProyecto.Get("No. proyecto") then begin
 
                     rstProyecto.TestField("Global Dimension 1 Code");
-                    rstProyecto.TestField("Global Dimension 3 Code");
+                    rstProyecto.TestField("Global Dimension 2 Code");
                     Capitán := rstProyecto.Patron;
-                    Actividad := rstProyecto."Global Dimension 2 Code";
+                    Actividad := rstProyecto."Global Dimension 3 Code";
                     Buque := rstProyecto."Global Dimension 1 Code";
-                    Marea := rstProyecto."Global Dimension 3 Code";
+                    Marea := rstProyecto."Global Dimension 2 Code";
 
                 end;
             end;
@@ -29,8 +29,8 @@ table 50561 "Cab. descarga"
         }
         field(3; Actividad; Code[10])
         {
-            CaptionClass = '1,1,2';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(2));
+            CaptionClass = '1,2,3';
+
         }
         field(4; "Fecha de inicio de descarga"; Date)
         {
@@ -42,8 +42,8 @@ table 50561 "Cab. descarga"
         }
         field(6; Marea; Code[10])
         {
-            CaptionClass = '1,1,3';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+            CaptionClass = '1,2,3';
+
         }
         field(7; Location; Code[20])
         {
@@ -231,7 +231,7 @@ table 50561 "Cab. descarga"
                 Clear(rstProyecto);
                 rstProyecto.Get(rstLDescargaNew."No. proyecto");
                 rstLDescargaNew.Buque := rstProyecto."Global Dimension 1 Code";
-                rstLDescargaNew.Marea := rstProyecto."Global Dimension 3 Code";
+                rstLDescargaNew.Marea := rstProyecto."Global Dimension 2 Code";
                 rstLDescargaNew.Modify;
 
             until rstLDescarga.Next = 0;

@@ -1,4 +1,4 @@
-tableextension 50289 tableextension50289 extends "Cancelled Document"
+tableextension 50289 "Cancelled Document Ext." extends "Cancelled Document"
 {
     fields
     {

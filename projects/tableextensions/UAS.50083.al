@@ -1,4 +1,4 @@
-tableextension 50083 tableextension50083 extends "User Task Group Member"
+tableextension 50083 "User Task Group Member Ext." extends "User Task Group Member"
 {
     fields
     {

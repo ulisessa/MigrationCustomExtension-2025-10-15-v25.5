@@ -1,4 +1,4 @@
-tableextension 50126 tableextension50126 extends "Bank Pmt. Appl. Rule"
+tableextension 50126 "Bank Pmt. Appl. Rule Ext." extends "Bank Pmt. Appl. Rule"
 {
     fields
     {

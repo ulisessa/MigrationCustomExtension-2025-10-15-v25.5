@@ -1,4 +1,4 @@
-tableextension 50056 tableextension50056 extends "Country/Region Translation"
+tableextension 50056 "Country/Region Trans. Ext." extends "Country/Region Translation"
 {
     Caption = 'Country/Region Translation';
     fields

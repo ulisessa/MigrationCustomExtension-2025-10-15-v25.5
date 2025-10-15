@@ -1,4 +1,4 @@
-tableextension 50086 tableextension50086 extends "Journal User Preferences"
+tableextension 50086 "Journal User Preferences Ext." extends "Journal User Preferences"
 {
     fields
     {

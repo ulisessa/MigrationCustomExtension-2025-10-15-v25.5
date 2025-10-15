@@ -1,4 +1,4 @@
-tableextension 50231 tableextension50231 extends "Office Add-in Setup"
+tableextension 50231 "Office Add-in Setup Ext." extends "Office Add-in Setup"
 {
     Caption = 'Office Add-in Setup';
 }

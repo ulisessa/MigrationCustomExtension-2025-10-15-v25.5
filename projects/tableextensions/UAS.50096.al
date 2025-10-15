@@ -1,4 +1,4 @@
-tableextension 50096 tableextension50096 extends "Data Exchange Type"
+tableextension 50096 "Data Exchange Type Ext." extends "Data Exchange Type"
 {
     fields
     {

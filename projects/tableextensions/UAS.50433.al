@@ -168,7 +168,7 @@ tableextension 50433 tableextension50433 extends "Purchases & Payables Setup"
         }
         field(50504; "Application formula"; DateFormula)
         {
-            CaptionML = ENU = 'Application formula', ESP = 'Fórmula de aplicación';
+            Caption = 'Application formula';
         }
         field(50505; "Proveedor Aduana Local"; Code[20])
         {

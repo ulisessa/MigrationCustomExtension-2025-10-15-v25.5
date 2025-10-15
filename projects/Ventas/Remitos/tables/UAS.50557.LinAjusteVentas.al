@@ -268,7 +268,7 @@ table 50557 "Lín. ajuste ventas"
         }
         field(27; Marea; Code[10])
         {
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
 
             trigger OnValidate()
             begin
@@ -288,7 +288,7 @@ table 50557 "Lín. ajuste ventas"
             CalcFormula = Sum("Sales Line".Quantity WHERE("Document No." = FIELD("Documento venta"),
                                                            "No." = FIELD("No. producto"),
                                                            "Shortcut Dimension 1 Code" = FIELD(Buque),
-                                                           "Shortcut Dimension 3 Code" = FIELD(Marea),
+                                                           "Shortcut Dimension 2 Code" = FIELD(Marea),
                                                            "No. reparto" = FIELD("No. reparto"),
                                                            "Linea reparto" = FIELD("Linea reparto")));
             Editable = false;
@@ -299,7 +299,7 @@ table 50557 "Lín. ajuste ventas"
             CalcFormula = Sum("Sales Line"."Net kilos" WHERE("Document No." = FIELD("Documento venta"),
                                                               "No." = FIELD("No. producto"),
                                                               "Shortcut Dimension 1 Code" = FIELD(Buque),
-                                                              "Shortcut Dimension 3 Code" = FIELD(Marea),
+                                                              "Shortcut Dimension 2 Code" = FIELD(Marea),
                                                               "No. reparto" = FIELD("No. reparto"),
                                                               "Linea reparto" = FIELD("Linea reparto")));
             Editable = false;
@@ -310,7 +310,7 @@ table 50557 "Lín. ajuste ventas"
             CalcFormula = Sum("Sales Line"."Gross kilos" WHERE("Document No." = FIELD("Documento venta"),
                                                                 "No." = FIELD("No. producto"),
                                                                 "Shortcut Dimension 1 Code" = FIELD(Buque),
-                                                                "Shortcut Dimension 3 Code" = FIELD(Marea),
+                                                                "Shortcut Dimension 2 Code" = FIELD(Marea),
                                                                 "No. reparto" = FIELD("No. reparto"),
                                                                 "Linea reparto" = FIELD("Linea reparto")));
             Editable = false;

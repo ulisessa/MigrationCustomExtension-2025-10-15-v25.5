@@ -1,4 +1,4 @@
-tableextension 50282 tableextension50282 extends "Consolidation Account"
+tableextension 50282 "Consolidation Account Ext." extends "Consolidation Account"
 {
     Caption = 'Consolidation Account';
     fields

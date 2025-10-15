@@ -1,4 +1,4 @@
-tableextension 50235 tableextension50235 extends "Office Admin. Credentials"
+tableextension 50235 "Office Admin. Credentials Ext." extends "Office Admin. Credentials"
 {
     fields
     {

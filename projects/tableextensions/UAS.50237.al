@@ -1,4 +1,4 @@
-tableextension 50237 tableextension50237 extends "Office Document Selection"
+tableextension 50237 "Office Document Selection Ext." extends "Office Document Selection"
 {
     Caption = 'Office Document Selection';
     fields

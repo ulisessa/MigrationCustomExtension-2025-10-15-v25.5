@@ -27,35 +27,35 @@ tableextension 50490 tableextension50490 extends "G/L Acc. Budget Buffer"
             CaptionClass = '1,3,3';
             Caption = 'Global Dimension 3 Filter';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50001; "Global Dimension 4 Filter"; Code[20])
         {
             CaptionClass = '1,3,4';
             Caption = 'Global Dimension 4 Filter';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
         }
         field(50002; "Global Dimension 5 Filter"; Code[20])
         {
             CaptionClass = '1,3,5';
             Caption = 'Global Dimension 5 Filter';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
         }
         field(50003; "Global Dimension 6 Filter"; Code[20])
         {
             CaptionClass = '1,3,6';
             Caption = 'Global Dimension 6 Filter';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
         }
         field(50004; "Global Dimension 7 Filter"; Code[20])
         {
             CaptionClass = '1,3,7';
             Caption = 'Global Dimension 7 Filter';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
     }
 

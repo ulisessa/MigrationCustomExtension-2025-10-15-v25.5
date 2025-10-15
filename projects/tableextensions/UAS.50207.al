@@ -1,4 +1,4 @@
-tableextension 50207 tableextension50207 extends "Sent Notification Entry"
+tableextension 50207 "Sent Notification Entry Ext." extends "Sent Notification Entry"
 {
     Caption = 'Sent Notification Entry';
     fields

@@ -1,4 +1,4 @@
-tableextension 50215 tableextension50215 extends "Workflow Event Queue"
+tableextension 50215 "Workflow Event Queue Ext." extends "Workflow Event Queue"
 {
     fields
     {

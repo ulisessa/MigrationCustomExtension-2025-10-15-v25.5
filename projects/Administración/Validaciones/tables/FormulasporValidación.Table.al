@@ -1,7 +1,5 @@
 table 50604 "Formulas por Validación"
 {
-    DrillDownPageID = "Lista formula validacion";
-    LookupPageID = "Lista formula validacion";
 
     fields
     {

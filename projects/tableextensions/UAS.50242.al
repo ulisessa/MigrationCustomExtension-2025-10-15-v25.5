@@ -1,4 +1,4 @@
-tableextension 50242 tableextension50242 extends "Payroll Setup"
+tableextension 50242 "Payroll Setup Ext." extends "Payroll Setup"
 {
     Caption = 'Payroll Setup';
     fields

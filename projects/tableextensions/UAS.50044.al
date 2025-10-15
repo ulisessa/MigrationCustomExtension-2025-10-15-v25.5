@@ -1,4 +1,4 @@
-tableextension 50044 tableextension50044 extends "Selected Rev. Charge Grp. 340"
+tableextension 50044 "Sel. Rev. Charge Grp. 340" extends "Selected Rev. Charge Grp. 340"
 {
     fields
     {

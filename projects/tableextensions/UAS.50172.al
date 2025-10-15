@@ -1,4 +1,4 @@
-tableextension 50172 tableextension50172 extends Location
+tableextension 50172 "Location Ext." extends Location
 {
     Caption = 'Location';
     fields

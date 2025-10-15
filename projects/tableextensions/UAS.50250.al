@@ -1,4 +1,4 @@
-tableextension 50250 tableextension50250 extends "Deferral Template"
+tableextension 50250 "Deferral Template Ext." extends "Deferral Template"
 {
     fields
     {

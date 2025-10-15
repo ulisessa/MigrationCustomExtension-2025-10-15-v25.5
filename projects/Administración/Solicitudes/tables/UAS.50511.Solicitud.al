@@ -92,8 +92,8 @@ table 50511 Solicitud
         }
         field(50006; "Global Dimension 3"; Code[10])
         {
-            CaptionClass = '1,1,3';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+            CaptionClass = '1,2,3';
+
 
             trigger OnValidate()
             begin
@@ -102,23 +102,23 @@ table 50511 Solicitud
         }
         field(50007; "Global Dimension 4"; Code[10])
         {
-            CaptionClass = '1,1,4';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+            CaptionClass = '1,2,4';
+
         }
         field(50008; "Global Dimension 5"; Code[10])
         {
-            CaptionClass = '1,1,5';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+            CaptionClass = '1,2,5';
+
         }
         field(50009; "Global Dimension 6"; Code[10])
         {
-            CaptionClass = '1,1,6';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+            CaptionClass = '1,2,6';
+
         }
         field(50010; "Global Dimension 7"; Code[10])
         {
-            CaptionClass = '1,1,7';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+            CaptionClass = '1,2,7';
+
         }
         field(50011; "No. Serie"; Code[10])
         {
@@ -477,7 +477,6 @@ table 50511 Solicitud
         t_rstPIL: Record "Purch. Inv. Line";
         l_rstPIL: Record "Purch. Inv. Line";
         l_rstPCL: Record "Purch. Cr. Memo Line";
-        l_pge50047: Page "Análisis de solicitud temporal";
     begin
         CLEAR(l_rstPCL);
         l_rstPCL.SETRANGE("No. Cab. Solicitud", "No. documento");

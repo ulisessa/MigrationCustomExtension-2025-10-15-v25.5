@@ -1,4 +1,4 @@
-tableextension 50087 tableextension50087 extends "Purch. Rcpt. Header"
+tableextension 50087 "Purch. Rcpt. Header Ext." extends "Purch. Rcpt. Header"
 {
     Caption = 'Purch. Rcpt. Header';
     fields
@@ -240,31 +240,31 @@ tableextension 50087 tableextension50087 extends "Purch. Rcpt. Header"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50001; "Shortcut Dimension 4 Code"; Code[20])
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50002; "Shortcut Dimension 5 Code"; Code[20])
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50003; "Shortcut Dimension 6 Code"; Code[20])
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50004; "Shortcut Dimension 7 Code"; Code[20])
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 3 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50005; "Concepto proyecto"; Code[10])
         {
@@ -361,6 +361,9 @@ tableextension 50087 tableextension50087 extends "Purch. Rcpt. Header"
         field(50702; "Tipo fiscal"; Code[20])
         {
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('TIPO FISCAL'));
+            ObsoleteTag = '12/2025';
+            ObsoleteState = Pending;
+            ObsoleteReason = 'Reemplazado por campo Grupo Registro IVA Negocio';
         }
         field(50703; Province; Code[20])
         {

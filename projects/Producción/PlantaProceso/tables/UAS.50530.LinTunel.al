@@ -35,7 +35,7 @@ table 50530 "Lin. tunel"
 
                     Descripcion := rstProducto.Description;
                     "Unidad medida" := rstProducto."Base Unit of Measure";
-                    Actividad := rstProducto."Global Dimension 2 Code";
+                    Actividad := rstProducto."Global Dimension 3 Code";
                     Familia := rstProducto.Familia;
                     Subfamilia := rstProducto.Subfamilia;
 

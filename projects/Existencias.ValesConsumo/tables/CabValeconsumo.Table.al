@@ -1,7 +1,6 @@
 table 50102 "Cab. Vale consumo"
 {
-    DrillDownPageID = "Vale de consumo";
-    LookupPageID = "Vale de consumo";
+
 
     fields
     {
@@ -21,10 +20,7 @@ table 50102 "Cab. Vale consumo"
 
                 //US.ARBU - 20040524 - Inicio Modificación Arbumasa para el seguimiento de documentos
 
-                rstConfUsu.Reset;
-                if rstConfUsu.Get(UserId) then
-                    cduMensajeria.RegistrarMensaje('Alta Vale de Consumo', '', "No. documento", 'Vale de Consumo', 'Abierto', Today,
-                    rstMensajeria."Tipo movimiento"::"Mensaje con Seguimiento", rstConfUsu.Grupo, '', '', '', '', '', '', '');
+
 
                 //US.ARBU - 20040524 - Fin Modificación Arbumasa para el seguimiento de documentos
             end;
@@ -76,10 +72,7 @@ table 50102 "Cab. Vale consumo"
         if (Estado <> 'Abierto') and (Estado <> '') then
             Error('No se puede eliminar un vale registrado');
 
-        rstConfUsu.Reset;
-        if rstConfUsu.Get(UserId) then
-            cduMensajeria.RegistrarMensaje('Vale de Consumo Eliminado', '', "No. documento", 'Vale de Consumo', 'Eliminado', Today,
-            rstMensajeria."Tipo movimiento"::Seguimiento, rstConfUsu.Grupo, '', '', '', '', '', '', '');
+
 
         //US.ARBU - 20040524 - Fin Modificación Arbumasa para el seguimiento de documentos
     end;
@@ -103,7 +96,7 @@ table 50102 "Cab. Vale consumo"
         PunAlm: Record Location;
         PunDep: Record Dimension;
         rstMensajeria: Record Mensajeria;
-        cduMensajeria: Codeunit "Mensajería";
+
         rstConfUsu: Record "User Setup";
         rstLinVC: Record "Lín. vale consumo";
 

@@ -1,4 +1,4 @@
-tableextension 50068 tableextension50068 extends "Sales Shipment Line"
+tableextension 50068 "Sales Shipment Line Ext." extends "Sales Shipment Line"
 {
     Caption = 'Sales Shipment Line';
     fields
@@ -195,31 +195,31 @@ tableextension 50068 tableextension50068 extends "Sales Shipment Line"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50001; "Shortcut Dimension 4 Code"; Code[20])
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
         }
         field(50002; "Shortcut Dimension 5 Code"; Code[20])
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
         }
         field(50003; "Shortcut Dimension 6 Code"; Code[20])
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
         }
         field(50004; "Shortcut Dimension 7 Code"; Code[20])
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
         field(50005; Facturado; Boolean)
         {
@@ -538,6 +538,10 @@ tableextension 50068 tableextension50068 extends "Sales Shipment Line"
         field(50079; "DCL application date formula"; Text[30])
         {
             Caption = 'Fórmula de aplicación de fechas de DCL';
+            DataClassification = ToBeClassified;
+        }
+        field(50081; "Sello Argentino"; Boolean)
+        {
             DataClassification = ToBeClassified;
         }
         field(50140; "No. reparto"; Code[20])

@@ -1,4 +1,4 @@
-tableextension 50210 tableextension50210 extends "My Notifications"
+tableextension 50210 "My Notifications Ext." extends "My Notifications"
 {
     fields
     {

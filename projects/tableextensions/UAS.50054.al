@@ -1,4 +1,4 @@
-tableextension 50054 tableextension50054 extends "SII Sales Document Scheme Code"
+tableextension 50054 "SII Sales Doc.Scheme Code Ext." extends "SII Sales Document Scheme Code"
 {
     Caption = 'SII Sales Document Scheme Code';
     fields

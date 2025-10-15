@@ -1,4 +1,4 @@
-tableextension 50196 tableextension50196 extends Workflow
+tableextension 50196 "Workflow Ext." extends Workflow
 {
     fields
     {

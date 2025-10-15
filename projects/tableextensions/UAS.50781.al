@@ -68,8 +68,8 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50000; "Global Dimension 3 Code"; Code[10])
         {
-            CaptionClass = '1,1,3';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+            CaptionClass = '1,2,3';
+
 
             trigger OnValidate()
             begin
@@ -78,8 +78,8 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
-            CaptionClass = '1,1,4';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+            CaptionClass = '1,2,4';
+
 
             trigger OnValidate()
             begin
@@ -88,8 +88,8 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
-            CaptionClass = '1,1,5';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+            CaptionClass = '1,2,5';
+
 
             trigger OnValidate()
             begin
@@ -98,8 +98,8 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50003; "Global Dimension 6 Code"; Code[10])
         {
-            CaptionClass = '1,1,6';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+            CaptionClass = '1,2,6';
+
 
             trigger OnValidate()
             begin
@@ -108,8 +108,8 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
-            CaptionClass = '1,1,7';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+            CaptionClass = '1,2,7';
+
 
             trigger OnValidate()
             begin
@@ -142,10 +142,10 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50007; "Global Dimension 3 Filter"; Code[10])
         {
-            CaptionClass = '1,1,3';
+            CaptionClass = '1,2,3';
             Caption = 'Filtro dim. global 3';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
 
             trigger OnValidate()
             begin
@@ -154,10 +154,10 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50008; "Global Dimension 4 Filter"; Code[10])
         {
-            CaptionClass = '1,1,4';
+            CaptionClass = '1,2,4';
             Caption = 'Filtro dim. global 4';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
 
             trigger OnValidate()
             begin
@@ -166,10 +166,10 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50009; "Global Dimension 5 Filter"; Code[10])
         {
-            CaptionClass = '1,1,5';
+            CaptionClass = '1,2,5';
             Caption = 'Filtro dim. global 5';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
 
             trigger OnValidate()
             begin
@@ -178,10 +178,10 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50010; "Global Dimension 6 Filter"; Code[10])
         {
-            CaptionClass = '1,1,6';
+            CaptionClass = '1,2,6';
             Caption = 'Filtro dim. global 6';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
 
             trigger OnValidate()
             begin
@@ -190,10 +190,10 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50011; "Global Dimension 7 Filter"; Code[20])
         {
-            CaptionClass = '1,1,7';
+            CaptionClass = '1,2,7';
             Caption = 'Filtro dim. global 7';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
 
             trigger OnValidate()
             begin

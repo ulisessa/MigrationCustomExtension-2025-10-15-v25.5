@@ -1,4 +1,4 @@
-tableextension 50136 tableextension50136 extends "Bank Clearing Standard"
+tableextension 50136 "Bank Clearing Standard Ext." extends "Bank Clearing Standard"
 {
     Caption = 'Bank Clearing Standard';
     fields

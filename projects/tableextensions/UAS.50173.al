@@ -1,4 +1,4 @@
-tableextension 50173 tableextension50173 extends "Service Connection"
+tableextension 50173 "Service Connection Ext." extends "Service Connection"
 {
     Caption = 'Service Connection';
     fields

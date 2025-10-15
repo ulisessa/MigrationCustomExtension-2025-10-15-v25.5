@@ -1,4 +1,4 @@
-tableextension 50208 tableextension50208 extends "Dynamic Request Page Entity"
+tableextension 50208 "Dynamic Req. Page Entity Ext." extends "Dynamic Request Page Entity"
 {
     Caption = 'Dynamic Request Page Entity';
     fields

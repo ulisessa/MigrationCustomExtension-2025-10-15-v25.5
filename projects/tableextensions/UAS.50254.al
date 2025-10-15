@@ -1,4 +1,4 @@
-tableextension 50254 tableextension50254 extends "Posted Deferral Header"
+tableextension 50254 "Posted Deferral Header Ext." extends "Posted Deferral Header"
 {
     fields
     {

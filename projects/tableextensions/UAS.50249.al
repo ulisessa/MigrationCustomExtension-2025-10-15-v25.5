@@ -1,4 +1,4 @@
-tableextension 50249 tableextension50249 extends "Standard Sales Code"
+tableextension 50249 "Standard Sales Code Ext." extends "Standard Sales Code"
 {
     Caption = 'Standard Sales Code';
     fields

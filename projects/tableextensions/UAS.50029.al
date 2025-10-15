@@ -1,4 +1,4 @@
-tableextension 50029 tableextension50029 extends "Acc. Schedule Buffer"
+tableextension 50029 "Acc. Schedule Buffer Extension" extends "Acc. Schedule Buffer"
 {
     fields
     {

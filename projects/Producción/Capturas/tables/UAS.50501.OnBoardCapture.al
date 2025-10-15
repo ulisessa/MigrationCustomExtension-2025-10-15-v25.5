@@ -16,8 +16,6 @@ table 50501 "On board capture"
         field(2; Marea; Code[10])
         {
             NotBlank = true;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
-            ValidateTableRelation = false;
 
             trigger OnValidate()
             begin

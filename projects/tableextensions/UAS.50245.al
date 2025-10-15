@@ -1,4 +1,4 @@
-tableextension 50245 tableextension50245 extends Job
+tableextension 50245 "Job Ext." extends Job
 {
     fields
     {
@@ -165,11 +165,10 @@ tableextension 50245 tableextension50245 extends Job
         //end;
         field(50000; "Global Dimension 3 Code"; Code[10])
         {
-            CaptionClass = '1,1,3';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+            CaptionClass = '1,2,3';
+
             //This property is currently not supported
             //TestTableRelation = false;
-            ValidateTableRelation = false;
 
             trigger OnValidate()
             var
@@ -196,13 +195,12 @@ tableextension 50245 tableextension50245 extends Job
                 //--Arbu 2020
                 ValidateShortcutDimCode(3, "Global Dimension 3 Code");
                 Modify;
-                Modify;
             end;
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
-            CaptionClass = '1,1,4';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+            CaptionClass = '1,2,4';
+
 
             trigger OnValidate()
             begin
@@ -212,8 +210,8 @@ tableextension 50245 tableextension50245 extends Job
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
-            CaptionClass = '1,1,5';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+            CaptionClass = '1,2,5';
+
 
             trigger OnValidate()
             begin
@@ -223,8 +221,8 @@ tableextension 50245 tableextension50245 extends Job
         }
         field(50003; "Global Dimension 6 Code"; Code[10])
         {
-            CaptionClass = '1,1,6';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+            CaptionClass = '1,2,6';
+
 
             trigger OnValidate()
             begin
@@ -234,8 +232,8 @@ tableextension 50245 tableextension50245 extends Job
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
-            CaptionClass = '1,1,7';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+            CaptionClass = '1,2,7';
+
 
             trigger OnValidate()
             begin
@@ -280,8 +278,8 @@ tableextension 50245 tableextension50245 extends Job
             AutoFormatType = 1;
             CalcFormula = Sum("Job Ledger Entry"."Original Total Cost (ACY)" WHERE("Job No." = FIELD("No."),
                                                                                     "Global Dimension 1 Code" = FIELD("Filtro departamento"),
-                                                                                    "Global Dimension 2 Code" = FIELD("Filtro actividad"),
-                                                                                    "Global Dimension 3 Code" = FIELD("Filtro marea/ciudad"),
+                                                                                    "Global Dimension 3 Code" = FIELD("Filtro actividad"),
+                                                                                    "Global Dimension 2 Code" = FIELD("Filtro marea/ciudad"),
                                                                                     "Posting Date" = FIELD("Posting Date Filter")));
             Editable = false;
             FieldClass = FlowField;
@@ -294,6 +292,10 @@ tableextension 50245 tableextension50245 extends Job
         }
         field(50037; Block; Boolean)
         {
+        }
+        field(50038; "Sello Argentino"; Boolean)
+        {
+            DataClassification = ToBeClassified;
         }
         field(50093; "Provision amount (LCY)"; Decimal)
         {
@@ -326,7 +328,7 @@ tableextension 50245 tableextension50245 extends Job
             CalcFormula = Sum("Sales Line"."Importe USD" WHERE("Document Type" = FILTER(Invoice | "Credit Memo"),
                                                                 "Document No." = FIELD("Filtro factura venta"),
                                                                 "Shortcut Dimension 1 Code" = FIELD("Filtro departamento"),
-                                                                "Shortcut Dimension 2 Code" = FIELD("Filtro actividad"),
+                                                                "Shortcut Dimension 3 Code" = FIELD("Filtro actividad"),
                                                                 "Job No." = FIELD("No."),
                                                                 "Cód. arancelario" = FIELD("Tariff code filter"),
                                                                 "Cód. categorización" = FIELD("Categorization filter"),
@@ -345,7 +347,7 @@ tableextension 50245 tableextension50245 extends Job
         {
             CalcFormula = Sum("Sales Line"."Importe USD" WHERE("Document Type" = FILTER(Invoice | "Credit Memo"),
                                                                 "Document No." = FIELD("Filtro factura venta"),
-                                                                "Shortcut Dimension 2 Code" = FIELD("Filtro actividad"),
+                                                                "Shortcut Dimension 3 Code" = FIELD("Filtro actividad"),
                                                                 "Cód. arancelario" = FIELD("Tariff code filter")));
             FieldClass = FlowField;
         }
@@ -454,7 +456,7 @@ tableextension 50245 tableextension50245 extends Job
         {
             Caption = 'Filtro marea/ciudad';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50511; "Filtro lote"; Code[10])
         {

@@ -1,4 +1,4 @@
-tableextension 50224 tableextension50224 extends "Workflow Webhook Sub Buffer"
+tableextension 50224 "Workflow WebhookSubBuffer Ext." extends "Workflow Webhook Sub Buffer"
 {
     Caption = 'Workflow Webhook Sub Buffer';
     fields

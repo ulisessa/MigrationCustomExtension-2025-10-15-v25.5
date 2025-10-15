@@ -1,7 +1,6 @@
 table 50566 "DCL Application Lines"
 {
-    DrillDownPageID = "DCL application lines";
-    LookupPageID = "DCL application lines";
+
 
     fields
     {
@@ -16,22 +15,7 @@ table 50566 "DCL Application Lines"
             TableRelation = Job WHERE(Tipo = CONST(Productivo),
                                        Blocked = CONST(" "));
 
-            trigger OnLookup()
-            var
-                l_rstCDCL: Record "Cab. DCL";
-                pgeDCL: Page "Cab. DCL";
-            begin
-                Clear(l_rstCDCL);
-                l_rstCDCL.SetRange("No. proyecto", "DCL Job no.");
-                if l_rstCDCL.FindFirst then begin
 
-                    Clear(pgeDCL);
-                    pgeDCL.LookupMode(true);
-                    pgeDCL.SetRecord(l_rstCDCL);
-                    pgeDCL.RunModal;
-
-                end;
-            end;
         }
         field(3; "DCL Line no."; Integer)
         {
@@ -71,22 +55,7 @@ table 50566 "DCL Application Lines"
             Caption = 'No. producción';
             DataClassification = ToBeClassified;
 
-            trigger OnLookup()
-            var
-                l_rstCDCL: Record "Produccion Planta";
-                pgeDCL: Page "Producción Planta";
-            begin
-                Clear(l_rstCDCL);
-                l_rstCDCL.SetRange("No. documento", "Production no.");
-                if l_rstCDCL.FindFirst then begin
 
-                    Clear(pgeDCL);
-                    pgeDCL.LookupMode(true);
-                    pgeDCL.SetRecord(l_rstCDCL);
-                    pgeDCL.RunModal;
-
-                end;
-            end;
         }
         field(10; "Container no."; Code[20])
         {

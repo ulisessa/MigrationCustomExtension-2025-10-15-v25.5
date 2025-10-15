@@ -1,4 +1,4 @@
-tableextension 50093 tableextension50093 extends "Credit Trans Re-export History"
+tableextension 50093 "Cred. Trans Reexport His. Ext." extends "Credit Trans Re-export History"
 {
     Caption = 'Credit Trans Re-export History';
     fields

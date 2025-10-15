@@ -1,4 +1,4 @@
-tableextension 50122 tableextension50122 extends "Bank Stmt Multiple Match Line"
+tableextension 50122 "Bank Stmt Mult. Match Ln. Ext." extends "Bank Stmt Multiple Match Line"
 {
     Caption = 'Bank Stmt Multiple Match Line';
     fields

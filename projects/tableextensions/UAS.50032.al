@@ -1,4 +1,4 @@
-tableextension 50032 tableextension50032 extends "AEAT Transference Format XML"
+tableextension 50032 "AEAT Transf. Format XML Ext." extends "AEAT Transference Format XML"
 {
     fields
     {

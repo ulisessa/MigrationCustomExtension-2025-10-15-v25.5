@@ -1,4 +1,4 @@
-tableextension 50223 tableextension50223 extends "Workflow User Group Member"
+tableextension 50223 "Workflow UserGroupMember Ext." extends "Workflow User Group Member"
 {
     fields
     {

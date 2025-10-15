@@ -1,4 +1,4 @@
-tableextension 50028 tableextension50028 extends "Non-Payment Period"
+tableextension 50028 "Non-Payment period extension" extends "Non-Payment Period"
 {
     fields
     {

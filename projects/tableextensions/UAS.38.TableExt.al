@@ -6,7 +6,7 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
 
             trigger OnValidate()
             begin
@@ -21,7 +21,7 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
 
             trigger OnValidate()
             begin
@@ -36,7 +36,7 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
 
             trigger OnValidate()
             begin
@@ -51,7 +51,7 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
 
             trigger OnValidate()
             begin
@@ -66,7 +66,7 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
 
             trigger OnValidate()
             begin
@@ -304,7 +304,9 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         field(50702; "Tipo Fiscal"; Code[20])
         {
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('TIPO FISCAL'));
-
+            ObsoleteTag = '12/2025';
+            ObsoleteState = Pending;
+            ObsoleteReason = 'Reemplazado por campo Grupo Registro IVA Negocio';
 
         }
         field(50703; Province; Code[20])
@@ -436,17 +438,5 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
     end;
 
     var
-        rstSeguridadUsuario: Record "Seguridad por usuario";
-        LinCompra: Record "Purchase Line";
-        rstImpoporOC: Record "Carpeta por OC";
-        frmImpoporOC: Page "Lista Carpetas Impo por OC";
-        rstCarpImpo: Record "Dimension Value";
-        rstConfCompras: Record "Purchases & Payables Setup";
-        rstSeguridad: Record Seguridad;
-        ConfUsu: Record "User Setup";
-        CodeMens: Codeunit "Mensajería";
-        PunMensajeria: Record Mensajeria;
-        rstInfoempresa: Record "Company Information";
-        rstMsj: Record Mensajeria;
         g_strDoc: Option " ",Remito,Factura,"Débito","Crédito",Recibo,"Factura pronto vencimiento","Déb.Vto.";
 }

@@ -1,4 +1,4 @@
-tableextension 50251 tableextension50251 extends "Deferral Header"
+tableextension 50251 "Deferral Header Ext." extends "Deferral Header"
 {
     fields
     {

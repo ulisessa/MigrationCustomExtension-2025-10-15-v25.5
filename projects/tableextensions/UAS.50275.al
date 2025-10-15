@@ -1,4 +1,4 @@
-tableextension 50275 tableextension50275 extends "Approval Workflow Wizard"
+tableextension 50275 "Approval Workflow Wizard Ext." extends "Approval Workflow Wizard"
 {
     Caption = 'Approval Workflow Wizard';
     fields

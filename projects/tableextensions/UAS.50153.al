@@ -1,4 +1,4 @@
-tableextension 50153 tableextension50153 extends "O365 Getting Started Page Data"
+tableextension 50153 "O365 Get. St. Page Data Ext." extends "O365 Getting Started Page Data"
 {
     Caption = 'O365 Getting Started Page Data';
     fields

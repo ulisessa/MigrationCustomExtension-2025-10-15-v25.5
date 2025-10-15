@@ -1,4 +1,4 @@
-tableextension 50233 tableextension50233 extends "Office Invoice"
+tableextension 50233 "Office Invoice Ext." extends "Office Invoice"
 {
     fields
     {

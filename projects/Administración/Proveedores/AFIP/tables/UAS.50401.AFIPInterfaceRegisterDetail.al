@@ -63,7 +63,7 @@ table 50401 "AFIP Interface Register detail"
         {
             Caption = 'Type of Change';
             DataClassification = ToBeClassified;
-            OptionCaptionML = ENU = 'Insertion,Modification,Deletion,"No change"', ESP = 'Inserción,Modificación,Borrado,"Sin cambio"';
+            OptionCaption = 'Insertion,Modification,Deletion,"No change"';
             OptionMembers = Insertion,Modification,Deletion,"No change";
         }
         field(10; "Old Value"; Text[250])

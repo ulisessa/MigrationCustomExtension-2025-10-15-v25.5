@@ -17,7 +17,7 @@ tableextension 51222 tableextension51222 extends "Country/Region"
         }
         modify("EU Country/Region Code")
         {
-            CaptionML = ENU = 'EU Country/Region Code', ESP = 'CUIT País';
+            Caption = 'EU Country/Region Code';
         }
         modify("Intrastat Code")
         {

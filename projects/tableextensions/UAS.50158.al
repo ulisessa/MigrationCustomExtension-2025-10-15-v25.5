@@ -1,4 +1,4 @@
-tableextension 50158 tableextension50158 extends "Trial Balance Setup"
+tableextension 50158 "Trial Balance Setup Ext." extends "Trial Balance Setup"
 {
     Caption = 'Trial Balance Setup';
 }

@@ -1,4 +1,4 @@
-tableextension 50138 tableextension50138 extends "Outstanding Bank Transaction"
+tableextension 50138 "Outstanding Bank Trans. Ext." extends "Outstanding Bank Transaction"
 {
     Caption = 'Outstanding Bank Transaction';
     fields

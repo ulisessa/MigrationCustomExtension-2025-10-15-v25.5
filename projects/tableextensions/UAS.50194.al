@@ -1,4 +1,4 @@
-tableextension 50194 tableextension50194 extends "G/L Account"
+tableextension 50194 "G/L Account Ext." extends "G/L Account"
 {
     fields
     {
@@ -103,8 +103,8 @@ tableextension 50194 tableextension50194 extends "G/L Account"
         }
         field(50000; "Global Dimension 3 Code"; Code[10])
         {
-            CaptionClass = '1,1,3';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+            CaptionClass = '1,2,3';
+
 
             trigger OnValidate()
             begin
@@ -113,8 +113,8 @@ tableextension 50194 tableextension50194 extends "G/L Account"
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
-            CaptionClass = '1,1,4';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+            CaptionClass = '1,2,4';
+
 
             trigger OnValidate()
             begin
@@ -123,8 +123,8 @@ tableextension 50194 tableextension50194 extends "G/L Account"
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
-            CaptionClass = '1,1,5';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+            CaptionClass = '1,2,5';
+
 
             trigger OnValidate()
             begin
@@ -133,8 +133,8 @@ tableextension 50194 tableextension50194 extends "G/L Account"
         }
         field(50003; "Global Dimension 6 Code"; Code[20])
         {
-            CaptionClass = '1,1,6';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+            CaptionClass = '1,2,6';
+
 
             trigger OnValidate()
             begin
@@ -143,8 +143,8 @@ tableextension 50194 tableextension50194 extends "G/L Account"
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
-            CaptionClass = '1,1,7';
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+            CaptionClass = '1,2,7';
+
 
             trigger OnValidate()
             begin
@@ -155,31 +155,31 @@ tableextension 50194 tableextension50194 extends "G/L Account"
         {
             CaptionClass = '1,3,3';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
+
         }
         field(50006; "Global Dimension 4 filter"; Code[10])
         {
             CaptionClass = '1,3,4';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
+
         }
         field(50007; "Global Dimension 5 filter"; Code[10])
         {
             CaptionClass = '1,3,5';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
+
         }
         field(50008; "Global dimension 6 filter"; Code[20])
         {
             CaptionClass = '1,3,6';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
+
         }
         field(50009; "Global Dimension 7 filter"; Code[20])
         {
             CaptionClass = '1,3,7';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
+
         }
         field(50010; "Registro por Dim. global 3"; Option)
         {

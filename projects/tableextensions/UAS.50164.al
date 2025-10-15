@@ -1,4 +1,4 @@
-tableextension 50164 tableextension50164 extends "Sales by Cust. Grp.Chart Setup"
+tableextension 50164 "Sales Cust. Grp.Ch. Set. Ext." extends "Sales by Cust. Grp.Chart Setup"
 {
     fields
     {

@@ -1,4 +1,4 @@
-tableextension 50121 tableextension50121 extends "Ledger Entry Matching Buffer"
+tableextension 50121 "Ledger Entry Match. Buf. Ext." extends "Ledger Entry Matching Buffer"
 {
     fields
     {

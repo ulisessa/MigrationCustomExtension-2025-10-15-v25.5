@@ -1,4 +1,4 @@
-tableextension 50241 tableextension50241 extends "Curr. Exch. Rate Update Setup"
+tableextension 50241 "Curr. Exch. RateUpd.Set. Ext." extends "Curr. Exch. Rate Update Setup"
 {
     fields
     {

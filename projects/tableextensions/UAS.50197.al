@@ -1,4 +1,4 @@
-tableextension 50197 tableextension50197 extends "Workflow Step"
+tableextension 50197 "Workflow Step Ext." extends "Workflow Step"
 {
     fields
     {

@@ -1,4 +1,4 @@
-tableextension 50157 tableextension50157 extends "Last Used Chart"
+tableextension 50157 "Last Used Chart Ext." extends "Last Used Chart"
 {
     Caption = 'Last Used Chart';
     fields

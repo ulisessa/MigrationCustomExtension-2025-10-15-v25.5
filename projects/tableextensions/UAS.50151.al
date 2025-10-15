@@ -1,4 +1,4 @@
-tableextension 50151 tableextension50151 extends "User Preference"
+tableextension 50151 "User Preference Ext." extends "User Preference"
 {
     fields
     {

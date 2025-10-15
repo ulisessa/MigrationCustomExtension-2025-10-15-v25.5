@@ -1,4 +1,4 @@
-tableextension 50125 tableextension50125 extends "Text-to-Account Mapping"
+tableextension 50125 "Text-to-Account Mapping Ext." extends "Text-to-Account Mapping"
 {
     Caption = 'Text-to-Account Mapping';
     fields

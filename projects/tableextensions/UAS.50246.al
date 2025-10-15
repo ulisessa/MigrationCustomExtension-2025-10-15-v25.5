@@ -1,4 +1,4 @@
-tableextension 50246 tableextension50246 extends "Option Lookup Buffer"
+tableextension 50246 "Option Lookup Buffer Ext." extends "Option Lookup Buffer"
 {
     Caption = 'Option Lookup Buffer';
     fields

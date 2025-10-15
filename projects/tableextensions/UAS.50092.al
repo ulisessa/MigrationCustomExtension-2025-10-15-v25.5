@@ -1,4 +1,4 @@
-tableextension 50092 tableextension50092 extends "Direct Debit Collection Entry"
+tableextension 50092 "Direct Debit Coll. Entry Ext." extends "Direct Debit Collection Entry"
 {
     fields
     {

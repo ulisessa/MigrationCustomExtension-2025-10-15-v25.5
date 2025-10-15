@@ -1,4 +1,4 @@
-tableextension 50046 tableextension50046 extends "Customer Cash Buffer"
+tableextension 50046 "Customer Cash Buffer Ext." extends "Customer Cash Buffer"
 {
     fields
     {

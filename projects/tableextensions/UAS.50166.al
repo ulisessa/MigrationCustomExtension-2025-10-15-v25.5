@@ -1,4 +1,4 @@
-tableextension 50166 tableextension50166 extends "Incoming Document Attachment"
+tableextension 50166 "Incoming Document Att. Ext." extends "Incoming Document Attachment"
 {
     fields
     {

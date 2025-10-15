@@ -1,4 +1,4 @@
-tableextension 50051 tableextension50051 extends "SII Doc. Upload State"
+tableextension 50051 "SII Doc. Upload State Ext." extends "SII Doc. Upload State"
 {
     fields
     {

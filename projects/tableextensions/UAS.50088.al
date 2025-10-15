@@ -1,4 +1,4 @@
-tableextension 50088 tableextension50088 extends "Bank Export/Import Setup"
+tableextension 50088 "Bank Export/Import Setup Ext." extends "Bank Export/Import Setup"
 {
     Caption = 'Bank Export/Import Setup';
     fields
