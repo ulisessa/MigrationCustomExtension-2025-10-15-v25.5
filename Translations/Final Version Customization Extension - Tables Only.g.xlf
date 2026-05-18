@@ -3518,6 +3518,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Invoice Withholding Buffer - Field Cod. sicore - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2918155120 - Field 3863167577 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Comentario exclusion</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Invoice Withholding Buffer - Field Comentario exclusion - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2918155120 - Field 3190532010 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Estado de situación fiscal</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -6397,6 +6402,11 @@
           <source>Marea</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Mov. remitos - Field Marea - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3257191211 - Field 3586885199 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MSC</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Mov. remitos - Field MSC - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3257191211 - Field 3096727049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>No. documento</source>
@@ -10567,6 +10577,11 @@
           <source>Cuenta retencion</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Withholding codes - Field Cuenta retencion - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1152905957 - Field 3944845860 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cód. alterno superior</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Withholding codes - Field Cód. alterno superior - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1152905957 - Field 1475260075 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Descripcion</source>
@@ -16037,6 +16052,11 @@
           <source>Mercado</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field Mercado - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3672691964 - Field 3586885199 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>MSC</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Ext. - Field MSC - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3672691964 - Field 1380184608 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
           <source>No. proyecto principal</source>
@@ -22978,6 +22998,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Invoice Line Ext. - Field Línea remito origen - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2571666260 - Field 3586885199 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2079186865">
+          <source>MSC</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Invoice Line Ext. - Field MSC - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2571666260 - Field 3042558655 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2079186865">
           <source>Net kilos</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -24257,6 +24282,11 @@
           <source>Línea remito origen</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Shipment Line Ext. - Field Línea remito origen - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3647144155 - Field 3586885199 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1114148978">
+          <source>MSC</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Shipment Line Ext. - Field MSC - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3647144155 - Field 3042558655 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1114148978">
           <source>Net kilos</source>
@@ -25592,6 +25622,11 @@
           <source>Línea ajustada</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension115 - Field Línea ajustada - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3353021982 - Field 3586885199 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3059602325">
+          <source>MSC</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension115 - Field MSC - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3353021982 - Field 709473187 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3059602325">
           <source>Net kilos (Base)</source>
@@ -29519,7 +29554,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50362 - Field Anulado - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 565556343 - Field 4175033428 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 406314583">
-          <source>Date Filter</source>
+          <source>Applied by Doc. Type Filter</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50362 - Field Applied by doc. type  Filter - Property Caption</note>
         </trans-unit>
@@ -36398,6 +36433,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50441 - Field Marea Tercero - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2696762061 - Field 3586885199 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
+          <source>MSC</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50441 - Field MSC - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2696762061 - Field 3042558655 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>Net kilos</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -39572,6 +39612,11 @@
           <source>Línea remito origen</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50485 - Field Línea remito origen - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 969377237 - Field 3586885199 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+          <source>MSC</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension50485 - Field MSC - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 969377237 - Field 3042558655 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
           <source>Net kilos</source>
@@ -75407,6 +75452,11 @@
           <source>Marea Tercero</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension51173 - Field Marea Tercero - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1194779474 - Field 3586885199 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
+          <source>MSC</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension tableextension51173 - Field MSC - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1194779474 - Field 3042558655 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
           <source>Net kilos</source>

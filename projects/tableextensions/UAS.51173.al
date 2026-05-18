@@ -953,6 +953,10 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
             Caption = 'Fórmula de aplicación de fechas de DCL';
             DataClassification = ToBeClassified;
         }
+        field(50082; "MSC"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
         field(50102; "Kn (Calculated)"; Decimal)
         {
             Caption = 'Kn (Calculated)';

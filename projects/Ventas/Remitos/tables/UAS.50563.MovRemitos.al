@@ -70,6 +70,10 @@ table 50563 "Mov. remitos"
             Caption = 'Fórmula de aplicación de fechas de DCL';
             DataClassification = ToBeClassified;
         }
+        field(108; "MSC"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
     keys

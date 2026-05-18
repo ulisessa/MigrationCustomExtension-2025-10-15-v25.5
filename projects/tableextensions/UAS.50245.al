@@ -297,6 +297,11 @@ tableextension 50245 "Job Ext." extends Job
         {
             DataClassification = ToBeClassified;
         }
+        field(50039; "MSC"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
+
         field(50093; "Provision amount (LCY)"; Decimal)
         {
             Caption = 'Importe provisión (DL)';

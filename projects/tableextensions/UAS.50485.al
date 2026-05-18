@@ -1304,6 +1304,11 @@ tableextension 50485 tableextension50485 extends "Sales Line"
         {
             DataClassification = ToBeClassified;
         }
+        field(50082; "MSC"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
+
         field(50110; "Net kilos to Assign"; Decimal)
         {
             CalcFormula = Sum("Item Charge Assignment (Sales)"."Qty. to Assign" WHERE("Document Type" = FIELD("Document Type"),

@@ -6,9 +6,9 @@ table 50023 "Withholding details"
     {
         field(1; "Cod. proveedor/cliente"; Code[20])
         {
-            TableRelation = IF ("Tipo registro" = CONST (Compra)) Vendor."No."
+            TableRelation = IF ("Tipo registro" = CONST(Compra)) Vendor."No."
             ELSE
-            IF ("Tipo registro" = CONST (Venta)) Customer."No.";
+            IF ("Tipo registro" = CONST(Venta)) Customer."No.";
         }
         field(2; "Tipo retención"; Option)
         {
@@ -22,7 +22,7 @@ table 50023 "Withholding details"
         }
         field(5; "Cód. retención"; Code[20])
         {
-            TableRelation = "Withholding codes"."Cod. retencion" WHERE ("Tipo impuesto retencion" = FIELD ("Tipo retención"));
+            TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FIELD("Tipo retención"));
         }
         field(6; Importe; Decimal)
         {
@@ -56,12 +56,12 @@ table 50023 "Withholding details"
         }
         field(50004; "Razon social Proveedor"; Text[100])
         {
-            CalcFormula = Lookup (Vendor.Name WHERE ("No." = FIELD ("Cod. proveedor/cliente")));
+            CalcFormula = Lookup(Vendor.Name WHERE("No." = FIELD("Cod. proveedor/cliente")));
             FieldClass = FlowField;
         }
         field(50005; "VAT Registration No."; Text[20])
         {
-            CalcFormula = Lookup (Vendor."VAT Registration No." WHERE ("No." = FIELD ("Cod. proveedor/cliente")));
+            CalcFormula = Lookup(Vendor."VAT Registration No." WHERE("No." = FIELD("Cod. proveedor/cliente")));
             Caption = 'VAT Registration No.';
             FieldClass = FlowField;
 
@@ -75,7 +75,7 @@ table 50023 "Withholding details"
 
     keys
     {
-        key(Key1; "Tipo registro", "Cod. proveedor/cliente", "Tipo retención", "Fecha efectividad retencion")
+        key(Key1; "Tipo registro", "Cod. proveedor/cliente", "Tipo retención", "Fecha efectividad retencion", "Cód. retención")
         {
             Clustered = true;
         }

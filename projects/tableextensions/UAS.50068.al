@@ -544,6 +544,11 @@ tableextension 50068 "Sales Shipment Line Ext." extends "Sales Shipment Line"
         {
             DataClassification = ToBeClassified;
         }
+        field(50082; "MSC"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
+
         field(50140; "No. reparto"; Code[20])
         {
             DataClassification = ToBeClassified;

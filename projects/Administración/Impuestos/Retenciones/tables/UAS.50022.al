@@ -165,6 +165,10 @@ table 50022 "Invoice Withholding Buffer"
             DataClassification = ToBeClassified;
             TableRelation = "Acción estado sit. fiscal";
         }
+        field(50024; "Comentario exclusion"; Text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
     keys

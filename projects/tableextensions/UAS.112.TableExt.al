@@ -318,6 +318,11 @@ tableextension 115 tableextension115 extends "Sales Cr.Memo Line"
         {
             DataClassification = ToBeClassified;
         }
+        field(50082; "MSC"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
+
         field(50140; "No. reparto"; Code[20])
         {
             DataClassification = ToBeClassified;

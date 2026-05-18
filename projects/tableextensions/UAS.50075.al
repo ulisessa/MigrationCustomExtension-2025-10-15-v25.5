@@ -545,6 +545,10 @@ tableextension 50075 "Sales Invoice Line Ext." extends "Sales Invoice Line"
         {
             DataClassification = ToBeClassified;
         }
+        field(50082; "MSC"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
         field(50100; "Tipo factura"; Option)
         {
             OptionMembers = Venta,Servicios,"Disminución coste",Anticipo;

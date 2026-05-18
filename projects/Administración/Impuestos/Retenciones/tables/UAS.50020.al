@@ -90,6 +90,10 @@ table 50020 "Withholding codes"
                 end;
             end;
         }
+        field(50010; "Cód. alterno superior"; Code[20])
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
     keys

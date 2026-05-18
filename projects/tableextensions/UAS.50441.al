@@ -327,6 +327,10 @@ tableextension 50441 tableextension50441 extends "Item Ledger Entry"
             Caption = 'Fórmula de aplicación de fechas de DCL';
             DataClassification = ToBeClassified;
         }
+        field(50082; "MSC"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
         field(50140; "No. reparto"; Code[20])
         {
             DataClassification = ToBeClassified;

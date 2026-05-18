@@ -262,7 +262,7 @@ tableextension 50362 tableextension50362 extends "Vendor Ledger Entry"
         }
         field(50596; "Applied by doc. type  Filter"; Option)
         {
-            Caption = 'Date Filter';
+            Caption = 'Applied by Doc. Type Filter';
             FieldClass = FlowFilter;
             OptionCaption = ' ,Payment,Invoice,Credit Memo,Finance Charge Memo,Reminder,Refund,,,,,,,,,,,,,,,Bill';
             OptionMembers = " ",Pago,Factura,Abono,"Docs. interés",Recordatorio,Reembolso,,,,,,,,,,,,,,,Efecto;
