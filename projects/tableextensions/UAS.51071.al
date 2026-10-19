@@ -141,17 +141,21 @@ tableextension 51071 tableextension51071 extends "Warehouse Journal Line"
         }
         field(50014; "Lote origen"; Code[10])
         {
+            Caption = 'Lote origen';
+            ToolTip = 'Specifies the value of the Lote origen field.';
             DataClassification = ToBeClassified;
         }
         field(50142; "Ommit position validation"; Boolean)
         {
             Caption = 'Omitir validación de posición';
+            ToolTip = 'Specifies the value of the Omitir validación de posición field.';
             DataClassification = ToBeClassified;
         }
         field(50500; "Shortcut Dimension 1 Code"; Code[20])
         {
             CaptionClass = '1,2,1';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
             DataClassification = ToBeClassified;
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(1));
         }
@@ -159,6 +163,7 @@ tableextension 51071 tableextension51071 extends "Warehouse Journal Line"
         {
             CaptionClass = '1,2,2';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
             DataClassification = ToBeClassified;
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(2));
         }
@@ -166,22 +171,26 @@ tableextension 51071 tableextension51071 extends "Warehouse Journal Line"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
             DataClassification = ToBeClassified;
 
         }
         field(50510; "Net kilos"; Decimal)
         {
             Caption = 'Net kilos';
+            ToolTip = 'Specifies the value of the Net kilos field.';
             DecimalPlaces = 0 : 5;
         }
         field(50511; "Gross kilos"; Decimal)
         {
             Caption = 'Gross kilos';
+            ToolTip = 'Specifies the value of the Gross kilos field.';
             DecimalPlaces = 0 : 5;
         }
         field(50512; "Net kilos (Base)"; Decimal)
         {
             Caption = 'Net kilos (Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -192,6 +201,7 @@ tableextension 51071 tableextension51071 extends "Warehouse Journal Line"
         field(50513; "Gross kilos (Base)"; Decimal)
         {
             Caption = 'Gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -202,6 +212,7 @@ tableextension 51071 tableextension51071 extends "Warehouse Journal Line"
         field(50514; "Net kilos (Absolute)"; Decimal)
         {
             Caption = 'Net kilos (Absolute)';
+            ToolTip = 'Specifies the value of the Net kilos (Absolute) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -215,6 +226,7 @@ tableextension 51071 tableextension51071 extends "Warehouse Journal Line"
         field(50515; "Gross kilos (Absolute)"; Decimal)
         {
             Caption = 'Gross kilos (Absolute)';
+            ToolTip = 'Specifies the value of the Gross kilos (Absolute) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -228,16 +240,19 @@ tableextension 51071 tableextension51071 extends "Warehouse Journal Line"
         field(50516; "Net kilos (Absolute, Base)"; Decimal)
         {
             Caption = 'Net kilos (Absolute, Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Absolute, Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50517; "Gross kilos (Absolute, Base)"; Decimal)
         {
             Caption = 'Gross kilos (Absolute, Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Absolute, Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50518; "Net kilos (Calculated)"; Decimal)
         {
             Caption = 'Net kilos (Calculated)';
+            ToolTip = 'Specifies the value of the Net kilos (Calculated) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -249,6 +264,7 @@ tableextension 51071 tableextension51071 extends "Warehouse Journal Line"
         field(50519; "Gross kilos (Calculated)"; Decimal)
         {
             Caption = 'Gross kilos (Calculated)';
+            ToolTip = 'Specifies the value of the Gross kilos (Calculated) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -260,30 +276,35 @@ tableextension 51071 tableextension51071 extends "Warehouse Journal Line"
         field(50520; "Net kilos (Phys. Inventory)"; Decimal)
         {
             Caption = 'Net kilos (Phys. Inventory)';
+            ToolTip = 'Specifies the value of the Net kilos (Phys. Inventory) field.';
             DecimalPlaces = 0 : 5;
 
         }
         field(50521; "Gross kilos (Phys. Inventory)"; Decimal)
         {
             Caption = 'Net kilos (Phys. Inventory)';
+            ToolTip = 'Specifies the value of the Net kilos (Phys. Inventory) field.';
             DecimalPlaces = 0 : 5;
 
         }
         field(50522; "Net kilos (Calculated) (Base)"; Decimal)
         {
             Caption = 'Net kilos (Calculated) (Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Calculated) (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50523; "Gross kilo (Calculated) (Base)"; Decimal)
         {
             Caption = 'Gross kilos (Calculated) (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Calculated) (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50524; "Net kilos (Phs. Inv.) (Base)"; Decimal)
         {
             Caption = 'Net kilos (Phs. Inv.) (Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Phs. Inv.) (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -296,6 +317,7 @@ tableextension 51071 tableextension51071 extends "Warehouse Journal Line"
         field(50525; "Gross kilos (Phs. Inv.) (Base)"; Decimal)
         {
             Caption = 'Gross kilos (Phs. Inv.) (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Phs. Inv.) (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 

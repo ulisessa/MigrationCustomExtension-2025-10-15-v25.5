@@ -5,33 +5,49 @@ table 50118 "Seguridad cambio estados"
     {
         field(1; Usuario; Code[50])
         {
+            Caption = 'User ID';
+            ToolTip = 'Specifies the value of the User ID field.';
             TableRelation = "User Setup"."User ID";
             ValidateTableRelation = true;
         }
         field(2; "Tipo documento"; Text[50])
         {
+            Caption = 'Document Type';
+            ToolTip = 'Specifies the value of the Document Type field.';
             TableRelation = "Tipos documento";
         }
         field(3; "Estado original"; Text[50])
         {
+            Caption = 'Estado original';
+            ToolTip = 'Specifies the value of the Estado original field.';
             TableRelation = Estados;
         }
         field(4; "Estado destino"; Text[50])
         {
+            Caption = 'Estado destino';
+            ToolTip = 'Specifies the value of the Estado destino field.';
             TableRelation = Estados;
         }
         field(5; "Grupo destino"; Code[10])
         {
+            Caption = 'Grupo destino';
+            ToolTip = 'Specifies the value of the Grupo destino field.';
             TableRelation = Seguridad;
         }
         field(6; "Enviar correo"; Boolean)
         {
+            Caption = 'Enviar correo';
+            ToolTip = 'Specifies the value of the Enviar correo field.';
         }
         field(7; Recomendado; Boolean)
         {
+            Caption = 'Recomendado';
+            ToolTip = 'Specifies the value of the Recomendado field.';
         }
         field(8; "Filtro por monto"; Text[250])
         {
+            Caption = 'Filtro por monto';
+            ToolTip = 'Specifies the value of the Filtro por monto field.';
             DataClassification = ToBeClassified;
         }
     }

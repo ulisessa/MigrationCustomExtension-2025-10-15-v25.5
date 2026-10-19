@@ -149,145 +149,187 @@ tableextension 50441 tableextension50441 extends "Item Ledger Entry"
         }
         field(50000; "Global dimension 3 Code"; Code[10])
         {
+            Caption = 'Global dimension 3 Code';
+            ToolTip = 'Specifies the value of the Global dimension 3 Code field.';
             CaptionClass = '1,2,3';
 
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
+            Caption = 'Global Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
+            Caption = 'Global Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
         }
         field(50003; "Global dimension 6 Code"; Code[20])
         {
+            Caption = 'Global dimension 6 Code';
+            ToolTip = 'Specifies the value of the Global dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
+            Caption = 'Global Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
         }
         field(50005; "Job concept"; Code[10])
         {
             Caption = 'Job concept';
+            ToolTip = 'Specifies the value of the Job concept field.';
             TableRelation = "Concepto proyecto";
         }
         field(50010; "Pallet no."; Code[20])
         {
             Caption = 'Pallet no.';
+            ToolTip = 'Specifies the value of the Pallet no field.';
         }
         field(50011; "No. proyecto"; Code[20])
         {
             Caption = 'Job no.';
+            ToolTip = 'Specifies the value of the Job no field.';
             TableRelation = Job."No.";
         }
         field(50012; "No. proyecto destino"; Code[20])
         {
             Caption = 'Destination job no.';
+            ToolTip = 'Specifies the value of the Destination job no field.';
             TableRelation = Job."No.";
         }
         field(50013; "Gross kilos"; Decimal)
         {
             Caption = 'Gross kilos';
+            ToolTip = 'Specifies the value of the Gross kilos field.';
         }
         field(50014; "Net kilos"; Decimal)
         {
             Caption = 'Net kilos';
+            ToolTip = 'Specifies the value of the Net kilos field.';
         }
         field(50015; "% price per kilo"; Decimal)
         {
             Caption = '% price per kilo';
+            ToolTip = 'Specifies the value of the % price per kilo field.';
         }
         field(50018; "Remaining gross kilos"; Decimal)
         {
             Caption = 'Remaining gross kilos';
+            ToolTip = 'Specifies the value of the Remaining gross kilos field.';
+            ObsoleteTag = '10/2026';
+            ObsoleteState = Pending;
+            ObsoleteReason = 'Ya no se mantiene. Kilos pendientes = Remaining Quantity x Gross kilos / Quantity; el stock en kilos es la suma con signo de Gross kilos.';
         }
         field(50019; "Remaining net kilos"; Decimal)
         {
             Caption = 'Remaining net kilos';
+            ToolTip = 'Specifies the value of the Remaining net kilos field.';
+            ObsoleteTag = '10/2026';
+            ObsoleteState = Pending;
+            ObsoleteReason = 'Ya no se mantiene. Kilos pendientes = Remaining Quantity x Net kilos / Quantity; el stock en kilos es la suma con signo de Net kilos.';
         }
         field(50021; "Item type"; Option)
         {
             Caption = 'Item type';
+            ToolTip = 'Specifies the value of the Item type field.';
             OptionCaption = 'Consumption,Fishing';
             OptionMembers = Consumo,Pesca;
         }
         field(50022; "Request header no."; Code[30])
         {
             Caption = 'Request header no.';
+            ToolTip = 'Specifies the value of the Request header no field.';
         }
         field(50023; "Request line no."; Integer)
         {
             Caption = 'Request line no.';
+            ToolTip = 'Specifies the value of the Request line no field.';
         }
         field(50024; "Invoiced net kilos"; Decimal)
         {
             Caption = 'Invoiced net kilos';
+            ToolTip = 'Specifies the value of the Invoiced net kilos field.';
             DecimalPlaces = 0 : 5;
         }
         field(50025; "Invoiced gross kilos"; Decimal)
         {
             Caption = 'Invoiced gross kilos';
+            ToolTip = 'Specifies the value of the Invoiced gross kilos field.';
         }
         field(50026; Family; Code[3])
         {
             Caption = 'Family';
+            ToolTip = 'Specifies the value of the Family field.';
             TableRelation = "Familia producto";
         }
         field(50027; Subfamily; Code[20])
         {
             Caption = 'Subfamily';
+            ToolTip = 'Specifies the value of the Subfamily field.';
             TableRelation = "Subfamilia producto".Code;
         }
         field(50028; "Production date"; Date)
         {
             Caption = 'Production date';
+            ToolTip = 'Specifies the value of the Production date field.';
         }
         field(50029; "Quantity in shipments"; Decimal)
         {
             Caption = 'Quantity in shipments';
+            ToolTip = 'Specifies the value of the Quantity in shipments field.';
         }
         field(50030; "Shipped nk Not Returned"; Decimal)
         {
             Caption = 'Shipped nk Not Returned';
+            ToolTip = 'Specifies the value of the Shipped nk Not Returned field.';
             DecimalPlaces = 0 : 5;
         }
         field(50031; "Shipped gk Not Returned"; Decimal)
         {
             Caption = 'Shipped gk Not Returned';
+            ToolTip = 'Specifies the value of the Shipped gk Not Returned field.';
             DecimalPlaces = 0 : 5;
         }
         field(50033; "Transport registration"; Code[10])
         {
             Caption = 'Transport registration';
+            ToolTip = 'Specifies the value of the Transport registration field.';
         }
         field(50034; Temperature; Decimal)
         {
             Caption = 'Temperature';
+            ToolTip = 'Specifies the value of the Temperature field.';
         }
         field(50035; "Time of arrival"; Time)
         {
             Caption = 'Time of arrival';
+            ToolTip = 'Specifies the value of the Time of arrival field.';
         }
         field(50036; "Sanitary protection type"; Option)
         {
             BlankZero = true;
             Caption = 'Sanitary protection type';
+            ToolTip = 'Specifies the value of the Sanitary protection type field.';
             OptionCaption = ',P.T.,P.T.R.,C.S.E.P.,Transit guide';
             OptionMembers = ,"P.T.","P.T.R.","C.S.E.P.","Guía de tránsito";
         }
         field(50037; "Sanitary protection no."; Code[30])
         {
             Caption = 'Sanitary protection no.';
+            ToolTip = 'Specifies the value of the Sanitary protection no field.';
         }
         field(50038; Destination; Code[30])
         {
             Caption = 'Destination';
+            ToolTip = 'Specifies the value of the Destination field.';
         }
         field(50039; "Reserved net kilos"; Decimal)
         {
@@ -299,6 +341,7 @@ tableextension 50441 tableextension50441 extends "Item Ledger Entry"
                                                                             "Source Prod. Order Line" = CONST(0),
                                                                             "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved net kilos';
+            ToolTip = 'Specifies the value of the Reserved net kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -313,43 +356,58 @@ tableextension 50441 tableextension50441 extends "Item Ledger Entry"
                                                                               "Source Prod. Order Line" = CONST(0),
                                                                               "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved gross kilos';
+            ToolTip = 'Specifies the value of the Reserved gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
         }
         field(50077; "Seguimiento para trazabilidad"; Option)
         {
+            Caption = 'Seguimiento para trazabilidad';
+            ToolTip = 'Specifies the value of the Seguimiento para trazabilidad field.';
             DataClassification = ToBeClassified;
             OptionMembers = " ","Post-Expo - Controlar contra DCL","No controlar contra DCL","Pre-Expo - Controlar contra DCL";
         }
         field(50079; "DCL application date formula"; Text[30])
         {
             Caption = 'Fórmula de aplicación de fechas de DCL';
+            ToolTip = 'Specifies the value of the Fórmula de aplicación de fechas de DCL field.';
             DataClassification = ToBeClassified;
         }
         field(50082; "MSC"; Boolean)
         {
+            Caption = 'MSC';
+            ToolTip = 'Specifies the value of the MSC field.';
             DataClassification = ToBeClassified;
         }
         field(50140; "No. reparto"; Code[20])
         {
+            Caption = 'No. reparto';
+            ToolTip = 'Specifies the value of the No. reparto field.';
             DataClassification = ToBeClassified;
         }
         field(50141; "Linea reparto"; Integer)
         {
+            Caption = 'Linea reparto';
+            ToolTip = 'Specifies the value of the Linea reparto field.';
             DataClassification = ToBeClassified;
         }
         field(50142; "Ommit position validation"; Boolean)
         {
             Caption = 'Omitir validación de posición';
+            ToolTip = 'Specifies the value of the Omitir validación de posición field.';
             DataClassification = ToBeClassified;
         }
         field(50500; "Resultado x tenencia"; Decimal)
         {
+            Caption = 'Resultado x tenencia';
+            ToolTip = 'Specifies the value of the Resultado x tenencia field.';
             DecimalPlaces = 2 : 2;
         }
         field(50501; "Liq. x Mov. Cont"; Text[30])
         {
+            Caption = 'Liq. x Mov. Cont';
+            ToolTip = 'Specifies the value of the Liq. x Mov. Cont field.';
 
             trigger OnLookup()
             var
@@ -365,19 +423,29 @@ tableextension 50441 tableextension50441 extends "Item Ledger Entry"
         }
         field(50502; "Concepto ajuste"; Code[20])
         {
+            Caption = 'Concepto ajuste';
+            ToolTip = 'Specifies the value of the Concepto ajuste field.';
             TableRelation = "AFIP Interface Register";
         }
         field(50503; "% Ajuste KN"; Decimal)
         {
+            Caption = '% Ajuste KN';
+            ToolTip = 'Specifies the value of the % Ajuste KN field.';
         }
         field(50504; "% Ajuste KB"; Decimal)
         {
+            Caption = '% Ajuste KB';
+            ToolTip = 'Specifies the value of the % Ajuste KB field.';
         }
         field(50505; "Nombre libro diario"; Code[10])
         {
+            Caption = 'Nombre libro diario';
+            ToolTip = 'Specifies the value of the Nombre libro diario field.';
         }
         field(50506; "Nombre seccion diario"; Code[10])
         {
+            Caption = 'Nombre seccion diario';
+            ToolTip = 'Specifies the value of the Nombre seccion diario field.';
             TableRelation = "Item Journal Batch".Name WHERE("Journal Template Name" = FIELD("Nombre libro diario"));
             //This property is currently not supported
             //TestTableRelation = false;
@@ -385,129 +453,195 @@ tableextension 50441 tableextension50441 extends "Item Ledger Entry"
         }
         field(50510; "Buque Tercero"; Code[3])
         {
+            Caption = 'Buque Tercero';
+            ToolTip = 'Specifies the value of the Buque Tercero field.';
         }
         field(50511; "Marea Tercero"; Code[7])
         {
+            Caption = 'Marea Tercero';
+            ToolTip = 'Specifies the value of the Marea Tercero field.';
             Editable = true;
         }
         field(50521; "Importe IVA Recuperado"; Decimal)
         {
+            Caption = 'Importe IVA Recuperado';
+            ToolTip = 'Specifies the value of the Importe IVA Recuperado field.';
         }
         field(50522; Recuperable; Boolean)
         {
+            Caption = 'Recuperable';
+            ToolTip = 'Specifies the value of the Recuperable field.';
         }
         field(50523; "Lote origen"; Code[20])
         {
+            Caption = 'Lote origen';
+            ToolTip = 'Specifies the value of the Lote origen field.';
         }
         field(50525; "Filtro fecha"; Date)
         {
+            Caption = 'Date Filter';
+            ToolTip = 'Specifies the value of the Date Filter field.';
             FieldClass = FlowFilter;
         }
         field(50526; "% IVA"; Decimal)
         {
+            Caption = '% IVA';
+            ToolTip = 'Specifies the value of the % IVA field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50527; "Cód. área impuesto"; Code[20])
         {
+            Caption = 'Tax Area Code';
+            ToolTip = 'Specifies the value of the Tax Area Code field.';
             TableRelation = Area;
         }
         field(50528; "Cód. grupo impuesto"; Code[10])
         {
+            Caption = 'Tax Group Code';
+            ToolTip = 'Specifies the value of the Tax Group Code field.';
             TableRelation = Area;
         }
         field(50529; "Cód. retención IVA"; Code[20])
         {
+            Caption = 'Cód. retención IVA';
+            ToolTip = 'Specifies the value of the Cód. retención IVA field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER(IVA));
         }
         field(50530; "Cód. retención SS"; Code[20])
         {
+            Caption = 'Cód. retención SS';
+            ToolTip = 'Specifies the value of the Cód. retención SS field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER("Ingresos Brutos"));
         }
         field(50531; "Cód. retención ganancias"; Code[20])
         {
+            Caption = 'Cód. retención ganancias';
+            ToolTip = 'Specifies the value of the Cód. retención ganancias field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER(Ganancias));
         }
         field(50532; Factura; Boolean)
         {
+            Caption = 'Factura';
+            ToolTip = 'Specifies the value of the Factura field.';
         }
         field(50533; "Fecha recupero"; Date)
         {
+            Caption = 'Fecha recupero';
+            ToolTip = 'Specifies the value of the Fecha recupero field.';
         }
         field(50534; "Revisión manual"; Boolean)
         {
+            Caption = 'Revisión manual';
+            ToolTip = 'Specifies the value of the Revisión manual field.';
         }
         field(50535; "Fecha creación"; Date)
         {
+            Caption = 'Creation Date';
+            ToolTip = 'Specifies the value of the Creation Date field.';
         }
         field(50536; "Document filter"; Code[20])
         {
             Caption = 'Filtro documento';
+            ToolTip = 'Specifies the value of the Filtro documento field.';
             FieldClass = FlowFilter;
         }
         field(50539; GS1; Text[250])
         {
+            Caption = 'GS1';
+            ToolTip = 'Specifies the value of the GS1 field.';
         }
         field(50540; "Ubicación"; Code[10])
         {
+            Caption = 'Ubicación';
+            ToolTip = 'Specifies the value of the Ubicación field.';
         }
         field(50541; "Importe div. adic."; Decimal)
         {
+            Caption = 'Importe div. adic.';
+            ToolTip = 'Specifies the value of the Importe div. adic field.';
             AutoFormatType = 1;
         }
         field(50542; "Consumir automáticamente"; Boolean)
         {
+            Caption = 'Consumir automáticamente';
+            ToolTip = 'Specifies the value of the Consumir automáticamente field.';
         }
         field(50543; Marcado; Boolean)
         {
+            Caption = 'Marcado';
+            ToolTip = 'Specifies the value of the Marcado field.';
         }
         field(50544; "Valor FIFO"; Decimal)
         {
+            Caption = 'Valor FIFO';
+            ToolTip = 'Specifies the value of the Valor FIFO field.';
         }
         field(50545; Pendiente; Decimal)
         {
+            Caption = 'Pendiente';
+            ToolTip = 'Specifies the value of the Pendiente field.';
         }
         field(50546; "FIFO Acumulado"; Decimal)
         {
+            Caption = 'FIFO Acumulado';
+            ToolTip = 'Specifies the value of the FIFO Acumulado field.';
         }
         field(50547; "Valued quantity"; Decimal)
         {
             CalcFormula = Sum("Value Entry"."Item Ledger Entry Quantity" WHERE("Item Ledger Entry No." = FIELD("Entry No."),
                                                                                 "Posting Date" = FIELD("Filtro fecha")));
             Caption = 'Cantidad valorada';
+            ToolTip = 'Specifies the value of the Cantidad valorada field.';
             FieldClass = FlowField;
         }
         field(50548; "Applied quantity"; Decimal)
         {
             CalcFormula = Sum("Item Application Entry".Quantity WHERE("Inbound Item Entry No." = FIELD("Entry No."),
                                                                        "Posting Date" = FIELD("Filtro fecha")));
-            Caption = 'Cantidad aplicada';
+            Caption = 'Quantity';
+            ToolTip = 'Specifies the value of the Quantity field.';
             FieldClass = FlowField;
         }
         field(50596; Regenerado; Boolean)
         {
+            Caption = 'Regenerado';
+            ToolTip = 'Specifies the value of the Regenerado field.';
         }
         field(50597; "Fecha reversión"; Date)
         {
+            Caption = 'Reverse Date';
+            ToolTip = 'Specifies the value of the Reverse Date field.';
         }
         field(50598; "Usuario reversión"; Code[20])
         {
+            Caption = 'Usuario reversión';
+            ToolTip = 'Specifies the value of the Usuario reversión field.';
         }
         field(50599; Revertido; Boolean)
         {
+            Caption = 'Reversed';
+            ToolTip = 'Specifies the value of the Reversed field.';
         }
         field(50700; "No. Remito"; Code[30])
         {
+            Caption = 'No. Remito';
+            ToolTip = 'Specifies the value of the No. Remito field.';
         }
         field(50701; "No. Despacho"; Code[20])
         {
+            Caption = 'No. Despacho';
+            ToolTip = 'Specifies the value of the No. Despacho field.';
         }
         field(50702; "Cust. post. group"; Code[20])
         {
+            Caption = 'Cust. post. group';
+            ToolTip = 'Specifies the value of the Cust. post. group field.';
         }
         field(50703; "Bin code"; Code[20])
         {
             Caption = 'Cód. caja';
+            ToolTip = 'Specifies the value of the Cód. caja field.';
             DataClassification = ToBeClassified;
             TableRelation = Bin.Code;
         }

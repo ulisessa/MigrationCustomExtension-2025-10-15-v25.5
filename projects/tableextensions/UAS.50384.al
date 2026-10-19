@@ -241,6 +241,8 @@ tableextension 50384 tableextension50384 extends "Bank Account"
         }
         field(50000; "Global Dimension 3 Code"; Code[10])
         {
+            Caption = 'Global Dimension 3 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 3 Code field.';
             CaptionClass = '1,2,3';
 
 
@@ -251,6 +253,8 @@ tableextension 50384 tableextension50384 extends "Bank Account"
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
+            Caption = 'Global Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
 
@@ -261,6 +265,8 @@ tableextension 50384 tableextension50384 extends "Bank Account"
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
+            Caption = 'Global Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
 
@@ -271,6 +277,8 @@ tableextension 50384 tableextension50384 extends "Bank Account"
         }
         field(50003; "Global Dimension 6 Code"; Code[10])
         {
+            Caption = 'Global Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
 
@@ -281,6 +289,8 @@ tableextension 50384 tableextension50384 extends "Bank Account"
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
+            Caption = 'Global Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
 
@@ -291,30 +301,40 @@ tableextension 50384 tableextension50384 extends "Bank Account"
         }
         field(50005; "Global Dimension 3 filter"; Code[10])
         {
+            Caption = 'Global Dimension 3 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 3 filter field.';
             CaptionClass = '1,3,3';
             FieldClass = FlowFilter;
 
         }
         field(50006; "Global Dimension 4 filter"; Code[10])
         {
+            Caption = 'Global Dimension 4 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 4 filter field.';
             CaptionClass = '1,3,4';
             FieldClass = FlowFilter;
 
         }
         field(50007; "Global Dimension 5 filter"; Code[10])
         {
+            Caption = 'Global Dimension 5 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 5 filter field.';
             CaptionClass = '1,3,5';
             FieldClass = FlowFilter;
 
         }
         field(50008; "Global Dimension 6 filter"; Code[10])
         {
+            Caption = 'Global Dimension 6 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 6 filter field.';
             CaptionClass = '1,3,6';
             FieldClass = FlowFilter;
 
         }
         field(50009; "Global Dimension 7 filter"; Code[20])
         {
+            Caption = 'Global Dimension 7 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 7 filter field.';
             CaptionClass = '1,3,7';
             FieldClass = FlowFilter;
 
@@ -322,30 +342,37 @@ tableextension 50384 tableextension50384 extends "Bank Account"
         field(50010; "Post dated check account"; Code[10])
         {
             Caption = 'Cuenta cheques diferidos';
+            ToolTip = 'Specifies the value of the Cuenta cheques diferidos field.';
             TableRelation = "G/L Account"."No.";
         }
         field(50011; "Tipo cuenta"; Code[2])
         {
+            Caption = 'Tipo cuenta';
+            ToolTip = 'Specifies the value of the Tipo cuenta field.';
             DataClassification = ToBeClassified;
         }
         field(50012; CBU; Code[30])
         {
             Caption = 'CBU';
+            ToolTip = 'Specifies the value of the CBU field.';
             DataClassification = ToBeClassified;
         }
         field(50013; "Only reconciliate amounts/chq"; Boolean)
         {
             Caption = 'Sólo conciiliar importes y cheque';
+            ToolTip = 'Specifies the value of the Sólo conciiliar importes y cheque field.';
             DataClassification = ToBeClassified;
         }
         field(50014; "Reconciliate amounts"; Boolean)
         {
             Caption = 'Reconciliar importes';
+            ToolTip = 'Specifies the value of the Reconciliar importes field.';
             DataClassification = ToBeClassified;
         }
         field(50015; "Manual conciliation"; Boolean)
         {
             Caption = 'Conciliación manual';
+            ToolTip = 'Specifies the value of the Conciliación manual field.';
             DataClassification = ToBeClassified;
         }
     }

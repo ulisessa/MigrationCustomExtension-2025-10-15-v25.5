@@ -157,78 +157,116 @@ tableextension 50306 tableextension50306 extends "Cust. Ledger Entry"
         }
         field(50000; "Global dimension 3 Code"; Code[10])
         {
+            Caption = 'Global dimension 3 Code';
+            ToolTip = 'Specifies the value of the Global dimension 3 Code field.';
             CaptionClass = '1,2,3';
 
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
+            Caption = 'Global Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
+            Caption = 'Global Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
         }
         field(50003; "Global dimension 6 Code"; Code[20])
         {
+            Caption = 'Global dimension 6 Code';
+            ToolTip = 'Specifies the value of the Global dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
+            Caption = 'Global Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
         }
         field(50005; "No. proyecto"; Code[20])
         {
+            Caption = 'Job No.';
+            ToolTip = 'Specifies the value of the Job No field.';
             TableRelation = Job;
         }
         field(50006; "No. certificación"; Code[10])
         {
+            Caption = 'No. certificación';
+            ToolTip = 'Specifies the value of the No. certificación field.';
         }
         field(50007; Ajustado; Boolean)
         {
+            Caption = 'Ajustado';
+            ToolTip = 'Specifies the value of the Ajustado field.';
         }
         field(50008; "USD Amount"; Decimal)
         {
+            Caption = 'USD Amount';
+            ToolTip = 'Specifies the value of the USD Amount field.';
             CalcFormula = Sum("Sales Invoice Line"."Importe USD" WHERE("Document No." = FIELD("Document No."),
                                                                         "Bill-to Customer No." = FIELD("Customer No.")));
             FieldClass = FlowField;
         }
         field(50009; "Credit USD Amount"; Decimal)
         {
+            Caption = 'Credit USD Amount';
+            ToolTip = 'Specifies the value of the Credit USD Amount field.';
             CalcFormula = Sum("Sales Cr.Memo Line"."Importe USD" WHERE("Document No." = FIELD("Document No."),
                                                                         "Bill-to Customer No." = FIELD("Customer No.")));
             FieldClass = FlowField;
         }
         field(50012; "Descripción 2"; Text[250])
         {
+            Caption = 'Description 2';
+            ToolTip = 'Specifies the value of the Description 2 field.';
         }
         field(50100; "Cód. forma pago"; Code[10])
         {
+            Caption = 'Payment Method Code';
+            ToolTip = 'Specifies the value of the Payment Method Code field.';
         }
         field(50503; "RRR&G Procesado"; Boolean)
         {
+            Caption = 'RRR&G Procesado';
+            ToolTip = 'Specifies the value of the RRR&G Procesado field.';
             DataClassification = ToBeClassified;
         }
         field(50505; "Nombre libro diario"; Code[10])
         {
+            Caption = 'Nombre libro diario';
+            ToolTip = 'Specifies the value of the Nombre libro diario field.';
         }
         field(50597; "Fecha anulación"; Date)
         {
+            Caption = 'Fecha anulación';
+            ToolTip = 'Specifies the value of the Fecha anulación field.';
         }
         field(50598; "Usuario Anulación"; Code[20])
         {
+            Caption = 'Usuario Anulación';
+            ToolTip = 'Specifies the value of the Usuario Anulación field.';
         }
         field(50599; Anulado; Boolean)
         {
+            Caption = 'Anulado';
+            ToolTip = 'Specifies the value of the Anulado field.';
         }
         field(50700; "No. cheque"; Code[20])
         {
+            Caption = 'No. cheque';
+            ToolTip = 'Specifies the value of the No. cheque field.';
         }
         field(50701; "Cód. banco cliente"; Code[20])
         {
+            Caption = 'Cust. Bank Acc. Code';
+            ToolTip = 'Specifies the value of the Cust. Bank Acc. Code field.';
         }
     }
 

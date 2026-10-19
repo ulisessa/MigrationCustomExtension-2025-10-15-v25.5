@@ -5,15 +5,19 @@ table 50105 "Familia producto"
     {
         field(1; "Code"; Code[3])
         {
-            Caption = 'Código';
+            Caption = 'Code';
+            ToolTip = 'Specifies the value of the Code field.';
             NotBlank = true;
         }
         field(2; Description; Text[250])
         {
-            Caption = 'Descripción';
+            Caption = 'Description';
+            ToolTip = 'Specifies the value of the Description field.';
         }
         field(3; "Tipo producto"; Option)
         {
+            Caption = 'Item type';
+            ToolTip = 'Specifies the value of the Item type field.';
             OptionMembers = Consumo,Pesca;
 
             trigger OnValidate()
@@ -34,16 +38,19 @@ table 50105 "Familia producto"
         field(4; "Cat. code"; Code[3])
         {
             Caption = 'Cód. categorización';
+            ToolTip = 'Specifies the value of the Cód. categorización field.';
             TableRelation = "Categorizacion productos";
         }
         field(5; "Rubric code"; Code[10])
         {
             Caption = 'Cód. rúbrica';
+            ToolTip = 'Specifies the value of the Cód. rúbrica field.';
 
         }
         field(6; "Rubric name"; Code[20])
         {
             Caption = 'Nombre rúbrica';
+            ToolTip = 'Specifies the value of the Nombre rúbrica field.';
         }
     }
 

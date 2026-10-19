@@ -52,9 +52,13 @@ tableextension 50305 tableextension50305 extends "Job Journal Template"
         }
         field(50500; Confirmar; Boolean)
         {
+            Caption = 'Confirmar';
+            ToolTip = 'Specifies the value of the Confirmar field.';
         }
         field(50502; "Fecha registro desde"; Date)
         {
+            Caption = 'Fecha registro desde';
+            ToolTip = 'Specifies the value of the Fecha registro desde field.';
 
             trigger OnValidate()
             begin
@@ -68,6 +72,8 @@ tableextension 50305 tableextension50305 extends "Job Journal Template"
         }
         field(50503; "Fecha registro hasta"; Date)
         {
+            Caption = 'Fecha registro hasta';
+            ToolTip = 'Specifies the value of the Fecha registro hasta field.';
 
             trigger OnValidate()
             begin

@@ -494,51 +494,73 @@ tableextension 50383 tableextension50383 extends Item
         //end;
         field(50000; "Global Dimension 3 filter"; Code[10])
         {
+            Caption = 'Global Dimension 3 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 3 filter field.';
             CaptionClass = '1,3,3';
             FieldClass = FlowFilter;
 
         }
         field(50001; "Global Dimension 4 filter"; Code[10])
         {
+            Caption = 'Global Dimension 4 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 4 filter field.';
             CaptionClass = '1,3,4';
             FieldClass = FlowFilter;
 
         }
         field(50002; "Global Dimension 5 filter"; Code[10])
         {
+            Caption = 'Global Dimension 5 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 5 filter field.';
             CaptionClass = '1,3,5';
             FieldClass = FlowFilter;
 
         }
         field(50003; "Global Dimension 6 filter"; Code[10])
         {
+            Caption = 'Global Dimension 6 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 6 filter field.';
             CaptionClass = '1,3,6';
             FieldClass = FlowFilter;
 
         }
         field(50004; "Global Dimension 7 filter"; Code[20])
         {
+            Caption = 'Global Dimension 7 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 7 filter field.';
             CaptionClass = '1,3,7';
             FieldClass = FlowFilter;
 
         }
         field(50009; "Lleva No. Lote"; Boolean)
         {
+            Caption = 'Lleva No. Lote';
+            ToolTip = 'Specifies the value of the Lleva No. Lote field.';
         }
         field(50010; "Lleva No. Pallet"; Boolean)
         {
+            Caption = 'Lleva No. Pallet';
+            ToolTip = 'Specifies the value of the Lleva No. Pallet field.';
         }
         field(50011; "Descripción Factura"; Text[250])
         {
+            Caption = 'Descripción Factura';
+            ToolTip = 'Specifies the value of the Descripción Factura field.';
         }
         field(50012; "Utiliza Tarifario"; Boolean)
         {
+            Caption = 'Utiliza Tarifario';
+            ToolTip = 'Specifies the value of the Utiliza Tarifario field.';
         }
         field(50013; "Texto Exportaciones"; Text[250])
         {
+            Caption = 'Texto Exportaciones';
+            ToolTip = 'Specifies the value of the Texto Exportaciones field.';
         }
         field(50015; "A proyecto desde buque"; Boolean)
         {
+            Caption = 'A proyecto desde buque';
+            ToolTip = 'Specifies the value of the A proyecto desde buque field.';
 
             trigger OnValidate()
             begin
@@ -552,6 +574,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50016; "Cdad. en solicitudes"; Decimal)
         {
+            Caption = 'Cdad. en solicitudes';
+            ToolTip = 'Specifies the value of the Cdad. en solicitudes field.';
             CalcFormula = Sum("Lín. solicitud"."Cantidad pendiente recibir" WHERE("No." = FIELD("No.")));
             DecimalPlaces = 0 : 3;
             Editable = false;
@@ -569,31 +593,40 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50017; "FIFO Contabilidad"; Decimal)
         {
+            Caption = 'FIFO Contabilidad';
+            ToolTip = 'Specifies the value of the FIFO Contabilidad field.';
             CalcFormula = Sum("Item Ledger Entry"."Valor FIFO" WHERE("Item No." = FIELD("No.")));
             FieldClass = FlowField;
         }
         field(50018; "Pendiente FIFO"; Decimal)
         {
+            Caption = 'Pendiente FIFO';
+            ToolTip = 'Specifies the value of the Pendiente FIFO field.';
             CalcFormula = Sum("Item Ledger Entry".Pendiente WHERE("Item No." = FIELD("No.")));
             FieldClass = FlowField;
         }
         field(50019; "Date of LDC"; Date)
         {
             Caption = 'Fecha de último costo directo';
+            ToolTip = 'Specifies the value of the Fecha de último costo directo field.';
             DataClassification = ToBeClassified;
         }
         field(50020; "Document No. Filter"; Code[20])
         {
             Caption = 'Filtro No. documento';
+            ToolTip = 'Specifies the value of the Filtro No. documento field.';
             FieldClass = FlowFilter;
         }
         field(50021; "Document No. Line Filter"; Integer)
         {
             Caption = 'Filtro Ln. No. Documento';
+            ToolTip = 'Specifies the value of the Filtro Ln. No. Documento field.';
             FieldClass = FlowFilter;
         }
         field(50077; "Seguimiento para trazabilidad"; Option)
         {
+            Caption = 'Seguimiento para trazabilidad';
+            ToolTip = 'Specifies the value of the Seguimiento para trazabilidad field.';
             DataClassification = ToBeClassified;
             OptionMembers = " ","Forzar uso de L.M.";
         }
@@ -602,10 +635,13 @@ tableextension 50383 tableextension50383 extends Item
             CalcFormula = Lookup("Purch. Inv. Line"."Buy-from Vendor No." WHERE(Type = FILTER(Item),
                                                                                  "No." = FIELD("No.")));
             Caption = 'Cód. proveedor';
+            ToolTip = 'Specifies the value of the Cód. proveedor field.';
             FieldClass = FlowField;
         }
         field(50500; "Nombre proveedor"; Text[100])
         {
+            Caption = 'Nombre proveedor';
+            ToolTip = 'Specifies the value of the Nombre proveedor field.';
             CalcFormula = Lookup(Vendor.Name WHERE("No." = FIELD("Vendor code")));
             Editable = false;
             FieldClass = FlowField;
@@ -622,6 +658,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50501; "Cód.Buque Tercero Obligatorio"; Boolean)
         {
+            Caption = 'Cód.Buque Tercero Obligatorio';
+            ToolTip = 'Specifies the value of the Cód.Buque Tercero Obligatorio field.';
 
             trigger OnValidate()
             begin
@@ -635,6 +673,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50502; "Existencias Kilos brutos"; Decimal)
         {
+            Caption = 'Existencias Kilos brutos';
+            ToolTip = 'Specifies the value of the Existencias Kilos brutos field.';
             CalcFormula = Sum("Item Ledger Entry"."Gross kilos" WHERE("Item No." = FIELD("No."),
                                                                        "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
                                                                        "Global Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
@@ -655,6 +695,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50503; "Existencias Kilos netos"; Decimal)
         {
+            Caption = 'Existencias Kilos netos';
+            ToolTip = 'Specifies the value of the Existencias Kilos netos field.';
             CalcFormula = Sum("Item Ledger Entry"."Net kilos" WHERE("Item No." = FIELD("No."),
                                                                      "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
                                                                      "Global Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
@@ -675,6 +717,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50504; "Filtro Puerto"; Code[10])
         {
+            Caption = 'Filtro Puerto';
+            ToolTip = 'Specifies the value of the Filtro Puerto field.';
             FieldClass = FlowFilter;
             TableRelation = "Entry/Exit Point";
 
@@ -690,6 +734,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50505; "Filtro Sección diario producto"; Code[10])
         {
+            Caption = 'Filtro Sección diario producto';
+            ToolTip = 'Specifies the value of the Filtro Sección diario producto field.';
             FieldClass = FlowFilter;
             TableRelation = "Item Journal Batch".Name;
 
@@ -705,6 +751,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50507; "Cód. divisa compra"; Code[10])
         {
+            Caption = 'Cód. divisa compra';
+            ToolTip = 'Specifies the value of the Cód. divisa compra field.';
             TableRelation = Currency.Code;
 
             trigger OnValidate()
@@ -719,6 +767,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50508; "Unidad Medida Factura"; Code[10])
         {
+            Caption = 'Unidad Medida Factura';
+            ToolTip = 'Specifies the value of the Unidad Medida Factura field.';
 
             trigger OnValidate()
             begin
@@ -732,6 +782,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50509; Usuario; Code[20])
         {
+            Caption = 'User ID';
+            ToolTip = 'Specifies the value of the User ID field.';
 
             trigger OnValidate()
             begin
@@ -745,14 +797,23 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50510; "Buque/Departamento"; Code[10])
         {
+            Caption = 'Buque/Departamento';
+            ToolTip = 'Specifies the value of the Buque/Departamento field.';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(1));
         }
         field(50511; Actividad; Code[10])
         {
+            Caption = 'Actividad (obsoleto)';
+            ToolTip = 'Specifies the value of the Actividad (obsoleto) field.';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(2));
+            ObsoleteState = Pending;
+            ObsoleteReason = 'Remanente de cuando Actividad era la dimensión 2. Usar "Global Dimension 3 Code" (50512).';
+            ObsoleteTag = '2.0.0.6';
         }
         field(50512; "Global Dimension 3 Code"; Code[10])
         {
+            Caption = 'Global Dimension 3 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 3 Code field.';
             CaptionClass = '1,2,3';
 
 
@@ -763,6 +824,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50513; "Global Dimension 4 Code"; Code[10])
         {
+            Caption = 'Global Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
 
@@ -773,6 +836,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50514; "Global Dimension 5 Code"; Code[10])
         {
+            Caption = 'Global Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
 
@@ -783,6 +848,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50515; "Global Dimension 6 Code"; Code[10])
         {
+            Caption = 'Global Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
 
@@ -793,6 +860,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50516; "Global Dimension 7 Code"; Code[20])
         {
+            Caption = 'Global Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
 
@@ -803,65 +872,97 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50517; "Cód. categorización"; Code[5])
         {
+            Caption = 'Cód. categorización';
+            ToolTip = 'Specifies the value of the Cód. categorización field.';
             TableRelation = "Categorizacion productos";
         }
         field(50518; "Nuevo Orden"; Code[4])
         {
+            Caption = 'Nuevo Orden';
+            ToolTip = 'Specifies the value of the Nuevo Orden field.';
         }
         field(50519; "Nuevo Específico"; Code[5])
         {
+            Caption = 'Nuevo Específico';
+            ToolTip = 'Specifies the value of the Nuevo Específico field.';
         }
         field(50520; "Nuevos KG"; Code[5])
         {
+            Caption = 'Nuevos KG';
+            ToolTip = 'Specifies the value of the Nuevos KG field.';
         }
         field(50521; "Antiguo Código"; Code[20])
         {
+            Caption = 'Antiguo Código';
+            ToolTip = 'Specifies the value of the Antiguo Código field.';
         }
         field(50522; "Especie de productos"; Option)
         {
+            Caption = 'Especie de productos';
+            ToolTip = 'Specifies the value of the Especie de productos field.';
             OptionMembers = " ","L{Langostino}","C{Calamar}","M{Merluza}","Z{Centolla}";
         }
         field(50523; "Nivel de producción"; Option)
         {
+            Caption = 'Nivel de producción';
+            ToolTip = 'Specifies the value of the Nivel de producción field.';
             OptionMembers = " ","Materia Prima",Semielaborado,"Producto Terminado",Residuos;
         }
         field(50524; Procedencia; Option)
         {
+            Caption = 'Procedencia';
+            ToolTip = 'Specifies the value of the Procedencia field.';
             OptionMembers = " ",Buques,Planta;
         }
         field(50525; "Propiedad producto"; Option)
         {
+            Caption = 'Propiedad producto';
+            ToolTip = 'Specifies the value of the Propiedad producto field.';
             OptionMembers = " ",Propio,Tercero,Comprado;
         }
         field(50526; "Número de Item"; Code[20])
         {
+            Caption = 'Número de Item';
+            ToolTip = 'Specifies the value of the Número de Item field.';
         }
         field(50527; "Número de Subitem"; Code[20])
         {
+            Caption = 'Número de Subitem';
+            ToolTip = 'Specifies the value of the Número de Subitem field.';
         }
         field(50528; "Cdad en Solicitud sin cotizar"; Decimal)
         {
+            Caption = 'Cdad en Solicitud sin cotizar';
+            ToolTip = 'Specifies the value of the Cdad en Solicitud sin cotizar field.';
         }
         field(50529; "Cdad en Cotización Provisoria"; Decimal)
         {
+            Caption = 'Cdad en Cotización Provisoria';
+            ToolTip = 'Specifies the value of the Cdad en Cotización Provisoria field.';
             CalcFormula = Sum("Purchase Line".Quantity WHERE("Document Type" = CONST(Quote),
                                                               "No." = FIELD("No.")));
             FieldClass = FlowField;
         }
         field(50530; "Cdad en Orden de Compra"; Decimal)
         {
+            Caption = 'Cdad en Orden de Compra';
+            ToolTip = 'Specifies the value of the Cdad en Orden de Compra field.';
             CalcFormula = Sum("Purchase Line"."Outstanding Quantity" WHERE("Document Type" = CONST(Order),
                                                                             "No." = FIELD("No.")));
             FieldClass = FlowField;
         }
         field(50531; "Cdad en Factura"; Decimal)
         {
+            Caption = 'Cdad en Factura';
+            ToolTip = 'Specifies the value of the Cdad en Factura field.';
             CalcFormula = Sum("Purchase Line".Quantity WHERE("Document Type" = CONST(Invoice),
                                                               "No." = FIELD("No.")));
             FieldClass = FlowField;
         }
         field(50532; "Filtro Lote Origen"; Code[20])
         {
+            Caption = 'Filtro Lote Origen';
+            ToolTip = 'Specifies the value of the Filtro Lote Origen field.';
             FieldClass = FlowFilter;
 
             trigger OnValidate()
@@ -876,6 +977,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50533; "Cantidad facturada"; Decimal)
         {
+            Caption = 'Cantidad facturada';
+            ToolTip = 'Specifies the value of the Cantidad facturada field.';
             CalcFormula = - Sum("Item Ledger Entry"."Invoiced Quantity" WHERE("Item No." = FIELD("No."),
                                                                               "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
                                                                               "Global Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
@@ -898,6 +1001,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50534; "Kilos netos facturados"; Decimal)
         {
+            Caption = 'Kilos netos facturados';
+            ToolTip = 'Specifies the value of the Kilos netos facturados field.';
             CalcFormula = - Sum("Item Ledger Entry"."Net kilos" WHERE("Item No." = FIELD("No."),
                                                                       "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
                                                                       "Global Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
@@ -921,6 +1026,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50535; "Kilos brutos facturados"; Decimal)
         {
+            Caption = 'Kilos brutos facturados';
+            ToolTip = 'Specifies the value of the Kilos brutos facturados field.';
             CalcFormula = Sum("Item Ledger Entry"."Invoiced Quantity" WHERE("Item No." = FIELD("No."),
                                                                              "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
                                                                              "Global Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
@@ -944,15 +1051,21 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50536; "Filtro Nombre Libro Diario"; Code[20])
         {
+            Caption = 'Filtro Nombre Libro Diario';
+            ToolTip = 'Specifies the value of the Filtro Nombre Libro Diario field.';
             FieldClass = FlowFilter;
         }
         field(50537; "Filtro proyecto"; Code[20])
         {
+            Caption = 'Filtro proyecto';
+            ToolTip = 'Specifies the value of the Filtro proyecto field.';
             FieldClass = FlowFilter;
             TableRelation = Job;
         }
         field(50538; "Imagen Barcode"; BLOB)
         {
+            Caption = 'Imagen Barcode';
+            ToolTip = 'Specifies the value of the Imagen Barcode field.';
         }
         field(50539; "Cost Amount (Actual)"; Decimal)
         {
@@ -962,11 +1075,14 @@ tableextension 50383 tableextension50383 extends Item
                                                                           "Item Ledger Entry Type" = FIELD("Filtro tipo mov."),
                                                                           "Document No." = FIELD("Document No. Filter")));
             Caption = 'Cost Amount (Actual)';
+            ToolTip = 'Specifies the value of the Cost Amount (Actual) field.';
             Editable = false;
             FieldClass = FlowField;
         }
         field(50540; "Cantidad descarga"; Decimal)
         {
+            Caption = 'Cantidad descarga';
+            ToolTip = 'Specifies the value of the Cantidad descarga field.';
             CalcFormula = Sum("Lín. descarga".Cantidad WHERE("Item no." = FIELD("No."),
                                                               "No. proyecto" = FIELD("Filtro proyecto"),
                                                               "Fecha remito" = FIELD("Date Filter"),
@@ -977,6 +1093,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50541; "Kilos netos descarga"; Decimal)
         {
+            Caption = 'Kilos netos descarga';
+            ToolTip = 'Specifies the value of the Kilos netos descarga field.';
             CalcFormula = Sum("Lín. descarga"."Net weight" WHERE("Item no." = FIELD("No."),
                                                                   "No. proyecto" = FIELD("Filtro proyecto"),
                                                                   "Fecha remito" = FIELD("Date Filter"),
@@ -987,6 +1105,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50542; "Kilos brutos descarga"; Decimal)
         {
+            Caption = 'Kilos brutos descarga';
+            ToolTip = 'Specifies the value of the Kilos brutos descarga field.';
             CalcFormula = Sum("Lín. descarga"."Gross weight" WHERE("Item no." = FIELD("No."),
                                                                     "No. proyecto" = FIELD("Filtro proyecto"),
                                                                     "Fecha remito" = FIELD("Date Filter"),
@@ -997,22 +1117,32 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50543; "Tiene código de barras"; Boolean)
         {
+            Caption = 'Tiene código de barras';
+            ToolTip = 'Specifies the value of the Tiene código de barras field.';
             CalcFormula = Exist("Item Unit of Measure" WHERE("Item No." = FIELD("No."),
                                                               "EAN-13 code" = FILTER(<> '')));
             FieldClass = FlowField;
         }
         field(50544; "Precio venta USD"; Decimal)
         {
+            Caption = 'Precio venta USD';
+            ToolTip = 'Specifies the value of the Precio venta USD field.';
         }
         field(50545; "Unidad medida Diario Abordo"; Code[10])
         {
+            Caption = 'Unidad medida Diario Abordo';
+            ToolTip = 'Specifies the value of the Unidad medida Diario Abordo field.';
             TableRelation = "Item Unit of Measure".Code WHERE("Item No." = FIELD("No."));
         }
         field(50546; "Precio venta $"; Decimal)
         {
+            Caption = 'Precio venta $';
+            ToolTip = 'Specifies the value of the Precio venta $ field.';
         }
         field(50547; "Cantidad x facturar"; Decimal)
         {
+            Caption = 'Cantidad x facturar';
+            ToolTip = 'Specifies the value of the Cantidad x facturar field.';
             CalcFormula = Sum("Sales Line"."Qty. Shipped Not Invoiced" WHERE(Type = CONST(Item),
                                                                               "No." = FIELD("No."),
                                                                               "Shortcut Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -1028,6 +1158,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50548; "KN x facturar"; Decimal)
         {
+            Caption = 'KN x facturar';
+            ToolTip = 'Specifies the value of the KN x facturar field.';
             CalcFormula = Sum("Sales Line"."NK Shipped Not Invoiced" WHERE(Type = CONST(Item),
                                                                             "No." = FIELD("No."),
                                                                             "Shortcut Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -1043,6 +1175,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50549; "KB x facturar"; Decimal)
         {
+            Caption = 'KB x facturar';
+            ToolTip = 'Specifies the value of the KB x facturar field.';
             CalcFormula = Sum("Sales Line"."GK Shipped Not Invoiced" WHERE(Type = CONST(Item),
                                                                             "No." = FIELD("No."),
                                                                             "Shortcut Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
@@ -1058,20 +1192,28 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50550; "Producto venta referencia"; Code[20])
         {
+            Caption = 'Producto venta referencia';
+            ToolTip = 'Specifies the value of the Producto venta referencia field.';
             TableRelation = Item."No." WHERE("Tipo producto" = CONST(Pesca));
         }
         field(50551; "Nombre producto venta"; Text[199])
         {
+            Caption = 'Nombre producto venta';
+            ToolTip = 'Specifies the value of the Nombre producto venta field.';
             CalcFormula = Lookup(Item.Description WHERE("No." = FIELD("Producto venta referencia")));
             FieldClass = FlowField;
         }
         field(50552; "Filtro Cliente"; Code[30])
         {
+            Caption = 'Filtro Cliente';
+            ToolTip = 'Specifies the value of the Filtro Cliente field.';
             FieldClass = FlowFilter;
             TableRelation = Customer;
         }
         field(50553; "Importe venta USD"; Decimal)
         {
+            Caption = 'Importe venta USD';
+            ToolTip = 'Specifies the value of the Importe venta USD field.';
             CalcFormula = Sum("Value Entry"."Sales Amount (Actual)" WHERE("Item No." = FIELD("No."),
                                                                            "Global Dimension 1 Code" = FIELD("Global Dimension 1 Filter"),
                                                                            "Global Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
@@ -1088,9 +1230,13 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50554; "Cantidad de bultos por pallet"; Decimal)
         {
+            Caption = 'Cantidad de bultos por pallet';
+            ToolTip = 'Specifies the value of the Cantidad de bultos por pallet field.';
         }
         field(50555; "Cantidad captura abordo"; Decimal)
         {
+            Caption = 'Cantidad captura abordo';
+            ToolTip = 'Specifies the value of the Cantidad captura abordo field.';
             CalcFormula = Sum("On board capture lines".Cantidad WHERE(Buque = FIELD("Global Dimension 1 Filter"),
                                                                        Marea = FIELD("Global Dimension 3 filter"),
                                                                        "Fecha registro" = FIELD("Date Filter"),
@@ -1100,17 +1246,25 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(50556; "Invisible pedido flota"; Boolean)
         {
+            Caption = 'Invisible pedido flota';
+            ToolTip = 'Specifies the value of the Invisible pedido flota field.';
         }
         field(50557; "Enviar a flota"; Boolean)
         {
+            Caption = 'Enviar a flota';
+            ToolTip = 'Specifies the value of the Enviar a flota field.';
             InitValue = true;
         }
         field(50558; "Filtro tipo mov."; Enum FiltroTipoMov)
         {
+            Caption = 'Filtro tipo mov.';
+            ToolTip = 'Specifies the value of the Filtro tipo mov field.';
 
         }
         field(50559; "Filtro concepto imputación"; Code[10])
         {
+            Caption = 'Filtro concepto imputación';
+            ToolTip = 'Specifies the value of the Filtro concepto imputación field.';
             FieldClass = FlowFilter;
 
         }
@@ -1126,6 +1280,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                      "Serial No." = FIELD("Serial No. Filter"),
                                                                      "Posting Date" = FIELD("Date Filter")));
             Caption = 'Inventory';
+            ToolTip = 'Specifies the value of the Inventory field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1141,6 +1296,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                             "Location Code" = FIELD("Location Filter"),
                                                                             "Variant Code" = FIELD("Variant Filter")));
             Caption = 'Reserved Qty. on Inventory';
+            ToolTip = 'Specifies the value of the Reserved Qty. on Inventory field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1155,6 +1311,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                             "Variant Code" = FIELD("Variant Filter"),
                                                                             "Expected Receipt Date" = FIELD("Date Filter")));
             Caption = 'Reserved Qty. on Purch. Orders';
+            ToolTip = 'Specifies the value of the Reserved Qty. on Purch. Orders field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1169,6 +1326,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                              "Variant Code" = FIELD("Variant Filter"),
                                                                              "Shipment Date" = FIELD("Date Filter")));
             Caption = 'Reserved Qty. on Sales Orders';
+            ToolTip = 'Specifies the value of the Reserved Qty. on Sales Orders field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1185,6 +1343,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                        "Serial No." = FIELD("Serial No. Filter"),
                                                                        "Posting Date" = FIELD("Date Filter")));
             Caption = 'Inventory';
+            ToolTip = 'Specifies the value of the Inventory field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1200,6 +1359,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                               "Location Code" = FIELD("Location Filter"),
                                                                               "Variant Code" = FIELD("Variant Filter")));
             Caption = 'Reserved Qty. on Inventory';
+            ToolTip = 'Specifies the value of the Reserved Qty. on Inventory field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1214,6 +1374,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                               "Variant Code" = FIELD("Variant Filter"),
                                                                               "Expected Receipt Date" = FIELD("Date Filter")));
             Caption = 'Reserved Qty. on Purch. Orders';
+            ToolTip = 'Specifies the value of the Reserved Qty. on Purch. Orders field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1228,6 +1389,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                                "Variant Code" = FIELD("Variant Filter"),
                                                                                "Shipment Date" = FIELD("Date Filter")));
             Caption = 'Reserved Qty. on Sales Orders';
+            ToolTip = 'Specifies the value of the Reserved Qty. on Sales Orders field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1242,6 +1404,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                                    "Shortcut Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
                                                                                    "Receipt Date" = FIELD("Date Filter")));
             Caption = 'Qty. in Transit';
+            ToolTip = 'Specifies the value of the Qty. in Transit field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1256,6 +1419,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                                     "Shortcut Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
                                                                                     "Receipt Date" = FIELD("Date Filter")));
             Caption = 'Trans. Ord. Receipt (Qty.)';
+            ToolTip = 'Specifies the value of the Trans. Ord. Receipt (Qty.) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1270,6 +1434,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                                     "Shortcut Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
                                                                                     "Shipment Date" = FIELD("Date Filter")));
             Caption = 'Trans. Ord. Shipment (Qty.)';
+            ToolTip = 'Specifies the value of the Trans. Ord. Shipment (Qty.) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1281,6 +1446,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                                               "Variant Code" = FIELD("Variant Filter"),
                                                                                               "Due Date" = FIELD("Date Filter")));
             Caption = 'Qty. Assigned to ship';
+            ToolTip = 'Specifies the value of the Qty. Assigned to ship field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1292,6 +1458,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                                          "Variant Code" = FIELD("Variant Filter"),
                                                                                          "Due Date" = FIELD("Date Filter")));
             Caption = 'Qty. Picked';
+            ToolTip = 'Specifies the value of the Qty. Picked field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1306,6 +1473,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                                      "Shortcut Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
                                                                                      "Receipt Date" = FIELD("Date Filter")));
             Caption = 'Qty. in Transit';
+            ToolTip = 'Specifies the value of the Qty. in Transit field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1320,6 +1488,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                                       "Shortcut Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
                                                                                       "Receipt Date" = FIELD("Date Filter")));
             Caption = 'Trans. Ord. Receipt (Qty.)';
+            ToolTip = 'Specifies the value of the Trans. Ord. Receipt (Qty.) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1334,6 +1503,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                                       "Shortcut Dimension 2 Code" = FIELD("Global Dimension 2 Filter"),
                                                                                       "Shipment Date" = FIELD("Date Filter")));
             Caption = 'Trans. Ord. Shipment (Qty.)';
+            ToolTip = 'Specifies the value of the Trans. Ord. Shipment (Qty.) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1345,6 +1515,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                                                 "Variant Code" = FIELD("Variant Filter"),
                                                                                                 "Due Date" = FIELD("Date Filter")));
             Caption = 'Qty. Assigned to ship';
+            ToolTip = 'Specifies the value of the Qty. Assigned to ship field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1356,6 +1527,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                                            "Variant Code" = FIELD("Variant Filter"),
                                                                                            "Due Date" = FIELD("Date Filter")));
             Caption = 'Qty. Picked';
+            ToolTip = 'Specifies the value of the Qty. Picked field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1367,6 +1539,7 @@ tableextension 50383 tableextension50383 extends Item
                                                            Type = CONST(Item),
                                                            "No." = FIELD("No.")));
             Caption = 'Cantidad Ln. factura venta';
+            ToolTip = 'Specifies the value of the Cantidad Ln. factura venta field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1374,6 +1547,7 @@ tableextension 50383 tableextension50383 extends Item
         field(50579; "Filtro factura"; Code[30])
         {
             Caption = 'Qty. Picked';
+            ToolTip = 'Specifies the value of the Qty. Picked field.';
             FieldClass = FlowFilter;
         }
         field(50580; "Importe factura"; Decimal)
@@ -1382,6 +1556,7 @@ tableextension 50383 tableextension50383 extends Item
                                                          Type = CONST(Item),
                                                          "No." = FIELD("No.")));
             Caption = 'Cantidad Ln. factura venta';
+            ToolTip = 'Specifies the value of the Cantidad Ln. factura venta field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1392,6 +1567,7 @@ tableextension 50383 tableextension50383 extends Item
                                                               Type = CONST(Item),
                                                               "No." = FIELD("No.")));
             Caption = 'KN Ln. factura venta';
+            ToolTip = 'Specifies the value of the KN Ln. factura venta field.';
             FieldClass = FlowField;
         }
         field(50582; "Cantidad línea fac. venta reg."; Decimal)
@@ -1400,6 +1576,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                    Type = CONST(Item),
                                                                    "No." = FIELD("No.")));
             Caption = 'Cantidad Ln. fac. venta reg.';
+            ToolTip = 'Specifies the value of the Cantidad Ln. fac. venta reg field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1410,6 +1587,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                       Type = CONST(Item),
                                                                       "No." = FIELD("No.")));
             Caption = 'KN Ln. factura venta reg.';
+            ToolTip = 'Specifies the value of the KN Ln. factura venta reg field.';
             FieldClass = FlowField;
         }
         field(50584; "Importe factura reg."; Decimal)
@@ -1418,21 +1596,27 @@ tableextension 50383 tableextension50383 extends Item
                                                                  Type = CONST(Item),
                                                                  "No." = FIELD("No.")));
             Caption = 'Importe factura reg.';
+            ToolTip = 'Specifies the value of the Importe factura reg field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
         }
         field(50585; "Exportación"; Boolean)
         {
+            Caption = 'Exportación';
+            ToolTip = 'Specifies the value of the Exportación field.';
         }
         field(50586; Captura; Boolean)
         {
+            Caption = 'Captura';
+            ToolTip = 'Specifies the value of the Captura field.';
         }
         field(50587; "Cantidad línea reparto venta"; Decimal)
         {
             CalcFormula = Sum("Lín. reparto"."Reservar - UMB" WHERE("No. Documento" = FIELD("Filtro factura"),
                                                                      "No. Producto" = FIELD("No.")));
             Caption = 'Cantidad Ln. reparto venta';
+            ToolTip = 'Specifies the value of the Cantidad Ln. reparto venta field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1444,16 +1628,21 @@ tableextension 50383 tableextension50383 extends Item
                                                            Type = CONST(Item),
                                                            "No." = FIELD("No.")));
             Caption = 'KN Ln. factura venta';
+            ToolTip = 'Specifies the value of the KN Ln. factura venta field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
         }
         field(50589; "Fecha cálculo FIFO"; Date)
         {
+            Caption = 'Fecha cálculo FIFO';
+            ToolTip = 'Specifies the value of the Fecha cálculo FIFO field.';
             DataClassification = ToBeClassified;
         }
         field(50590; "Pendientes en compras"; Decimal)
         {
+            Caption = 'Pendientes en compras';
+            ToolTip = 'Specifies the value of the Pendientes en compras field.';
             CalcFormula = Sum("Purchase Line"."Outstanding Quantity" WHERE("No." = FIELD("No.")));
             FieldClass = FlowField;
         }
@@ -1465,6 +1654,7 @@ tableextension 50383 tableextension50383 extends Item
                                                                         "Item Ledger Entry Type" = FIELD("Filtro tipo mov."),
                                                                         "Document No." = FIELD("Document No. Filter")));
             Caption = 'Cost Amount (Actual)';
+            ToolTip = 'Specifies the value of the Cost Amount (Actual) field.';
             Editable = false;
             FieldClass = FlowField;
         }
@@ -1475,50 +1665,70 @@ tableextension 50383 tableextension50383 extends Item
                                                         "Posting Date" = FIELD("Date Filter"),
                                                         "G/L Account No." = FIELD("Filtro cuenta")));
             Caption = 'Cost Amount (Actual)';
+            ToolTip = 'Specifies the value of the Cost Amount (Actual) field.';
             Editable = false;
             FieldClass = FlowField;
         }
         field(50599; "Con movimientos"; Boolean)
         {
+            Caption = 'Con movimientos';
+            ToolTip = 'Specifies the value of the Con movimientos field.';
             CalcFormula = Exist("Item Ledger Entry" WHERE("Item No." = FIELD("No.")));
             FieldClass = FlowField;
         }
         field(50600; "Descripcion minima"; Text[14])
         {
             Caption = 'Descripción mínima';
+            ToolTip = 'Specifies the value of the Descripción mínima field.';
             DataClassification = ToBeClassified;
         }
         field(50601; "Filtro cuenta"; Code[10])
         {
+            Caption = 'Filtro cuenta';
+            ToolTip = 'Specifies the value of the Filtro cuenta field.';
             FieldClass = FlowFilter;
             TableRelation = "G/L Account"."No." WHERE("Account Type" = FILTER(Posting));
         }
         field(50604; "Cantidad reservada"; Decimal)
         {
+            Caption = 'Cantidad reservada';
+            ToolTip = 'Specifies the value of the Cantidad reservada field.';
             FieldClass = Normal;
         }
         field(50700; "Tipo retención"; Code[10])
         {
+            Caption = 'Tipo retención';
+            ToolTip = 'Specifies the value of the Tipo retención field.';
         }
         field(50701; "Cód. retención IVA"; Code[20])
         {
+            Caption = 'Cód. retención IVA';
+            ToolTip = 'Specifies the value of the Cód. retención IVA field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = CONST(IVA));
         }
         field(50702; "Cód. retención SS"; Code[20])
         {
+            Caption = 'Cód. retención SS';
+            ToolTip = 'Specifies the value of the Cód. retención SS field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER("Ingresos Brutos"));
         }
         field(50703; "Cód. retención ganancias"; Code[20])
         {
+            Caption = 'Cód. retención ganancias';
+            ToolTip = 'Specifies the value of the Cód. retención ganancias field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER(Ganancias));
         }
         field(50704; "Cta. Compras"; Code[20])
         {
+            Caption = 'No.';
+            ToolTip = 'Specifies the value of the No field.';
             CalcFormula = Lookup("General Posting Setup"."Inventory Adjmt. Account" WHERE("Gen. Prod. Posting Group" = FIELD("Gen. Prod. Posting Group")));
             FieldClass = FlowField;
         }
         field(60000; "Tipo producto"; Option)
         {
+            Caption = 'Item type';
+            ToolTip = 'Specifies the value of the Item type field.';
             OptionMembers = Consumo,Pesca;
 
             trigger OnValidate()
@@ -1536,6 +1746,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(60001; Familia; Code[3])
         {
+            Caption = 'Family';
+            ToolTip = 'Specifies the value of the Family field.';
             Editable = false;
             TableRelation = "Familia producto";
 
@@ -1555,6 +1767,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(60002; Subfamilia; Code[20])
         {
+            Caption = 'Subfamily';
+            ToolTip = 'Specifies the value of the Subfamily field.';
             Editable = false;
             TableRelation = "Subfamilia producto".Code WHERE("Family code" = FIELD(Familia));
 
@@ -1574,6 +1788,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(60003; "Específico"; Code[20])
         {
+            Caption = 'Específico';
+            ToolTip = 'Specifies the value of the Específico field.';
 
             trigger OnValidate()
             begin
@@ -1587,6 +1803,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(60006; "Precio kilo tripulación"; Decimal)
         {
+            Caption = 'Precio kilo tripulación';
+            ToolTip = 'Specifies the value of the Precio kilo tripulación field.';
             AutoFormatType = 2;
             MinValue = 0;
 
@@ -1604,12 +1822,18 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(60007; "Porcentaje Max Min permitido N"; Decimal)
         {
+            Caption = 'Porcentaje Max Min permitido N';
+            ToolTip = 'Specifies the value of the Porcentaje Max Min permitido N field.';
         }
         field(60008; "Porcentaje Max Min permitido B"; Decimal)
         {
+            Caption = 'Porcentaje Max Min permitido B';
+            ToolTip = 'Specifies the value of the Porcentaje Max Min permitido B field.';
         }
         field(60009; "Familia origen"; Code[3])
         {
+            Caption = 'Familia origen';
+            ToolTip = 'Specifies the value of the Familia origen field.';
             TableRelation = "Familia producto";
 
             trigger OnValidate()
@@ -1628,6 +1852,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(60010; "Subfamilia origen"; Code[20])
         {
+            Caption = 'Subfamilia origen';
+            ToolTip = 'Specifies the value of the Subfamilia origen field.';
             TableRelation = "Subfamilia producto".Code WHERE("Family code" = FIELD("Familia origen"));
 
             trigger OnValidate()
@@ -1646,6 +1872,8 @@ tableextension 50383 tableextension50383 extends Item
         }
         field(60011; Rendimiento; Decimal)
         {
+            Caption = 'Rendimiento';
+            ToolTip = 'Specifies the value of the Rendimiento field.';
             DataClassification = ToBeClassified;
         }
     }

@@ -130,6 +130,7 @@ tableextension 50355 tableextension50355 extends "Source Code Setup"
         field(50000; "Inflation posting"; Code[10])
         {
             Caption = 'Registro inflación';
+            ToolTip = 'Specifies the value of the Registro inflación field.';
             DataClassification = ToBeClassified;
             TableRelation = "Source Code";
         }

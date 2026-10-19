@@ -82,10 +82,12 @@ tableextension 51081 tableextension51081 extends "Posted Whse. Shipment Line"
         field(50000; "Net kilos"; Decimal)
         {
             Caption = 'Net kilos';
+            ToolTip = 'Specifies the value of the Net kilos field.';
         }
         field(50001; "Gross kilos"; Decimal)
         {
             Caption = 'Gross kilos';
+            ToolTip = 'Specifies the value of the Gross kilos field.';
         }
     }
 

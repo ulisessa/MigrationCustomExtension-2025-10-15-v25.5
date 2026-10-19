@@ -442,6 +442,7 @@ tableextension 50345 tableextension50345 extends Vendor
         {
             CaptionClass = '1,2,3';
             Caption = 'Global Dimension 3 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 3 Code field.';
 
 
             trigger OnValidate()
@@ -451,6 +452,8 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
+            Caption = 'Global Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
 
@@ -461,6 +464,8 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
+            Caption = 'Global Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
 
@@ -471,6 +476,8 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50003; "Global Dimension 6 Code"; Code[10])
         {
+            Caption = 'Global Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
 
@@ -481,6 +488,8 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
+            Caption = 'Global Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
 
@@ -491,44 +500,60 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50005; "Global Dimension 3 filter"; Code[10])
         {
+            Caption = 'Global Dimension 3 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 3 filter field.';
             CaptionClass = '1,3,3';
             FieldClass = FlowFilter;
 
         }
         field(50006; "Global Dimension 4 filter"; Code[10])
         {
+            Caption = 'Global Dimension 4 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 4 filter field.';
             CaptionClass = '1,3,4';
             FieldClass = FlowFilter;
 
         }
         field(50007; "Global Dimension 5 filter"; Code[10])
         {
+            Caption = 'Global Dimension 5 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 5 filter field.';
             CaptionClass = '1,3,5';
             FieldClass = FlowFilter;
 
         }
         field(50008; "Global Dimension 6 filter"; Code[10])
         {
+            Caption = 'Global Dimension 6 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 6 filter field.';
             CaptionClass = '1,3,6';
             FieldClass = FlowFilter;
 
         }
         field(50009; "Global Dimension 7 filter"; Code[20])
         {
+            Caption = 'Global Dimension 7 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 7 filter field.';
             CaptionClass = '1,3,7';
             FieldClass = FlowFilter;
 
         }
         field(50010; "Cta. contrapartida proveedor"; Code[20])
         {
+            Caption = 'Cta. contrapartida proveedor';
+            ToolTip = 'Specifies the value of the Cta. contrapartida proveedor field.';
             TableRelation = "G/L Account"."No.";
         }
         field(50011; "Lugar de Pago"; Option)
         {
+            Caption = 'Lugar de Pago';
+            ToolTip = 'Specifies the value of the Lugar de Pago field.';
             OptionMembers = " ",BUE,CRV,PD,MDQ;
         }
         field(50012; "Concepto proyecto"; Code[10])
         {
+            Caption = 'Job concept';
+            ToolTip = 'Specifies the value of the Job concept field.';
             TableRelation = "Concepto proyecto";
             //This property is currently not supported
             //TestTableRelation = true;
@@ -536,32 +561,48 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50015; Test; Code[10])
         {
+            Caption = 'Test';
+            ToolTip = 'Specifies the value of the Test field.';
             DataClassification = ToBeClassified;
         }
         field(50019; "Tipo retención"; Code[10])
         {
+            Caption = 'Tipo retención';
+            ToolTip = 'Specifies the value of the Tipo retención field.';
         }
         field(50020; "Cód. retención IVA"; Code[20])
         {
+            Caption = 'Cód. retención IVA';
+            ToolTip = 'Specifies the value of the Cód. retención IVA field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = CONST(IVA));
         }
         field(50021; "Cód. retención SS"; Code[20])
         {
+            Caption = 'Cód. retención SS';
+            ToolTip = 'Specifies the value of the Cód. retención SS field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER("Seguridad Social"));
         }
         field(50022; "Cód. retención ganancias"; Code[20])
         {
+            Caption = 'Cód. retención ganancias';
+            ToolTip = 'Specifies the value of the Cód. retención ganancias field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER(Ganancias));
         }
         field(50023; "Cód. retención IIBB"; Code[20])
         {
+            Caption = 'Cód. retención IIBB';
+            ToolTip = 'Specifies the value of the Cód. retención IIBB field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER("Ingresos Brutos"));
         }
         field(50112; "Código Antiguo Proveedor"; Code[9])
         {
+            Caption = 'Código Antiguo Proveedor';
+            ToolTip = 'Specifies the value of the Código Antiguo Proveedor field.';
         }
         field(50200; "% retención s/base imponible"; Decimal)
         {
+            Caption = '% retención s/base imponible';
+            ToolTip = 'Specifies the value of the % retención s/base imponible field.';
             MaxValue = 100;
             MinValue = 0;
 
@@ -572,6 +613,8 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50201; "% retención s/total factura"; Decimal)
         {
+            Caption = '% retención s/total factura';
+            ToolTip = 'Specifies the value of the % retención s/total factura field.';
             MaxValue = 100;
             MinValue = 0;
 
@@ -582,20 +625,28 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50202; "Unidades comprados por prov."; Decimal)
         {
+            Caption = 'Unidades comprados por prov.';
+            ToolTip = 'Specifies the value of the Unidades comprados por prov field.';
             CalcFormula = Sum("Item Ledger Entry"."Invoiced Quantity" WHERE("Entry Type" = CONST(Purchase)));
             Editable = false;
             FieldClass = FlowField;
         }
         field(50500; "Grupo contable producto"; Code[10])
         {
+            Caption = 'Grupo contable producto';
+            ToolTip = 'Specifies the value of the Grupo contable producto field.';
             TableRelation = "Gen. Product Posting Group";
         }
         field(50501; "Grupo registro IVA prod."; Code[10])
         {
+            Caption = 'VAT Prod. Posting Group';
+            ToolTip = 'Specifies the value of the VAT Prod. Posting Group field.';
             TableRelation = "VAT Product Posting Group";
         }
         field(50502; "Saldo USD"; Decimal)
         {
+            Caption = 'Saldo USD';
+            ToolTip = 'Specifies the value of the Saldo USD field.';
             AutoFormatType = 1;
             CalcFormula = - Sum("Detailed Vendor Ledg. Entry".Amount WHERE("Vendor No." = FIELD("No."),
                                                                            "Currency Code" = FILTER('USD'),
@@ -605,6 +656,8 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50503; "Saldo Pesos"; Decimal)
         {
+            Caption = 'Saldo Pesos';
+            ToolTip = 'Specifies the value of the Saldo Pesos field.';
             AutoFormatType = 1;
             CalcFormula = - Sum("Detailed Vendor Ledg. Entry".Amount WHERE("Vendor No." = FIELD("No."),
                                                                            "Currency Code" = FILTER(''),
@@ -614,6 +667,8 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50504; "Saldo Euros"; Decimal)
         {
+            Caption = 'Saldo Euros';
+            ToolTip = 'Specifies the value of the Saldo Euros field.';
             AutoFormatType = 1;
             CalcFormula = - Sum("Detailed Vendor Ledg. Entry".Amount WHERE("Vendor No." = FIELD("No."),
                                                                            "Currency Code" = FILTER('EUR'),
@@ -623,22 +678,34 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50505; "Estado de situación fiscal"; Code[10])
         {
+            Caption = 'Estado de situación fiscal';
+            ToolTip = 'Specifies the value of the Estado de situación fiscal field.';
             TableRelation = "Acción estado sit. fiscal";
         }
         field(50506; "Fecha consulta Reproweb"; Date)
         {
+            Caption = 'Fecha consulta Reproweb';
+            ToolTip = 'Specifies the value of the Fecha consulta Reproweb field.';
         }
         field(50507; "Exento retención IVA"; Boolean)
         {
+            Caption = 'Exento retención IVA';
+            ToolTip = 'Specifies the value of the Exento retención IVA field.';
         }
         field(50508; "Exento ganancias"; Boolean)
         {
+            Caption = 'Exento ganancias';
+            ToolTip = 'Specifies the value of the Exento ganancias field.';
         }
         field(50509; "Agente retención IB"; Boolean)
         {
+            Caption = 'Agente retención IB';
+            ToolTip = 'Specifies the value of the Agente retención IB field.';
         }
         field(50510; "Fecha vencimiento CAI"; Date)
         {
+            Caption = 'Fecha vencimiento CAI';
+            ToolTip = 'Specifies the value of the Fecha vencimiento CAI field.';
 
             trigger OnValidate()
             begin
@@ -657,52 +724,82 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50511; Empleador; Boolean)
         {
+            Caption = 'Empleador';
+            ToolTip = 'Specifies the value of the Empleador field.';
         }
         field(50512; "Imp Ganancias"; Text[2])
         {
+            Caption = 'Imp Ganancias';
+            ToolTip = 'Specifies the value of the Imp Ganancias field.';
         }
         field(50513; "Imp IVA"; Text[2])
         {
+            Caption = 'Imp IVA';
+            ToolTip = 'Specifies the value of the Imp IVA field.';
         }
         field(50514; Monotributo; Text[2])
         {
+            Caption = 'Monotributo';
+            ToolTip = 'Specifies the value of the Monotributo field.';
         }
         field(50515; "Integrante Soc"; Boolean)
         {
+            Caption = 'Integrante Soc';
+            ToolTip = 'Specifies the value of the Integrante Soc field.';
         }
         field(50516; "Fecha Consulta"; Date)
         {
+            Caption = 'Fecha Consulta';
+            ToolTip = 'Specifies the value of the Fecha Consulta field.';
 
         }
         field(50517; "Sin Autorizacion Pago"; Boolean)
         {
+            Caption = 'Sin Autorizacion Pago';
+            ToolTip = 'Specifies the value of the Sin Autorizacion Pago field.';
             InitValue = true;
         }
         field(50518; "Ticket factura"; Boolean)
         {
+            Caption = 'Ticket factura';
+            ToolTip = 'Specifies the value of the Ticket factura field.';
         }
         field(50519; "Proveedor SP"; Boolean)
         {
+            Caption = 'Proveedor SP';
+            ToolTip = 'Specifies the value of the Proveedor SP field.';
         }
         field(50520; Otros; Boolean)
         {
+            Caption = 'Otros';
+            ToolTip = 'Specifies the value of the Otros field.';
         }
         field(50521; "No.CAI"; Code[14])
         {
+            Caption = 'No.CAI';
+            ToolTip = 'Specifies the value of the No.CAI field.';
         }
         field(50522; "Lleva CAI"; Boolean)
         {
+            Caption = 'Lleva CAI';
+            ToolTip = 'Specifies the value of the Lleva CAI field.';
         }
         field(50523; "Comprobar No.factura proveedor"; Boolean)
         {
+            Caption = 'Comprobar No.factura proveedor';
+            ToolTip = 'Specifies the value of the Comprobar No.factura proveedor field.';
             InitValue = true;
 
         }
         field(50524; "Exento retención SS"; Boolean)
         {
+            Caption = 'Exento retención SS';
+            ToolTip = 'Specifies the value of the Exento retención SS field.';
         }
         field(50525; "Saldo Todo Pesos"; Decimal)
         {
+            Caption = 'Saldo Todo Pesos';
+            ToolTip = 'Specifies the value of the Saldo Todo Pesos field.';
             AutoFormatType = 1;
             CalcFormula = - Sum("Detailed Vendor Ledg. Entry"."Amount (LCY)" WHERE("Vendor No." = FIELD("No."),
                                                                                    "Posting Date" = FIELD("Date Filter")));
@@ -711,14 +808,20 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50526; "Admite factura directa"; Boolean)
         {
+            Caption = 'Admite factura directa';
+            ToolTip = 'Specifies the value of the Admite factura directa field.';
 
         }
         field(50527; "Fecha demora envío"; Code[10])
         {
+            Caption = 'Fecha demora envío';
+            ToolTip = 'Specifies the value of the Fecha demora envío field.';
             DateFormula = true;
         }
         field(50528; "Saldo Yenes"; Decimal)
         {
+            Caption = 'Saldo Yenes';
+            ToolTip = 'Specifies the value of the Saldo Yenes field.';
             AutoFormatType = 1;
             CalcFormula = - Sum("Detailed Vendor Ledg. Entry".Amount WHERE("Vendor No." = FIELD("No."),
                                                                            "Currency Code" = FILTER('YEN'),
@@ -728,6 +831,8 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50529; "Saldo doc. prov. (DL)"; Decimal)
         {
+            Caption = 'Saldo doc. prov. (DL)';
+            ToolTip = 'Specifies the value of the Saldo doc. prov. (DL) field.';
             CalcFormula = - Sum("Detailed Vendor Ledg. Entry".Amount WHERE("Vendor No." = FIELD("No."),
                                                                            "Currency Code" = FILTER('EUR'),
                                                                            "Posting Date" = FIELD("Date Filter")));
@@ -735,80 +840,117 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50530; "Filtro tipo documento"; Option)
         {
+            Caption = 'Filtro tipo documento';
+            ToolTip = 'Specifies the value of the Filtro tipo documento field.';
             FieldClass = FlowFilter;
             OptionMembers = " ",Pago,Factura,"Nota d/c","Docs.interés",Recordatorio,Efecto,,,,,"Retención","Pagaré","Anulacíon pagaré",Suplido;
         }
         field(50531; "Importe operaciones a fecha"; Decimal)
         {
+            Caption = 'Importe operaciones a fecha';
+            ToolTip = 'Specifies the value of the Importe operaciones a fecha field.';
             CalcFormula = - Sum("Detailed Vendor Ledg. Entry"."Amount (LCY)" WHERE("Vendor No." = FIELD("No."),
                                                                                    "Posting Date" = FIELD("Date Filter")));
             FieldClass = FlowField;
         }
         field(50532; "Agente retención IVA"; Boolean)
         {
+            Caption = 'Agente retención IVA';
+            ToolTip = 'Specifies the value of the Agente retención IVA field.';
         }
         field(50533; "Registrado RG3594"; Option)
         {
+            Caption = 'Registrado RG3594';
+            ToolTip = 'Specifies the value of the Registrado RG3594 field.';
             OptionMembers = " ",Activo,Suspendido,Excluido,"Inscripción cancelada";
         }
         field(50534; "Documentos digitalizados"; Integer)
         {
+            Caption = 'Documentos digitalizados';
+            ToolTip = 'Specifies the value of the Documentos digitalizados field.';
             CalcFormula = Count("Documentos digitalizados" WHERE("Nivel 4" = FIELD("No.")));
             FieldClass = FlowField;
         }
         field(50535; "Tipo autorizacion"; Option)
         {
+            Caption = 'Tipo autorizacion';
+            ToolTip = 'Specifies the value of the Tipo autorizacion field.';
             OptionMembers = " ",CAE,CAEA,CAI;
         }
         field(50536; "Fecha digitalizacion IIBB"; Date)
         {
+            Caption = 'Fecha digitalizacion IIBB';
+            ToolTip = 'Specifies the value of the Fecha digitalizacion IIBB field.';
 
         }
         field(50537; "Documentacion IIBB verificada"; Boolean)
         {
+            Caption = 'Documentacion IIBB verificada';
+            ToolTip = 'Specifies the value of the Documentacion IIBB verificada field.';
 
         }
         field(50538; "Inscripto IIBB"; Option)
         {
+            Caption = 'Inscripto IIBB';
+            ToolTip = 'Specifies the value of the Inscripto IIBB field.';
             OptionMembers = " ","Sí","No retención";
 
         }
         field(50539; "GI Inscription type"; Code[1])
         {
             Caption = 'Tipo inscripción IIBB';
+            ToolTip = 'Specifies the value of the Tipo inscripción IIBB field.';
 
         }
         field(50540; "Omitir validación WS-AFIP"; Boolean)
         {
+            Caption = 'Omitir validación WS-AFIP';
+            ToolTip = 'Specifies the value of the Omitir validación WS-AFIP field.';
             InitValue = false;
 
         }
         field(50550; Pendiente; Boolean)
         {
+            Caption = 'Pendiente';
+            ToolTip = 'Specifies the value of the Pendiente field.';
             CalcFormula = Exist("Vendor Ledger Entry" WHERE(Open = CONST(true),
                                                              "Vendor No." = FIELD("No.")));
             FieldClass = FlowField;
         }
         field(50551; "Exento ganancias 3594"; Boolean)
         {
+            Caption = 'Exento ganancias 3594';
+            ToolTip = 'Specifies the value of the Exento ganancias 3594 field.';
         }
         field(50700; "No. resolucion IVA"; Code[20])
         {
+            Caption = 'No. resolucion IVA';
+            ToolTip = 'Specifies the value of the No. resolucion IVA field.';
         }
         field(50701; "No. ingresos brutos"; Code[20])
         {
+            Caption = 'No. ingresos brutos';
+            ToolTip = 'Specifies the value of the No. ingresos brutos field.';
         }
         field(50702; "Base retenciones"; Decimal)
         {
+            Caption = 'Base retenciones';
+            ToolTip = 'Specifies the value of the Base retenciones field.';
         }
         field(50703; "Fitro tipo retención"; Code[10])
         {
+            Caption = 'Fitro tipo retención';
+            ToolTip = 'Specifies the value of the Fitro tipo retención field.';
         }
         field(50704; DigitoDeControl; Integer)
         {
+            Caption = 'DigitoDeControl';
+            ToolTip = 'Specifies the value of the DigitoDeControl field.';
         }
         field(50705; "Tipo Fiscal"; Code[10])
         {
+            Caption = 'Fiscal Type';
+            ToolTip = 'Specifies the value of the Fiscal Type field.';
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('TIPO FISCAL'));
             ObsoleteTag = '12/2025';
             ObsoleteState = Pending;
@@ -816,71 +958,103 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(50706; "Cód. Provincia"; Code[10])
         {
+            Caption = 'County Code';
+            ToolTip = 'Specifies the value of the County Code field.';
             TableRelation = Area;
         }
         field(50707; "Proveedor tipo gasto"; Boolean)
         {
+            Caption = 'Proveedor tipo gasto';
+            ToolTip = 'Specifies the value of the Proveedor tipo gasto field.';
         }
         field(50708; "Cheque a la orden de"; Text[50])
         {
+            Caption = 'Cheque a la orden de';
+            ToolTip = 'Specifies the value of the Cheque a la orden de field.';
         }
         field(50709; "Tipo persona"; Option)
         {
+            Caption = 'Tipo persona';
+            ToolTip = 'Specifies the value of the Tipo persona field.';
             DataClassification = ToBeClassified;
             OptionCaption = ' ,Fisica,Juridica';
             OptionMembers = " ",Fisica,Juridica;
         }
         field(50710; "Tipo Clave"; Option)
         {
+            Caption = 'Tipo Clave';
+            ToolTip = 'Specifies the value of the Tipo Clave field.';
             DataClassification = ToBeClassified;
             OptionMembers = ,CUIT,CUIL,CDI;
         }
         field(50711; "Estado Clave"; Option)
         {
+            Caption = 'Estado Clave';
+            ToolTip = 'Specifies the value of the Estado Clave field.';
             DataClassification = ToBeClassified;
             OptionMembers = ,Activo,Inactivo;
         }
         field(50712; "Tipo Regimen"; Text[30])
         {
+            Caption = 'Tipo Regimen';
+            ToolTip = 'Specifies the value of the Tipo Regimen field.';
             DataClassification = ToBeClassified;
         }
         field(50713; "Tipo Domicilio"; Option)
         {
+            Caption = 'Tipo Domicilio';
+            ToolTip = 'Specifies the value of the Tipo Domicilio field.';
             DataClassification = ToBeClassified;
             OptionMembers = ,FISCAL,"LEGAL/REAL";
         }
         field(50714; "Tipo Dato Adicional"; Text[30])
         {
+            Caption = 'Tipo Dato Adicional';
+            ToolTip = 'Specifies the value of the Tipo Dato Adicional field.';
             DataClassification = ToBeClassified;
         }
         field(50715; "Mes Cierre"; Integer)
         {
+            Caption = 'Mes Cierre';
+            ToolTip = 'Specifies the value of the Mes Cierre field.';
             DataClassification = ToBeClassified;
         }
         field(50716; "Fecha contrato social"; Date)
         {
+            Caption = 'Fecha contrato social';
+            ToolTip = 'Specifies the value of the Fecha contrato social field.';
             DataClassification = ToBeClassified;
         }
         field(50717; Dependencia; Text[30])
         {
+            Caption = 'Dependencia';
+            ToolTip = 'Specifies the value of the Dependencia field.';
             DataClassification = ToBeClassified;
         }
         field(50718; "Domicilio Fiscal"; Text[50])
         {
+            Caption = 'Domicilio Fiscal';
+            ToolTip = 'Specifies the value of the Domicilio Fiscal field.';
             DataClassification = ToBeClassified;
         }
         field(60000; "Es cliente"; Boolean)
         {
+            Caption = 'Es cliente';
+            ToolTip = 'Specifies the value of the Es cliente field.';
             CalcFormula = Exist(Customer WHERE("VAT Registration No." = FIELD("VAT Registration No.")));
             Editable = false;
             FieldClass = FlowField;
         }
         field(60001; "Filtro forma de pago"; Code[10])
         {
+            Caption = 'Filtro forma de pago';
+            ToolTip = 'Specifies the value of the Filtro forma de pago field.';
             FieldClass = FlowFilter;
         }
         field(60002; "Proveedor genérico"; Boolean)
         {
+            Caption = 'Proveedor genérico';
+            ToolTip = 'Specifies the value of the Proveedor genérico field.';
 
             trigger OnValidate()
             begin
@@ -890,14 +1064,20 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(60003; "Cód. especialidad"; Code[10])
         {
+            Caption = 'Cód. especialidad';
+            ToolTip = 'Specifies the value of the Cód. especialidad field.';
             TableRelation = "Imputación directa por grupo";
         }
         field(70050; "No. banco pago"; Code[20])
         {
+            Caption = 'No. banco pago';
+            ToolTip = 'Specifies the value of the No. banco pago field.';
             TableRelation = "Bank Account";
         }
         field(80000; "Crear Ln. de factura aut."; Boolean)
         {
+            Caption = 'Crear Ln. de factura aut.';
+            ToolTip = 'Specifies the value of the Crear Ln. de factura aut field.';
 
             trigger OnValidate()
             begin
@@ -907,6 +1087,8 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(80001; "Cta. compras"; Code[20])
         {
+            Caption = 'No.';
+            ToolTip = 'Specifies the value of the No field.';
             TableRelation = "G/L Account"."No.";
 
             trigger OnValidate()
@@ -916,12 +1098,18 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(90000; "Entidad Pago"; Text[50])
         {
+            Caption = 'Entidad Pago';
+            ToolTip = 'Specifies the value of the Entidad Pago field.';
         }
         field(90001; "Dirección Ent. de Pago"; Text[100])
         {
+            Caption = 'Dirección Ent. de Pago';
+            ToolTip = 'Specifies the value of the Dirección Ent. de Pago field.';
         }
         field(90002; "C.P. Entidad de Pago"; Code[15])
         {
+            Caption = 'C.P. Entidad de Pago';
+            ToolTip = 'Specifies the value of the C.P. Entidad de Pago field.';
             TableRelation = "G/L Account"."No.";
             //This property is currently not supported
             //TestTableRelation = false;
@@ -929,28 +1117,44 @@ tableextension 50345 tableextension50345 extends Vendor
         }
         field(90003; "Ciudad de Entidad de Pago"; Text[25])
         {
+            Caption = 'Ciudad de Entidad de Pago';
+            ToolTip = 'Specifies the value of the Ciudad de Entidad de Pago field.';
         }
         field(90004; "País de Entidad de Pago"; Code[25])
         {
+            Caption = 'País de Entidad de Pago';
+            ToolTip = 'Specifies the value of the País de Entidad de Pago field.';
             TableRelation = "Country/Region";
         }
         field(90005; "Cód. Entidad de Pago"; Text[15])
         {
+            Caption = 'Cód. Entidad de Pago';
+            ToolTip = 'Specifies the value of the Cód. Entidad de Pago field.';
         }
         field(90006; "Cód. Sucursal de Pago"; Text[15])
         {
+            Caption = 'Cód. Sucursal de Pago';
+            ToolTip = 'Specifies the value of the Cód. Sucursal de Pago field.';
         }
         field(90007; "Cód. Cuenta de Pago"; Text[25])
         {
+            Caption = 'Cód. Cuenta de Pago';
+            ToolTip = 'Specifies the value of the Cód. Cuenta de Pago field.';
         }
         field(90008; "Swift address"; Text[15])
         {
+            Caption = 'Swift address';
+            ToolTip = 'Specifies the value of the Swift address field.';
         }
         field(90009; "ABA Code"; Text[15])
         {
+            Caption = 'ABA Code';
+            ToolTip = 'Specifies the value of the ABA Code field.';
         }
         field(90010; "Cód. Arancel?rio"; Text[15])
         {
+            Caption = 'Cód. Arancel?rio';
+            ToolTip = 'Specifies the value of the Cód. Arancel?rio field.';
         }
     }
 

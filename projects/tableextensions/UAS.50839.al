@@ -169,6 +169,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50010; "Net kilos"; Decimal)
         {
             Caption = 'Net kilos';
+            ToolTip = 'Specifies the value of the Net kilos field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -176,6 +177,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50011; "Gross kilos"; Decimal)
         {
             Caption = 'Gross kilos';
+            ToolTip = 'Specifies the value of the Gross kilos field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -183,6 +185,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50012; "Net kilos to Ship"; Decimal)
         {
             Caption = 'Net kilos to Ship';
+            ToolTip = 'Specifies the value of the Net kilos to Ship field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -190,6 +193,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50013; "Gross kilos to Ship"; Decimal)
         {
             Caption = 'Gross kilos to Ship';
+            ToolTip = 'Specifies the value of the Gross kilos to Ship field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -197,6 +201,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50014; "Net kilos to Receive"; Decimal)
         {
             Caption = 'Net kilos to Receive';
+            ToolTip = 'Specifies the value of the Net kilos to Receive field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -204,6 +209,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50015; "Gross kilos to Receive"; Decimal)
         {
             Caption = 'Gross kilos to Receive';
+            ToolTip = 'Specifies the value of the Gross kilos to Receive field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -211,6 +217,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50016; "Net kilos Shipped"; Decimal)
         {
             Caption = 'Net kilos Shipped';
+            ToolTip = 'Specifies the value of the Net kilos Shipped field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -226,6 +233,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50017; "Gross kilos Shipped"; Decimal)
         {
             Caption = 'Gross kilos Shipped';
+            ToolTip = 'Specifies the value of the Gross kilos Shipped field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -241,6 +249,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50018; "Net kilos Received"; Decimal)
         {
             Caption = 'Net kilos Received';
+            ToolTip = 'Specifies the value of the Net kilos Received field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -255,6 +264,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50019; "Gross kilos Received"; Decimal)
         {
             Caption = 'Gross kilos Received';
+            ToolTip = 'Specifies the value of the Gross kilos Received field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -269,6 +279,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50020; "Net kilos (Base)"; Decimal)
         {
             Caption = 'Net kilos (Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -283,6 +294,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50021; "Gross kilos (Base)"; Decimal)
         {
             Caption = 'Gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -297,18 +309,21 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50022; "Outstanding net kilos (Base)"; Decimal)
         {
             Caption = 'Outstanding net kilos (Base)';
+            ToolTip = 'Specifies the value of the Outstanding net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50023; "Outstanding gross kilos (Base)"; Decimal)
         {
             Caption = 'Outstanding gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Outstanding gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50024; "Net kilos to Ship (Base)"; Decimal)
         {
             Caption = 'Net kilos to Ship (Base)';
+            ToolTip = 'Specifies the value of the Net kilos to Ship (Base) field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -321,6 +336,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50025; "Gross kilos to Ship (Base)"; Decimal)
         {
             Caption = 'Gross kilos to Ship (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos to Ship (Base) field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -333,18 +349,21 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50026; "Net kilos Shipped (Base)"; Decimal)
         {
             Caption = 'Net kilos Shipped (Base)';
+            ToolTip = 'Specifies the value of the Net kilos Shipped (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50027; "Gross kilos Shipped (Base)"; Decimal)
         {
             Caption = 'Gross kilos Shipped (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos Shipped (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50028; "Net kilos to Receive (Base)"; Decimal)
         {
             Caption = 'Net kilos to Receive (Base)';
+            ToolTip = 'Specifies the value of the Net kilos to Receive (Base) field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -357,6 +376,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50029; "Gross kilos to Receive (Base)"; Decimal)
         {
             Caption = 'Gross kilos to Receive (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos to Receive (Base) field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -369,48 +389,56 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         field(50030; "Net kilos Received (Base)"; Decimal)
         {
             Caption = 'Net kilos Received (Base)';
+            ToolTip = 'Specifies the value of the Net kilos Received (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50031; "Gross kilos Received (Base)"; Decimal)
         {
             Caption = 'Gross kilos Received (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos Received (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50032; "Outstanding net kilos"; Decimal)
         {
             Caption = 'Outstanding net kilos';
+            ToolTip = 'Specifies the value of the Outstanding net kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50033; "Outstanding gross kilos"; Decimal)
         {
             Caption = 'Outstanding gross kilos';
+            ToolTip = 'Specifies the value of the Outstanding gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50034; "Net kilos in Transit"; Decimal)
         {
             Caption = 'Net kilos in Transit';
+            ToolTip = 'Specifies the value of the Net kilos in Transit field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50035; "Gross kilos in Transit"; Decimal)
         {
             Caption = 'Gross kilos in Transit';
+            ToolTip = 'Specifies the value of the Gross kilos in Transit field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50036; "Net kilos in Transit (Base)"; Decimal)
         {
             Caption = 'Net kilos in Transit (Base)';
+            ToolTip = 'Specifies the value of the Net kilos in Transit (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50037; "Gross kilos in Transit (Base)"; Decimal)
         {
             Caption = 'Gross kilos in Transit (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos in Transit (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
@@ -423,6 +451,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
                                                                      "Source Prod. Order Line" = FIELD("Derived From Line No."),
                                                                      "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved net kilos Inbnd.';
+            ToolTip = 'Specifies the value of the Reserved net kilos Inbnd field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -436,6 +465,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
                                                                        "Source Prod. Order Line" = FIELD("Derived From Line No."),
                                                                        "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved gross kilos Inbnd.';
+            ToolTip = 'Specifies the value of the Reserved gross kilos Inbnd field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -449,6 +479,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
                                                                       "Source Prod. Order Line" = FIELD("Derived From Line No."),
                                                                       "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved net kilos Outbnd.';
+            ToolTip = 'Specifies the value of the Reserved net kilos Outbnd field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -462,6 +493,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
                                                                         "Source Prod. Order Line" = FIELD("Derived From Line No."),
                                                                         "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved gross kilos Outbnd.';
+            ToolTip = 'Specifies the value of the Reserved gross kilos Outbnd field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -475,6 +507,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
                                                                             "Source Prod. Order Line" = FIELD("Derived From Line No."),
                                                                             "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved net kilos Inbnd. (Base)';
+            ToolTip = 'Specifies the value of the Reserved net kilos Inbnd. (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -488,6 +521,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
                                                                               "Source Prod. Order Line" = FIELD("Derived From Line No."),
                                                                               "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved gross kilos Inbnd. (Base)';
+            ToolTip = 'Specifies the value of the Reserved gross kilos Inbnd. (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -501,6 +535,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
                                                                              "Source Prod. Order Line" = FIELD("Derived From Line No."),
                                                                              "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved net kilos Outbnd. (Base)';
+            ToolTip = 'Specifies the value of the Reserved net kilos Outbnd. (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -514,6 +549,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
                                                                                "Source Prod. Order Line" = FIELD("Derived From Line No."),
                                                                                "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved gross kilos Outbnd. (Base)';
+            ToolTip = 'Specifies the value of the Reserved gross kilos Outbnd. (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -527,6 +563,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
                                                                      "Source Prod. Order Line" = FIELD("Line No."),
                                                                      "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved net kilos Shipped';
+            ToolTip = 'Specifies the value of the Reserved net kilos Shipped field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -540,6 +577,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
                                                                        "Source Prod. Order Line" = FIELD("Line No."),
                                                                        "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved gross kilos Shipped';
+            ToolTip = 'Specifies the value of the Reserved gross kilos Shipped field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -553,6 +591,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
                                                                             "Source Prod. Order Line" = FIELD("Line No."),
                                                                             "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved net kilos Shipped (Base)';
+            ToolTip = 'Specifies the value of the Reserved net kilos Shipped (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -566,6 +605,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
                                                                               "Source Prod. Order Line" = FIELD("Line No."),
                                                                               "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved gross kilos Shipped (Base)';
+            ToolTip = 'Specifies the value of the Reserved gross kilos Shipped (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -574,6 +614,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         {
             BlankZero = true;
             Caption = 'Whse. Inbnd. Otsdg. Net kilos (Base)';
+            ToolTip = 'Specifies the value of the Whse. Inbnd. Otsdg. Net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
@@ -581,6 +622,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         {
             BlankZero = true;
             Caption = 'Whse. Inbnd. Otsdg. Gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Whse. Inbnd. Otsdg. Gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
@@ -588,6 +630,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         {
             BlankZero = true;
             Caption = 'Whse Outbnd. Otsdg. Net kilos (Base)';
+            ToolTip = 'Specifies the value of the Whse Outbnd. Otsdg. Net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
@@ -595,6 +638,7 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         {
             BlankZero = true;
             Caption = 'Whse Outbnd. Otsdg. Gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Whse Outbnd. Otsdg. Gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
@@ -602,30 +646,35 @@ tableextension 50839 tableextension50839 extends "Transfer Line"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
         }
         field(50504; "Shortcut Dimension 4 Code"; Code[20])
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
         }
         field(50505; "Shortcut Dimension 5 Code"; Code[20])
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
         }
         field(50506; "Shortcut Dimension 6 Code"; Code[20])
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
         }
         field(50507; "Shortcut Dimension 7 Code"; Code[20])
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
         }
     }

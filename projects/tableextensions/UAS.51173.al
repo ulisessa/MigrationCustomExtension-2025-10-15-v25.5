@@ -722,10 +722,14 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         //end;
         field(50010; "No. Pallet"; Code[20])
         {
+            Caption = 'Pallet no.';
+            ToolTip = 'Specifies the value of the Pallet no field.';
 
         }
         field(50011; "No. Proyecto"; Code[20])
         {
+            Caption = 'Job No.';
+            ToolTip = 'Specifies the value of the Job No field.';
             TableRelation = Job."No.";
 
             trigger OnValidate()
@@ -767,6 +771,8 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         }
         field(50012; "No. Proyecto destino"; Code[20])
         {
+            Caption = 'Destination job no.';
+            ToolTip = 'Specifies the value of the Destination job no field.';
             TableRelation = Job."No.";
 
             trigger OnValidate()
@@ -792,6 +798,8 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         }
         field(50013; "Gross kilos"; Decimal)
         {
+            Caption = 'Gross kilos';
+            ToolTip = 'Specifies the value of the Gross kilos field.';
 
             trigger OnValidate()
             begin
@@ -821,6 +829,8 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         }
         field(50014; "Net kilos"; Decimal)
         {
+            Caption = 'Net kilos';
+            ToolTip = 'Specifies the value of the Net kilos field.';
 
             trigger OnValidate()
             begin
@@ -852,114 +862,169 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         }
         field(50015; "% Precio kilo"; Decimal)
         {
+            Caption = '% price per kilo';
+            ToolTip = 'Specifies the value of the % price per kilo field.';
         }
         field(50016; "Nuevo No. Pallet"; Code[10])
         {
+            Caption = 'Nuevo No. Pallet';
+            ToolTip = 'Specifies the value of the Nuevo No. Pallet field.';
 
         }
         field(50017; "Kilos brutos destino"; Decimal)
         {
+            Caption = 'Kilos brutos destino';
+            ToolTip = 'Specifies the value of the Kilos brutos destino field.';
         }
         field(50018; Familia; Code[3])
         {
+            Caption = 'Family';
+            ToolTip = 'Specifies the value of the Family field.';
             TableRelation = "Familia producto";
         }
         field(50019; Subfamilia; Code[20])
         {
+            Caption = 'Subfamily';
+            ToolTip = 'Specifies the value of the Subfamily field.';
             TableRelation = "Subfamilia producto";
         }
         field(50020; "Kilos netos destino"; Decimal)
         {
+            Caption = 'Kilos netos destino';
+            ToolTip = 'Specifies the value of the Kilos netos destino field.';
         }
         field(50021; "Tipo producto"; Option)
         {
+            Caption = 'Item type';
+            ToolTip = 'Specifies the value of the Item type field.';
             OptionMembers = Consumo,Pesca;
         }
         field(50022; "No. Cab. Solicitud"; Code[30])
         {
+            Caption = 'Request header no.';
+            ToolTip = 'Specifies the value of the Request header no field.';
         }
         field(50023; "No. Linea Solicitud"; Integer)
         {
+            Caption = 'No. Linea Solicitud';
+            ToolTip = 'Specifies the value of the No. Linea Solicitud field.';
         }
         field(50024; "Net Kilos Invoiced"; Decimal)
         {
+            Caption = 'Net Kilos Invoiced';
+            ToolTip = 'Specifies the value of the Net Kilos Invoiced field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50025; "Net kilos (Base)"; Decimal)
         {
+            Caption = 'Net kilos (Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50026; "Net Kilos Invoiced (Base)"; Decimal)
         {
+            Caption = 'Net Kilos Invoiced (Base)';
+            ToolTip = 'Specifies the value of the Net Kilos Invoiced (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50027; "Gross kilos Invoiced"; Decimal)
         {
+            Caption = 'Gross kilos Invoiced';
+            ToolTip = 'Specifies the value of the Gross kilos Invoiced field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50028; "Gross kilos (Base)"; Decimal)
         {
+            Caption = 'Gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50029; "Gross kilos Invoiced (Base)"; Decimal)
         {
+            Caption = 'Gross kilos Invoiced (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos Invoiced (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50030; "Fecha Produccion"; Date)
         {
+            Caption = 'Fecha Produccion';
+            ToolTip = 'Specifies the value of the Fecha Produccion field.';
         }
         field(50031; "Buque Tercero"; Code[3])
         {
+            Caption = 'Buque Tercero';
+            ToolTip = 'Specifies the value of the Buque Tercero field.';
         }
         field(50032; "Marea Tercero"; Code[7])
         {
+            Caption = 'Marea Tercero';
+            ToolTip = 'Specifies the value of the Marea Tercero field.';
         }
         field(50033; "Transporte matrícula"; Code[10])
         {
+            Caption = 'Transport registration';
+            ToolTip = 'Specifies the value of the Transport registration field.';
         }
         field(50034; Temperatura; Decimal)
         {
+            Caption = 'Temperature';
+            ToolTip = 'Specifies the value of the Temperature field.';
         }
         field(50035; "Hora de ingreso"; Time)
         {
+            Caption = 'Time of arrival';
+            ToolTip = 'Specifies the value of the Time of arrival field.';
         }
         field(50036; "Tipo de amparo sanitario"; Option)
         {
+            Caption = 'Sanitary protection type';
+            ToolTip = 'Specifies the value of the Sanitary protection type field.';
             BlankZero = true;
             OptionMembers = ,"P.T.","P.T.R.","C.S.E.P.","Guía de tránsito";
         }
         field(50037; "No. amparo sanitario"; Code[30])
         {
-            Caption = 'No. amparo sanitario';
+            Caption = 'Sanitary protection no.';
+            ToolTip = 'Specifies the value of the Sanitary protection no field.';
         }
         field(50038; Destino; Code[30])
         {
+            Caption = 'Destination';
+            ToolTip = 'Specifies the value of the Destination field.';
         }
         field(50039; "Concepto proyecto"; Code[10])
         {
+            Caption = 'Job concept';
+            ToolTip = 'Specifies the value of the Job concept field.';
             TableRelation = "Concepto proyecto";
         }
         field(50077; "Seguimiento para trazabilidad"; Option)
         {
+            Caption = 'Seguimiento para trazabilidad';
+            ToolTip = 'Specifies the value of the Seguimiento para trazabilidad field.';
             DataClassification = ToBeClassified;
             OptionMembers = " ","Post-Expo - Controlar contra DCL","No controlar contra DCL","Pre-Expo - Controlar contra DCL";
         }
         field(50079; "DCL application date formula"; Text[30])
         {
             Caption = 'Fórmula de aplicación de fechas de DCL';
+            ToolTip = 'Specifies the value of the Fórmula de aplicación de fechas de DCL field.';
             DataClassification = ToBeClassified;
         }
         field(50082; "MSC"; Boolean)
         {
+            Caption = 'MSC';
+            ToolTip = 'Specifies the value of the MSC field.';
             DataClassification = ToBeClassified;
         }
         field(50102; "Kn (Calculated)"; Decimal)
         {
             Caption = 'Kn (Calculated)';
+            ToolTip = 'Specifies the value of the Kn (Calculated) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -971,6 +1036,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50103; "Kb (Calculated)"; Decimal)
         {
             Caption = 'Kb (Calculated)';
+            ToolTip = 'Specifies the value of the Kb (Calculated) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -982,12 +1048,14 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50104; "Kn (Phys. Inventory)"; Decimal)
         {
             Caption = 'Kn (Phys. Inventory)';
+            ToolTip = 'Specifies the value of the Kn (Phys. Inventory) field.';
             DecimalPlaces = 0 : 5;
 
         }
         field(50105; "Kb (Phys. Inventory)"; Decimal)
         {
             Caption = 'Kb (Phys. Inventory)';
+            ToolTip = 'Specifies the value of the Kb (Phys. Inventory) field.';
             DecimalPlaces = 0 : 5;
 
         }
@@ -1000,6 +1068,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
                                                                      "Source Prod. Order Line" = CONST(0),
                                                                      "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved net kilos';
+            ToolTip = 'Specifies the value of the Reserved net kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1013,6 +1082,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
                                                                        "Source Prod. Order Line" = CONST(0),
                                                                        "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved gross kilos';
+            ToolTip = 'Specifies the value of the Reserved gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1026,6 +1096,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
                                                                             "Source Prod. Order Line" = CONST(0),
                                                                             "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved net kilos (Base)';
+            ToolTip = 'Specifies the value of the Reserved net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1039,6 +1110,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
                                                                               "Source Prod. Order Line" = CONST(0),
                                                                               "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Reserved gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -1046,18 +1118,21 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50114; "Output net kilos"; Decimal)
         {
             Caption = 'Output net kilos';
+            ToolTip = 'Specifies the value of the Output net kilos field.';
             DecimalPlaces = 0 : 5;
 
         }
         field(50115; "Output gross kilos"; Decimal)
         {
             Caption = 'Output gross kilos';
+            ToolTip = 'Specifies the value of the Output gross kilos field.';
             DecimalPlaces = 0 : 5;
 
         }
         field(50116; "Scrap net kilos"; Decimal)
         {
             Caption = 'Scrap net kilos';
+            ToolTip = 'Specifies the value of the Scrap net kilos field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -1069,6 +1144,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50117; "Scrap gross kilos"; Decimal)
         {
             Caption = 'Scrap gross kilos';
+            ToolTip = 'Specifies the value of the Scrap gross kilos field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -1080,6 +1156,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50118; "Output net kilos (Base)"; Decimal)
         {
             Caption = 'Output net kilos (Base)';
+            ToolTip = 'Specifies the value of the Output net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -1091,6 +1168,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50119; "Output gross kilos (Base)"; Decimal)
         {
             Caption = 'Output gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Output gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -1102,6 +1180,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50120; "Scrap net kilos (Base)"; Decimal)
         {
             Caption = 'Scrap net kilos (Base)';
+            ToolTip = 'Specifies the value of the Scrap net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -1113,6 +1192,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50121; "Scrap gross kilos (Base)"; Decimal)
         {
             Caption = 'Scrap gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Scrap gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -1123,90 +1203,136 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         }
         field(50140; "No. reparto"; Code[20])
         {
+            Caption = 'No. reparto';
+            ToolTip = 'Specifies the value of the No. reparto field.';
             DataClassification = ToBeClassified;
         }
         field(50141; "Linea reparto"; Integer)
         {
+            Caption = 'Linea reparto';
+            ToolTip = 'Specifies the value of the Linea reparto field.';
             DataClassification = ToBeClassified;
         }
         field(50142; "Ommit position validation"; Boolean)
         {
             Caption = 'Omitir validación de posición';
+            ToolTip = 'Specifies the value of the Omitir validación de posición field.';
             DataClassification = ToBeClassified;
         }
         field(50500; "Concepto ajuste"; Code[20])
         {
+            Caption = 'Concepto ajuste';
+            ToolTip = 'Specifies the value of the Concepto ajuste field.';
             TableRelation = "AFIP Interface Register";
         }
         field(50501; "% Ajuste KN"; Decimal)
         {
+            Caption = '% Ajuste KN';
+            ToolTip = 'Specifies the value of the % Ajuste KN field.';
         }
         field(50502; "% Ajuste KB"; Decimal)
         {
+            Caption = '% Ajuste KB';
+            ToolTip = 'Specifies the value of the % Ajuste KB field.';
         }
         field(50503; "Lote origen"; Code[10])
         {
+            Caption = 'Lote origen';
+            ToolTip = 'Specifies the value of the Lote origen field.';
 
         }
         field(50504; "% IVA"; Decimal)
         {
+            Caption = '% IVA';
+            ToolTip = 'Specifies the value of the % IVA field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50505; "Cód. área impuesto"; Code[20])
         {
+            Caption = 'Tax Area Code';
+            ToolTip = 'Specifies the value of the Tax Area Code field.';
             TableRelation = Area;
         }
         field(50506; "Cód. grupo impuesto"; Code[10])
         {
+            Caption = 'Tax Group Code';
+            ToolTip = 'Specifies the value of the Tax Group Code field.';
             TableRelation = Area;
         }
         field(50507; "Cód. retención IVA"; Code[20])
         {
+            Caption = 'Cód. retención IVA';
+            ToolTip = 'Specifies the value of the Cód. retención IVA field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER(IVA));
         }
         field(50508; "Cód. retención SS"; Code[20])
         {
+            Caption = 'Cód. retención SS';
+            ToolTip = 'Specifies the value of the Cód. retención SS field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER("Ingresos Brutos"));
         }
         field(50509; "Cód. retención ganancias"; Code[20])
         {
+            Caption = 'Cód. retención ganancias';
+            ToolTip = 'Specifies the value of the Cód. retención ganancias field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER(Ganancias));
         }
         field(50510; Factura; Boolean)
         {
+            Caption = 'Factura';
+            ToolTip = 'Specifies the value of the Factura field.';
         }
         field(50511; "Lote origen destino"; Code[10])
         {
+            Caption = 'Lote origen destino';
+            ToolTip = 'Specifies the value of the Lote origen destino field.';
         }
         field(50512; "GS1.128"; Text[250])
         {
+            Caption = 'GS1.128';
+            ToolTip = 'Specifies the value of the GS1.128 field.';
         }
         field(50513; "Barcode 1"; BLOB)
         {
+            Caption = 'Barcode 1';
+            ToolTip = 'Specifies the value of the Barcode 1 field.';
         }
         field(50514; "Barcode 2"; BLOB)
         {
+            Caption = 'Barcode 2';
+            ToolTip = 'Specifies the value of the Barcode 2 field.';
         }
         field(50515; "Barcode 3"; BLOB)
         {
+            Caption = 'Barcode 3';
+            ToolTip = 'Specifies the value of the Barcode 3 field.';
         }
         field(50516; "Ubicación"; Code[10])
         {
+            Caption = 'Ubicación';
+            ToolTip = 'Specifies the value of the Ubicación field.';
         }
         field(50517; "Ubicación destino"; Code[10])
         {
+            Caption = 'Ubicación destino';
+            ToolTip = 'Specifies the value of the Ubicación destino field.';
         }
         field(50518; "Consumir autom??ticamente"; Boolean)
         {
+            Caption = 'Consumir autom??ticamente';
+            ToolTip = 'Specifies the value of the Consumir autom??ticamente field.';
         }
         field(50519; Revertido; Boolean)
         {
+            Caption = 'Reversed';
+            ToolTip = 'Specifies the value of the Reversed field.';
         }
         field(50525; "Shortcut Dimension 3 Code"; Code[20])
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 3 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 3 Code field.';
 
 
         }
@@ -1214,6 +1340,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
 
             trigger OnValidate()
@@ -1227,6 +1354,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()
@@ -1240,6 +1368,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
 
             trigger OnValidate()
@@ -1253,6 +1382,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()
@@ -1264,10 +1394,13 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         }
         field(50530; "New shortcut Dimension 3 Code"; Code[20])
         {
+            Caption = 'New shortcut Dimension 3 Code';
+            ToolTip = 'Specifies the value of the New shortcut Dimension 3 Code field.';
         }
         field(50531; "New shortcut Dimension 4 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
 
             trigger OnValidate()
@@ -1278,6 +1411,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50532; "New shortcut Dimension 5 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()
@@ -1288,6 +1422,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50533; "New shortcut Dimension 6 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
 
             trigger OnValidate()
@@ -1298,6 +1433,7 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50534; "New shortcut Dimension 7 Code"; Code[20])
         {
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()
@@ -1308,32 +1444,41 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
         field(50535; "Net kilos per UOM"; Decimal)
         {
             Caption = 'Net kilos per UOM';
+            ToolTip = 'Specifies the value of the Net kilos per UOM field.';
         }
         field(50536; "Gross kilos per UOM"; Decimal)
         {
             Caption = 'Gross kilos per UOM';
+            ToolTip = 'Specifies the value of the Gross kilos per UOM field.';
         }
         field(50542; "Additional-Currency Posting"; Option)
         {
             Caption = 'Additional-Currency Posting';
+            ToolTip = 'Specifies the value of the Additional-Currency Posting field.';
             DataClassification = ToBeClassified;
             OptionCaption = 'None,Amount Only,Additional-Currency Amount Only';
             OptionMembers = "None","Amount Only","Additional-Currency Amount Only";
         }
         field(50598; Usuario; Code[20])
         {
+            Caption = 'User ID';
+            ToolTip = 'Specifies the value of the User ID field.';
         }
         field(50599; Regenerado; Boolean)
         {
+            Caption = 'Regenerado';
+            ToolTip = 'Specifies the value of the Regenerado field.';
         }
         field(50700; "No. Remito"; Code[30])
         {
             Caption = 'No. Remito';
+            ToolTip = 'Specifies the value of the No. Remito field.';
             Description = 'No. remito';
         }
         field(50701; "No. Despacho"; Code[20])
         {
             Caption = 'No. Despacho';
+            ToolTip = 'Specifies the value of the No. Despacho field.';
             Description = 'No. Despacho importación';
         }
     }
@@ -1801,8 +1946,11 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
             if "Entry Type" in ["Entry Type"::Transfer, "Entry Type"::"Negative Adjmt."] then begin
 
                 Validate(Quantity, rstMovProducto."Remaining Quantity");
-                Validate("Net kilos", rstMovProducto."Remaining net kilos");
-                Validate("Gross kilos", rstMovProducto."Remaining gross kilos");
+                // Kilos pendientes del movimiento: cantidad pendiente x kilos por unidad.
+                if rstMovProducto.Quantity <> 0 then begin
+                    Validate("Net kilos", rstMovProducto."Remaining Quantity" * rstMovProducto."Net kilos" / rstMovProducto.Quantity);
+                    Validate("Gross kilos", rstMovProducto."Remaining Quantity" * rstMovProducto."Gross kilos" / rstMovProducto.Quantity);
+                end;
 
                 if "Entry Type" = "Entry Type"::Transfer then begin
 
@@ -1986,8 +2134,11 @@ tableextension 51173 tableextension51173 extends "Item Journal Line"
                 if "Entry Type" in ["Entry Type"::Transfer, "Entry Type"::"Negative Adjmt."] then begin
 
                     Validate(Quantity, rstMovProducto."Remaining Quantity");
-                    Validate("Net kilos", rstMovProducto."Remaining net kilos");
-                    Validate("Gross kilos", rstMovProducto."Remaining gross kilos");
+                    // Kilos pendientes del movimiento: cantidad pendiente x kilos por unidad.
+                    if rstMovProducto.Quantity <> 0 then begin
+                        Validate("Net kilos", rstMovProducto."Remaining Quantity" * rstMovProducto."Net kilos" / rstMovProducto.Quantity);
+                        Validate("Gross kilos", rstMovProducto."Remaining Quantity" * rstMovProducto."Gross kilos" / rstMovProducto.Quantity);
+                    end;
 
                     if "Entry Type" = "Entry Type"::Transfer then begin
 

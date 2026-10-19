@@ -598,39 +598,61 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         //end;
         field(50005; "Reg. consumo en proyecto"; Boolean)
         {
+            Caption = 'Reg. consumo en proyecto';
+            ToolTip = 'Specifies the value of the Reg. consumo en proyecto field.';
             Description = 'Sí = Generar apunte pry desde diario';
             Editable = true;
         }
         field(50009; "Permiso de embarque"; Code[30])
         {
+            Caption = 'Boarding permission';
+            ToolTip = 'Specifies the value of the Boarding permission field.';
         }
         field(50010; "Carpeta importación"; Code[20])
         {
+            Caption = 'Carpeta importación';
+            ToolTip = 'Specifies the value of the Carpeta importación field.';
         }
         field(50011; "Lugar de Pago"; Option)
         {
+            Caption = 'Lugar de Pago';
+            ToolTip = 'Specifies the value of the Lugar de Pago field.';
             OptionMembers = " ",BUE,CRV,PD,MDQ;
         }
         field(50012; "Descripción 2"; Text[150])
         {
+            Caption = 'Description 2';
+            ToolTip = 'Specifies the value of the Description 2 field.';
         }
         field(50013; "Retención"; Boolean)
         {
+            Caption = 'Retención';
+            ToolTip = 'Specifies the value of the Retención field.';
         }
         field(50014; "No. documento relacionado"; Code[20])
         {
+            Caption = 'No. documento relacionado';
+            ToolTip = 'Specifies the value of the No. documento relacionado field.';
         }
         field(50015; "No. línea doc. relacionado"; Integer)
         {
+            Caption = 'No. línea doc. relacionado';
+            ToolTip = 'Specifies the value of the No. línea doc. relacionado field.';
         }
         field(50016; "Concepto general"; Text[50])
         {
+            Caption = 'Concepto general';
+            ToolTip = 'Specifies the value of the Concepto general field.';
         }
         field(50017; "No. liquidación"; Code[20])
         {
+            Caption = 'No. liquidación';
+            ToolTip = 'Specifies the value of the No. liquidación field.';
         }
         field(50018; "Aprobar pago sin liquidar"; Boolean)
         {
+            Caption = 'Aprobar pago sin liquidar';
+            ToolTip = 'Specifies the value of the Aprobar pago sin liquidar field.';
 
             trigger OnValidate()
             begin
@@ -645,10 +667,14 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         }
         field(50019; "Concepto proyecto"; Code[10])
         {
+            Caption = 'Job concept';
+            ToolTip = 'Specifies the value of the Job concept field.';
             TableRelation = "Concepto proyecto";
         }
         field(50020; "Estado RG3594"; Option)
         {
+            Caption = 'Estado RG3594';
+            ToolTip = 'Specifies the value of the Estado RG3594 field.';
             CalcFormula = Lookup(Vendor."Registrado RG3594" WHERE("No." = FIELD("Account No.")));
             FieldClass = FlowField;
             OptionMembers = " ",Activo,Suspendido,Excluido,"Inscripción cancelada";
@@ -656,32 +682,42 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         field(50021; "Payment block"; Boolean)
         {
             Caption = 'Pago bloqueado';
+            ToolTip = 'Specifies the value of the Pago bloqueado field.';
             DataClassification = ToBeClassified;
         }
         field(50022; "Payment blocked by"; Code[10])
         {
             Caption = 'Pago bloqueado por';
+            ToolTip = 'Specifies the value of the Pago bloqueado por field.';
             DataClassification = ToBeClassified;
             TableRelation = Seguridad.Grupo;
         }
         field(50142; "Ommit position validation"; Boolean)
         {
             Caption = 'Omitir validación de posición';
+            ToolTip = 'Specifies the value of the Omitir validación de posición field.';
             DataClassification = ToBeClassified;
         }
         field(50212; "Factor divisa operacion"; Decimal)
         {
+            Caption = 'Factor divisa operacion';
+            ToolTip = 'Specifies the value of the Factor divisa operacion field.';
         }
         field(50213; "Valor divisa operacion"; Decimal)
         {
+            Caption = 'Valor divisa operacion';
+            ToolTip = 'Specifies the value of the Valor divisa operacion field.';
         }
         field(50500; ProyectoMeta4; Code[20])
         {
+            Caption = 'ProyectoMeta4';
+            ToolTip = 'Specifies the value of the ProyectoMeta4 field.';
         }
         field(50505; "Shortcut Dimension 3 Code"; Code[20])
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 3 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 3 Code field.';
 
 
             trigger OnValidate()
@@ -693,6 +729,7 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 4 Code field.';
 
 
             trigger OnValidate()
@@ -704,6 +741,7 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 5 Code field.';
 
 
             trigger OnValidate()
@@ -715,6 +753,7 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 6 Code field.';
 
 
             trigger OnValidate()
@@ -726,6 +765,7 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 7 Code field.';
 
 
             trigger OnValidate()
@@ -735,86 +775,139 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         }
         field(50510; "Id. Sociedad"; Code[10])
         {
+            Caption = 'Id. Sociedad';
+            ToolTip = 'Specifies the value of the Id. Sociedad field.';
         }
         field(50511; "Id. Empleado"; Code[20])
         {
+            Caption = 'Id. Empleado';
+            ToolTip = 'Specifies the value of the Id. Empleado field.';
         }
         field(50512; "Cod. cuenta"; Code[20])
         {
+            Caption = 'Cod. cuenta';
+            ToolTip = 'Specifies the value of the Cod. cuenta field.';
         }
         field(50513; "Proy."; Code[20])
         {
+            Caption = 'Proy.';
+            ToolTip = 'Specifies the value of the Proy field.';
         }
         field(50514; "Id. Empresa"; Code[10])
         {
+            Caption = 'Id. Empresa';
+            ToolTip = 'Specifies the value of the Id. Empresa field.';
         }
         field(50515; "Fecha pago"; Date)
         {
+            Caption = 'Fecha pago';
+            ToolTip = 'Specifies the value of the Fecha pago field.';
         }
         field(50516; "Fecha imputacion"; Date)
         {
+            Caption = 'Fecha imputacion';
+            ToolTip = 'Specifies the value of the Fecha imputacion field.';
         }
         field(50517; "Tipo imputacion"; Code[10])
         {
+            Caption = 'Tipo imputacion';
+            ToolTip = 'Specifies the value of the Tipo imputacion field.';
         }
         field(50518; "Id. categoria"; Code[10])
         {
+            Caption = 'Id. categoria';
+            ToolTip = 'Specifies the value of the Id. categoria field.';
         }
         field(50519; "Nombre categoria"; Text[50])
         {
+            Caption = 'Nombre categoria';
+            ToolTip = 'Specifies the value of the Nombre categoria field.';
         }
         field(50520; "Id. puesto"; Code[10])
         {
+            Caption = 'Id. puesto';
+            ToolTip = 'Specifies the value of the Id. puesto field.';
         }
         field(50521; "Nombre puesto"; Text[50])
         {
+            Caption = 'Nombre puesto';
+            ToolTip = 'Specifies the value of the Nombre puesto field.';
         }
         field(50522; "Id. nacionalidad"; Code[10])
         {
+            Caption = 'Id. nacionalidad';
+            ToolTip = 'Specifies the value of the Id. nacionalidad field.';
         }
         field(50523; "Fecha sicore"; Date)
         {
+            Caption = 'Fecha sicore';
+            ToolTip = 'Specifies the value of the Fecha sicore field.';
         }
         field(50524; Importe; Decimal)
         {
+            Caption = 'Importe';
+            ToolTip = 'Specifies the value of the Importe field.';
         }
         field(50525; "Fecha de importacion"; DateTime)
         {
+            Caption = 'Fecha de importacion';
+            ToolTip = 'Specifies the value of the Fecha de importacion field.';
         }
         field(50526; Buque; Code[10])
         {
+            Caption = 'Buque';
+            ToolTip = 'Specifies the value of the Buque field.';
+            CaptionClass = '1,2,1';
+            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(1));
         }
         field(50527; Marea; Code[10])
         {
+            Caption = 'Marea';
+            ToolTip = 'Specifies the value of the Marea field.';
+            CaptionClass = '1,2,2';
+            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(2));
         }
         field(50528; Costo; Code[10])
         {
+            Caption = 'Costo';
+            ToolTip = 'Specifies the value of the Costo field.';
         }
         field(50529; Region; Option)
         {
-            Caption = 'Región';
+            Caption = 'Region';
+            ToolTip = 'Specifies the value of the Region field.';
             DataClassification = ToBeClassified;
             OptionMembers = "901 - CABA","902 - Buenos Aires","903 - Catamarca","904 - Córdoba","905 - Corrientes","906 - Chaco","907 - Chubut","908 - Entre Ríos","909 - Formosa","910 - Jujuy","911 - La Pampa","912 - La Rioja","913 - Mendoza","914 - Misiones","915 - Neuquén","916 - Río Negro","917 - Salta","918 - San Juan","919 - San Luis","920 - Santa Cruz","921 - Santa Fe","922 - Santiago del Estero","923 - Tierra del Fuego","924 -Tucumán";
         }
         field(50530; "Balance (DA)"; Decimal)
         {
+            Caption = 'Balance (DA)';
+            ToolTip = 'Specifies the value of the Balance (DA) field.';
             DataClassification = ToBeClassified;
             Editable = false;
         }
         field(50700; "Cód. retención IVA"; Code[20])
         {
+            Caption = 'Cód. retención IVA';
+            ToolTip = 'Specifies the value of the Cód. retención IVA field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER(IVA));
         }
         field(50701; "Cód. retención IB"; Code[20])
         {
+            Caption = 'Cód. retención IB';
+            ToolTip = 'Specifies the value of the Cód. retención IB field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER("Ingresos Brutos"));
         }
         field(50702; "Cód. retención ganancias"; Code[20])
         {
+            Caption = 'Cód. retención ganancias';
+            ToolTip = 'Specifies the value of the Cód. retención ganancias field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = CONST(Ganancias));
         }
         field(50703; "No. cheque"; Code[10])
         {
+            Caption = 'No. cheque';
+            ToolTip = 'Specifies the value of the No. cheque field.';
 
             trigger OnValidate()
             begin
@@ -824,10 +917,14 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         }
         field(50704; Provincia; Code[10])
         {
+            Caption = 'Provincia';
+            ToolTip = 'Specifies the value of the Provincia field.';
             TableRelation = Area;
         }
         field(50705; "Tipo fiscal"; Code[10])
         {
+            Caption = 'Fiscal Type';
+            ToolTip = 'Specifies the value of the Fiscal Type field.';
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('TIPO FISCAL'));
             ObsoleteTag = '12/2025';
             ObsoleteState = Pending;
@@ -835,17 +932,24 @@ tableextension 51171 tableextension51171 extends "Gen. Journal Line"
         }
         field(50706; "Punto de venta"; Code[10])
         {
+            Caption = 'Punto de venta';
+            ToolTip = 'Specifies the value of the Punto de venta field.';
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('PUNTO VENTA'));
         }
         field(50707; Letra; Text[10])
         {
+            Caption = 'Letra';
+            ToolTip = 'Specifies the value of the Letra field.';
         }
         field(50708; "Cheque a la orden de"; Text[50])
         {
+            Caption = 'Cheque a la orden de';
+            ToolTip = 'Specifies the value of the Cheque a la orden de field.';
         }
         field(50709; "Value Date"; Date)
         {
             Caption = 'Check Date';
+            ToolTip = 'Specifies the value of the Check Date field.';
         }
     }
 

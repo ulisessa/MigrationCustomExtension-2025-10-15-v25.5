@@ -17,6 +17,8 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
         }
         field(50000; "Producción planta"; Integer)
         {
+            Caption = 'Producción planta';
+            ToolTip = 'Specifies the value of the Producción planta field.';
             CalcFormula = Count("Produccion Planta" WHERE("Fecha registro" = FIELD("Date Filter")));
             FieldClass = FlowField;
         }
@@ -28,6 +30,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   Estado = CONST('Digitalizado'),
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos")));
             Caption = 'Digitalizadas - Facturas';
+            ToolTip = 'Specifies the value of the Digitalizadas - Facturas field.';
             FieldClass = FlowField;
         }
         field(50002; "Preaprobadas - Facturas"; Integer)
@@ -38,6 +41,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   Estado = CONST('Preaprobado'),
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos")));
             Caption = 'Preaprobadas - Facturas';
+            ToolTip = 'Specifies the value of the Preaprobadas - Facturas field.';
             FieldClass = FlowField;
         }
         field(50003; "Aprobadas - Facturas"; Integer)
@@ -48,6 +52,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   Estado = CONST('Aprobado'),
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos")));
             Caption = 'Aprobadas - Facturas';
+            ToolTip = 'Specifies the value of the Aprobadas - Facturas field.';
             FieldClass = FlowField;
         }
         field(50004; "Facturas a autorizar"; Integer)
@@ -58,6 +63,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   Estado = CONST('A autorizar'),
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos")));
             Caption = 'A autorizar - Facturas';
+            ToolTip = 'Specifies the value of the A autorizar - Facturas field.';
             FieldClass = FlowField;
         }
         field(50005; "Facturas autorizadas"; Integer)
@@ -68,6 +74,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   Estado = CONST('Autorizado'),
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos")));
             Caption = 'Autorizadas - Facturas';
+            ToolTip = 'Specifies the value of the Autorizadas - Facturas field.';
             FieldClass = FlowField;
         }
         field(50006; "Facturas registradas"; Integer)
@@ -77,6 +84,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   Estado = CONST('Registrado'),
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos")));
             Caption = 'Registradas - Facturas';
+            ToolTip = 'Specifies the value of the Registradas - Facturas field.';
             FieldClass = FlowField;
         }
         field(50007; "Facturas liquidadas"; Integer)
@@ -87,6 +95,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   Estado = CONST('Factura liquidada'),
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos")));
             Caption = 'Liquidadas - Facturas';
+            ToolTip = 'Specifies the value of the Liquidadas - Facturas field.';
             FieldClass = FlowField;
         }
         field(50008; "Solicitudes abiertas"; Integer)
@@ -97,6 +106,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos"),
                                                   "Destinatario/Grupo" = FIELD("Filtro grupo destino")));
             Caption = 'Abiertas - Solicitudes';
+            ToolTip = 'Specifies the value of the Abiertas - Solicitudes field.';
             FieldClass = FlowField;
         }
         field(50009; "Solicitudes a aprobar"; Integer)
@@ -107,6 +117,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos"),
                                                   "Destinatario/Grupo" = FIELD("Filtro grupo destino")));
             Caption = 'A aprobar - Solicitudes';
+            ToolTip = 'Specifies the value of the A aprobar - Solicitudes field.';
             FieldClass = FlowField;
         }
         field(50010; "Solicitudes aprobado"; Integer)
@@ -117,6 +128,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos"),
                                                   "Destinatario/Grupo" = FIELD("Filtro grupo destino")));
             Caption = 'Aprobado - Solicitudes';
+            ToolTip = 'Specifies the value of the Aprobado - Solicitudes field.';
             FieldClass = FlowField;
         }
         field(50011; "Solicitudes en cotización"; Integer)
@@ -127,6 +139,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos"),
                                                   "Destinatario/Grupo" = FIELD("Filtro grupo destino")));
             Caption = 'En cotización - Solicitudes';
+            ToolTip = 'Specifies the value of the En cotización - Solicitudes field.';
             FieldClass = FlowField;
         }
         field(50012; "Solicitudes en pedido"; Integer)
@@ -137,6 +150,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos"),
                                                   "Destinatario/Grupo" = FIELD("Filtro grupo destino")));
             Caption = 'En pedido - Solicitudes';
+            ToolTip = 'Specifies the value of the En pedido - Solicitudes field.';
             FieldClass = FlowField;
         }
         field(50013; "Solicitudes en factura"; Integer)
@@ -147,6 +161,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos"),
                                                   "Destinatario/Grupo" = FIELD("Filtro grupo destino")));
             Caption = 'En factura - Solicitudes';
+            ToolTip = 'Specifies the value of the En factura - Solicitudes field.';
             FieldClass = FlowField;
         }
         field(50014; "Solicitudes registradas"; Integer)
@@ -155,6 +170,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   Estado = CONST('Aprobado y registrado'),
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos")));
             Caption = 'Completadas - Solicitudes';
+            ToolTip = 'Specifies the value of the Completadas - Solicitudes field.';
             FieldClass = FlowField;
         }
         field(50015; "Producción merluza"; Integer)
@@ -162,6 +178,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
             CalcFormula = Count("Produccion Planta" WHERE("Fecha registro" = FIELD("Date Filter"),
                                                            "Global Dimension 2" = CONST('MER')));
             Caption = 'Merluza - Producción';
+            ToolTip = 'Specifies the value of the Merluza - Producción field.';
             FieldClass = FlowField;
         }
         field(50016; "Producción calamar"; Integer)
@@ -169,6 +186,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
             CalcFormula = Count("Produccion Planta" WHERE("Fecha registro" = FIELD("Date Filter"),
                                                            "Global Dimension 2" = CONST('CAL')));
             Caption = 'Calamar - Producción';
+            ToolTip = 'Specifies the value of the Calamar - Producción field.';
             FieldClass = FlowField;
         }
         field(50017; "Producción langostino fresco"; Integer)
@@ -176,6 +194,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
             CalcFormula = Count("Produccion Planta" WHERE("Fecha registro" = FIELD("Date Filter"),
                                                            "Global Dimension 2" = CONST('FRE')));
             Caption = 'Langostino fresco - Producción';
+            ToolTip = 'Specifies the value of the Langostino fresco - Producción field.';
             FieldClass = FlowField;
         }
         field(50018; "Ordenes de compra abiertas"; Integer)
@@ -185,6 +204,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   Estado = CONST('Abierto'),
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos")));
             Caption = 'Abiertas - OC';
+            ToolTip = 'Specifies the value of the Abiertas - OC field.';
             FieldClass = FlowField;
         }
         field(50019; "Ordenes de compra a recibir"; Integer)
@@ -194,6 +214,7 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   Estado = CONST('A recibir'),
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos")));
             Caption = 'A recibir - OC';
+            ToolTip = 'Specifies the value of the A recibir - OC field.';
             FieldClass = FlowField;
         }
         field(50020; "Ordenes de compra recibidas"; Integer)
@@ -203,10 +224,13 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
                                                   Estado = CONST('Recibido'),
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos")));
             Caption = 'Recibidas - OC';
+            ToolTip = 'Specifies the value of the Recibidas - OC field.';
             FieldClass = FlowField;
         }
         field(50021; "Pedido abierto - Ventas"; Integer)
         {
+            Caption = 'Pedido abierto - Ventas';
+            ToolTip = 'Specifies the value of the Pedido abierto - Ventas field.';
             CalcFormula = Count(Mensajeria WHERE("Tipo Documento" = FILTER('Pedido (ventas)'),
                                                   Estado = CONST('Abierto'),
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos")));
@@ -214,6 +238,8 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
         }
         field(50022; "Pedido enviado - Ventas"; Integer)
         {
+            Caption = 'Pedido enviado - Ventas';
+            ToolTip = 'Specifies the value of the Pedido enviado - Ventas field.';
             CalcFormula = Count(Mensajeria WHERE("Tipo Documento" = FILTER('Pedido (ventas)'),
                                                   Estado = CONST('Enviado'),
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos")));
@@ -221,6 +247,8 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
         }
         field(50023; "Reparto abierto - Ventas"; Integer)
         {
+            Caption = 'Reparto abierto - Ventas';
+            ToolTip = 'Specifies the value of the Reparto abierto - Ventas field.';
             CalcFormula = Count(Mensajeria WHERE("Tipo Documento" = FILTER('Reparto (ventas)'),
                                                   Estado = CONST('Abierto'),
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos")));
@@ -228,6 +256,8 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
         }
         field(50024; "Reparto registrado - Ventas"; Integer)
         {
+            Caption = 'Reparto registrado - Ventas';
+            ToolTip = 'Specifies the value of the Reparto registrado - Ventas field.';
             CalcFormula = Count(Mensajeria WHERE("Tipo Documento" = FILTER('Reparto (ventas)'),
                                                   Estado = CONST('Registrado'),
                                                   "Tipo movimiento" = FILTER("Mensaje con Seguimiento" | Alerta | "Flujo documentos")));
@@ -235,31 +265,43 @@ tableextension 51244 tableextension51244 extends "Administration Cue"
         }
         field(50500; Grupo; Code[20])
         {
+            Caption = 'Grupo';
+            ToolTip = 'Specifies the value of the Grupo field.';
             FieldClass = FlowFilter;
             TableRelation = Seguridad;
         }
         field(50501; "Tipo documento"; Text[40])
         {
+            Caption = 'Document Type';
+            ToolTip = 'Specifies the value of the Document Type field.';
             FieldClass = FlowFilter;
             TableRelation = "Tipos documento";
         }
         field(50502; "Estado documento"; Text[50])
         {
+            Caption = 'Estado documento';
+            ToolTip = 'Specifies the value of the Estado documento field.';
             FieldClass = FlowFilter;
             TableRelation = Estados;
         }
         field(50503; "No. form"; Integer)
         {
+            Caption = 'No. form';
+            ToolTip = 'Specifies the value of the No. form field.';
             FieldClass = FlowFilter;
             TableRelation = Object.ID WHERE(Type = CONST(Page));
         }
         field(50504; "Filtro grupo origen"; Code[20])
         {
+            Caption = 'Filtro grupo origen';
+            ToolTip = 'Specifies the value of the Filtro grupo origen field.';
             FieldClass = FlowFilter;
             TableRelation = Seguridad;
         }
         field(50505; "Filtro grupo destino"; Code[20])
         {
+            Caption = 'Filtro grupo destino';
+            ToolTip = 'Specifies the value of the Filtro grupo destino field.';
             FieldClass = FlowFilter;
             TableRelation = Seguridad;
         }

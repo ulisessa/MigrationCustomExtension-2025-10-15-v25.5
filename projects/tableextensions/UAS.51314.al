@@ -24,12 +24,16 @@ tableextension 51314 tableextension51314 extends "Item Vendor"
         }
         field(60000; "Nombre proveedor"; Text[100])
         {
+            Caption = 'Nombre proveedor';
+            ToolTip = 'Specifies the value of the Nombre proveedor field.';
             CalcFormula = Lookup(Vendor.Name WHERE("No." = FIELD("Vendor No.")));
             Editable = false;
             FieldClass = FlowField;
         }
         field(60001; "Nombre producto"; Text[250])
         {
+            Caption = 'Nombre producto';
+            ToolTip = 'Specifies the value of the Nombre producto field.';
             CalcFormula = Lookup(Item.Description WHERE("No." = FIELD("Item No.")));
             Editable = false;
             FieldClass = FlowField;

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(& \"C:\\\\Users\\\\ULISES~1.SAS\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d--Users-ulises-sasovsky-OneDrive-Personal-OneDrive-Documentos-Proyectos-25-2-28-0---Custom-Extensions-MigrationCustomExtension-2026-06-11-v28-0\\\\6d16706f-0938-4bca-9b67-1fc91a496645\\\\scratchpad\\\\translate.ps1\")",
+      "PowerShell($map = [ordered]@{ 267 = \"Reserva\"; 274 = \"Estado de reserva\" }; foreach \\($k in $map.Keys\\) { \"$k -> $\\($map[$k]\\) \\(type: $\\($k.GetType\\(\\).Name\\)\\)\" })",
+      "PowerShell($map = [ordered]@{ 267 = \"Reserva\"; 274 = \"Estado de reserva\" }; $map | Format-Table -AutoSize; Write-Host \"---\"; $map[267]; Write-Host \"---keys---\"; $map.Keys | ForEach-Object { $_.GetType\\(\\).FullName })",
+      "Bash(grep -rl \"Tables Only.g.es-ES.xlf\" \"$HOME/AppData/Roaming/Code/User/History\" 2>/dev/null | head -20)",
+      "Read(//c/Users/ulises.sasovsky/AppData/Roaming/Code/User/History/**)"
+    ]
+  }
+}

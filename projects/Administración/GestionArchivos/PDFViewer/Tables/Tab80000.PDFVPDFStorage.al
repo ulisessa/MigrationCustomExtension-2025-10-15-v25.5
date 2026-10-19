@@ -8,22 +8,26 @@ table 50605 "PDFV PDF Storage"
         field(1; "Entry No."; BigInteger)
         {
             Caption = 'Entry No.';
+            ToolTip = 'Specifies the value of the Entry No field.';
             DataClassification = CustomerContent;
             AutoIncrement = true;
         }
         field(2; "Source Record ID"; RecordId)
         {
             Caption = 'Source Record ID';
+            ToolTip = 'Specifies the value of the Source Record ID field.';
             DataClassification = CustomerContent;
         }
         field(3; "PDF Value"; Blob)
         {
             Caption = 'PDF Value';
+            ToolTip = 'Specifies the value of the PDF Value field.';
             DataClassification = CustomerContent;
         }
         field(4; Description; Text[200])
         {
             Caption = 'Description';
+            ToolTip = 'Specifies the value of the Description field.';
             DataClassification = CustomerContent;
         }
     }

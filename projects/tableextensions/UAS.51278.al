@@ -674,6 +674,8 @@ tableextension 51278 tableextension51278 extends "Vendor Posting Group"
         //end;
         field(50090; "Cta. provisión compras"; Code[20])
         {
+            Caption = 'Cta. provisión compras';
+            ToolTip = 'Specifies the value of the Cta. provisión compras field.';
             DataClassification = ToBeClassified;
             TableRelation = "G/L Account"."No.";
         }

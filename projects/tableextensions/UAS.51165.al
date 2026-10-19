@@ -205,15 +205,23 @@ tableextension 51165 tableextension51165 extends "Company Information"
         }
         field(50000; "Mod."; Text[30])
         {
+            Caption = 'Mod.';
+            ToolTip = 'Specifies the value of the Mod field.';
         }
         field(50001; "Capital social"; Decimal)
         {
+            Caption = 'Capital social';
+            ToolTip = 'Specifies the value of the Capital social field.';
         }
         field(50002; "Empresa Krustamoz"; Boolean)
         {
+            Caption = 'Empresa Krustamoz';
+            ToolTip = 'Specifies the value of the Empresa Krustamoz field.';
         }
         field(50003; "Activar mensajeria"; Boolean)
         {
+            Caption = 'Activar mensajeria';
+            ToolTip = 'Specifies the value of the Activar mensajeria field.';
 
             trigger OnValidate()
             begin
@@ -223,30 +231,40 @@ tableextension 51165 tableextension51165 extends "Company Information"
         }
         field(50004; "Almacen general informacion"; Text[10])
         {
+            Caption = 'Almacen general informacion';
+            ToolTip = 'Specifies the value of the Almacen general informacion field.';
         }
         field(50005; "GS1 Country Code"; Code[3])
         {
             Caption = 'Cód. país GS1';
+            ToolTip = 'Specifies the value of the Cód. país GS1 field.';
         }
         field(50006; "GS1 Company Code"; Code[6])
         {
             Caption = 'Cód. empresa GS1';
+            ToolTip = 'Specifies the value of the Cód. empresa GS1 field.';
         }
         field(50007; "GS1 main GLN Code"; Code[13])
         {
             Caption = 'Cód. GS1 GLN principal';
+            ToolTip = 'Specifies the value of the Cód. GS1 GLN principal field.';
         }
         field(50008; "Cost Group Dimension"; Code[20])
         {
             Caption = 'Dimensión Grupo Costo';
+            ToolTip = 'Specifies the value of the Dimensión Grupo Costo field.';
             DataClassification = ToBeClassified;
             TableRelation = Dimension;
         }
         field(50500; "No. serie mensajería"; Code[20])
         {
+            Caption = 'No. serie mensajería';
+            ToolTip = 'Specifies the value of the No. serie mensajería field.';
         }
         field(50501; "Ruta de digitalizacion"; Text[250])
         {
+            Caption = 'Ruta de digitalizacion';
+            ToolTip = 'Specifies the value of the Ruta de digitalizacion field.';
 
             trigger OnValidate()
             begin
@@ -256,9 +274,13 @@ tableextension 51165 tableextension51165 extends "Company Information"
         }
         field(50502; "No. Serie digitalizacion"; Code[30])
         {
+            Caption = 'No. Serie digitalizacion';
+            ToolTip = 'Specifies the value of the No. Serie digitalizacion field.';
         }
         field(50503; "Ruta Intranet"; Text[100])
         {
+            Caption = 'Ruta Intranet';
+            ToolTip = 'Specifies the value of the Ruta Intranet field.';
 
             trigger OnValidate()
             begin
@@ -268,6 +290,8 @@ tableextension 51165 tableextension51165 extends "Company Information"
         }
         field(50504; "Ruta NavXtender"; Text[100])
         {
+            Caption = 'Ruta NavXtender';
+            ToolTip = 'Specifies the value of the Ruta NavXtender field.';
 
             trigger OnValidate()
             begin
@@ -277,6 +301,8 @@ tableextension 51165 tableextension51165 extends "Company Information"
         }
         field(50505; "Ruta cabecera digitalizacion"; Text[250])
         {
+            Caption = 'Ruta cabecera digitalizacion';
+            ToolTip = 'Specifies the value of the Ruta cabecera digitalizacion field.';
             DataClassification = ToBeClassified;
 
             trigger OnValidate()
@@ -287,6 +313,8 @@ tableextension 51165 tableextension51165 extends "Company Information"
         }
         field(50506; "Ruta ejecutable digitalizacion"; Text[250])
         {
+            Caption = 'Ruta ejecutable digitalizacion';
+            ToolTip = 'Specifies the value of the Ruta ejecutable digitalizacion field.';
             DataClassification = ToBeClassified;
 
             trigger OnValidate()
@@ -297,57 +325,84 @@ tableextension 51165 tableextension51165 extends "Company Information"
         }
         field(50700; "Cód. área impuesto"; Code[20])
         {
+            Caption = 'Tax Area Code';
+            ToolTip = 'Specifies the value of the Tax Area Code field.';
             TableRelation = Area;
         }
         field(50701; "Sujeto a impuesto"; Boolean)
         {
+            Caption = 'Sujeto a impuesto';
+            ToolTip = 'Specifies the value of the Sujeto a impuesto field.';
         }
         field(50702; DigitoDeControl; Integer)
         {
+            Caption = 'DigitoDeControl';
+            ToolTip = 'Specifies the value of the DigitoDeControl field.';
         }
         field(50703; "Ag. Retencion IVA"; Boolean)
         {
+            Caption = 'Ag. Retencion IVA';
+            ToolTip = 'Specifies the value of the Ag. Retencion IVA field.';
         }
         field(50704; "Ag. Retencion Ingreso Brutos"; Boolean)
         {
+            Caption = 'Ag. Retencion Ingreso Brutos';
+            ToolTip = 'Specifies the value of the Ag. Retencion Ingreso Brutos field.';
         }
         field(50705; "Ag. Retencion Ganancias"; Boolean)
         {
+            Caption = 'Ag. Retencion Ganancias';
+            ToolTip = 'Specifies the value of the Ag. Retencion Ganancias field.';
         }
         field(50706; "No agente retención"; Code[20])
         {
+            Caption = 'No agente retención';
+            ToolTip = 'Specifies the value of the No agente retención field.';
         }
         field(50707; Province; Code[20])
         {
+            Caption = 'Province';
+            ToolTip = 'Specifies the value of the Province field.';
             TableRelation = Area;
         }
         field(50708; "No. ingresos brutos"; Code[20])
         {
+            Caption = 'No. ingresos brutos';
+            ToolTip = 'Specifies the value of the No. ingresos brutos field.';
         }
         field(50709; Paralelo; Boolean)
         {
+            Caption = 'Paralelo';
+            ToolTip = 'Specifies the value of the Paralelo field.';
         }
         field(50711; "Omitir control factura directa"; Boolean)
         {
+            Caption = 'Omitir control factura directa';
+            ToolTip = 'Specifies the value of the Omitir control factura directa field.';
             DataClassification = ToBeClassified;
         }
         field(50712; "Logo path"; Text[250])
         {
             Caption = 'Ruta a logotipo';
+            ToolTip = 'Specifies the value of the Ruta a logotipo field.';
             DataClassification = ToBeClassified;
         }
         field(50713; "Omitir controles impositivos"; Boolean)
         {
+            Caption = 'Omitir controles impositivos';
+            ToolTip = 'Specifies the value of the Omitir controles impositivos field.';
             DataClassification = ToBeClassified;
         }
         field(50714; "GI agent type"; Text[30])
         {
             Caption = 'Tipo agente IIBB';
+            ToolTip = 'Specifies the value of the Tipo agente IIBB field.';
             DataClassification = ToBeClassified;
         }
         field(50715; "GI agent no."; Code[10])
         {
             Caption = 'No. agente IIBB';
+            ToolTip = 'Specifies the value of the No. agente IIBB field.';
             DataClassification = ToBeClassified;
         }
     }

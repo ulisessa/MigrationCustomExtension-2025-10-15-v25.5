@@ -56,14 +56,20 @@ tableextension 51172 tableextension51172 extends "Item Journal Template"
         }
         field(50000; "Proyecto Obligatorio"; Boolean)
         {
+            Caption = 'Proyecto Obligatorio';
+            ToolTip = 'Specifies the value of the Proyecto Obligatorio field.';
         }
         field(50003; "xBorrar al contab."; Boolean)
         {
+            Caption = 'xBorrar al contab.';
+            ToolTip = 'Specifies the value of the xBorrar al contab field.';
             BlankZero = true;
             InitValue = true;
         }
         field(50500; "Fecha registro desde"; Date)
         {
+            Caption = 'Fecha registro desde';
+            ToolTip = 'Specifies the value of the Fecha registro desde field.';
 
             trigger OnValidate()
             begin
@@ -76,6 +82,8 @@ tableextension 51172 tableextension51172 extends "Item Journal Template"
         }
         field(50501; "Fecha registro hasta"; Date)
         {
+            Caption = 'Fecha registro hasta';
+            ToolTip = 'Specifies the value of the Fecha registro hasta field.';
 
             trigger OnValidate()
             begin
@@ -88,6 +96,8 @@ tableextension 51172 tableextension51172 extends "Item Journal Template"
         }
         field(50502; Planta; Boolean)
         {
+            Caption = 'Planta';
+            ToolTip = 'Specifies the value of the Planta field.';
         }
     }
 

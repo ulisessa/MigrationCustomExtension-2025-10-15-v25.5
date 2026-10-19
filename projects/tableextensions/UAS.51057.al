@@ -22,11 +22,13 @@ tableextension 51057 tableextension51057 extends "Sales Shipment Buffer"
         field(50000; "Net kilos"; Decimal)
         {
             Caption = 'Quantity';
+            ToolTip = 'Specifies the value of the Quantity field.';
             DataClassification = ToBeClassified;
         }
         field(50001; "Gross kilos"; Decimal)
         {
             Caption = 'Quantity';
+            ToolTip = 'Specifies the value of the Quantity field.';
             DataClassification = ToBeClassified;
         }
     }

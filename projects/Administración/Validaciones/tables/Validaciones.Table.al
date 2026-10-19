@@ -5,17 +5,25 @@ table 50534 Validaciones
     {
         field(1; "Cód. fórmula"; Code[50])
         {
+            Caption = 'Cód. fórmula';
+            ToolTip = 'Specifies the value of the Cód. fórmula field.';
         }
         field(2; "Cód. validación"; Code[50])
         {
+            Caption = 'Cód. validación';
+            ToolTip = 'Specifies the value of the Cód. validación field.';
             TableRelation = "Maestro validaciones";
         }
         field(3; "No. línea"; Integer)
         {
+            Caption = 'Line No.';
+            ToolTip = 'Specifies the value of the Line No field.';
             AutoIncrement = true;
         }
         field(4; Tabla; Integer)
         {
+            Caption = 'Tabla';
+            ToolTip = 'Specifies the value of the Tabla field.';
             //This property is currently not supported
             //TestTableRelation = false;
             //The property 'ValidateTableRelation' can only be set if the property 'TableRelation' is set
@@ -25,11 +33,15 @@ table 50534 Validaciones
         }
         field(5; Campo; Integer)
         {
+            Caption = 'Campo';
+            ToolTip = 'Specifies the value of the Campo field.';
 
 
         }
         field(6; Valor; Text[150])
         {
+            Caption = 'Valor';
+            ToolTip = 'Specifies the value of the Valor field.';
 
             trigger OnLookup()
             begin
@@ -384,16 +396,22 @@ table 50534 Validaciones
         }
         field(7; Tipo; Option)
         {
+            Caption = 'Tipo';
+            ToolTip = 'Specifies the value of the Tipo field.';
             Description = ' {sin tipo},Condicionante {es la primera parte de la restricción, la que se evalúa contra el entorno para analizar si es aplicable o no en cada caso particular},Condición {es la segunda parte de la restricción, la que se evalúa contra el valor en sí para verificar que cumpla con la condición propuesta entre el Tipo condición y el valor},Condicionar {limita la cantidad y calidad de registros sobre los cuales se debe aplicar la evaluación},Sumatoria {realiza la sumatoria del campo especificado},Para cada una {ejecuta para cada registro}';
             OptionMembers = " ",Condicionante,"Condición",Condicionar,Sumatoria,"Para cada una";
         }
         field(8; "Tipo evaluación"; Option)
         {
+            Caption = 'Tipo evaluación';
+            ToolTip = 'Specifies the value of the Tipo evaluación field.';
             Description = ' {sin valor de condición},= {el dato debe ser igual al Valor},<> {el dato debe ser diferente al Valor},> {el dato debe ser mayor al Valor},< {el dato debe ser menor al Valor},| {el dato debe ser uno u otro Valor},& {el dato debe ser uno y otro Valor},[] {el dato debe estar entre varios Valores},( {},) {},+ {el dato debe sumar al Valor},- {el dato debe restar al Valor},* {el dato debe multiplicar al Valor},/ {el dato debe dividir al Valor},% {obtener el porcentual del Valor},@ {el dato debe ser mayor al Valor},..';
             OptionMembers = " ","=","<>",">","<","|","&","[]","(",")","+","-","*","/","%","@","..";
         }
         field(9; "Tipo de valor"; Option)
         {
+            Caption = 'Tipo de valor';
+            ToolTip = 'Specifies the value of the Tipo de valor field.';
             Description = 'Entrada fija {Se ingresa un valor fijo; este valor fijo no puede ser un parámetro},Entrada variable {Se ingresa un valor variable; este valor puede ser un parámetro},Salida valor {La salida de este registro es un valor dependiente del resto de la fórmula},Salida fórmula {La salida de este registro depende de una fórmula},Salida fija {La salida de este registro es un valor fijo independiente}';
             OptionMembers = "Entrada fija","Entrada variable","Salida valor","Salida fórmula","Salida fija";
 
@@ -405,18 +423,26 @@ table 50534 Validaciones
         }
         field(10; "Posición"; Integer)
         {
+            Caption = 'Position';
+            ToolTip = 'Specifies the value of the Position field.';
         }
         field(11; "Nombre referencia"; Text[5])
         {
+            Caption = 'Nombre referencia';
+            ToolTip = 'Specifies the value of the Nombre referencia field.';
         }
         field(100; "Nombre tabla"; Text[30])
         {
+            Caption = 'Nombre tabla';
+            ToolTip = 'Specifies the value of the Nombre tabla field.';
             CalcFormula = Lookup(Object.Name WHERE(Type = CONST(Table),
                                                     ID = FIELD(Tabla)));
             FieldClass = FlowField;
         }
         field(101; "Nombre campo"; Text[30])
         {
+            Caption = 'Nombre campo';
+            ToolTip = 'Specifies the value of the Nombre campo field.';
             CalcFormula = Lookup(Field.FieldName WHERE(TableNo = FIELD(Tabla),
                                                         "No." = FIELD(Campo)));
             FieldClass = FlowField;
@@ -424,6 +450,7 @@ table 50534 Validaciones
         field(102; "Option value"; Text[30])
         {
             Caption = 'Valor opción';
+            ToolTip = 'Specifies the value of the Valor opción field.';
             DataClassification = ToBeClassified;
         }
     }

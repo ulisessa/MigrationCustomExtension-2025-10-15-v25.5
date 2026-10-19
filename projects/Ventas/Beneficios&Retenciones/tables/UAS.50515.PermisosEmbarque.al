@@ -8,6 +8,8 @@ table 50515 "Permisos Embarque"
     {
         field(1; "Permiso embarque"; Code[20])
         {
+            Caption = 'Permiso embarque';
+            ToolTip = 'Specifies the value of the Permiso embarque field.';
         }
     }
 

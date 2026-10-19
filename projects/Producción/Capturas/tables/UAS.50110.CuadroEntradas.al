@@ -5,6 +5,8 @@ table 50110 "Cuadro entradas"
     {
         field(1; Buque; Text[10])
         {
+            Caption = 'Buque';
+            ToolTip = 'Specifies the value of the Buque field.';
 
             trigger OnLookup()
             begin
@@ -17,12 +19,18 @@ table 50110 "Cuadro entradas"
         }
         field(2; Salidas; Date)
         {
+            Caption = 'Salidas';
+            ToolTip = 'Specifies the value of the Salidas field.';
         }
         field(3; "Días de marea"; Integer)
         {
+            Caption = 'Días de marea';
+            ToolTip = 'Specifies the value of the Días de marea field.';
         }
         field(4; Entrada; Date)
         {
+            Caption = 'Entrada';
+            ToolTip = 'Specifies the value of the Entrada field.';
 
             trigger OnValidate()
             begin
@@ -34,12 +42,18 @@ table 50110 "Cuadro entradas"
         }
         field(5; "Día"; Integer)
         {
+            Caption = 'Day';
+            ToolTip = 'Specifies the value of the Day field.';
         }
         field(6; "Día semana"; Date)
         {
+            Caption = 'Día semana';
+            ToolTip = 'Specifies the value of the Día semana field.';
         }
         field(7; "Salida prevista"; Date)
         {
+            Caption = 'Salida prevista';
+            ToolTip = 'Specifies the value of the Salida prevista field.';
 
             trigger OnValidate()
             begin
@@ -51,6 +65,8 @@ table 50110 "Cuadro entradas"
         }
         field(8; Destino; Code[10])
         {
+            Caption = 'Destination';
+            ToolTip = 'Specifies the value of the Destination field.';
             TableRelation = "Entry/Exit Point";
 
             trigger OnValidate()
@@ -63,21 +79,31 @@ table 50110 "Cuadro entradas"
         }
         field(9; "En puerto"; Boolean)
         {
+            Caption = 'En puerto';
+            ToolTip = 'Specifies the value of the En puerto field.';
         }
         field(10; Marea; Code[6])
         {
+            Caption = 'Marea';
+            ToolTip = 'Specifies the value of the Marea field.';
         }
         field(11; Ordenamiento; Integer)
         {
+            Caption = 'Ordenamiento';
+            ToolTip = 'Specifies the value of the Ordenamiento field.';
         }
         field(12; "Kilos capturados"; Decimal)
         {
+            Caption = 'Kilos capturados';
+            ToolTip = 'Specifies the value of the Kilos capturados field.';
             CalcFormula = Sum("On board capture lines".Kilos WHERE("Cód. proyecto" = FIELD(Proyecto),
                                                                     "Fecha registro" = FIELD("Filtro fecha")));
             FieldClass = FlowField;
         }
         field(13; Estado; Text[50])
         {
+            Caption = 'Estado';
+            ToolTip = 'Specifies the value of the Estado field.';
             TableRelation = Estados.Estados;
 
             trigger OnValidate()
@@ -90,9 +116,13 @@ table 50110 "Cuadro entradas"
         }
         field(14; "Buque/Departamento"; Code[10])
         {
+            Caption = 'Buque/Departamento';
+            ToolTip = 'Specifies the value of the Buque/Departamento field.';
         }
         field(15; "Kilos descargados x buque"; Decimal)
         {
+            Caption = 'Kilos descargados x buque';
+            ToolTip = 'Specifies the value of the Kilos descargados x buque field.';
             CalcFormula = Sum("Lín. descarga"."Net weight" WHERE(Buque = FIELD("Global Dimension 1 Code"),
                                                                   "Fecha remito" = FIELD("Filtro fecha")));
             FieldClass = FlowField;
@@ -101,16 +131,20 @@ table 50110 "Cuadro entradas"
         {
             CaptionClass = '1,1,1';
             Caption = 'Global Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 1 Code field.';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(1));
         }
         field(17; "Global Dimension 2 Code"; Code[20])
         {
             CaptionClass = '1,1,2';
             Caption = 'Global Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 2 Code field.';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(2));
         }
         field(18; "Kilos descargados x actividad"; Decimal)
         {
+            Caption = 'Kilos descargados x actividad';
+            ToolTip = 'Specifies the value of the Kilos descargados x actividad field.';
             CalcFormula = Sum("Lín. descarga"."Net weight" WHERE(Actividad = FIELD(Actividad),
                                                                   "Fecha remito" = FIELD("Filtro fecha")));
             FieldClass = FlowField;
@@ -119,13 +153,18 @@ table 50110 "Cuadro entradas"
         {
             CaptionClass = '1,2,3';
             Caption = 'Actividad';
+            ToolTip = 'Specifies the value of the Actividad field.';
         }
         field(100; Proyecto; Code[20])
         {
+            Caption = 'Proyecto';
+            ToolTip = 'Specifies the value of the Proyecto field.';
             TableRelation = Job."No.";
         }
         field(101; "Confirmación de entrada"; Option)
         {
+            Caption = 'Confirmación de entrada';
+            ToolTip = 'Specifies the value of the Confirmación de entrada field.';
             OptionMembers = Pendiente,"Sí";
 
             trigger OnValidate()
@@ -138,6 +177,8 @@ table 50110 "Cuadro entradas"
         }
         field(103; "Filtro fecha"; Date)
         {
+            Caption = 'Date Filter';
+            ToolTip = 'Specifies the value of the Date Filter field.';
             FieldClass = FlowFilter;
         }
     }

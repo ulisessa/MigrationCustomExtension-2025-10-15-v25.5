@@ -56,6 +56,7 @@ tableextension 50257 "Standard Sales Line Ext." extends "Standard Sales Line"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
 
             trigger OnValidate()
@@ -67,6 +68,7 @@ tableextension 50257 "Standard Sales Line Ext." extends "Standard Sales Line"
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(4));
 
             trigger OnValidate()
@@ -78,6 +80,7 @@ tableextension 50257 "Standard Sales Line Ext." extends "Standard Sales Line"
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(5));
 
             trigger OnValidate()
@@ -89,6 +92,7 @@ tableextension 50257 "Standard Sales Line Ext." extends "Standard Sales Line"
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(6));
 
             trigger OnValidate()
@@ -100,6 +104,7 @@ tableextension 50257 "Standard Sales Line Ext." extends "Standard Sales Line"
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(7));
 
             trigger OnValidate()

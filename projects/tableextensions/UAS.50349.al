@@ -21,12 +21,24 @@ tableextension 50349 tableextension50349 extends "Item Journal Batch"
         }
         field(50000; "Requiere hora inicio/fin"; Boolean)
         {
+            Caption = 'Requiere hora inicio/fin';
+            ToolTip = 'Specifies the value of the Requiere hora inicio/fin field.';
         }
         field(50003; "No pide confirmación"; Boolean)
         {
+            Caption = 'No pide confirmación';
+            ToolTip = 'Specifies the value of the No pide confirmación field.';
+        }
+        field(50100; "Entry/Exit Point"; Code[20])
+        {
+            Caption = 'Entry/Exit Point';
+            ToolTip = 'Specifies the value of the Entry/Exit Point field.';
+            TableRelation = "Entry/Exit Point".Code;
         }
         field(50500; "Fecha registro desde"; Date)
         {
+            Caption = 'Fecha registro desde';
+            ToolTip = 'Specifies the value of the Fecha registro desde field.';
 
             trigger OnValidate()
             begin
@@ -40,6 +52,8 @@ tableextension 50349 tableextension50349 extends "Item Journal Batch"
         }
         field(50501; "Fecha registro hasta"; Date)
         {
+            Caption = 'Fecha registro hasta';
+            ToolTip = 'Specifies the value of the Fecha registro hasta field.';
 
             trigger OnValidate()
             begin

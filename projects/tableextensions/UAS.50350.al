@@ -23,6 +23,7 @@ tableextension 50350 tableextension50350 extends "Res. Journal Batch"
         {
 
             Caption = 'Fecha registro desde';
+            ToolTip = 'Specifies the value of the Fecha registro desde field.';
             trigger OnValidate()
             begin
 
@@ -35,6 +36,8 @@ tableextension 50350 tableextension50350 extends "Res. Journal Batch"
         }
         field(50501; "Fecha registro hasta"; Date)
         {
+            Caption = 'Fecha registro hasta';
+            ToolTip = 'Specifies the value of the Fecha registro hasta field.';
 
             trigger OnValidate()
             begin

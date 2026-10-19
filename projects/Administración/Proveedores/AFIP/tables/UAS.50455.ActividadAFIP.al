@@ -6,15 +6,23 @@ table 50455 "Actividad AFIP"
     {
         field(1; "No. actividad"; Code[10])
         {
+            Caption = 'No. actividad';
+            ToolTip = 'Specifies the value of the No. actividad field.';
         }
         field(2; Nombre; Text[250])
         {
+            Caption = 'Name';
+            ToolTip = 'Specifies the value of the Name field.';
         }
         field(3; "Actividad registrada en RG3594"; Boolean)
         {
+            Caption = 'Actividad registrada en RG3594';
+            ToolTip = 'Specifies the value of the Actividad registrada en RG3594 field.';
         }
         field(4; "Tipo actividad"; Option)
         {
+            Caption = 'Tipo actividad';
+            ToolTip = 'Specifies the value of the Tipo actividad field.';
             DataClassification = ToBeClassified;
             OptionMembers = Actividad,Impuesto,Regimen;
         }

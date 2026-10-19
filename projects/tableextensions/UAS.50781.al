@@ -68,6 +68,8 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50000; "Global Dimension 3 Code"; Code[10])
         {
+            Caption = 'Global Dimension 3 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 3 Code field.';
             CaptionClass = '1,2,3';
 
 
@@ -78,6 +80,8 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
+            Caption = 'Global Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
 
@@ -88,6 +92,8 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
+            Caption = 'Global Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
 
@@ -98,6 +104,8 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50003; "Global Dimension 6 Code"; Code[10])
         {
+            Caption = 'Global Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
 
@@ -108,6 +116,8 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
+            Caption = 'Global Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
 
@@ -120,6 +130,7 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         {
             CaptionClass = '1,1,1';
             Caption = 'Filtro dim. global 1';
+            ToolTip = 'Specifies the value of the Filtro dim. global 1 field.';
             FieldClass = FlowFilter;
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(1));
 
@@ -132,6 +143,7 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         {
             CaptionClass = '1,1,2';
             Caption = 'Filtro dim. global 2';
+            ToolTip = 'Specifies the value of the Filtro dim. global 2 field.';
             FieldClass = FlowFilter;
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(2));
 
@@ -144,6 +156,7 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         {
             CaptionClass = '1,2,3';
             Caption = 'Filtro dim. global 3';
+            ToolTip = 'Specifies the value of the Filtro dim. global 3 field.';
             FieldClass = FlowFilter;
 
 
@@ -156,6 +169,7 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         {
             CaptionClass = '1,2,4';
             Caption = 'Filtro dim. global 4';
+            ToolTip = 'Specifies the value of the Filtro dim. global 4 field.';
             FieldClass = FlowFilter;
 
 
@@ -168,6 +182,7 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         {
             CaptionClass = '1,2,5';
             Caption = 'Filtro dim. global 5';
+            ToolTip = 'Specifies the value of the Filtro dim. global 5 field.';
             FieldClass = FlowFilter;
 
 
@@ -180,6 +195,7 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         {
             CaptionClass = '1,2,6';
             Caption = 'Filtro dim. global 6';
+            ToolTip = 'Specifies the value of the Filtro dim. global 6 field.';
             FieldClass = FlowFilter;
 
 
@@ -192,6 +208,7 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         {
             CaptionClass = '1,2,7';
             Caption = 'Filtro dim. global 7';
+            ToolTip = 'Specifies the value of the Filtro dim. global 7 field.';
             FieldClass = FlowFilter;
 
 
@@ -202,80 +219,128 @@ tableextension 50781 tableextension50781 extends "Fixed Asset"
         }
         field(50026; "Eslora de arqueo (m)"; Decimal)
         {
+            Caption = 'Eslora de arqueo (m)';
+            ToolTip = 'Specifies the value of the Eslora de arqueo (m) field.';
         }
         field(50027; "Manga (m)"; Decimal)
         {
+            Caption = 'Manga (m)';
+            ToolTip = 'Specifies the value of the Manga (m) field.';
         }
         field(50028; "Puntal (m)"; Decimal)
         {
+            Caption = 'Puntal (m)';
+            ToolTip = 'Specifies the value of the Puntal (m) field.';
         }
         field(50029; "Bodega neta (m)"; Decimal)
         {
+            Caption = 'Bodega neta (m)';
+            ToolTip = 'Specifies the value of the Bodega neta (m) field.';
         }
         field(50030; "T.R.B."; Decimal)
         {
+            Caption = 'T.R.B.';
+            ToolTip = 'Specifies the value of the T.R.B field.';
         }
         field(50031; "T.R.N."; Decimal)
         {
+            Caption = 'T.R.N.';
+            ToolTip = 'Specifies the value of the T.R.N field.';
         }
         field(50032; "País de construcción"; Text[30])
         {
+            Caption = 'País de construcción';
+            ToolTip = 'Specifies the value of the País de construcción field.';
             TableRelation = "Country/Region";
         }
         field(50033; "Año de construcción"; Integer)
         {
+            Caption = 'Año de construcción';
+            ToolTip = 'Specifies the value of the Año de construcción field.';
         }
         field(50034; "Motor principal n?"; Text[30])
         {
+            Caption = 'Motor principal n?';
+            ToolTip = 'Specifies the value of the Motor principal n? field.';
         }
         field(50035; "Motor principal marca"; Text[30])
         {
+            Caption = 'Motor principal marca';
+            ToolTip = 'Specifies the value of the Motor principal marca field.';
         }
         field(50036; "Motor principal modelo"; Text[30])
         {
+            Caption = 'Motor principal modelo';
+            ToolTip = 'Specifies the value of the Motor principal modelo field.';
         }
         field(50037; "Motor principal potencia (KW)"; Decimal)
         {
+            Caption = 'Motor principal potencia (KW)';
+            ToolTip = 'Specifies the value of the Motor principal potencia (KW) field.';
         }
         field(50038; "Motor auxiliar n?"; Text[30])
         {
+            Caption = 'Motor auxiliar n?';
+            ToolTip = 'Specifies the value of the Motor auxiliar n? field.';
         }
         field(50039; "Motor auxiliar marca"; Text[30])
         {
+            Caption = 'Motor auxiliar marca';
+            ToolTip = 'Specifies the value of the Motor auxiliar marca field.';
         }
         field(50040; "Motor auxiliar modelo"; Text[30])
         {
+            Caption = 'Motor auxiliar modelo';
+            ToolTip = 'Specifies the value of the Motor auxiliar modelo field.';
         }
         field(50041; "Motor auxiliar potencia (KW)"; Decimal)
         {
+            Caption = 'Motor auxiliar potencia (KW)';
+            ToolTip = 'Specifies the value of the Motor auxiliar potencia (KW) field.';
         }
         field(50042; "Volumen túneles"; Decimal)
         {
+            Caption = 'Volumen túneles';
+            ToolTip = 'Specifies the value of the Volumen túneles field.';
         }
         field(50402; "No. proyecto"; Code[20])
         {
+            Caption = 'Job No.';
+            ToolTip = 'Specifies the value of the Job No field.';
             TableRelation = Job;
         }
         field(50403; "Ubicación"; Code[10])
         {
+            Caption = 'Ubicación';
+            ToolTip = 'Specifies the value of the Ubicación field.';
         }
         field(50404; "Grupo contable"; Code[10])
         {
+            Caption = 'Grupo contable';
+            ToolTip = 'Specifies the value of the Grupo contable field.';
             Description = 'Campo únicamente descriptivo';
         }
         field(50500; "Utiliza Cód. serie"; Boolean)
         {
+            Caption = 'Utiliza Cód. serie';
+            ToolTip = 'Specifies the value of the Utiliza Cód. serie field.';
         }
         field(50501; Familia; Code[5])
         {
+            Caption = 'Family';
+            ToolTip = 'Specifies the value of the Family field.';
             TableRelation = "DCL Application Lines";
         }
         field(50502; Subfamilia; Code[5])
         {
+            Caption = 'Subfamily';
+            ToolTip = 'Specifies the value of the Subfamily field.';
             TableRelation = "xCost Object" WHERE(Code = FIELD(Familia));
         }
         field(50503; "Específico"; Code[18])
         {
+            Caption = 'Específico';
+            ToolTip = 'Specifies the value of the Específico field.';
         }
     }
 

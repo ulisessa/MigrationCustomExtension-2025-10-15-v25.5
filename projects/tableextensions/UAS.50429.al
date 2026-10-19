@@ -37,12 +37,18 @@ tableextension 50429 tableextension50429 extends "No. Series Line"
         }
         field(50000; "Fecha final"; Date)
         {
+            Caption = 'Fecha final';
+            ToolTip = 'Specifies the value of the Fecha final field.';
         }
         field(50700; CAI; Code[20])
         {
+            Caption = 'CAI';
+            ToolTip = 'Specifies the value of the CAI field.';
         }
         field(50701; "Fecha Vencimiento"; Date)
         {
+            Caption = 'Fecha Vencimiento';
+            ToolTip = 'Specifies the value of the Fecha Vencimiento field.';
         }
     }
 }

@@ -16,12 +16,18 @@ tableextension 50439 tableextension50439 extends "Tax Area"
         }
         field(50000; "Importar Reproweb"; Boolean)
         {
+            Caption = 'Importar Reproweb';
+            ToolTip = 'Specifies the value of the Importar Reproweb field.';
         }
         field(50001; "Realizar consulta constancia"; Boolean)
         {
+            Caption = 'Realizar consulta constancia';
+            ToolTip = 'Specifies the value of the Realizar consulta constancia field.';
         }
         field(50700; "Tipo fiscal"; Code[10])
         {
+            Caption = 'Fiscal Type';
+            ToolTip = 'Specifies the value of the Fiscal Type field.';
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('TIPO FISCAL'));
             ObsoleteTag = '12/2025';
             ObsoleteState = Pending;

@@ -64,6 +64,7 @@ tableextension 50860 tableextension50860 extends "Item Charge Assignment (Purch)
         {
             BlankZero = true;
             Caption = 'Net kilos to Assign';
+            ToolTip = 'Specifies the value of the Net kilos to Assign field.';
             DecimalPlaces = 0 : 5;
 
         }
@@ -71,6 +72,7 @@ tableextension 50860 tableextension50860 extends "Item Charge Assignment (Purch)
         {
             BlankZero = true;
             Caption = 'Net kilos Assigned';
+            ToolTip = 'Specifies the value of the Net kilos Assigned field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
@@ -78,6 +80,7 @@ tableextension 50860 tableextension50860 extends "Item Charge Assignment (Purch)
         {
             BlankZero = true;
             Caption = 'Gross kilos to Assign';
+            ToolTip = 'Specifies the value of the Gross kilos to Assign field.';
             DecimalPlaces = 0 : 5;
 
         }
@@ -85,6 +88,7 @@ tableextension 50860 tableextension50860 extends "Item Charge Assignment (Purch)
         {
             BlankZero = true;
             Caption = 'Gross Assigned';
+            ToolTip = 'Specifies the value of the Gross Assigned field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }

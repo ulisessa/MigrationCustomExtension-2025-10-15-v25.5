@@ -5,6 +5,8 @@ table 50603 Formulas
     {
         field(1; "Cód. fórmula"; Code[20])
         {
+            Caption = 'Cód. fórmula';
+            ToolTip = 'Specifies the value of the Cód. fórmula field.';
             NotBlank = false;
             TableRelation = Formulas;
             //This property is currently not supported
@@ -13,6 +15,8 @@ table 50603 Formulas
         }
         field(2; "Expresión"; Text[250])
         {
+            Caption = 'Expresión';
+            ToolTip = 'Specifies the value of the Expresión field.';
         }
     }
 

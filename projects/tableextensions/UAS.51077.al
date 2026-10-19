@@ -106,44 +106,52 @@ tableextension 51077 tableextension51077 extends "Posted Whse. Receipt Line"
         field(50010; "Net kilos"; Decimal)
         {
             Caption = 'Net kilos';
+            ToolTip = 'Specifies the value of the Net kilos field.';
             DecimalPlaces = 0 : 5;
         }
         field(50011; "Gross kilos"; Decimal)
         {
             Caption = 'Gross kilos';
+            ToolTip = 'Specifies the value of the Gross kilos field.';
             DecimalPlaces = 0 : 5;
         }
         field(50012; "Net kilos (Base)"; Decimal)
         {
             Caption = 'Net kilos (Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50013; "Gross kilos (Base)"; Decimal)
         {
             Caption = 'Gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50014; "Net kilos Put Away"; Decimal)
         {
             Caption = 'Net kilos Put Away';
+            ToolTip = 'Specifies the value of the Net kilos Put Away field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50015; "Gross kilos Put Away"; Decimal)
         {
             Caption = 'Gross kilos Put Away';
+            ToolTip = 'Specifies the value of the Gross kilos Put Away field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50016; "Net kilos Put Away (Base)"; Decimal)
         {
             Caption = 'Net kilos Put Away (Base)';
+            ToolTip = 'Specifies the value of the Net kilos Put Away (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50017; "Gross kilos Put Away (Base)"; Decimal)
         {
             Caption = 'Gross kilos Put Away (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos Put Away (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
@@ -157,6 +165,7 @@ tableextension 51077 tableextension51077 extends "Posted Whse. Receipt Line"
                                                                                   "Action Type" = FILTER(" " | Take),
                                                                                   "Original Breakbulk" = CONST(false)));
             Caption = 'Put-away net kilos';
+            ToolTip = 'Specifies the value of the Put-away net kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -171,6 +180,7 @@ tableextension 51077 tableextension51077 extends "Posted Whse. Receipt Line"
                                                                                   "Action Type" = FILTER(" " | Take),
                                                                                   "Original Breakbulk" = CONST(false)));
             Caption = 'Put-away gross kilos';
+            ToolTip = 'Specifies the value of the Put-away gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -184,6 +194,7 @@ tableextension 51077 tableextension51077 extends "Posted Whse. Receipt Line"
                                                                                          "Action Type" = FILTER(" " | Take),
                                                                                          "Original Breakbulk" = CONST(false)));
             Caption = 'Put-away net kilos (Base)';
+            ToolTip = 'Specifies the value of the Put-away net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -197,6 +208,7 @@ tableextension 51077 tableextension51077 extends "Posted Whse. Receipt Line"
                                                                                          "Action Type" = FILTER(" " | Take),
                                                                                          "Original Breakbulk" = CONST(false)));
             Caption = 'Put-away gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Put-away gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -204,23 +216,27 @@ tableextension 51077 tableextension51077 extends "Posted Whse. Receipt Line"
         field(50022; "Net kilos Cross-Docked"; Decimal)
         {
             Caption = 'Net kilos Cross-Docked';
+            ToolTip = 'Specifies the value of the Net kilos Cross-Docked field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
         }
         field(50023; "Gross kilos Cross-Docked"; Decimal)
         {
             Caption = 'Gross kilos Cross-Docked';
+            ToolTip = 'Specifies the value of the Gross kilos Cross-Docked field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
         }
         field(50024; "Net kilos Cross-Docked (Base)"; Decimal)
         {
             Caption = 'Net kilos Cross-Docked (Base)';
+            ToolTip = 'Specifies the value of the Net kilos Cross-Docked (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50025; "Gross kilo Cross-Docked (Base)"; Decimal)
         {
             Caption = 'Gross kilo Cross-Docked (Base)';
+            ToolTip = 'Specifies the value of the Gross kilo Cross-Docked (Base) field.';
             DecimalPlaces = 0 : 5;
         }
     }

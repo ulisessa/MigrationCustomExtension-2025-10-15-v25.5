@@ -82,24 +82,28 @@ tableextension 51095 tableextension51095 extends "Bin Creation Worksheet Line"
         field(50000; "Min. net kilos"; Decimal)
         {
             Caption = 'Min. Qty.';
+            ToolTip = 'Specifies the value of the Min. Qty field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
         }
         field(50001; "Max. net kilos"; Decimal)
         {
             Caption = 'Max. Qty.';
+            ToolTip = 'Specifies the value of the Max. Qty field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
         }
         field(50002; "Min. gross kilos"; Decimal)
         {
             Caption = 'Min. Qty.';
+            ToolTip = 'Specifies the value of the Min. Qty field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
         }
         field(50003; "Max. gross kilos"; Decimal)
         {
             Caption = 'Max. Qty.';
+            ToolTip = 'Specifies the value of the Max. Qty field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
         }

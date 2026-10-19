@@ -288,6 +288,7 @@ tableextension 50942 tableextension50942 extends "Service Contract Header"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()
@@ -299,6 +300,7 @@ tableextension 50942 tableextension50942 extends "Service Contract Header"
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
 
             trigger OnValidate()
@@ -310,6 +312,7 @@ tableextension 50942 tableextension50942 extends "Service Contract Header"
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()
@@ -321,6 +324,7 @@ tableextension 50942 tableextension50942 extends "Service Contract Header"
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
 
             trigger OnValidate()
@@ -332,6 +336,7 @@ tableextension 50942 tableextension50942 extends "Service Contract Header"
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()

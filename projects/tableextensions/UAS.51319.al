@@ -12,6 +12,8 @@ tableextension 51319 tableextension51319 extends "Shop Calendar Holiday"
         }
         field(50000; "Meta4 code"; Integer)
         {
+            Caption = 'Meta4 code';
+            ToolTip = 'Specifies the value of the Meta4 code field.';
             DataClassification = ToBeClassified;
             TableRelation = "Meta4 concept";
         }

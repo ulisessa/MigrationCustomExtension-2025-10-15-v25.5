@@ -74,6 +74,7 @@ tableextension 51187 tableextension51187 extends "Cash Flow Worksheet Line"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 3 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 3 Code field.';
             DataClassification = ToBeClassified;
             TableRelation = "Dimension Value".Code WHERE ("Global Dimension No." = CONST (3));
 
@@ -86,6 +87,7 @@ tableextension 51187 tableextension51187 extends "Cash Flow Worksheet Line"
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 4 Code field.';
             DataClassification = ToBeClassified;
             TableRelation = "Dimension Value".Code WHERE ("Global Dimension No." = CONST (4));
 
@@ -98,6 +100,7 @@ tableextension 51187 tableextension51187 extends "Cash Flow Worksheet Line"
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 5 Code field.';
             DataClassification = ToBeClassified;
             TableRelation = "Dimension Value".Code WHERE ("Global Dimension No." = CONST (5));
 
@@ -110,6 +113,7 @@ tableextension 51187 tableextension51187 extends "Cash Flow Worksheet Line"
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 6 Code field.';
             DataClassification = ToBeClassified;
             TableRelation = "Dimension Value".Code WHERE ("Global Dimension No." = CONST (6));
 
@@ -122,6 +126,7 @@ tableextension 51187 tableextension51187 extends "Cash Flow Worksheet Line"
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 7 Code field.';
             DataClassification = ToBeClassified;
             TableRelation = "Dimension Value".Code WHERE ("Global Dimension No." = CONST (7));
 

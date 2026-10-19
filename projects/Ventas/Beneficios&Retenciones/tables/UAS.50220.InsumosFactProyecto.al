@@ -5,13 +5,19 @@ table 50220 "Insumos fact proyecto"
     {
         field(1; Factura; Code[20])
         {
+            Caption = 'Factura';
+            ToolTip = 'Specifies the value of the Factura field.';
         }
         field(2; "Posición arancelaria"; Code[20])
         {
+            Caption = 'Posición arancelaria';
+            ToolTip = 'Specifies the value of the Posición arancelaria field.';
             TableRelation = "Tariff Number"."No.";
         }
         field(3; Insumos; Decimal)
         {
+            Caption = 'Insumos';
+            ToolTip = 'Specifies the value of the Insumos field.';
         }
     }
 

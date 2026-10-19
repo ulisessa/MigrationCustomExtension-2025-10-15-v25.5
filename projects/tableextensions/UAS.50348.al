@@ -45,22 +45,33 @@ tableextension 50348 tableextension50348 extends "Gen. Journal Batch"
         }
         field(50000; Preguntar; Boolean)
         {
+            Caption = 'Preguntar';
+            ToolTip = 'Specifies the value of the Preguntar field.';
         }
         field(50001; "Sección Cobros Cartera"; Boolean)
         {
+            Caption = 'Sección Cobros Cartera';
+            ToolTip = 'Specifies the value of the Sección Cobros Cartera field.';
         }
         field(50002; "Sección Pagos Cartera"; Boolean)
         {
+            Caption = 'Sección Pagos Cartera';
+            ToolTip = 'Specifies the value of the Sección Pagos Cartera field.';
         }
         field(50003; "No pide confirmación"; Boolean)
         {
+            Caption = 'No pide confirmación';
+            ToolTip = 'Specifies the value of the No pide confirmación field.';
         }
         field(50005; "Ocultar ventanas"; Boolean)
         {
+            Caption = 'Ocultar ventanas';
+            ToolTip = 'Specifies the value of the Ocultar ventanas field.';
         }
         field(50006; "No. Series Application"; Code[10])
         {
             Caption = 'No. Series';
+            ToolTip = 'Specifies the value of the No. Series field.';
             TableRelation = "No. Series";
 
             trigger OnValidate()
@@ -83,6 +94,8 @@ tableextension 50348 tableextension50348 extends "Gen. Journal Batch"
         }
         field(50500; "Fecha registro desde"; Date)
         {
+            Caption = 'Fecha registro desde';
+            ToolTip = 'Specifies the value of the Fecha registro desde field.';
 
             trigger OnValidate()
             begin
@@ -96,6 +109,8 @@ tableextension 50348 tableextension50348 extends "Gen. Journal Batch"
         }
         field(50501; "Fecha registro hasta"; Date)
         {
+            Caption = 'Fecha registro hasta';
+            ToolTip = 'Specifies the value of the Fecha registro hasta field.';
 
             trigger OnValidate()
             begin

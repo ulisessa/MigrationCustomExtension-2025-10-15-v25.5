@@ -171,15 +171,21 @@ tableextension 50786 tableextension50786 extends "FA Posting Group"
         }
         field(50000; "No Proyecto Amortizacion"; Code[20])
         {
+            Caption = 'No Proyecto Amortizacion';
+            ToolTip = 'Specifies the value of the No Proyecto Amortizacion field.';
             TableRelation = Job;
         }
         field(50001; "% Amotización lineal"; Decimal)
         {
+            Caption = '% Amotización lineal';
+            ToolTip = 'Specifies the value of the % Amotización lineal field.';
             MaxValue = 100;
             MinValue = 0;
         }
         field(50002; "Cta. provisión compra"; Code[20])
         {
+            Caption = 'Cta. provisión compra';
+            ToolTip = 'Specifies the value of the Cta. provisión compra field.';
             TableRelation = "G/L Account"."No.";
 
             trigger OnValidate()

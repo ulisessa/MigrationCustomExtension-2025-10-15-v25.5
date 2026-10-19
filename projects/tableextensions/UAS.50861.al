@@ -65,6 +65,7 @@ tableextension 50861 tableextension50861 extends "Item Charge Assignment (Sales)
         {
             BlankZero = true;
             Caption = 'Net kilos to Assign';
+            ToolTip = 'Specifies the value of the Net kilos to Assign field.';
             DecimalPlaces = 0 : 5;
 
         }
@@ -72,6 +73,7 @@ tableextension 50861 tableextension50861 extends "Item Charge Assignment (Sales)
         {
             BlankZero = true;
             Caption = 'Gross kilos to Assign';
+            ToolTip = 'Specifies the value of the Gross kilos to Assign field.';
             DecimalPlaces = 0 : 5;
 
         }
@@ -79,6 +81,7 @@ tableextension 50861 tableextension50861 extends "Item Charge Assignment (Sales)
         {
             BlankZero = true;
             Caption = 'Net kilos Assigned';
+            ToolTip = 'Specifies the value of the Net kilos Assigned field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
@@ -86,6 +89,7 @@ tableextension 50861 tableextension50861 extends "Item Charge Assignment (Sales)
         {
             BlankZero = true;
             Caption = 'Gross kilos Assigned';
+            ToolTip = 'Specifies the value of the Gross kilos Assigned field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }

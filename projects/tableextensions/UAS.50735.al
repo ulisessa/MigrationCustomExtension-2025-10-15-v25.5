@@ -210,62 +210,78 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
         //end;
         field(50000; "Global Dimension 3 Code"; Code[10])
         {
+            Caption = 'Global Dimension 3 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 3 Code field.';
             CaptionClass = '1,2,3';
 
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
+            Caption = 'Global Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
+            Caption = 'Global Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
         }
         field(50003; "Global Dimension 6 Code"; Code[10])
         {
+            Caption = 'Global Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
+            Caption = 'Global Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
         }
         field(50010; "Net kilos"; Decimal)
         {
             Caption = 'Net kilos';
+            ToolTip = 'Specifies the value of the Net kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50011; "Gross kilos"; Decimal)
         {
             Caption = 'Gross kilos';
+            ToolTip = 'Specifies the value of the Gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50012; "Expected net kilos"; Decimal)
         {
             Caption = 'Expected net kilos';
+            ToolTip = 'Specifies the value of the Expected net kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50013; "Expected gross kilos"; Decimal)
         {
             Caption = 'Expected gross kilos ';
+            ToolTip = 'Specifies the value of the Expected gross kilos  field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50014; "Remaining net kilos"; Decimal)
         {
             Caption = 'Remaining net kilos';
+            ToolTip = 'Specifies the value of the Remaining net kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50015; "Remaining gross kilos"; Decimal)
         {
             Caption = 'Remaining gross kilos ';
+            ToolTip = 'Specifies the value of the Remaining gross kilos  field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
@@ -277,6 +293,7 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
                                                                       "Order Line No." = FIELD("Prod. Order Line No."),
                                                                       "Prod. Order Comp. Line No." = FIELD("Line No.")));
             Caption = 'Act. Consumption (kn)';
+            ToolTip = 'Specifies the value of the Act. Consumption (kn) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -289,6 +306,7 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
                                                                         "Order Line No." = FIELD("Prod. Order Line No."),
                                                                         "Prod. Order Comp. Line No." = FIELD("Line No.")));
             Caption = 'Act. Consumption (kb)';
+            ToolTip = 'Specifies the value of the Act. Consumption (kb) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -296,24 +314,28 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
         field(50018; "Remaining nk (Base)"; Decimal)
         {
             Caption = 'Remaining nk (Base)';
+            ToolTip = 'Specifies the value of the Remaining nk (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50019; "Remaining gk (Base)"; Decimal)
         {
             Caption = 'Remaining gk (Base)';
+            ToolTip = 'Specifies the value of the Remaining gk (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50020; "Net kilos (Base)"; Decimal)
         {
             Caption = 'Net kilos (Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50021; "Gross kilos (Base)"; Decimal)
         {
             Caption = 'Gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
@@ -326,6 +348,7 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
                                                                              "Source Prod. Order Line" = FIELD("Prod. Order Line No."),
                                                                              "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved nk (Base)';
+            ToolTip = 'Specifies the value of the Reserved nk (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -339,6 +362,7 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
                                                                                "Source Prod. Order Line" = FIELD("Prod. Order Line No."),
                                                                                "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved gk (Base)';
+            ToolTip = 'Specifies the value of the Reserved gk (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -352,6 +376,7 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
                                                                       "Source Prod. Order Line" = FIELD("Prod. Order Line No."),
                                                                       "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved nk';
+            ToolTip = 'Specifies the value of the Reserved nk field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -365,6 +390,7 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
                                                                         "Source Prod. Order Line" = FIELD("Prod. Order Line No."),
                                                                         "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved gk';
+            ToolTip = 'Specifies the value of the Reserved gk field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -372,12 +398,14 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
         field(50026; "Expected nk (Base)"; Decimal)
         {
             Caption = 'Expected nk (Base)';
+            ToolTip = 'Specifies the value of the Expected nk (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50027; "Expected gk (Base)"; Decimal)
         {
             Caption = 'Expected gk (Base)';
+            ToolTip = 'Specifies the value of the Expected gk (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
@@ -393,6 +421,7 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
                                                                                        "Original Breakbulk" = CONST(false),
                                                                                        "Breakbulk No." = CONST(0)));
             Caption = 'Pick net kilos';
+            ToolTip = 'Specifies the value of the Pick net kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -409,6 +438,7 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
                                                                                          "Original Breakbulk" = CONST(false),
                                                                                          "Breakbulk No." = CONST(0)));
             Caption = 'Pick gross kilos';
+            ToolTip = 'Specifies the value of the Pick gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -416,24 +446,28 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
         field(50030; "Net kilos picked"; Decimal)
         {
             Caption = 'Net kilos picked';
+            ToolTip = 'Specifies the value of the Net kilos picked field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50031; "Gross kilos picked"; Decimal)
         {
             Caption = 'Gross kilos picked';
+            ToolTip = 'Specifies the value of the Gross kilos picked field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50032; "Net kilos picked (Base)"; Decimal)
         {
             Caption = 'Net kilos picked (Base)';
+            ToolTip = 'Specifies the value of the Net kilos picked (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50033; "Gross kilos picked (Base)"; Decimal)
         {
             Caption = 'Gross kilos picked (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos picked (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
@@ -448,6 +482,7 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
                                                                                               "Original Breakbulk" = CONST(false),
                                                                                               "Breakbulk No." = CONST(0)));
             Caption = 'Pick nk (Base)';
+            ToolTip = 'Specifies the value of the Pick nk (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -463,6 +498,7 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
                                                                                                 "Original Breakbulk" = CONST(false),
                                                                                                 "Breakbulk No." = CONST(0)));
             Caption = 'Pick gk (Base)';
+            ToolTip = 'Specifies the value of the Pick gk (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -471,6 +507,7 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()
@@ -482,6 +519,7 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
 
             trigger OnValidate()
@@ -493,6 +531,7 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()
@@ -504,6 +543,7 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
 
             trigger OnValidate()
@@ -515,6 +555,7 @@ tableextension 50735 tableextension50735 extends "Prod. Order Component"
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()

@@ -99,30 +99,35 @@ tableextension 50841 tableextension50841 extends "Transfer Shipment Header"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
             TableRelation = "Dimension Value".Code WHERE ("Global Dimension No." = CONST (3));
         }
         field(50506; "Shortcut Dimension 4 Code"; Code[20])
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
             TableRelation = "Dimension Value".Code WHERE ("Global Dimension No." = CONST (4));
         }
         field(50507; "Shortcut Dimension 5 Code"; Code[20])
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
             TableRelation = "Dimension Value".Code WHERE ("Global Dimension No." = CONST (5));
         }
         field(50508; "Shortcut Dimension 6 Code"; Code[20])
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
             TableRelation = "Dimension Value".Code WHERE ("Global Dimension No." = CONST (6));
         }
         field(50509; "Shortcut Dimension 7 Code"; Code[20])
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
             TableRelation = "Dimension Value".Code WHERE ("Global Dimension No." = CONST (7));
         }
     }

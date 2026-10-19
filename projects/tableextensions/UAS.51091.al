@@ -54,91 +54,109 @@ tableextension 51091 tableextension51091 extends "Whse. Internal Pick Line"
         field(50010; "Net kilos (Base)"; Decimal)
         {
             Caption = 'Net kilos (Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50011; "Gross kilos (Base)"; Decimal)
         {
             Caption = 'Gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50012; "Net kilos"; Decimal)
         {
             Caption = 'Net kilos (Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50013; "Gross kilos"; Decimal)
         {
             Caption = 'Gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50014; "Net kilos to handle (Base)"; Decimal)
         {
             Caption = 'Net kilos to handle (Base)';
+            ToolTip = 'Specifies the value of the Net kilos to handle (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50015; "Gross kilos to handle (Base)"; Decimal)
         {
             Caption = 'Gross kilos to handle (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos to handle (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50016; "Net kilos to invoice (Base)"; Decimal)
         {
             Caption = 'Net kilos to invoice (Base)';
+            ToolTip = 'Specifies the value of the Net kilos to invoice (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50017; "Gross kilos to invoice (Base)"; Decimal)
         {
             Caption = 'Gross kilos to invoice (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos to invoice (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50018; "Net kilos invoiced (Base)"; Decimal)
         {
             Caption = 'Net kilos invoiced (Base)';
+            ToolTip = 'Specifies the value of the Net kilos invoiced (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50019; "Gross kilos invoiced (Base)"; Decimal)
         {
             Caption = 'Gross kilos invoiced (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos invoiced (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50022; "Net kilos to Handle"; Decimal)
         {
             Caption = 'Net kilos to Handle';
+            ToolTip = 'Specifies the value of the Net kilos to Handle field.';
             DecimalPlaces = 0 : 5;
         }
         field(50023; "Gross kilos to Handle"; Decimal)
         {
             Caption = 'Gross kilos to Handle';
+            ToolTip = 'Specifies the value of the Gross kilos to Handle field.';
             DecimalPlaces = 0 : 5;
         }
         field(50024; "Net kilos to invoice"; Decimal)
         {
             Caption = 'Net kilos to invoice';
+            ToolTip = 'Specifies the value of the Net kilos to invoice field.';
             DecimalPlaces = 0 : 5;
         }
         field(50025; "Gross kilos to invoice"; Decimal)
         {
             Caption = 'Gross kilos to invoice';
+            ToolTip = 'Specifies the value of the Gross kilos to invoice field.';
             DecimalPlaces = 0 : 5;
         }
         field(50026; "Nk actual handled (Base)"; Decimal)
         {
             Caption = 'Nk actual handled (Base)';
+            ToolTip = 'Specifies the value of the Nk actual handled (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50027; "Gk actual handled (Base)"; Decimal)
         {
             Caption = 'Gk actual handled (Base)';
+            ToolTip = 'Specifies the value of the Gk actual handled (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50038; "Net kilos handled (Base)"; Decimal)
         {
             Caption = 'Net kilos handled (Base)';
+            ToolTip = 'Specifies the value of the Net kilos handled (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50039; "Gross kilos handled (Base)"; Decimal)
         {
             Caption = 'Gross kilos handled (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos handled (Base) field.';
             DecimalPlaces = 0 : 5;
         }
     }

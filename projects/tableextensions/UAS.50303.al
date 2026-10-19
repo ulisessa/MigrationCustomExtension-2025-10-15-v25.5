@@ -118,20 +118,24 @@ tableextension 50303 tableextension50303 extends "Res. Journal Line"
         field(50000; "Document Type"; Option)
         {
             Caption = 'Document Type';
+            ToolTip = 'Specifies the value of the Document Type field.';
             OptionCaption = ' ,Sales Shipment,Sales Invoice,Sales Return Receipt,Sales Credit Memo,Purchase Receipt,Purchase Invoice,Purchase Return Shipment,Purchase Credit Memo,Transfer Shipment,Transfer Receipt,Service Shipment,Service Invoice,Service Credit Memo,Posted Assembly';
             OptionMembers = " ","Sales Shipment","Sales Invoice","Sales Return Receipt","Sales Credit Memo","Purchase Receipt","Purchase Invoice","Purchase Return Shipment","Purchase Credit Memo","Transfer Shipment","Transfer Receipt","Service Shipment","Service Invoice","Service Credit Memo","Posted Assembly";
         }
         field(50001; "Document Line No."; Integer)
         {
             Caption = 'Document Line No.';
+            ToolTip = 'Specifies the value of the Document Line No field.';
         }
         field(50002; Correction; Boolean)
         {
             Caption = 'Correction';
+            ToolTip = 'Specifies the value of the Correction field.';
         }
         field(50003; "Applies-to Entry"; Integer)
         {
             Caption = 'Applies-to Entry';
+            ToolTip = 'Specifies the value of the Applies-to Entry field.';
 
             trigger OnValidate()
             var
@@ -143,18 +147,24 @@ tableextension 50303 tableextension50303 extends "Res. Journal Line"
         field(50004; "Resource Shpt. Entry No."; Integer)
         {
             Caption = 'Item Shpt. Entry No.';
+            ToolTip = 'Specifies the value of the Item Shpt. Entry No field.';
             Editable = false;
         }
         field(50022; "No. Cab. Solicitud"; Code[30])
         {
+            Caption = 'Request header no.';
+            ToolTip = 'Specifies the value of the Request header no field.';
         }
         field(50023; "No. línea Solicitud"; Integer)
         {
+            Caption = 'No. línea Solicitud';
+            ToolTip = 'Specifies the value of the No. línea Solicitud field.';
         }
         field(50505; "Shortcut Dimension 3 Code"; Code[20])
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()
@@ -166,6 +176,7 @@ tableextension 50303 tableextension50303 extends "Res. Journal Line"
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
 
             trigger OnValidate()
@@ -177,6 +188,7 @@ tableextension 50303 tableextension50303 extends "Res. Journal Line"
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()
@@ -188,6 +200,7 @@ tableextension 50303 tableextension50303 extends "Res. Journal Line"
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
 
             trigger OnValidate()
@@ -199,6 +212,7 @@ tableextension 50303 tableextension50303 extends "Res. Journal Line"
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()

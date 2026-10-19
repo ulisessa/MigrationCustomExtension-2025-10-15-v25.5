@@ -76,18 +76,25 @@ tableextension 51167 tableextension51167 extends "Gen. Journal Template"
         }
         field(50001; "Anula desde Reg. Movimientos"; Boolean)
         {
+            Caption = 'Anula desde Reg. Movimientos';
+            ToolTip = 'Specifies the value of the Anula desde Reg. Movimientos field.';
         }
         field(50003; "xBorrar al contab."; Boolean)
         {
+            Caption = 'xBorrar al contab.';
+            ToolTip = 'Specifies the value of the xBorrar al contab field.';
             BlankZero = true;
             InitValue = true;
         }
         field(50004; "Diario corrección"; Boolean)
         {
+            Caption = 'Diario corrección';
+            ToolTip = 'Specifies the value of the Diario corrección field.';
         }
         field(50005; "Test Report ID 2"; Integer)
         {
             Caption = 'Test Report ID 2';
+            ToolTip = 'Specifies the value of the Test Report ID 2 field.';
             TableRelation = Object.ID WHERE(Type = CONST(Report));
         }
         field(50006; "Test Report Caption 2"; Text[250])
@@ -95,11 +102,14 @@ tableextension 51167 tableextension51167 extends "Gen. Journal Template"
             CalcFormula = Lookup(AllObjWithCaption."Object Caption" WHERE("Object Type" = CONST(Report),
                                                                            "Object ID" = FIELD("Test Report ID 2")));
             Caption = 'Test Report Caption 2';
+            ToolTip = 'Specifies the value of the Test Report Caption 2 field.';
             Editable = false;
             FieldClass = FlowField;
         }
         field(50500; "Fecha registro desde"; Date)
         {
+            Caption = 'Fecha registro desde';
+            ToolTip = 'Specifies the value of the Fecha registro desde field.';
 
             trigger OnValidate()
             begin
@@ -112,6 +122,8 @@ tableextension 51167 tableextension51167 extends "Gen. Journal Template"
         }
         field(50501; "Fecha registro hasta"; Date)
         {
+            Caption = 'Fecha registro hasta';
+            ToolTip = 'Specifies the value of the Fecha registro hasta field.';
 
             trigger OnValidate()
             begin

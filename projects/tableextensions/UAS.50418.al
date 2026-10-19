@@ -37,18 +37,26 @@ tableextension 50418 tableextension50418 extends "Payment Terms"
         }
         field(50002; "xDistancia 1er. Plazo"; Text[10])
         {
+            Caption = 'xDistancia 1er. Plazo';
+            ToolTip = 'Specifies the value of the xDistancia 1er. Plazo field.';
             DateFormula = true;
         }
         field(50100; "xNo. Plazos"; Integer)
         {
+            Caption = 'xNo. Plazos';
+            ToolTip = 'Specifies the value of the xNo. Plazos field.';
             BlankZero = true;
         }
         field(50101; "xDistancia Plazos"; Text[10])
         {
+            Caption = 'xDistancia Plazos';
+            ToolTip = 'Specifies the value of the xDistancia Plazos field.';
             DateFormula = true;
         }
         field(50102; "xDías Retroceso"; Integer)
         {
+            Caption = 'xDías Retroceso';
+            ToolTip = 'Specifies the value of the xDías Retroceso field.';
             BlankZero = true;
         }
     }

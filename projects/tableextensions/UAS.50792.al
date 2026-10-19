@@ -134,6 +134,7 @@ tableextension 50792 tableextension50792 extends "FA Depreciation Book"
         field(50000; "Global Dimension 1 filter"; Code[10])
         {
             Caption = 'Filtro Cód. dim. global 1';
+            ToolTip = 'Specifies the value of the Filtro Cód. dim. global 1 field.';
             FieldClass = FlowFilter;
         }
     }

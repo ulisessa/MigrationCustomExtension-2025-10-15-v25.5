@@ -108,67 +108,85 @@ tableextension 50872 tableextension50872 extends "Capacity Ledger Entry"
         }
         field(50000; "Global Dimension 3 Code"; Code[10])
         {
+            Caption = 'Global Dimension 3 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 3 Code field.';
             CaptionClass = '1,2,3';
 
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
+            Caption = 'Global Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
+            Caption = 'Global Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
         }
         field(50003; "Global Dimension 6 Code"; Code[10])
         {
+            Caption = 'Global Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
+            Caption = 'Global Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
         }
         field(50010; "Net kilos"; Decimal)
         {
             Caption = 'Net kilos';
+            ToolTip = 'Specifies the value of the Net kilos field.';
             DecimalPlaces = 0 : 5;
         }
         field(50011; "Gross kilos"; Decimal)
         {
             Caption = 'Gross kilos';
+            ToolTip = 'Specifies the value of the Gross kilos field.';
             DecimalPlaces = 0 : 5;
         }
         field(50012; "Invoiced net kilos"; Decimal)
         {
             Caption = 'Invoiced net kilos';
+            ToolTip = 'Specifies the value of the Invoiced net kilos field.';
             DecimalPlaces = 0 : 5;
         }
         field(50013; "Invoiced gross kilos"; Decimal)
         {
             Caption = 'Invoiced gross kilos';
+            ToolTip = 'Specifies the value of the Invoiced gross kilos field.';
             DecimalPlaces = 0 : 5;
         }
         field(50014; "Output net kilos"; Decimal)
         {
             Caption = 'Output net kilos';
+            ToolTip = 'Specifies the value of the Output net kilos field.';
             DecimalPlaces = 0 : 5;
         }
         field(50015; "Output gross kilos"; Decimal)
         {
             Caption = 'Output gross kilos';
+            ToolTip = 'Specifies the value of the Output gross kilos field.';
             DecimalPlaces = 0 : 5;
         }
         field(50016; "Scrap net kilos"; Decimal)
         {
             Caption = 'Scrap net kilos';
+            ToolTip = 'Specifies the value of the Scrap net kilos field.';
             DecimalPlaces = 0 : 5;
         }
         field(50017; "Scrap gross kilos"; Decimal)
         {
             Caption = 'Scrap gross kilos';
+            ToolTip = 'Specifies the value of the Scrap gross kilos field.';
             DecimalPlaces = 0 : 5;
         }
     }

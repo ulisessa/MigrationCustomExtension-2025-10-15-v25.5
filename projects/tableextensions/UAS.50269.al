@@ -465,6 +465,8 @@ tableextension 50269 "Customer Ext." extends Customer
         //end;
         field(50000; "Global dimension 3 Code"; Code[10])
         {
+            Caption = 'Global dimension 3 Code';
+            ToolTip = 'Specifies the value of the Global dimension 3 Code field.';
             CaptionClass = '1,2,3';
 
 
@@ -475,6 +477,8 @@ tableextension 50269 "Customer Ext." extends Customer
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
+            Caption = 'Global Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
 
@@ -485,6 +489,8 @@ tableextension 50269 "Customer Ext." extends Customer
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
+            Caption = 'Global Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
 
@@ -495,6 +501,8 @@ tableextension 50269 "Customer Ext." extends Customer
         }
         field(50003; "Global Dimension 6 Code"; Code[10])
         {
+            Caption = 'Global Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
 
@@ -505,6 +513,8 @@ tableextension 50269 "Customer Ext." extends Customer
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
+            Caption = 'Global Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
 
@@ -515,40 +525,54 @@ tableextension 50269 "Customer Ext." extends Customer
         }
         field(50005; "Global dimension 3 filter"; Code[10])
         {
+            Caption = 'Global dimension 3 filter';
+            ToolTip = 'Specifies the value of the Global dimension 3 filter field.';
             CaptionClass = '1,3,3';
             FieldClass = FlowFilter;
 
         }
         field(50006; "Global Dimension 4 filter"; Code[10])
         {
+            Caption = 'Global Dimension 4 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 4 filter field.';
             CaptionClass = '1,3,4';
             FieldClass = FlowFilter;
 
         }
         field(50007; "Global Dimension 5 filter"; Code[10])
         {
+            Caption = 'Global Dimension 5 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 5 filter field.';
             CaptionClass = '1,3,5';
             FieldClass = FlowFilter;
 
         }
         field(50008; "Global dimension 6 filter"; Code[10])
         {
+            Caption = 'Global dimension 6 filter';
+            ToolTip = 'Specifies the value of the Global dimension 6 filter field.';
             CaptionClass = '1,3,6';
             FieldClass = FlowFilter;
 
         }
         field(50009; "Global Dimension 7 filter"; Code[20])
         {
+            Caption = 'Global Dimension 7 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 7 filter field.';
             CaptionClass = '1,3,7';
             FieldClass = FlowFilter;
 
         }
         field(50023; "Cód. percepción IIBB"; Code[20])
         {
+            Caption = 'Cód. percepción IIBB';
+            ToolTip = 'Specifies the value of the Cód. percepción IIBB field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER("Ingresos Brutos"));
         }
         field(50200; "% retención s/base imponible"; Decimal)
         {
+            Caption = '% retención s/base imponible';
+            ToolTip = 'Specifies the value of the % retención s/base imponible field.';
             MaxValue = 100;
             MinValue = 0;
 
@@ -559,6 +583,8 @@ tableextension 50269 "Customer Ext." extends Customer
         }
         field(50201; "% retención s/total factura"; Decimal)
         {
+            Caption = '% retención s/total factura';
+            ToolTip = 'Specifies the value of the % retención s/total factura field.';
 
             trigger OnValidate()
             begin
@@ -567,66 +593,99 @@ tableextension 50269 "Customer Ext." extends Customer
         }
         field(50300; "Saldo vencido en efectos"; Decimal)
         {
+            Caption = 'Saldo vencido en efectos';
+            ToolTip = 'Specifies the value of the Saldo vencido en efectos field.';
             AutoFormatType = 1;
             Editable = false;
             FieldClass = Normal;
         }
         field(50301; "Saldo vencido en efectos (DL)"; Decimal)
         {
+            Caption = 'Saldo vencido en efectos (DL)';
+            ToolTip = 'Specifies the value of the Saldo vencido en efectos (DL) field.';
             AutoFormatType = 1;
             Editable = false;
             FieldClass = Normal;
         }
         field(50511; Empleador; Boolean)
         {
+            Caption = 'Empleador';
+            ToolTip = 'Specifies the value of the Empleador field.';
         }
         field(50512; "Imp Ganancias"; Text[2])
         {
+            Caption = 'Imp Ganancias';
+            ToolTip = 'Specifies the value of the Imp Ganancias field.';
         }
         field(50513; "Imp IVA"; Text[2])
         {
+            Caption = 'Imp IVA';
+            ToolTip = 'Specifies the value of the Imp IVA field.';
         }
         field(50514; Monotributo; Text[2])
         {
+            Caption = 'Monotributo';
+            ToolTip = 'Specifies the value of the Monotributo field.';
         }
         field(50515; "Integrante Soc"; Boolean)
         {
+            Caption = 'Integrante Soc';
+            ToolTip = 'Specifies the value of the Integrante Soc field.';
         }
         field(50516; "Fecha Consulta"; Date)
         {
+            Caption = 'Fecha Consulta';
+            ToolTip = 'Specifies the value of the Fecha Consulta field.';
         }
         field(50536; "Fecha digitalizacion IIBB"; Date)
         {
+            Caption = 'Fecha digitalizacion IIBB';
+            ToolTip = 'Specifies the value of the Fecha digitalizacion IIBB field.';
 
         }
         field(50537; "Documentacion IIBB verificada"; Boolean)
         {
+            Caption = 'Documentacion IIBB verificada';
+            ToolTip = 'Specifies the value of the Documentacion IIBB verificada field.';
 
         }
         field(50538; "Inscripto IIBB"; Option)
         {
+            Caption = 'Inscripto IIBB';
+            ToolTip = 'Specifies the value of the Inscripto IIBB field.';
             OptionMembers = " ","Sí","No retención";
         }
         field(50539; "GI Inscription type"; Code[1])
         {
             Caption = 'Tipo inscripción IIBB';
+            ToolTip = 'Specifies the value of the Tipo inscripción IIBB field.';
         }
         field(50540; "Clase precio transferencia"; Option)
         {
+            Caption = 'Clase precio transferencia';
+            ToolTip = 'Specifies the value of the Clase precio transferencia field.';
             DataClassification = ToBeClassified;
             OptionMembers = " ","No cooperante",Cooperante,Vinculada;
         }
         field(50700; "No. resolucion IVA"; Code[20])
         {
+            Caption = 'No. resolucion IVA';
+            ToolTip = 'Specifies the value of the No. resolucion IVA field.';
         }
         field(50701; "No. ingresos brutos"; Code[20])
         {
+            Caption = 'No. ingresos brutos';
+            ToolTip = 'Specifies the value of the No. ingresos brutos field.';
         }
         field(50702; "Exencion S/N"; Boolean)
         {
+            Caption = 'Exencion S/N';
+            ToolTip = 'Specifies the value of the Exencion S/N field.';
         }
         field(50703; "Tipo Fiscal"; Code[10])
         {
+            Caption = 'Fiscal Type';
+            ToolTip = 'Specifies the value of the Fiscal Type field.';
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('TIPO FISCAL'));
             ObsoleteTag = '12/2025';
             ObsoleteState = Pending;
@@ -634,57 +693,81 @@ tableextension 50269 "Customer Ext." extends Customer
         }
         field(50704; DigitoDeControl; Integer)
         {
+            Caption = 'DigitoDeControl';
+            ToolTip = 'Specifies the value of the DigitoDeControl field.';
         }
         field(50705; "Fecha de alta"; Date)
         {
+            Caption = 'Fecha de alta';
+            ToolTip = 'Specifies the value of the Fecha de alta field.';
         }
         field(50706; "Punto de Venta"; Code[10])
         {
+            Caption = 'Punto de Venta';
+            ToolTip = 'Specifies the value of the Punto de Venta field.';
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('PUNTO VENTA'));
         }
         field(50707; "Campo prueba"; Code[10])
         {
+            Caption = 'Campo prueba';
+            ToolTip = 'Specifies the value of the Campo prueba field.';
             TableRelation = Vendor.Test;
         }
         field(60000; "Es proveedor"; Boolean)
         {
+            Caption = 'Es proveedor';
+            ToolTip = 'Specifies the value of the Es proveedor field.';
             CalcFormula = Exist(Vendor WHERE("VAT Registration No." = FIELD("VAT Registration No.")));
             Editable = false;
             FieldClass = FlowField;
         }
         field(65000; "Filtro proyecto"; Code[20])
         {
+            Caption = 'Filtro proyecto';
+            ToolTip = 'Specifies the value of the Filtro proyecto field.';
             FieldClass = FlowFilter;
             TableRelation = Job;
         }
         field(65001; "Filtro tipo factura"; Option)
         {
+            Caption = 'Filtro tipo factura';
+            ToolTip = 'Specifies the value of the Filtro tipo factura field.';
             FieldClass = FlowFilter;
             OptionMembers = Venta,Servicios,"Disminución coste",Anticipo;
         }
         field(65002; "Importe en proyectos (DL)"; Decimal)
         {
+            Caption = 'Importe en proyectos (DL)';
+            ToolTip = 'Specifies the value of the Importe en proyectos (DL) field.';
             Editable = false;
             FieldClass = Normal;
         }
         field(65003; "Importe en proyectos IVA (DL)"; Decimal)
         {
+            Caption = 'Importe en proyectos IVA (DL)';
+            ToolTip = 'Specifies the value of the Importe en proyectos IVA (DL) field.';
             Editable = false;
             FieldClass = Normal;
         }
         field(65004; "Importe retenido (DL)"; Decimal)
         {
+            Caption = 'Importe retenido (DL)';
+            ToolTip = 'Specifies the value of the Importe retenido (DL) field.';
             AutoFormatType = 1;
             Editable = false;
             FieldClass = Normal;
         }
         field(66000; "Modificado pte. traspaso"; Boolean)
         {
+            Caption = 'Modificado pte. traspaso';
+            ToolTip = 'Specifies the value of the Modificado pte. traspaso field.';
             Editable = false;
             InitValue = true;
         }
         field(66001; "Unidades vendidas por cliente"; Decimal)
         {
+            Caption = 'Unidades vendidas por cliente';
+            ToolTip = 'Specifies the value of the Unidades vendidas por cliente field.';
             CalcFormula = Sum("Item Ledger Entry"."Invoiced Quantity" WHERE("Entry Type" = CONST(Sale),
                                                                              "Source Type" = CONST(Customer),
                                                                              "Source No." = FIELD("No."),

@@ -135,89 +135,127 @@ tableextension 50362 tableextension50362 extends "Vendor Ledger Entry"
         }
         field(50000; "Global dimension 3 Code"; Code[10])
         {
+            Caption = 'Global dimension 3 Code';
+            ToolTip = 'Specifies the value of the Global dimension 3 Code field.';
             CaptionClass = '1,2,3';
 
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
+            Caption = 'Global Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
+            Caption = 'Global Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
         }
         field(50003; "Global Dimension 6 Code"; Code[20])
         {
+            Caption = 'Global Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
+            Caption = 'Global Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
         }
         field(50005; "No. banco pagaré"; Code[20])
         {
+            Caption = 'No. banco pagaré';
+            ToolTip = 'Specifies the value of the No. banco pagaré field.';
             TableRelation = "Bank Account";
         }
         field(50006; "No. copias impresas"; Integer)
         {
+            Caption = 'No. copias impresas';
+            ToolTip = 'Specifies the value of the No. copias impresas field.';
         }
         field(50007; Ajustado; Boolean)
         {
+            Caption = 'Ajustado';
+            ToolTip = 'Specifies the value of the Ajustado field.';
         }
         field(50008; "Lugar de Pago"; Option)
         {
+            Caption = 'Lugar de Pago';
+            ToolTip = 'Specifies the value of the Lugar de Pago field.';
             OptionMembers = " ",BUE,CRV,PD,MDQ;
         }
         field(50009; "Payment block"; Boolean)
         {
             Caption = 'Pago bloqueado';
+            ToolTip = 'Specifies the value of the Pago bloqueado field.';
             DataClassification = ToBeClassified;
         }
         field(50010; "Payment blocked by"; Code[10])
         {
             Caption = 'Pago bloqueado por';
+            ToolTip = 'Specifies the value of the Pago bloqueado por field.';
             DataClassification = ToBeClassified;
             TableRelation = Seguridad.Grupo;
         }
         field(50012; "Descripción 2"; Text[250])
         {
+            Caption = 'Description 2';
+            ToolTip = 'Specifies the value of the Description 2 field.';
         }
         field(50100; "Cód. forma pago"; Code[10])
         {
+            Caption = 'Payment Method Code';
+            ToolTip = 'Specifies the value of the Payment Method Code field.';
             TableRelation = "Bank Account";
         }
         field(50102; "No. proyecto"; Code[20])
         {
+            Caption = 'Job No.';
+            ToolTip = 'Specifies the value of the Job No field.';
             TableRelation = Job;
         }
         field(50505; "Nombre libro diario"; Code[10])
         {
+            Caption = 'Nombre libro diario';
+            ToolTip = 'Specifies the value of the Nombre libro diario field.';
         }
         field(50506; "Fecha creación"; Date)
         {
+            Caption = 'Creation Date';
+            ToolTip = 'Specifies the value of the Creation Date field.';
         }
         field(50507; "No_ factura prov_"; Code[35])
         {
+            Caption = 'No_ factura prov_';
+            ToolTip = 'Specifies the value of the No_ factura prov_ field.';
             CalcFormula = Lookup("Vendor Ledger Entry"."External Document No." WHERE("Document Type" = FIELD("Applies-to Doc. Type"),
                                                                                       "Document No." = FIELD("Applies-to Doc. No.")));
             FieldClass = FlowField;
         }
         field(50508; "Cód. condición pago"; Code[20])
         {
+            Caption = 'Cód. condición pago';
+            ToolTip = 'Specifies the value of the Cód. condición pago field.';
             TableRelation = "Payment Terms";
         }
         field(50509; "Archivo vinculado"; Text[250])
         {
+            Caption = 'Archivo vinculado';
+            ToolTip = 'Specifies the value of the Archivo vinculado field.';
             CalcFormula = Lookup("Documentos digitalizados".Archivo WHERE("Nivel 8" = FIELD("Document No.")));
             Editable = false;
             FieldClass = FlowField;
         }
         field(50510; "Mov. liquidación"; Boolean)
         {
+            Caption = 'Mov. liquidación';
+            ToolTip = 'Specifies the value of the Mov. liquidación field.';
             CalcFormula = Exist("Lín. Liquidacion Pagos" WHERE("No. mov." = FIELD("Entry No.")));
             FieldClass = FlowField;
         }
@@ -225,15 +263,20 @@ tableextension 50362 tableextension50362 extends "Vendor Ledger Entry"
         {
             CalcFormula = Lookup("Purch. Inv. Header"."Currency Factor" WHERE("No." = FIELD("Document No.")));
             Caption = 'Tipo de cambio documento';
+            ToolTip = 'Specifies the value of the Tipo de cambio documento field.';
             FieldClass = FlowField;
         }
         field(50512; "Estado recupero"; Option)
         {
+            Caption = 'Estado recupero';
+            ToolTip = 'Specifies the value of the Estado recupero field.';
             DataClassification = ToBeClassified;
             OptionMembers = " ","Listo para solicitar",Solicitado;
         }
         field(50513; "No computable"; Boolean)
         {
+            Caption = 'No computable';
+            ToolTip = 'Specifies the value of the No computable field.';
             DataClassification = ToBeClassified;
         }
         field(50514; "Amount to Apply (LCY)"; Decimal)
@@ -241,6 +284,7 @@ tableextension 50362 tableextension50362 extends "Vendor Ledger Entry"
             AutoFormatExpression = "Currency Code";
             AutoFormatType = 1;
             Caption = 'Amount to Apply';
+            ToolTip = 'Specifies the value of the Amount to Apply field.';
             DataClassification = ToBeClassified;
 
             trigger OnValidate()
@@ -263,27 +307,40 @@ tableextension 50362 tableextension50362 extends "Vendor Ledger Entry"
         field(50596; "Applied by doc. type  Filter"; Option)
         {
             Caption = 'Applied by Doc. Type Filter';
+            ToolTip = 'Specifies the value of the Applied by Doc. Type Filter field.';
             FieldClass = FlowFilter;
             OptionCaption = ' ,Payment,Invoice,Credit Memo,Finance Charge Memo,Reminder,Refund,,,,,,,,,,,,,,,Bill';
             OptionMembers = " ",Pago,Factura,Abono,"Docs. interés",Recordatorio,Reembolso,,,,,,,,,,,,,,,Efecto;
         }
         field(50597; "Fecha anulación"; Date)
         {
+            Caption = 'Fecha anulación';
+            ToolTip = 'Specifies the value of the Fecha anulación field.';
         }
         field(50598; "Usuario Anulación"; Code[20])
         {
+            Caption = 'Usuario Anulación';
+            ToolTip = 'Specifies the value of the Usuario Anulación field.';
         }
         field(50599; Anulado; Boolean)
         {
+            Caption = 'Anulado';
+            ToolTip = 'Specifies the value of the Anulado field.';
         }
         field(50700; Liquidarefecto; Boolean)
         {
+            Caption = 'Liquidarefecto';
+            ToolTip = 'Specifies the value of the Liquidarefecto field.';
         }
         field(50701; "Cheque a la orden de"; Text[50])
         {
+            Caption = 'Cheque a la orden de';
+            ToolTip = 'Specifies the value of the Cheque a la orden de field.';
         }
         field(50702; "No. cheque"; Code[20])
         {
+            Caption = 'No. cheque';
+            ToolTip = 'Specifies the value of the No. cheque field.';
         }
     }
 

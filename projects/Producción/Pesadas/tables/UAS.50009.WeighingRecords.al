@@ -6,31 +6,37 @@ table 50009 "Weighing Records"
         field(1; "Shipment No."; Code[20])
         {
             Caption = 'No. remito';
+            ToolTip = 'Specifies the value of the No. remito field.';
             DataClassification = ToBeClassified;
         }
         field(2; "Weighing line no."; Integer)
         {
             Caption = 'No. línea pesada';
+            ToolTip = 'Specifies the value of the No. línea pesada field.';
             DataClassification = ToBeClassified;
         }
         field(3; "Qty. per Bulk"; Integer)
         {
             Caption = 'Cantidad por Bulto';
+            ToolTip = 'Specifies the value of the Cantidad por Bulto field.';
             DataClassification = ToBeClassified;
         }
         field(4; "Scale code"; Code[10])
         {
             Caption = 'Cód. balanza';
+            ToolTip = 'Specifies the value of the Cód. balanza field.';
             DataClassification = ToBeClassified;
         }
         field(5; "Location code"; Code[10])
         {
             Caption = 'Cód. depósito';
+            ToolTip = 'Specifies the value of the Cód. depósito field.';
             DataClassification = ToBeClassified;
         }
         field(6; "Item no."; Code[20])
         {
-            Caption = 'No. producto';
+            Caption = 'Item No.';
+            ToolTip = 'Specifies the value of the Item No field.';
             DataClassification = ToBeClassified;
             TableRelation = Item."No.";
 
@@ -62,12 +68,14 @@ table 50009 "Weighing Records"
         }
         field(7; "Item description"; Text[199])
         {
-            Caption = 'Descripción producto';
+            Caption = 'Item Description';
+            ToolTip = 'Specifies the value of the Item Description field.';
             DataClassification = ToBeClassified;
         }
         field(8; "Lot no."; Code[30])
         {
             Caption = 'No. lote';
+            ToolTip = 'Specifies the value of the No. lote field.';
             DataClassification = ToBeClassified;
             TableRelation = "Item Ledger Entry"."Lot No." WHERE ("Item No." = FIELD ("Item no."),
                                                                  "Location Code" = FIELD ("Location code"),
@@ -109,7 +117,8 @@ table 50009 "Weighing Records"
         }
         field(9; "Pallet no."; Code[20])
         {
-            Caption = 'No. pallet';
+            Caption = 'Pallet no.';
+            ToolTip = 'Specifies the value of the Pallet no field.';
             DataClassification = ToBeClassified;
             TableRelation = "Item Ledger Entry"."Pallet no." WHERE ("Item No." = FIELD ("Item no."),
                                                                     "Location Code" = FIELD ("Location code"),
@@ -154,11 +163,13 @@ table 50009 "Weighing Records"
         field(10; "Weighing Date and Time"; DateTime)
         {
             Caption = 'Fecha y hora pesada';
+            ToolTip = 'Specifies the value of the Fecha y hora pesada field.';
             DataClassification = ToBeClassified;
         }
         field(11; Tare; Integer)
         {
             Caption = 'Tara';
+            ToolTip = 'Specifies the value of the Tara field.';
             DataClassification = ToBeClassified;
 
             trigger OnValidate()
@@ -169,6 +180,7 @@ table 50009 "Weighing Records"
         field(12; "Gross + Tare"; Decimal)
         {
             Caption = 'Bruto + Tara';
+            ToolTip = 'Specifies the value of the Bruto + Tara field.';
             DataClassification = ToBeClassified;
 
             trigger OnValidate()
@@ -179,31 +191,38 @@ table 50009 "Weighing Records"
         field(13; Gross; Decimal)
         {
             Caption = 'Bruto';
+            ToolTip = 'Specifies the value of the Bruto field.';
             DataClassification = ToBeClassified;
         }
         field(14; Detail; Text[30])
         {
             Caption = 'Detalles';
+            ToolTip = 'Specifies the value of the Detalles field.';
             DataClassification = ToBeClassified;
         }
         field(15; Confirmed; Option)
         {
             Caption = 'Confirmado';
+            ToolTip = 'Specifies the value of the Confirmado field.';
             DataClassification = ToBeClassified;
             OptionMembers = " ","Pesar activamente",Confirmada,Reabrir;
         }
         field(16; Status; Text[50])
         {
             Caption = 'Estado';
+            ToolTip = 'Specifies the value of the Estado field.';
             DataClassification = ToBeClassified;
         }
         field(17; "Lote origen"; Code[10])
         {
+            Caption = 'Lote origen';
+            ToolTip = 'Specifies the value of the Lote origen field.';
             DataClassification = ToBeClassified;
         }
         field(18; "Item ledger entry no."; Integer)
         {
             Caption = 'No. mov. producto';
+            ToolTip = 'Specifies the value of the No. mov. producto field.';
             DataClassification = ToBeClassified;
         }
     }

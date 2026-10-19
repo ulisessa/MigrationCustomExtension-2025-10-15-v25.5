@@ -13,6 +13,7 @@ tableextension 50732 tableextension50732 extends "Item Unit of Measure"
         field(50000; "Country code"; Code[3])
         {
             Caption = 'Cód. país';
+            ToolTip = 'Specifies the value of the Cód. país field.';
 
             trigger OnValidate()
             begin
@@ -22,7 +23,8 @@ tableextension 50732 tableextension50732 extends "Item Unit of Measure"
         }
         field(50001; "Company code"; Code[6])
         {
-            Caption = 'Cód. empresa';
+            Caption = 'Business Unit Code';
+            ToolTip = 'Specifies the value of the Business Unit Code field.';
 
             trigger OnValidate()
             begin
@@ -33,6 +35,7 @@ tableextension 50732 tableextension50732 extends "Item Unit of Measure"
         field(50002; "Item code"; Code[3])
         {
             Caption = 'Cód. proudcto';
+            ToolTip = 'Specifies the value of the Cód. proudcto field.';
 
             trigger OnValidate()
             begin
@@ -43,21 +46,25 @@ tableextension 50732 tableextension50732 extends "Item Unit of Measure"
         field(50003; "Validation code"; Code[1])
         {
             Caption = 'Cód. validación';
+            ToolTip = 'Specifies the value of the Cód. validación field.';
             Editable = false;
         }
         field(50004; "EAN-13 code"; Code[13])
         {
             Caption = 'Cód. EAN-13';
+            ToolTip = 'Specifies the value of the Cód. EAN-13 field.';
         }
         field(50005; "Item description"; Text[250])
         {
             CalcFormula = Lookup(Item.Description WHERE("No." = FIELD("Item No.")));
-            Caption = 'Descripción producto';
+            Caption = 'Item Description';
+            ToolTip = 'Specifies the value of the Item Description field.';
             FieldClass = FlowField;
         }
         field(50006; "Bulk code"; Code[1])
         {
             Caption = 'Cód. bulto';
+            ToolTip = 'Specifies the value of the Cód. bulto field.';
             CharAllowed = '12345678';
 
             trigger OnValidate()
@@ -69,6 +76,7 @@ tableextension 50732 tableextension50732 extends "Item Unit of Measure"
         field(50007; "EAN-14 code"; Code[14])
         {
             Caption = 'Cód. EAN-14';
+            ToolTip = 'Specifies the value of the Cód. EAN-14 field.';
         }
     }
 

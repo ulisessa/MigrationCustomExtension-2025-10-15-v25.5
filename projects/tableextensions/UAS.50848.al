@@ -221,6 +221,7 @@ tableextension 50848 tableextension50848 extends "Warehouse Activity Line"
         field(50010; "Net kilos"; Decimal)
         {
             Caption = 'Net kilos';
+            ToolTip = 'Specifies the value of the Net kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -233,6 +234,7 @@ tableextension 50848 tableextension50848 extends "Warehouse Activity Line"
         field(50011; "Gross kilos"; Decimal)
         {
             Caption = 'Gross kilos';
+            ToolTip = 'Specifies the value of the Gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -245,6 +247,7 @@ tableextension 50848 tableextension50848 extends "Warehouse Activity Line"
         field(50012; "Net kilos (Base)"; Decimal)
         {
             Caption = 'Net kilos (Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -257,6 +260,7 @@ tableextension 50848 tableextension50848 extends "Warehouse Activity Line"
         field(50013; "Gross kilos (Base)"; Decimal)
         {
             Caption = 'Gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -269,6 +273,7 @@ tableextension 50848 tableextension50848 extends "Warehouse Activity Line"
         field(50014; "Net kilos Outstanding"; Decimal)
         {
             Caption = 'Net kilos Outstanding';
+            ToolTip = 'Specifies the value of the Net kilos Outstanding field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -281,6 +286,7 @@ tableextension 50848 tableextension50848 extends "Warehouse Activity Line"
         field(50015; "Gross kilos Outstanding"; Decimal)
         {
             Caption = 'Gross kilos Outstanding';
+            ToolTip = 'Specifies the value of the Gross kilos Outstanding field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -293,6 +299,7 @@ tableextension 50848 tableextension50848 extends "Warehouse Activity Line"
         field(50016; "Net kilos Outstanding (Base)"; Decimal)
         {
             Caption = 'Net kilos Outstanding (Base)';
+            ToolTip = 'Specifies the value of the Net kilos Outstanding (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -305,6 +312,7 @@ tableextension 50848 tableextension50848 extends "Warehouse Activity Line"
         field(50017; "Gross kilos Outstanding (Base)"; Decimal)
         {
             Caption = 'Gross kilos Outstanding (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos Outstanding (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -317,6 +325,7 @@ tableextension 50848 tableextension50848 extends "Warehouse Activity Line"
         field(50018; "Net kilos to Handle"; Decimal)
         {
             Caption = 'Net kilos to Handle';
+            ToolTip = 'Specifies the value of the Net kilos to Handle field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -324,6 +333,7 @@ tableextension 50848 tableextension50848 extends "Warehouse Activity Line"
         field(50019; "Gross kilos to Handle"; Decimal)
         {
             Caption = 'Gross kilos to Handle';
+            ToolTip = 'Specifies the value of the Gross kilos to Handle field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -331,18 +341,21 @@ tableextension 50848 tableextension50848 extends "Warehouse Activity Line"
         field(50020; "Net kilos to Handle (Base)"; Decimal)
         {
             Caption = 'Net kilos to Handle (Base)';
+            ToolTip = 'Specifies the value of the Net kilos to Handle (Base) field.';
             DecimalPlaces = 0 : 5;
 
         }
         field(50021; "Gross kilos to Handle (Base)"; Decimal)
         {
             Caption = 'Gross kilos to Handle (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos to Handle (Base) field.';
             DecimalPlaces = 0 : 5;
 
         }
         field(50022; "Net kilos Handled"; Decimal)
         {
             Caption = 'Net kilos Handled';
+            ToolTip = 'Specifies the value of the Net kilos Handled field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -354,6 +367,7 @@ tableextension 50848 tableextension50848 extends "Warehouse Activity Line"
         field(50023; "Gross kilos Handled"; Decimal)
         {
             Caption = 'Gross kilos Handled';
+            ToolTip = 'Specifies the value of the Gross kilos Handled field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -365,12 +379,14 @@ tableextension 50848 tableextension50848 extends "Warehouse Activity Line"
         field(50024; "Net kilos Handled (Base)"; Decimal)
         {
             Caption = 'Net kilos Handled (Base)';
+            ToolTip = 'Specifies the value of the Net kilos Handled (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50025; "Gross kilos Handled (Base)"; Decimal)
         {
             Caption = 'Gross kilos Handled (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos Handled (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }

@@ -165,6 +165,8 @@ tableextension 50245 "Job Ext." extends Job
         //end;
         field(50000; "Global Dimension 3 Code"; Code[10])
         {
+            Caption = 'Global Dimension 3 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 3 Code field.';
             CaptionClass = '1,2,3';
 
             //This property is currently not supported
@@ -199,6 +201,8 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
+            Caption = 'Global Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
 
@@ -210,6 +214,8 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
+            Caption = 'Global Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
 
@@ -221,6 +227,8 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(50003; "Global Dimension 6 Code"; Code[10])
         {
+            Caption = 'Global Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
 
@@ -232,6 +240,8 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
+            Caption = 'Global Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
 
@@ -244,30 +254,39 @@ tableextension 50245 "Job Ext." extends Job
         field(50005; "Default location code"; Code[10])
         {
             Caption = 'Cód. predefinido de depósito';
+            ToolTip = 'Specifies the value of the Cód. predefinido de depósito field.';
             DataClassification = ToBeClassified;
             TableRelation = Location;
         }
         field(50011; "Stock invoicing journal"; Code[10])
         {
             Caption = 'Libro diario facturación stock';
+            ToolTip = 'Specifies the value of the Libro diario facturación stock field.';
             DataClassification = ToBeClassified;
             TableRelation = "Job Journal Template".Name;
         }
         field(50012; "Stock invoicing section"; Code[10])
         {
             Caption = 'Sección diario facturación stock';
+            ToolTip = 'Specifies the value of the Sección diario facturación stock field.';
             DataClassification = ToBeClassified;
             TableRelation = "Job Journal Batch".Name WHERE("Journal Template Name" = FIELD("Stock invoicing journal"));
         }
         field(50019; "Lote origen"; Code[10])
         {
+            Caption = 'Lote origen';
+            ToolTip = 'Specifies the value of the Lote origen field.';
             DataClassification = ToBeClassified;
         }
         field(50020; Patron; Text[50])
         {
+            Caption = 'Patron';
+            ToolTip = 'Specifies the value of the Patron field.';
         }
         field(50021; "Importe facturado DA"; Decimal)
         {
+            Caption = 'Importe facturado DA';
+            ToolTip = 'Specifies the value of the Importe facturado DA field.';
             AutoFormatType = 1;
             CalcFormula = - Sum("Job Ledger Entry"."Add.-Currency Total Price");
             Editable = false;
@@ -275,6 +294,8 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(50022; "Coste total DA"; Decimal)
         {
+            Caption = 'Coste total DA';
+            ToolTip = 'Specifies the value of the Coste total DA field.';
             AutoFormatType = 1;
             CalcFormula = Sum("Job Ledger Entry"."Original Total Cost (ACY)" WHERE("Job No." = FIELD("No."),
                                                                                     "Global Dimension 1 Code" = FIELD("Filtro departamento"),
@@ -287,49 +308,65 @@ tableextension 50245 "Job Ext." extends Job
         field(50023; "Invoicing Job Task No."; Code[20])
         {
             Caption = 'Job Task No.';
+            ToolTip = 'Specifies the value of the Job Task No field.';
             DataClassification = ToBeClassified;
             TableRelation = "Job Task"."Job Task No." WHERE("Job No." = FIELD("No."));
         }
         field(50037; Block; Boolean)
         {
+            Caption = 'Block';
+            ToolTip = 'Specifies the value of the Block field.';
         }
         field(50038; "Sello Argentino"; Boolean)
         {
+            Caption = 'Sello Argentino';
+            ToolTip = 'Specifies the value of the Sello Argentino field.';
             DataClassification = ToBeClassified;
         }
         field(50039; "MSC"; Boolean)
         {
+            Caption = 'MSC';
+            ToolTip = 'Specifies the value of the MSC field.';
             DataClassification = ToBeClassified;
         }
 
         field(50093; "Provision amount (LCY)"; Decimal)
         {
             Caption = 'Importe provisión (DL)';
+            ToolTip = 'Specifies the value of the Importe provisión (DL) field.';
             Editable = false;
         }
         field(50100; "Address code"; Code[2])
         {
             Caption = 'Cód. dirección';
+            ToolTip = 'Specifies the value of the Cód. dirección field.';
             Editable = false;
             NotBlank = true;
         }
         field(50101; "Area code"; Code[2])
         {
             Caption = 'Cód. área';
+            ToolTip = 'Specifies the value of the Cód. área field.';
             Editable = false;
             NotBlank = true;
         }
         field(50104; "Filtro tipos mov."; Option)
         {
+            Caption = 'Filtro tipos mov.';
+            ToolTip = 'Specifies the value of the Filtro tipos mov field.';
             FieldClass = FlowFilter;
             OptionMembers = Consumo,Venta,,,,"Producción",Servicios,Anticipo;
         }
         field(50105; "Filtro factura venta"; Code[20])
         {
+            Caption = 'Filtro factura venta';
+            ToolTip = 'Specifies the value of the Filtro factura venta field.';
             FieldClass = FlowFilter;
         }
         field(50106; "Base impuestos Expo"; Decimal)
         {
+            Caption = 'Base impuestos Expo';
+            ToolTip = 'Specifies the value of the Base impuestos Expo field.';
             CalcFormula = Sum("Sales Line"."Importe USD" WHERE("Document Type" = FILTER(Invoice | "Credit Memo"),
                                                                 "Document No." = FIELD("Filtro factura venta"),
                                                                 "Shortcut Dimension 1 Code" = FIELD("Filtro departamento"),
@@ -346,10 +383,13 @@ tableextension 50245 "Job Ext." extends Job
         field(50107; "Tariff code filter"; Code[20])
         {
             Caption = 'Filtro Cód. arancelario';
+            ToolTip = 'Specifies the value of the Filtro Cód. arancelario field.';
             FieldClass = FlowFilter;
         }
         field(50108; "Base impuestos Expo CA"; Decimal)
         {
+            Caption = 'Base impuestos Expo CA';
+            ToolTip = 'Specifies the value of the Base impuestos Expo CA field.';
             CalcFormula = Sum("Sales Line"."Importe USD" WHERE("Document Type" = FILTER(Invoice | "Credit Memo"),
                                                                 "Document No." = FIELD("Filtro factura venta"),
                                                                 "Shortcut Dimension 3 Code" = FIELD("Filtro actividad"),
@@ -358,25 +398,33 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(50190; "xCod. Subprograma"; Code[10])
         {
+            Caption = 'xCod. Subprograma';
+            ToolTip = 'Specifies the value of the xCod. Subprograma field.';
             TableRelation = "Employee entry";
         }
         field(50200; "Fecha llegada prevista"; Date)
         {
+            Caption = 'Fecha llegada prevista';
+            ToolTip = 'Specifies the value of the Fecha llegada prevista field.';
         }
         field(50201; "Year tide"; Integer)
         {
             BlankZero = true;
             Caption = 'Año marea';
+            ToolTip = 'Specifies the value of the Año marea field.';
             Editable = false;
         }
         field(50202; "Last pallet no."; Text[10])
         {
             CalcFormula = Max("Item Ledger Entry"."Pallet no." WHERE("Job No." = FIELD("No.")));
             Caption = 'Último no. de pallet';
+            ToolTip = 'Specifies the value of the Último no. de pallet field.';
             FieldClass = FlowField;
         }
         field(50203; "Totales DCL"; Decimal)
         {
+            Caption = 'Totales DCL';
+            ToolTip = 'Specifies the value of the Totales DCL field.';
             CalcFormula = Sum("Lín. DCL"."Kilos netos" WHERE("No. proyecto" = FIELD("No."),
                                                               Actividad = FIELD("Filtro actividad"),
                                                               "Fecha DCL" = FIELD("Posting Date Filter"),
@@ -387,6 +435,8 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(50204; "Totales aplicados a DCL"; Decimal)
         {
+            Caption = 'Totales aplicados a DCL';
+            ToolTip = 'Specifies the value of the Totales aplicados a DCL field.';
             CalcFormula = Sum("DCL Application Lines"."Origin kilos" WHERE("DCL Job no." = FIELD("No."),
                                                                             "Document date" = FIELD("Posting Date Filter"),
                                                                             Activity = FIELD("Filtro actividad")));
@@ -394,6 +444,8 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(50205; "Totales descontados DCL"; Decimal)
         {
+            Caption = 'Totales descontados DCL';
+            ToolTip = 'Specifies the value of the Totales descontados DCL field.';
             CalcFormula = Sum("Lín. DCL"."Kilos netos" WHERE("No. proyecto" = FIELD("No."),
                                                               Actividad = FIELD("Filtro actividad"),
                                                               "Fecha DCL" = FIELD("Posting Date Filter"),
@@ -404,30 +456,40 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(50500; "Salida Prevista Marea pos"; Date)
         {
+            Caption = 'Salida Prevista Marea pos';
+            ToolTip = 'Specifies the value of the Salida Prevista Marea pos field.';
         }
         field(50501; "Puerto Descarga"; Code[10])
         {
             Caption = 'Puerto Descarga';
+            ToolTip = 'Specifies the value of the Puerto Descarga field.';
             TableRelation = "Entry/Exit Point";
         }
         field(50502; "Requires OP no."; Boolean)
         {
             Caption = 'Requiere No. orden producción';
+            ToolTip = 'Specifies the value of the Requiere No. orden producción field.';
         }
         field(50503; "Kilos netos descargados"; Decimal)
         {
+            Caption = 'Kilos netos descargados';
+            ToolTip = 'Specifies the value of the Kilos netos descargados field.';
             CalcFormula = Sum("Item Ledger Entry"."Net kilos" WHERE("Job No." = FIELD("No."),
                                                                      "Nombre libro diario" = CONST('DESCARGA')));
             FieldClass = FlowField;
         }
         field(50504; "Kilos brutos descargados"; Decimal)
         {
+            Caption = 'Kilos brutos descargados';
+            ToolTip = 'Specifies the value of the Kilos brutos descargados field.';
             CalcFormula = Sum("Item Ledger Entry"."Gross kilos" WHERE("Job No." = FIELD("No."),
                                                                        "Nombre libro diario" = CONST('DESCARGA')));
             FieldClass = FlowField;
         }
         field(50505; "Kilos netos comprados"; Decimal)
         {
+            Caption = 'Kilos netos comprados';
+            ToolTip = 'Specifies the value of the Kilos netos comprados field.';
             CalcFormula = Sum("Item Ledger Entry"."Net kilos" WHERE("Job No." = FIELD("No."),
                                                                      "Entry Type" = CONST(Purchase),
                                                                      "Nombre libro diario" = CONST('COMPRA')));
@@ -436,87 +498,107 @@ tableextension 50245 "Job Ext." extends Job
         field(50506; "Location filter"; Code[10])
         {
             Caption = 'Filtro depósito';
+            ToolTip = 'Specifies the value of the Filtro depósito field.';
             FieldClass = FlowFilter;
             TableRelation = Location;
         }
         field(50507; "Filtro puerto"; Code[10])
         {
             Caption = 'Filtro puerto';
+            ToolTip = 'Specifies the value of the Filtro puerto field.';
             FieldClass = FlowFilter;
             TableRelation = "Entry/Exit Point";
         }
         field(50508; "Filtro departamento"; Code[10])
         {
             Caption = 'Filtro departamento';
+            ToolTip = 'Specifies the value of the Filtro departamento field.';
             FieldClass = FlowFilter;
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(1));
         }
         field(50509; "Filtro actividad"; Code[10])
         {
             Caption = 'Filtro actividad';
+            ToolTip = 'Specifies the value of the Filtro actividad field.';
             FieldClass = FlowFilter;
-            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(2));
+            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
         }
         field(50510; "Filtro marea/ciudad"; Code[10])
         {
             Caption = 'Filtro marea/ciudad';
+            ToolTip = 'Specifies the value of the Filtro marea/ciudad field.';
             FieldClass = FlowFilter;
 
         }
         field(50511; "Filtro lote"; Code[10])
         {
             Caption = 'Filtro lote';
+            ToolTip = 'Specifies the value of the Filtro lote field.';
             FieldClass = FlowFilter;
         }
         field(50512; "Filtro familia"; Code[10])
         {
             Caption = 'Filtro familia';
+            ToolTip = 'Specifies the value of the Filtro familia field.';
             FieldClass = FlowFilter;
             TableRelation = "Familia producto";
         }
         field(50513; "Filtro subfamilia"; Code[10])
         {
             Caption = 'Filtro subfamilia';
+            ToolTip = 'Specifies the value of the Filtro subfamilia field.';
             FieldClass = FlowFilter;
             TableRelation = "Subfamilia producto";
         }
         field(50514; "Filtro proyecto"; Code[20])
         {
             Caption = 'Filtro proyecto';
+            ToolTip = 'Specifies the value of the Filtro proyecto field.';
             FieldClass = FlowFilter;
             TableRelation = Job;
         }
         field(50515; "Tax group code"; Code[10])
         {
-            Caption = 'Cód. grupo impuesto';
+            Caption = 'Tax Group Code';
+            ToolTip = 'Specifies the value of the Tax Group Code field.';
             TableRelation = "Tax Group";
         }
         field(50516; "Personal involucrado"; Integer)
         {
+            Caption = 'Personal involucrado';
+            ToolTip = 'Specifies the value of the Personal involucrado field.';
             CalcFormula = Count("Personal embarcado" WHERE(Proyecto = FIELD("No.")));
             FieldClass = FlowField;
         }
         field(50517; "Sueldos personal"; Decimal)
         {
+            Caption = 'Sueldos personal';
+            ToolTip = 'Specifies the value of the Sueldos personal field.';
             CalcFormula = Sum("Buffer Meta4".Importe WHERE(Proyecto = FIELD("No."),
                                                             Importe = FILTER(> 0)));
             FieldClass = FlowField;
         }
         field(50518; "Kilos netos pendientes"; Decimal)
         {
+            Caption = 'Kilos netos pendientes';
+            ToolTip = 'Specifies the value of the Kilos netos pendientes field.';
             BlankZero = true;
-            CalcFormula = Sum("Item Ledger Entry"."Remaining net kilos" WHERE(Open = CONST(true),
-                                                                               "Item No." = FIELD(FILTER("Filtro producto")),
-                                                                               "Lote origen" = FIELD(FILTER("Filtro lote")),
-                                                                               "Lote origen" = FIELD(FILTER("Lote origen"))));
+            // Suma con signo de los kilos de los movimientos: cada salida resta sus propios kilos.
+            CalcFormula = Sum("Item Ledger Entry"."Net kilos" WHERE("Item No." = FIELD(FILTER("Filtro producto")),
+                                                                     "Lote origen" = FIELD(FILTER("Filtro lote")),
+                                                                     "Lote origen" = FIELD(FILTER("Lote origen"))));
             FieldClass = FlowField;
         }
         field(50519; "Kilos brutos pendientes"; Decimal)
         {
+            Caption = 'Kilos brutos pendientes';
+            ToolTip = 'Specifies the value of the Kilos brutos pendientes field.';
             FieldClass = Normal;
         }
         field(50520; "Kilos netos ingresados x fason"; Decimal)
         {
+            Caption = 'Kilos netos ingresados x fason';
+            ToolTip = 'Specifies the value of the Kilos netos ingresados x fason field.';
             CalcFormula = Sum("Item Ledger Entry"."Net kilos" WHERE("Job No." = FIELD("No."),
                                                                      "Entry Type" = CONST(Purchase),
                                                                      "Nombre libro diario" = CONST('ING-FASON')));
@@ -524,6 +606,8 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(50521; "Kilos netos registrados"; Decimal)
         {
+            Caption = 'Kilos netos registrados';
+            ToolTip = 'Specifies the value of the Kilos netos registrados field.';
             CalcFormula = Sum("Item Ledger Entry"."Net kilos" WHERE("Job No." = FIELD("No."),
                                                                      "Nombre libro diario" = CONST('DESCARGA')));
             FieldClass = FlowField;
@@ -533,12 +617,15 @@ tableextension 50245 "Job Ext." extends Job
             CalcFormula = Sum("Lín. reparto"."Reservar - UMB" WHERE(Proyecto = FIELD("No."),
                                                                      "No. Documento" = FIELD("Filtro factura venta")));
             Caption = 'Cantidad Ln. reparto venta';
+            ToolTip = 'Specifies the value of the Cantidad Ln. reparto venta field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
         }
         field(50525; "Importe contabilizado DA"; Decimal)
         {
+            Caption = 'Importe contabilizado DA';
+            ToolTip = 'Specifies the value of the Importe contabilizado DA field.';
             CalcFormula = Sum("G/L Entry"."Additional-Currency Amount" WHERE("Job No." = FIELD("No."),
                                                                               "Posting Date" = FIELD("Posting Date Filter"),
                                                                               "G/L Account No." = FIELD("Filtro Cuenta")));
@@ -546,10 +633,14 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(50526; "Filtro Cuenta"; Text[20])
         {
+            Caption = 'Filtro Cuenta';
+            ToolTip = 'Specifies the value of the Filtro Cuenta field.';
             FieldClass = FlowFilter;
         }
         field(50527; "Importe contabilizado"; Decimal)
         {
+            Caption = 'Importe contabilizado';
+            ToolTip = 'Specifies the value of the Importe contabilizado field.';
             CalcFormula = Sum("G/L Entry".Amount WHERE("Job No." = FIELD("No."),
                                                         "Posting Date" = FIELD("Posting Date Filter"),
                                                         "G/L Account No." = FIELD("Filtro Cuenta")));
@@ -557,10 +648,14 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(50528; "Puerto zarpada"; Code[10])
         {
+            Caption = 'Puerto zarpada';
+            ToolTip = 'Specifies the value of the Puerto zarpada field.';
             TableRelation = "Entry/Exit Point";
         }
         field(50530; "Grupo Informe Costos"; Text[50])
         {
+            Caption = 'Grupo Informe Costos';
+            ToolTip = 'Specifies the value of the Grupo Informe Costos field.';
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('GRUPO COSTOS'));
 
             trigger OnValidate()
@@ -571,70 +666,95 @@ tableextension 50245 "Job Ext." extends Job
         field(50531; "Confirmación entrada"; Option)
         {
             Caption = 'Confirmación entrada';
+            ToolTip = 'Specifies the value of the Confirmación entrada field.';
             OptionMembers = Pendiente,"Sí?";
         }
         field(50532; Texturas; BLOB)
         {
+            Caption = 'Texturas';
+            ToolTip = 'Specifies the value of the Texturas field.';
         }
         field(50533; "Cuenta Informe Costos"; Code[20])
         {
+            Caption = 'Cuenta Informe Costos';
+            ToolTip = 'Specifies the value of the Cuenta Informe Costos field.';
             TableRelation = "G/L Account"."No.";
         }
         field(50534; "Categorization filter"; Code[4])
         {
             Caption = 'Filtro categorización';
+            ToolTip = 'Specifies the value of the Filtro categorización field.';
             FieldClass = FlowFilter;
         }
         field(50535; "Filtro especie de productos"; Option)
         {
+            Caption = 'Filtro especie de productos';
+            ToolTip = 'Specifies the value of the Filtro especie de productos field.';
             FieldClass = FlowFilter;
             OptionMembers = " ","L{Langostino}","C{Calamar}","M{Merluza}","Z{Centolla}";
         }
         field(50536; "Production level filter"; Option)
         {
             Caption = 'Filtro nivel de producción';
+            ToolTip = 'Specifies the value of the Filtro nivel de producción field.';
             FieldClass = FlowFilter;
             OptionMembers = " ","Materia Prima",Semielaborado,"Producto Terminado",Residuos;
         }
         field(50537; "Filtro procedencia"; Option)
         {
+            Caption = 'Filtro procedencia';
+            ToolTip = 'Specifies the value of the Filtro procedencia field.';
             FieldClass = FlowFilter;
             OptionMembers = " ",Buques,Planta;
         }
         field(50538; "Filtro propiedad producto"; Option)
         {
+            Caption = 'Filtro propiedad producto';
+            ToolTip = 'Specifies the value of the Filtro propiedad producto field.';
             FieldClass = FlowFilter;
             OptionMembers = " ",Propio,Tercero,Comprado;
         }
         field(50539; "Fecha arribo a rada"; Date)
         {
+            Caption = 'Fecha arribo a rada';
+            ToolTip = 'Specifies the value of the Fecha arribo a rada field.';
         }
         field(50540; "Horas navegación a rada"; Duration)
         {
             Caption = 'Horas navegación a rada';
+            ToolTip = 'Specifies the value of the Horas navegación a rada field.';
         }
         field(50541; "Horas navegación zona pesca"; Duration)
         {
             Caption = 'Horas navegación zona pesca';
+            ToolTip = 'Specifies the value of the Horas navegación zona pesca field.';
         }
         field(50542; "Planta destino mercader?a"; Text[30])
         {
             Caption = 'Planta destino mercader?a';
+            ToolTip = 'Specifies the value of the Planta destino mercader?a field.';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(1),
                                                           "Use code" = FILTER(Planta));
         }
         field(50543; "Hora ingreso a puerto"; Time)
         {
+            Caption = 'Hora ingreso a puerto';
+            ToolTip = 'Specifies the value of the Hora ingreso a puerto field.';
         }
         field(50544; "Hora de zarpada"; Time)
         {
+            Caption = 'Hora de zarpada';
+            ToolTip = 'Specifies the value of the Hora de zarpada field.';
         }
         field(50800; "Venta interna"; Boolean)
         {
+            Caption = 'Venta interna';
+            ToolTip = 'Specifies the value of the Venta interna field.';
         }
         field(50801; "No. proyecto principal"; Code[20])
         {
             Caption = 'No. proyecto principal';
+            ToolTip = 'Specifies the value of the No. proyecto principal field.';
             TableRelation = Job;
 
             trigger OnValidate()
@@ -644,20 +764,30 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(50802; "Calcula financieros"; Boolean)
         {
+            Caption = 'Calcula financieros';
+            ToolTip = 'Specifies the value of the Calcula financieros field.';
         }
         field(50803; "Admite compras"; Boolean)
         {
+            Caption = 'Admite compras';
+            ToolTip = 'Specifies the value of the Admite compras field.';
         }
         field(50804; "Anual/continuo"; Option)
         {
+            Caption = 'Anual/continuo';
+            ToolTip = 'Specifies the value of the Anual/continuo field.';
             OptionMembers = " ",Anual,Continuo;
         }
         field(50805; "Iva no realizado"; Option)
         {
+            Caption = 'Iva no realizado';
+            ToolTip = 'Specifies the value of the Iva no realizado field.';
             OptionMembers = " ","Sí",Calculado;
         }
         field(50806; Tipo; Option)
         {
+            Caption = 'Tipo';
+            ToolTip = 'Specifies the value of the Tipo field.';
             BlankZero = true;
             InitValue = Productivo;
             OptionMembers = ,Productivo,Improductivo;
@@ -686,29 +816,37 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(50807; "Salesperson code"; Code[10])
         {
-            Caption = 'Cód. vendedor';
+            Caption = 'Salesperson Code';
+            ToolTip = 'Specifies the value of the Salesperson Code field.';
             TableRelation = "Salesperson/Purchaser";
         }
         field(50808; "Expense distribution code"; Code[10])
         {
             Caption = 'Cód. reparto gastos';
+            ToolTip = 'Specifies the value of the Cód. reparto gastos field.';
         }
         field(50809; "Fecha de cierre"; Date)
         {
+            Caption = 'Fecha de cierre';
+            ToolTip = 'Specifies the value of the Fecha de cierre field.';
             Editable = false;
         }
         field(50810; "Country code"; Code[10])
         {
             Caption = 'Cód. país';
+            ToolTip = 'Specifies the value of the Cód. país field.';
             TableRelation = "Country/Region";
         }
         field(50811; "Province code"; Code[10])
         {
-            Caption = 'Cód. provincia';
+            Caption = 'County Code';
+            ToolTip = 'Specifies the value of the County Code field.';
             TableRelation = "Country/Region";
         }
         field(50812; "Contapartida de gastos ind."; Boolean)
         {
+            Caption = 'Contapartida de gastos ind.';
+            ToolTip = 'Specifies the value of the Contapartida de gastos ind field.';
 
             trigger OnValidate()
             begin
@@ -718,88 +856,120 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(50820; Mercado; Option)
         {
+            Caption = 'Mercado';
+            ToolTip = 'Specifies the value of the Mercado field.';
             BlankZero = true;
             OptionMembers = ,"Obra p?blica","Obra privada","Promoción",Otros;
         }
         field(50821; "Specialization code"; Code[10])
         {
             Caption = 'Cód. especialidad';
+            ToolTip = 'Specifies the value of the Cód. especialidad field.';
         }
         field(50822; "Sector code"; Code[10])
         {
             Caption = 'Cód. sector';
+            ToolTip = 'Specifies the value of the Cód. sector field.';
         }
         field(50823; "Activity code"; Code[10])
         {
-            Caption = 'Cód. actividad';
+            Caption = 'Activity Code';
+            ToolTip = 'Specifies the value of the Activity Code field.';
         }
         field(50824; "Situation code"; Code[10])
         {
             Caption = 'Cód. situación';
+            ToolTip = 'Specifies the value of the Cód. situación field.';
         }
         field(50825; "Aggregation code"; Code[10])
         {
             Caption = 'Cód. agrupación';
+            ToolTip = 'Specifies the value of the Cód. agrupación field.';
         }
         field(55555; Contador; Decimal)
         {
+            Caption = 'Contador';
+            ToolTip = 'Specifies the value of the Contador field.';
             Editable = false;
             InitValue = 1;
         }
         field(60000; "Importe venta presup."; Decimal)
         {
+            Caption = 'Importe venta presup.';
+            ToolTip = 'Specifies the value of the Importe venta presup field.';
             AutoFormatType = 1;
             Editable = false;
             FieldClass = Normal;
         }
         field(60001; "Horas presup."; Decimal)
         {
+            Caption = 'Horas presup.';
+            ToolTip = 'Specifies the value of the Horas presup field.';
             AutoFormatType = 1;
             Editable = false;
             FieldClass = Normal;
         }
         field(60003; "Importe cobrado"; Decimal)
         {
+            Caption = 'Importe cobrado';
+            ToolTip = 'Specifies the value of the Importe cobrado field.';
             AutoFormatType = 1;
             Editable = false;
             FieldClass = Normal;
         }
         field(60004; "Importe pagado"; Decimal)
         {
+            Caption = 'Importe pagado';
+            ToolTip = 'Specifies the value of the Importe pagado field.';
             AutoFormatType = 1;
             Editable = false;
         }
         field(60005; "Importe cobrado IVA inc."; Decimal)
         {
+            Caption = 'Importe cobrado IVA inc.';
+            ToolTip = 'Specifies the value of the Importe cobrado IVA inc field.';
             AutoFormatType = 1;
             Editable = false;
         }
         field(60006; "Importe pagado IVA inc."; Decimal)
         {
+            Caption = 'Importe pagado IVA inc.';
+            ToolTip = 'Specifies the value of the Importe pagado IVA inc field.';
             AutoFormatType = 1;
             Editable = false;
         }
         field(60007; "Horas consumidas"; Decimal)
         {
+            Caption = 'Horas consumidas';
+            ToolTip = 'Specifies the value of the Horas consumidas field.';
             Editable = false;
         }
         field(60008; "Importe pedido pendiente  (DL)"; Decimal)
         {
+            Caption = 'Importe pedido pendiente  (DL)';
+            ToolTip = 'Specifies the value of the Importe pedido pendiente  (DL) field.';
             Editable = false;
         }
         field(60009; "Importe pedido registrado (DL)"; Decimal)
         {
+            Caption = 'Importe pedido registrado (DL)';
+            ToolTip = 'Specifies the value of the Importe pedido registrado (DL) field.';
             Editable = false;
         }
         field(60020; "Foreign production"; Boolean)
         {
             Caption = 'Producción ajena';
+            ToolTip = 'Specifies the value of the Producción ajena field.';
         }
         field(70000; Vacaciones; Boolean)
         {
+            Caption = 'Vacaciones';
+            ToolTip = 'Specifies the value of the Vacaciones field.';
         }
         field(75000; "Dias de mar previstos"; Decimal)
         {
+            Caption = 'Dias de mar previstos';
+            ToolTip = 'Specifies the value of the Dias de mar previstos field.';
             BlankZero = true;
             Editable = false;
 
@@ -817,6 +987,8 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(75001; "Dias de mar reales"; Decimal)
         {
+            Caption = 'Dias de mar reales';
+            ToolTip = 'Specifies the value of the Dias de mar reales field.';
             BlankZero = true;
             Editable = false;
 
@@ -834,6 +1006,8 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(75002; "Forma de reparto"; Option)
         {
+            Caption = 'Forma de reparto';
+            ToolTip = 'Specifies the value of the Forma de reparto field.';
             OptionMembers = " ",Estructura,"Por departamento","Por actividad";
 
             trigger OnValidate()
@@ -850,9 +1024,13 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(75003; "Codigo rubrica reparto"; Code[10])
         {
+            Caption = 'Codigo rubrica reparto';
+            ToolTip = 'Specifies the value of the Codigo rubrica reparto field.';
         }
         field(75004; "Criterio de reparto"; Option)
         {
+            Caption = 'Criterio de reparto';
+            ToolTip = 'Specifies the value of the Criterio de reparto field.';
             OptionMembers = " ","Por Dias marea","Por kilos","Por Importe";
 
             trigger OnValidate()
@@ -862,26 +1040,36 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(75005; "Filtro producto"; Code[20])
         {
+            Caption = 'Filtro producto';
+            ToolTip = 'Specifies the value of the Filtro producto field.';
             FieldClass = FlowFilter;
             TableRelation = Item;
         }
         field(75006; "Importe bruto captura"; Decimal)
         {
+            Caption = 'Importe bruto captura';
+            ToolTip = 'Specifies the value of the Importe bruto captura field.';
             BlankZero = true;
             Editable = false;
         }
         field(75007; "Kilos capturados"; Decimal)
         {
+            Caption = 'Kilos capturados';
+            ToolTip = 'Specifies the value of the Kilos capturados field.';
             BlankZero = true;
             Editable = false;
         }
         field(75008; "Importe neto captura"; Decimal)
         {
+            Caption = 'Importe neto captura';
+            ToolTip = 'Specifies the value of the Importe neto captura field.';
             BlankZero = true;
             Editable = false;
         }
         field(75009; "Importe captura previsto"; Decimal)
         {
+            Caption = 'Importe captura previsto';
+            ToolTip = 'Specifies the value of the Importe captura previsto field.';
             AutoFormatType = 1;
             BlankZero = true;
 
@@ -892,6 +1080,8 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(75010; "Kilos pesca previstos"; Decimal)
         {
+            Caption = 'Kilos pesca previstos';
+            ToolTip = 'Specifies the value of the Kilos pesca previstos field.';
             BlankZero = true;
 
             trigger OnValidate()
@@ -901,11 +1091,15 @@ tableextension 50245 "Job Ext." extends Job
         }
         field(75011; "Consumo producto (p. coste)"; Decimal)
         {
+            Caption = 'Consumo producto (p. coste)';
+            ToolTip = 'Specifies the value of the Consumo producto (p. coste) field.';
             AutoFormatType = 1;
             Editable = false;
         }
         field(75012; "Consumo producto (Cant.)"; Decimal)
         {
+            Caption = 'Consumo producto (Cant.)';
+            ToolTip = 'Specifies the value of the Consumo producto (Cant.) field.';
             AutoFormatType = 1;
             Editable = false;
         }
@@ -914,11 +1108,13 @@ tableextension 50245 "Job Ext." extends Job
             AutoFormatType = 1;
             BlankZero = true;
             Caption = 'Valor captura tripulación';
+            ToolTip = 'Specifies the value of the Valor captura tripulación field.';
             Editable = false;
         }
         field(75014; "Fecha último reparto"; Date)
         {
             Caption = 'Fecha último reparto';
+            ToolTip = 'Specifies the value of the Fecha último reparto field.';
             Editable = false;
         }
     }
@@ -1305,191 +1501,33 @@ tableextension 50245 "Job Ext." extends Job
         blnCopiar := l_blnCopiar;
     end;
 
+    procedure GetJobVesselDimensions(var codBuque: Code[20]; var codMarea: Code[20])
+    var
+        l_rstJob: Record Job;
+        l_rstDD: Record "Default Dimension";
+        l_rstJS: Record "Jobs Setup";
+    begin
+        clear(l_rstJob);
+        l_rstJob.Get(Rec."No.");
+        clear(l_rstJS);
+        l_rstJS.Get();
+        clear(l_rstDD);
+        l_rstDD.SetRange("Table ID", DATABASE::"Job");
+        l_rstDD.SetRange("Dimension Code", l_rstJS."Vessel dimension");
+        l_rstDD.FindFirst();
+        codBuque := l_rstDD."Dimension Value Code";
+        clear(l_rstDD);
+        l_rstDD.SetRange("Table ID", DATABASE::"Job");
+        l_rstDD.SetRange("Dimension Code", l_rstJS."Tide dimension");
+        l_rstDD.FindFirst();
+        codMarea := l_rstDD."Dimension Value Code";
+    end;
+
     var
         rstCDA: Record "On board capture";
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "AssociatedEntriesExistErr(Variable 1000)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //AssociatedEntriesExistErr : @@@="%1 = Name of field used in the error; %2 = The name of the Job table";ENU=You cannot change %1 because one or more entries are associated with this %2.;ESP=No puede cambiar el %1 porque hay uno o más movimientos asociados con este %2.;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //AssociatedEntriesExistErr : @@@="%1 = Name of field used in the error; %2 = The name of the Job table";ENU=You cannot change %1 because one or more entries are associated with this %2.;ESP=No puede cambiar el %1 porque hay uno o más movimientos asociados con este %2.;
-    //Variable type has not been exported.
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "StatusChangeQst(Variable 1017)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //StatusChangeQst : ENU=This will delete any unposted WIP entries for this job and allow you to reverse the completion postings for this job.\\Do you wish to continue?;ESP=De esta manera eliminará cualquier movimiento WIP no registrado para este proyecto y podrá revertir los registros completados para este proyecto.\\¿Desea continuar?;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //StatusChangeQst : ENU=This will delete any unposted WIP entries for this job and allow you to reverse the completion postings for this job.\\Do you wish to continue?;ESP=De esta manera eliminará cualquier movimiento WIP no registrado para este proyecto y podrá revertir los registros completados para este proyecto.\\?Desea continuar?;
-    //Variable type has not been exported.
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "ContactBusRelDiffCompErr(Variable 1019)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //ContactBusRelDiffCompErr : @@@="%1 = The contact number; %2 = The contact's name; %3 = The Bill-To Customer Number associated with this job";ENU=Contact %1 %2 is related to a different company than customer %3.;ESP=Contacto %1 %2 está relacionado con una empresa diferente al cliente %3.;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //ContactBusRelDiffCompErr : @@@="%1 = The contact number; %2 = The contact's name; %3 = The Bill-To Customer Number associated with this job";ENU=Contact %1 %2 is related to a different company than customer %3.;ESP=Contacto %1 %2 está relacionado con una empresa diferente al cliente %3.;
-    //Variable type has not been exported.
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "ContactBusRelErr(Variable 1018)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //ContactBusRelErr : @@@="%1 = The contact number; %2 = The contact's name; %3 = The Bill-To Customer Number associated with this job";ENU=Contact %1 %2 is not related to customer %3.;ESP=Contacto %1 %2 no está relacionado con el cliente %3.;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //ContactBusRelErr : @@@="%1 = The contact number; %2 = The contact's name; %3 = The Bill-To Customer Number associated with this job";ENU=Contact %1 %2 is not related to customer %3.;ESP=Contacto %1 %2 no está relacionado con el cliente %3.;
-    //Variable type has not been exported.
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "ContactBusRelMissingErr(Variable 1009)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //ContactBusRelMissingErr : @@@="%1 = The contact number; %2 = The contact's name";ENU=Contact %1 %2 is not related to a customer.;ESP=El contacto %1 %2 no está relacionado con un cliente.;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //ContactBusRelMissingErr : @@@="%1 = The contact number; %2 = The contact's name";ENU=Contact %1 %2 is not related to a customer.;ESP=El contacto %1 %2 no está relacionado con un cliente.;
-    //Variable type has not been exported.
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "ReverseCompletionEntriesMsg(Variable 1008)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //ReverseCompletionEntriesMsg : @@@="%1 = The name of the Job Post WIP to G/L report";ENU=You must run the %1 function to reverse the completion entries that have already been posted for this job.;ESP=Debe ejecutar la función %1 para revertir los movimientos completados registrados para este proyecto.;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //ReverseCompletionEntriesMsg : @@@="%1 = The name of the Job Post WIP to G/L report";ENU=You must run the %1 function to reverse the completion entries that have already been posted for this job.;ESP=Debe ejecutar la función %1 para revertir los movimientos completados registrados para este proyecto.;
-    //Variable type has not been exported.
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "OnlineMapMsg(Variable 1007)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //OnlineMapMsg : ENU=Before you can use Online Map, you must fill in the Online Map Setup window.\See Setting Up Online Map in Help.;ESP=Para poder usar Online Map, primero debe rellenar la ventana Configuración Online Map.\Consulte Configuración de Online Map en la Ayuda.;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //OnlineMapMsg : ENU=Before you can use Online Map, you must fill in the Online Map Setup window.\See Setting Up Online Map in Help.;ESP=Para poder usar Online Map, primero debe rellenar la ventana Configuración Online Map.\Consulte Configuración de Online Map en la Ayuda.;
-    //Variable type has not been exported.
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "ApplyUsageLinkErr(Variable 1013)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //ApplyUsageLinkErr : @@@="%1 = The name of the Job table";ENU=A usage link cannot be enabled for the entire %1 because usage without the usage link already has been posted.;ESP=No se puede activar un vínculo de uso para el %1 completo porque ya se ha registrado el uso sin vínculo de uso.;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //ApplyUsageLinkErr : @@@="%1 = The name of the Job table";ENU=A usage link cannot be enabled for the entire %1 because usage without the usage link already has been posted.;ESP=No se puede activar un vínculo de uso para el %1 completo porque ya se ha registrado el uso sin vínculo de uso.;
-    //Variable type has not been exported.
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "WIPMethodQst(Variable 1016)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //WIPMethodQst : @@@="%1 = The WIP Method field name; %2 = The name of the Job Task table; %3 = The current job task's WIP Total type";ENU=Do you want to set the %1 on every %2 of type %3?;ESP=¿Desea establecer el %1 en cada %2 de tipo %3?;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //WIPMethodQst : @@@="%1 = The WIP Method field name; %2 = The name of the Job Task table; %3 = The current job task's WIP Total type";ENU=Do you want to set the %1 on every %2 of type %3?;ESP=?Desea establecer el %1 en cada %2 de tipo %3?;
-    //Variable type has not been exported.
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "WIPAlreadyPostedErr(Variable 1020)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //WIPAlreadyPostedErr : @@@="%1 = The name of the WIP Posting Method field; %2 = The previous WIP Posting Method value of this job";ENU=%1 must be %2 because job WIP general ledger entries already were posted with this setting.;ESP=%1 debe ser %2 porque los Movs. contabilidad WIP proyecto ya se registraron con esta configuración.;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //WIPAlreadyPostedErr : @@@="%1 = The name of the WIP Posting Method field; %2 = The previous WIP Posting Method value of this job";ENU=%1 must be %2 because job WIP general ledger entries already were posted with this setting.;ESP=%1 debe ser %2 porque los Movs. contabilidad WIP proyecto ya se registraron con esta configuración.;
-    //Variable type has not been exported.
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "UpdateJobTaskDimQst(Variable 1026)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //UpdateJobTaskDimQst : ENU=You have changed a dimension.\\Do you want to update the lines?;ESP=Ha cambiado una dimensión.\\¿Desea actualizar las líneas?;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //UpdateJobTaskDimQst : ENU=You have changed a dimension.\\Do you want to update the lines?;ESP=Ha cambiado una dimensión.\\?Desea actualizar las líneas?;
-    //Variable type has not been exported.
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "RunWIPFunctionsQst(Variable 1028)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //RunWIPFunctionsQst : @@@="%1 = The name of the Job Calculate WIP report";ENU=You must run the %1 function to create completion entries for this job. \Do you want to run this function now?;ESP=Debe ejecutar la función %1 para crear los movimientos de finalización de este proyecto. \¿Desea ejecutar esta función ahora?;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //RunWIPFunctionsQst : @@@="%1 = The name of the Job Calculate WIP report";ENU=You must run the %1 function to create completion entries for this job. \Do you want to run this function now?;ESP=Debe ejecutar la función %1 para crear los movimientos de finalización de este proyecto. \?Desea ejecutar esta función ahora?;
-    //Variable type has not been exported.
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "ReservationEntriesDeleteQst(Variable 1022)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //ReservationEntriesDeleteQst : ENU=Any reservation entries that exist for this job will be deleted. \Do you want to continue?;ESP=Se eliminarán todos los movimientos de reserva que existan para este proyecto. \¿Desea continuar?;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //ReservationEntriesDeleteQst : ENU=Any reservation entries that exist for this job will be deleted. \Do you want to continue?;ESP=Se eliminarán todos los movimientos de reserva que existan para este proyecto. \?Desea continuar?;
-    //Variable type has not been exported.
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "ReservationEntriesExistErr(Variable 1027)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //ReservationEntriesExistErr : @@@="%1=The job status name";ENU=You cannot set the status to %1 because the job has reservations on the job planning lines.;ESP=No puede configurar el estado a %1 porque el proyecto tiene reservas en las líneas de planificación de proyecto.;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //ReservationEntriesExistErr : @@@="%1=The job status name";ENU=You cannot set the status to %1 because the job has reservations on the job planning lines.;ESP=No puede configurar el estado a %1 porque el proyecto tiene reservas en las líneas de planificación de proyecto.;
-    //Variable type has not been exported.
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "AutoReserveNotPossibleMsg(Variable 1029)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //AutoReserveNotPossibleMsg : ENU=Automatic reservation is not possible for one or more job planning lines. \Please reserve manually.;ESP=La reserva automática no es posible para una o más líneas de planificación de proyecto. \Reserve manualmente.;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //AutoReserveNotPossibleMsg : ENU=Automatic reservation is not possible for one or more job planning lines. \Please reserve manually.;ESP=La reserva automática no es posible para una o más líneas de planificación de proyecto. \Reserve manualmente.;
-    //Variable type has not been exported.
-
-
-    //Unsupported feature: Property Modification (TextConstString) on "StatusCompletedErr(Variable 1031)".
-
-    //var
-    //>>>> ORIGINAL VALUE:
-    //StatusCompletedErr : @@@="%1=Job number; %2=Job Status";ENU=You cannot select the Job %1, its status set to %2.;ESP=No puede establecer el trabajo %1, su estado está establecido en %2.;
-    //Variable type has not been exported.
-    //>>>> MODIFIED VALUE:
-    //StatusCompletedErr : @@@="%1=Job number; %2=Job Status";ENU=You cannot select the Job %1, its status set to %2.;ESP=No puede establecer el trabajo %1, su estado está establecido en %2.;
-    //Variable type has not been exported.
-
-    var
         MovProy: Record "Job Ledger Entry";
         Departamento: Record "Dimension Value";
         Proyecto: Record Job;
-
-    var
         rstGLS: Record "General Ledger Setup";
         blnCopiar: Boolean;
 }

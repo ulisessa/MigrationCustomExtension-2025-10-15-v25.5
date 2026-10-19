@@ -8,6 +8,8 @@ tableextension 50380 tableextension50380 extends "Vendor Amount"
         }
         field(50000; Cantidad; Decimal)
         {
+            Caption = 'Quantity';
+            ToolTip = 'Specifies the value of the Quantity field.';
         }
     }
 }

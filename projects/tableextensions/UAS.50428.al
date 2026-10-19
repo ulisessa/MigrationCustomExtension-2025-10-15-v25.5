@@ -20,6 +20,8 @@ tableextension 50428 tableextension50428 extends "No. Series"
         }
         field(50500; "Habilitar para batch"; Boolean)
         {
+            Caption = 'Habilitar para batch';
+            ToolTip = 'Specifies the value of the Habilitar para batch field.';
         }
     }
 }

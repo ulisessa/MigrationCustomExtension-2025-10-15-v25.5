@@ -5,14 +5,20 @@ table 50598 "Ejecutor validaciones"
     {
         field(1; "Cód. validación"; Code[50])
         {
+            Caption = 'Cód. validación';
+            ToolTip = 'Specifies the value of the Cód. validación field.';
             TableRelation = "Maestro validaciones";
         }
         field(2; "No. línea"; Integer)
         {
+            Caption = 'Line No.';
+            ToolTip = 'Specifies the value of the Line No field.';
             AutoIncrement = true;
         }
         field(3; Tabla; Integer)
         {
+            Caption = 'Tabla';
+            ToolTip = 'Specifies the value of the Tabla field.';
             //This property is currently not supported
             //TestTableRelation = false;
             //The property 'ValidateTableRelation' can only be set if the property 'TableRelation' is set
@@ -36,6 +42,8 @@ table 50598 "Ejecutor validaciones"
         }
         field(4; Campo; Integer)
         {
+            Caption = 'Campo';
+            ToolTip = 'Specifies the value of the Campo field.';
 
             /*
             trigger OnLookup()
@@ -56,6 +64,8 @@ table 50598 "Ejecutor validaciones"
         }
         field(5; Valor; Text[150])
         {
+            Caption = 'Valor';
+            ToolTip = 'Specifies the value of the Valor field.';
 
             trigger OnLookup()
             begin
@@ -290,20 +300,28 @@ table 50598 "Ejecutor validaciones"
         }
         field(7; Tipo; Option)
         {
+            Caption = 'Tipo';
+            ToolTip = 'Specifies the value of the Tipo field.';
             OptionMembers = " ",Condicionante,"Condición",Condicionar,Sumatoria;
         }
         field(8; "Tipo condición"; Option)
         {
+            Caption = 'Tipo condición';
+            ToolTip = 'Specifies the value of the Tipo condición field.';
             OptionMembers = " ","=","<>",">","<","|","&","[]","(",")","+","-","*","/","%","@","Para cada","..";
         }
         field(100; "Nombre tabla"; Text[30])
         {
+            Caption = 'Nombre tabla';
+            ToolTip = 'Specifies the value of the Nombre tabla field.';
             CalcFormula = Lookup(Object.Name WHERE(Type = CONST(Table),
                                                     ID = FIELD(Tabla)));
             FieldClass = FlowField;
         }
         field(101; "Nombre campo"; Text[30])
         {
+            Caption = 'Nombre campo';
+            ToolTip = 'Specifies the value of the Nombre campo field.';
             CalcFormula = Lookup(Field.FieldName WHERE(TableNo = FIELD(Tabla),
                                                         "No." = FIELD(Campo)));
             FieldClass = FlowField;

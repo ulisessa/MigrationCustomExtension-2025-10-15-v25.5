@@ -61,6 +61,8 @@ tableextension 51106 tableextension51106 extends Bin
         }
         field(50000; "No es posicionamiento"; Boolean)
         {
+            Caption = 'No es posicionamiento';
+            ToolTip = 'Specifies the value of the No es posicionamiento field.';
             InitValue = true;
         }
     }

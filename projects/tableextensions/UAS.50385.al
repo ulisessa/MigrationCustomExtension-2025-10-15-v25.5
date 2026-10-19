@@ -187,53 +187,76 @@ tableextension 50385 tableextension50385 extends "Bank Account Ledger Entry"
         //end;
         field(50000; "Global Dimension 3 Code"; Code[10])
         {
+            Caption = 'Global Dimension 3 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 3 Code field.';
             CaptionClass = '1,2,3';
 
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
+            Caption = 'Global Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
+            Caption = 'Global Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
         }
         field(50003; "Global Dimension 6 Code"; Code[20])
         {
+            Caption = 'Global Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
+            Caption = 'Global Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
         }
         field(50012; "Descripción 2"; Text[250])
         {
+            Caption = 'Description 2';
+            ToolTip = 'Specifies the value of the Description 2 field.';
         }
         field(50013; "Bank Payment Type"; Option)
         {
             Caption = 'Bank Payment Type';
+            ToolTip = 'Specifies the value of the Bank Payment Type field.';
             OptionCaption = ' ,Computer Check,Manual Check,,,,,Electronic Payment';
             OptionMembers = " ","Computer Check","Manual Check",,,,,"Electronic Payment";
         }
         field(50505; "Nombre libro diario"; Code[10])
         {
+            Caption = 'Nombre libro diario';
+            ToolTip = 'Specifies the value of the Nombre libro diario field.';
             TableRelation = "Gen. Journal Template";
         }
         field(50597; "Fecha anulación"; Date)
         {
+            Caption = 'Fecha anulación';
+            ToolTip = 'Specifies the value of the Fecha anulación field.';
         }
         field(50598; "Usuario anulación"; Code[20])
         {
+            Caption = 'Usuario anulación';
+            ToolTip = 'Specifies the value of the Usuario anulación field.';
         }
         field(50599; Anulado; Boolean)
         {
+            Caption = 'Anulado';
+            ToolTip = 'Specifies the value of the Anulado field.';
         }
         field(50700; "No. cheque"; Code[10])
         {
+            Caption = 'No. cheque';
+            ToolTip = 'Specifies the value of the No. cheque field.';
 
             trigger OnValidate()
             var
@@ -258,6 +281,7 @@ tableextension 50385 tableextension50385 extends "Bank Account Ledger Entry"
         field(50709; "Value Date"; Date)
         {
             Caption = 'Check Date';
+            ToolTip = 'Specifies the value of the Check Date field.';
 
             trigger OnValidate()
             var
@@ -279,18 +303,26 @@ tableextension 50385 tableextension50385 extends "Bank Account Ledger Entry"
         }
         field(51000; Expediente; Text[30])
         {
+            Caption = 'Expediente';
+            ToolTip = 'Specifies the value of the Expediente field.';
             Description = 'CON';
         }
         field(51002; "Id. conciliación"; Integer)
         {
+            Caption = 'Id. conciliación';
+            ToolTip = 'Specifies the value of the Id. conciliación field.';
             Description = 'CON';
         }
         field(51003; Conciliado; Boolean)
         {
+            Caption = 'Conciliado';
+            ToolTip = 'Specifies the value of the Conciliado field.';
             Description = 'CON';
         }
         field(66000; "No. mov. origen"; Integer)
         {
+            Caption = 'No. mov. origen';
+            ToolTip = 'Specifies the value of the No. mov. origen field.';
         }
     }
 }

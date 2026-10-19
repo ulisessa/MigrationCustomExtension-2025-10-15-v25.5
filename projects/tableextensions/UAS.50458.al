@@ -183,146 +183,172 @@ tableextension 50458 tableextension50458 extends "Tracking Specification"
         field(50010; "Net kilos (Base)"; Decimal)
         {
             Caption = 'Net kilos (Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
 
         }
         field(50011; "Gross kilos (Base)"; Decimal)
         {
             Caption = 'Gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
 
         }
         field(50014; "Net kilos to handle (Base)"; Decimal)
         {
             Caption = 'Net kilos to handle (Base)';
+            ToolTip = 'Specifies the value of the Net kilos to handle (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50015; "Gross kilos to handle (Base)"; Decimal)
         {
             Caption = 'Gross kilos to handle (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos to handle (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50016; "Net kilos to invoice (Base)"; Decimal)
         {
             Caption = 'Net kilos to invoice (Base)';
+            ToolTip = 'Specifies the value of the Net kilos to invoice (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50017; "Gross kilos to invoice (Base)"; Decimal)
         {
             Caption = 'Gross kilos to invoice (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos to invoice (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50018; "Net kilos invoiced (Base)"; Decimal)
         {
             Caption = 'Net kilos invoiced (Base)';
+            ToolTip = 'Specifies the value of the Net kilos invoiced (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50019; "Gross kilos invoiced (Base)"; Decimal)
         {
             Caption = 'Gross kilos invoiced (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos invoiced (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50022; "Net kilos to Handle"; Decimal)
         {
             Caption = 'Net kilos to Handle';
+            ToolTip = 'Specifies the value of the Net kilos to Handle field.';
             DecimalPlaces = 0 : 5;
         }
         field(50023; "Gross kilos to Handle"; Decimal)
         {
             Caption = 'Gross kilos to Handle';
+            ToolTip = 'Specifies the value of the Gross kilos to Handle field.';
             DecimalPlaces = 0 : 5;
         }
         field(50024; "Net kilos to invoice"; Decimal)
         {
             Caption = 'Net kilos to invoice';
+            ToolTip = 'Specifies the value of the Net kilos to invoice field.';
             DecimalPlaces = 0 : 5;
         }
         field(50025; "Gross kilos to invoice"; Decimal)
         {
             Caption = 'Gross kilos to invoice';
+            ToolTip = 'Specifies the value of the Gross kilos to invoice field.';
             DecimalPlaces = 0 : 5;
         }
         field(50026; "Nk actual handled (Base)"; Decimal)
         {
             Caption = 'Nk actual handled (Base)';
+            ToolTip = 'Specifies the value of the Nk actual handled (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50027; "Gk actual handled (Base)"; Decimal)
         {
             Caption = 'Gk actual handled (Base)';
+            ToolTip = 'Specifies the value of the Gk actual handled (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50028; "Buffer Value6"; Decimal)
         {
             Caption = 'Buffer Value5';
+            ToolTip = 'Specifies the value of the Buffer Value5 field.';
             Description = 'Buffer Value4 KN';
             Editable = false;
         }
         field(50029; "Buffer Value7"; Decimal)
         {
             Caption = 'Buffer Value5';
+            ToolTip = 'Specifies the value of the Buffer Value5 field.';
             Description = 'Buffer Value4 KB';
             Editable = false;
         }
         field(50030; "Buffer Value8"; Decimal)
         {
             Caption = 'Buffer Value5';
+            ToolTip = 'Specifies the value of the Buffer Value5 field.';
             Description = 'Buffer Value2 KN';
             Editable = false;
         }
         field(50031; "Buffer Value9"; Decimal)
         {
             Caption = 'Buffer Value5';
+            ToolTip = 'Specifies the value of the Buffer Value5 field.';
             Description = 'Buffer Value2 KB';
             Editable = false;
         }
         field(50032; "Buffer Value10"; Decimal)
         {
             Caption = 'Buffer Value5';
+            ToolTip = 'Specifies the value of the Buffer Value5 field.';
             Description = 'Buffer Value1 KN';
             Editable = false;
         }
         field(50033; "Buffer Value11"; Decimal)
         {
             Caption = 'Buffer Value5';
+            ToolTip = 'Specifies the value of the Buffer Value5 field.';
             Description = 'Buffer Value1 KB';
             Editable = false;
         }
         field(50034; "Buffer Value12"; Decimal)
         {
             Caption = 'Buffer Value5';
+            ToolTip = 'Specifies the value of the Buffer Value5 field.';
             Description = 'Buffer Value3 KN';
             Editable = false;
         }
         field(50035; "Buffer Value13"; Decimal)
         {
             Caption = 'Buffer Value5';
+            ToolTip = 'Specifies the value of the Buffer Value5 field.';
             Description = 'Buffer Value3 KB';
             Editable = false;
         }
         field(50036; "Buffer Value14"; Decimal)
         {
             Caption = 'Buffer Value5';
+            ToolTip = 'Specifies the value of the Buffer Value5 field.';
             Description = 'Buffer Value5 KN';
             Editable = false;
         }
         field(50037; "Buffer Value15"; Decimal)
         {
             Caption = 'Buffer Value5';
+            ToolTip = 'Specifies the value of the Buffer Value5 field.';
             Description = 'Buffer Value5 KB';
             Editable = false;
         }
         field(50038; "Net kilos handled (Base)"; Decimal)
         {
             Caption = 'Net kilos handled (Base)';
+            ToolTip = 'Specifies the value of the Net kilos handled (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50039; "Gross kilos handled (Base)"; Decimal)
         {
             Caption = 'Gross kilos handled (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos handled (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }

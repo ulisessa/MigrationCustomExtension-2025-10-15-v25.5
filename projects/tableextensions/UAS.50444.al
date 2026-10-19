@@ -24,7 +24,8 @@ tableextension 50444 tableextension50444 extends "Tax Detail"
         }
         field(50700; "Region code"; Code[10])
         {
-            Caption = 'Cód. provincia';
+            Caption = 'County Code';
+            ToolTip = 'Specifies the value of the County Code field.';
         }
     }
 }

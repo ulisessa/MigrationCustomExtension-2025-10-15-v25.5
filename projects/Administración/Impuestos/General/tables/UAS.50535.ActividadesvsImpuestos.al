@@ -5,17 +5,22 @@ table 50535 "Actividades vs impuestos"
     {
         field(2; "No. actividad"; Code[10])
         {
+            Caption = 'No. actividad';
+            ToolTip = 'Specifies the value of the No. actividad field.';
             DataClassification = ToBeClassified;
             TableRelation = "Actividad AFIP"."No. actividad" WHERE("Tipo actividad" = CONST(Impuesto));
         }
         field(3; "Nombre actividad"; Text[250])
         {
+            Caption = 'Nombre actividad';
+            ToolTip = 'Specifies the value of the Nombre actividad field.';
             CalcFormula = Lookup("Actividad AFIP".Nombre WHERE("No. actividad" = FIELD("No. actividad")));
             FieldClass = FlowField;
         }
         field(4; "Cod. area impuesto"; Code[10])
         {
-            Caption = 'Cód. área impuesto';
+            Caption = 'Tax Area Code';
+            ToolTip = 'Specifies the value of the Tax Area Code field.';
             DataClassification = ToBeClassified;
             TableRelation = "Tax Area".Code;
         }
@@ -23,11 +28,13 @@ table 50535 "Actividades vs impuestos"
         {
             CalcFormula = Lookup("Tax Area".Description WHERE(Code = FIELD("Cod. area impuesto")));
             Caption = 'Nombre área impuesto';
+            ToolTip = 'Specifies the value of the Nombre área impuesto field.';
             FieldClass = FlowField;
         }
         field(6; Accion; Option)
         {
             Caption = 'Acción';
+            ToolTip = 'Specifies the value of the Acción field.';
             DataClassification = ToBeClassified;
             NotBlank = true;
             OptionMembers = " ",Habilitado,Bloqueado;

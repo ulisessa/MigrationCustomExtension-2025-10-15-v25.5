@@ -78,38 +78,45 @@ tableextension 51075 tableextension51075 extends "Warehouse Receipt Line"
         field(50000; "Net kilos"; Decimal)
         {
             Caption = 'Net kilos';
+            ToolTip = 'Specifies the value of the Net kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50001; "Gross kilos"; Decimal)
         {
             Caption = 'Gross kilos';
+            ToolTip = 'Specifies the value of the Gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50010; "Net kilos (Base)"; Decimal)
         {
             Caption = 'Net kilos (Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50011; "Gross kilos (Base)"; Decimal)
         {
             Caption = 'Gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50018; "Net kilos invoiced (Base)"; Decimal)
         {
             Caption = 'Net kilos invoiced (Base)';
+            ToolTip = 'Specifies the value of the Net kilos invoiced (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50019; "Gross kilos invoiced (Base)"; Decimal)
         {
             Caption = 'Gross kilos invoiced (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos invoiced (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50020; "Net kilos to Receive"; Decimal)
         {
             Caption = 'Net kilos to Receive';
+            ToolTip = 'Specifies the value of the Net kilos to Receive field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -117,6 +124,7 @@ tableextension 51075 tableextension51075 extends "Warehouse Receipt Line"
         field(50021; "Net kilos to Receive (Base)"; Decimal)
         {
             Caption = 'Net kilos to Receive (Base)';
+            ToolTip = 'Specifies the value of the Net kilos to Receive (Base) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -128,6 +136,7 @@ tableextension 51075 tableextension51075 extends "Warehouse Receipt Line"
         field(50022; "Net kilos Received"; Decimal)
         {
             Caption = 'Net kilos Received';
+            ToolTip = 'Specifies the value of the Net kilos Received field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -135,12 +144,14 @@ tableextension 51075 tableextension51075 extends "Warehouse Receipt Line"
         field(50023; "Net kilos Received (Base)"; Decimal)
         {
             Caption = 'Net kilos Received (Base)';
+            ToolTip = 'Specifies the value of the Net kilos Received (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50024; "Gross kilos to Receive"; Decimal)
         {
             Caption = 'Gross kilos to Receive';
+            ToolTip = 'Specifies the value of the Gross kilos to Receive field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -148,6 +159,7 @@ tableextension 51075 tableextension51075 extends "Warehouse Receipt Line"
         field(50025; "Gross kilos to Receive (Base)"; Decimal)
         {
             Caption = 'Gross kilos to Receive (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos to Receive (Base) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -159,6 +171,7 @@ tableextension 51075 tableextension51075 extends "Warehouse Receipt Line"
         field(50026; "Gross kilos Received"; Decimal)
         {
             Caption = 'Gross kilos Received';
+            ToolTip = 'Specifies the value of the Gross kilos Received field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -166,22 +179,26 @@ tableextension 51075 tableextension51075 extends "Warehouse Receipt Line"
         field(50027; "Gross kilos Received (Base)"; Decimal)
         {
             Caption = 'Gross kilos Received (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos Received (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50038; "Net kilos handled (Base)"; Decimal)
         {
             Caption = 'Net kilos handled (Base)';
+            ToolTip = 'Specifies the value of the Net kilos handled (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50039; "Gross kilos handled (Base)"; Decimal)
         {
             Caption = 'Gross kilos handled (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos handled (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50040; "Net kilos Outstanding"; Decimal)
         {
             Caption = 'Qty. Outstanding';
+            ToolTip = 'Specifies the value of the Qty. Outstanding field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -194,12 +211,14 @@ tableextension 51075 tableextension51075 extends "Warehouse Receipt Line"
         field(50041; "Net kilos Outstanding (Base)"; Decimal)
         {
             Caption = 'Qty. Outstanding (Base)';
+            ToolTip = 'Specifies the value of the Qty. Outstanding (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50042; "Gross kilos Outstanding"; Decimal)
         {
             Caption = 'Qty. Outstanding';
+            ToolTip = 'Specifies the value of the Qty. Outstanding field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -212,6 +231,7 @@ tableextension 51075 tableextension51075 extends "Warehouse Receipt Line"
         field(50043; "Gross kilos Outstanding (Base)"; Decimal)
         {
             Caption = 'Qty. Outstanding (Base)';
+            ToolTip = 'Specifies the value of the Qty. Outstanding (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }

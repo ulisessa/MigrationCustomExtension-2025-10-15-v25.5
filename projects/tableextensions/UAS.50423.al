@@ -142,6 +142,8 @@ tableextension 50423 tableextension50423 extends "Finance Charge Memo Line"
         //end;
         field(50700; province; Code[10])
         {
+            Caption = 'province';
+            ToolTip = 'Specifies the value of the province field.';
         }
     }
 

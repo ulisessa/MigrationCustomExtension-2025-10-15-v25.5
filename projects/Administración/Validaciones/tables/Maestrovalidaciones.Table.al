@@ -5,9 +5,13 @@ table 50533 "Maestro validaciones"
     {
         field(1; "Cód. validación"; Code[50])
         {
+            Caption = 'Cód. validación';
+            ToolTip = 'Specifies the value of the Cód. validación field.';
         }
         field(2; Tabla; Integer)
         {
+            Caption = 'Tabla';
+            ToolTip = 'Specifies the value of the Tabla field.';
             TableRelation = Object.ID WHERE(Type = CONST(Table));
             //This property is currently not supported
             //TestTableRelation = false;
@@ -38,6 +42,8 @@ table 50533 "Maestro validaciones"
         }
         field(3; "Descripción"; Text[200])
         {
+            Caption = 'Description';
+            ToolTip = 'Specifies the value of the Description field.';
         }
     }
 

@@ -373,6 +373,8 @@ tableextension 50650 tableextension50650 extends "Sales Header Archive"
         }
         field(50000; "Global Dimension 3 Code"; Code[10])
         {
+            Caption = 'Global Dimension 3 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 3 Code field.';
             CaptionClass = '1,2,3';
 
 
@@ -383,200 +385,299 @@ tableextension 50650 tableextension50650 extends "Sales Header Archive"
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
+            Caption = 'Global Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
+            Caption = 'Global Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
         }
         field(50003; "Global Dimension 6 Code"; Code[10])
         {
+            Caption = 'Global Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
+            Caption = 'Global Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
         }
         field(50005; "No. certificación"; Code[10])
         {
+            Caption = 'No. certificación';
+            ToolTip = 'Specifies the value of the No. certificación field.';
         }
         field(50006; "Orden Encargo"; Code[10])
         {
+            Caption = 'Orden Encargo';
+            ToolTip = 'Specifies the value of the Orden Encargo field.';
         }
         field(50007; "Carpeta de Exportación"; Text[10])
         {
+            Caption = 'Carpeta de Exportación';
+            ToolTip = 'Specifies the value of the Carpeta de Exportación field.';
         }
         field(50008; "Permiso de embarque"; Code[30])
         {
+            Caption = 'Boarding permission';
+            ToolTip = 'Specifies the value of the Boarding permission field.';
             TableRelation = "Permisos Embarque";
             ValidateTableRelation = false;
         }
         field(50009; Marcas; Code[20])
         {
+            Caption = 'Marcas';
+            ToolTip = 'Specifies the value of the Marcas field.';
         }
         field(50010; "Banco Interviniente"; Code[30])
         {
+            Caption = 'Banco Interviniente';
+            ToolTip = 'Specifies the value of the Banco Interviniente field.';
             TableRelation = "Bank Account"."No.";
         }
         field(50011; "Producido en"; Code[100])
         {
+            Caption = 'Producido en';
+            ToolTip = 'Specifies the value of the Producido en field.';
         }
         field(50012; "Puerto embarque"; Code[30])
         {
+            Caption = 'Puerto embarque';
+            ToolTip = 'Specifies the value of the Puerto embarque field.';
             TableRelation = "Entry/Exit Point";
         }
         field(50013; "Puerto destino"; Code[30])
         {
+            Caption = 'Puerto destino';
+            ToolTip = 'Specifies the value of the Puerto destino field.';
             TableRelation = "Entry/Exit Point";
             ValidateTableRelation = false;
         }
         field(50014; "Cód. Contenedor"; Code[20])
         {
+            Caption = 'Cód. Contenedor';
+            ToolTip = 'Specifies the value of the Cód. Contenedor field.';
         }
         field(50015; "Precinto DGA"; Code[20])
         {
+            Caption = 'Precinto DGA';
+            ToolTip = 'Specifies the value of the Precinto DGA field.';
         }
         field(50016; Precinto; Code[20])
         {
+            Caption = 'Precinto';
+            ToolTip = 'Specifies the value of the Precinto field.';
         }
         field(50018; Aprobar; Boolean)
         {
+            Caption = 'Aprobar';
+            ToolTip = 'Specifies the value of the Aprobar field.';
         }
-        field(50019; Usuario; Code[20])
+        field(50019; Usuario; Code[50])
         {
+            Caption = 'User ID';
+            ToolTip = 'Specifies the value of the User ID field.';
             TableRelation = User;
         }
         field(50020; "Importe sujeto retencion"; Decimal)
         {
+            Caption = 'Importe sujeto retencion';
+            ToolTip = 'Specifies the value of the Importe sujeto retencion field.';
         }
         field(50021; "% retención"; Decimal)
         {
+            Caption = '% retención';
+            ToolTip = 'Specifies the value of the % retención field.';
         }
         field(50022; "Importe sujeto reembolso"; Decimal)
         {
+            Caption = 'Importe sujeto reembolso';
+            ToolTip = 'Specifies the value of the Importe sujeto reembolso field.';
         }
         field(50023; "% reembolso"; Decimal)
         {
+            Caption = '% reembolso';
+            ToolTip = 'Specifies the value of the % reembolso field.';
         }
         field(50024; "Importe sujeto reintegro"; Decimal)
         {
+            Caption = 'Importe sujeto reintegro';
+            ToolTip = 'Specifies the value of the Importe sujeto reintegro field.';
         }
         field(50025; "% reintegro"; Decimal)
         {
+            Caption = '% reintegro';
+            ToolTip = 'Specifies the value of the % reintegro field.';
         }
         field(50027; "Tipo de Contenedor"; Code[10])
         {
+            Caption = 'Tipo de Contenedor';
+            ToolTip = 'Specifies the value of the Tipo de Contenedor field.';
             TableRelation = "xCost Entry";
         }
         field(50029; "Transporte matrícula"; Code[10])
         {
+            Caption = 'Transport registration';
+            ToolTip = 'Specifies the value of the Transport registration field.';
         }
         field(50030; Temperatura; Decimal)
         {
+            Caption = 'Temperature';
+            ToolTip = 'Specifies the value of the Temperature field.';
         }
         field(50031; Hora; Time)
         {
+            Caption = 'Time';
+            ToolTip = 'Specifies the value of the Time field.';
         }
         field(50032; "Tipo de amparo sanitario"; Option)
         {
+            Caption = 'Sanitary protection type';
+            ToolTip = 'Specifies the value of the Sanitary protection type field.';
             BlankZero = true;
             OptionMembers = ,"P.T.","P.T.R.","C.S.E.P.","Guía de tránsito";
         }
         field(50033; "No. amparo sanitario"; Code[30])
         {
+            Caption = 'Sanitary protection no.';
+            ToolTip = 'Specifies the value of the Sanitary protection no field.';
         }
         field(50034; Destino; Code[30])
         {
+            Caption = 'Destination';
+            ToolTip = 'Specifies the value of the Destination field.';
         }
         field(50035; Conductor; Text[50])
         {
+            Caption = 'Conductor';
+            ToolTip = 'Specifies the value of the Conductor field.';
         }
         field(50036; Insumos; Decimal)
         {
+            Caption = 'Insumos';
+            ToolTip = 'Specifies the value of the Insumos field.';
             CalcFormula = Sum("Insumos fact proyecto".Insumos WHERE(Factura = FIELD("No.")));
             FieldClass = FlowField;
         }
         field(50100; "Tipo factura"; Option)
         {
+            Caption = 'Tipo factura';
+            ToolTip = 'Specifies the value of the Tipo factura field.';
             OptionMembers = Venta,Servicios,"Disminución coste",Anticipo;
         }
         field(50110; "xNo Entrega Pedido"; Code[10])
         {
+            Caption = 'xNo Entrega Pedido';
+            ToolTip = 'Specifies the value of the xNo Entrega Pedido field.';
             Editable = false;
             InitValue = '1';
         }
         field(50300; "Su pedido"; Text[30])
         {
+            Caption = 'Su pedido';
+            ToolTip = 'Specifies the value of the Su pedido field.';
         }
         field(50301; "Cód. responsable"; Code[20])
         {
+            Caption = 'Person Responsible';
+            ToolTip = 'Specifies the value of the Person Responsible field.';
         }
         field(50302; "Ntro. no cuenta"; Text[20])
         {
+            Caption = 'Ntro. no cuenta';
+            ToolTip = 'Specifies the value of the Ntro. no cuenta field.';
         }
         field(50500; Observaciones; Text[50])
         {
+            Caption = 'Observaciones';
+            ToolTip = 'Specifies the value of the Observaciones field.';
         }
         field(50501; Estado; Text[50])
         {
+            Caption = 'Estado';
+            ToolTip = 'Specifies the value of the Estado field.';
             CalcFormula = Lookup(Mensajeria.Estado WHERE("No. documento" = FIELD("No.")));
             FieldClass = FlowField;
         }
         field(50502; "Archivo vinculado"; Text[250])
         {
+            Caption = 'Archivo vinculado';
+            ToolTip = 'Specifies the value of the Archivo vinculado field.';
         }
         field(50503; "Shortcut Dimension 3 Code"; Code[20])
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
         }
         field(50504; "Shortcut Dimension 4 Code"; Code[20])
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
         }
         field(50505; "Shortcut Dimension 5 Code"; Code[20])
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
         }
         field(50506; "Shortcut Dimension 6 Code"; Code[20])
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
         }
         field(50507; "Shortcut Dimension 7 Code"; Code[20])
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
         }
         field(50598; "Usuario Anulación"; Code[20])
         {
+            Caption = 'Usuario Anulación';
+            ToolTip = 'Specifies the value of the Usuario Anulación field.';
         }
         field(50599; Anulado; Boolean)
         {
+            Caption = 'Anulado';
+            ToolTip = 'Specifies the value of the Anulado field.';
         }
         field(50700; "Nota Créd. Correc. Precio"; Boolean)
         {
+            Caption = 'Nota Créd. Correc. Precio';
+            ToolTip = 'Specifies the value of the Nota Créd. Correc. Precio field.';
         }
         field(50701; "Nota Deb. Correc. Precio"; Boolean)
         {
+            Caption = 'Nota Deb. Correc. Precio';
+            ToolTip = 'Specifies the value of the Nota Deb. Correc. Precio field.';
         }
         field(50702; Province; Code[10])
         {
+            Caption = 'Province';
+            ToolTip = 'Specifies the value of the Province field.';
             TableRelation = Area;
         }
         field(50703; "Tipo Fiscal"; Code[10])
         {
+            Caption = 'Fiscal Type';
+            ToolTip = 'Specifies the value of the Fiscal Type field.';
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('TIPO FISCAL'));
             ObsoleteTag = '12/2025';
             ObsoleteState = Pending;
@@ -584,10 +685,14 @@ tableextension 50650 tableextension50650 extends "Sales Header Archive"
         }
         field(50704; "Punto Venta"; Code[10])
         {
+            Caption = 'Punto Venta';
+            ToolTip = 'Specifies the value of the Punto Venta field.';
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('PUNTO VENTA'));
         }
         field(50805; "Iva no realizado"; Option)
         {
+            Caption = 'Iva no realizado';
+            ToolTip = 'Specifies the value of the Iva no realizado field.';
             OptionMembers = " ","Sí",Proyecto;
         }
     }

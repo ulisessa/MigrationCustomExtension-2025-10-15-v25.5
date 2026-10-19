@@ -103,6 +103,8 @@ tableextension 50194 "G/L Account Ext." extends "G/L Account"
         }
         field(50000; "Global Dimension 3 Code"; Code[10])
         {
+            Caption = 'Global Dimension 3 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 3 Code field.';
             CaptionClass = '1,2,3';
 
 
@@ -113,6 +115,8 @@ tableextension 50194 "G/L Account Ext." extends "G/L Account"
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
+            Caption = 'Global Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
 
@@ -123,6 +127,8 @@ tableextension 50194 "G/L Account Ext." extends "G/L Account"
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
+            Caption = 'Global Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
 
@@ -133,6 +139,8 @@ tableextension 50194 "G/L Account Ext." extends "G/L Account"
         }
         field(50003; "Global Dimension 6 Code"; Code[20])
         {
+            Caption = 'Global Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
 
@@ -143,6 +151,8 @@ tableextension 50194 "G/L Account Ext." extends "G/L Account"
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
+            Caption = 'Global Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
 
@@ -153,162 +163,225 @@ tableextension 50194 "G/L Account Ext." extends "G/L Account"
         }
         field(50005; "Global dimension 3 filter"; Code[10])
         {
+            Caption = 'Global dimension 3 filter';
+            ToolTip = 'Specifies the value of the Global dimension 3 filter field.';
             CaptionClass = '1,3,3';
             FieldClass = FlowFilter;
 
         }
         field(50006; "Global Dimension 4 filter"; Code[10])
         {
+            Caption = 'Global Dimension 4 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 4 filter field.';
             CaptionClass = '1,3,4';
             FieldClass = FlowFilter;
 
         }
         field(50007; "Global Dimension 5 filter"; Code[10])
         {
+            Caption = 'Global Dimension 5 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 5 filter field.';
             CaptionClass = '1,3,5';
             FieldClass = FlowFilter;
 
         }
         field(50008; "Global dimension 6 filter"; Code[20])
         {
+            Caption = 'Global dimension 6 filter';
+            ToolTip = 'Specifies the value of the Global dimension 6 filter field.';
             CaptionClass = '1,3,6';
             FieldClass = FlowFilter;
 
         }
         field(50009; "Global Dimension 7 filter"; Code[20])
         {
+            Caption = 'Global Dimension 7 filter';
+            ToolTip = 'Specifies the value of the Global Dimension 7 filter field.';
             CaptionClass = '1,3,7';
             FieldClass = FlowFilter;
 
         }
         field(50010; "Registro por Dim. global 3"; Option)
         {
+            Caption = 'Registro por Dim. global 3';
+            ToolTip = 'Specifies the value of the Registro por Dim. global 3 field.';
             OptionMembers = " ",Obligatorio,"Igual código","Sin código";
         }
         field(50011; "Registro por Dim. global 4"; Option)
         {
+            Caption = 'Registro por Dim. global 4';
+            ToolTip = 'Specifies the value of the Registro por Dim. global 4 field.';
             OptionMembers = " ",Obligatorio,"Igual código","Sin código";
         }
         field(50012; "Registro por Dim. global 5"; Option)
         {
+            Caption = 'Registro por Dim. global 5';
+            ToolTip = 'Specifies the value of the Registro por Dim. global 5 field.';
             OptionMembers = " ",Obligatorio,"Igual código","Sin código";
         }
         field(50013; "Registro por Dim. global 6"; Option)
         {
+            Caption = 'Registro por Dim. global 6';
+            ToolTip = 'Specifies the value of the Registro por Dim. global 6 field.';
             OptionMembers = " ",Obligatorio,"Igual código","Sin código";
         }
         field(50014; "Registro por Dim. global 7"; Option)
         {
+            Caption = 'Registro por Dim. global 7';
+            ToolTip = 'Specifies the value of the Registro por Dim. global 7 field.';
             OptionMembers = " ",Obligatorio,"Igual código","Sin código";
         }
         field(50015; "Registro por proyectos"; Option)
         {
+            Caption = 'Registro por proyectos';
+            ToolTip = 'Specifies the value of the Registro por proyectos field.';
             OptionMembers = " ",Obligatorio,"Igual código","Sin código";
         }
         field(50016; "No. proyecto"; Code[30])
         {
+            Caption = 'Job No.';
+            ToolTip = 'Specifies the value of the Job No field.';
             TableRelation = Job;
         }
         field(50017; "Registro por Dim. global 1"; Option)
         {
+            Caption = 'Registro por Dim. global 1';
+            ToolTip = 'Specifies the value of the Registro por Dim. global 1 field.';
             OptionMembers = " ",Obligatorio,"Igual código","Sin código";
         }
         field(50018; "Registro por Dim. global 2"; Option)
         {
+            Caption = 'Registro por Dim. global 2';
+            ToolTip = 'Specifies the value of the Registro por Dim. global 2 field.';
             OptionMembers = " ",Obligatorio,"Igual código","Sin código";
         }
         field(50019; "Origin filter"; Code[10])
         {
             Caption = 'Filtro origen';
+            ToolTip = 'Specifies the value of the Filtro origen field.';
             FieldClass = FlowFilter;
             TableRelation = "Source Code";
         }
         field(50020; "Inflation Adjustment Enabled"; Boolean)
         {
             Caption = 'Habillitar para ajuste por inflación';
+            ToolTip = 'Specifies the value of the Habillitar para ajuste por inflación field.';
             DataClassification = ToBeClassified;
         }
         field(50021; "Inflation Adjustment Orig. Acc"; Code[10])
         {
             Caption = 'Cuenta Origen Ajuste Inflación';
+            ToolTip = 'Specifies the value of the Cuenta Origen Ajuste Inflación field.';
             DataClassification = ToBeClassified;
             TableRelation = "G/L Account"."No.";
         }
         field(50022; "Inflation Adjustment Dest. Acc"; Code[10])
         {
             Caption = 'Cuenta Destino Ajuste Inflación';
+            ToolTip = 'Specifies the value of the Cuenta Destino Ajuste Inflación field.';
             DataClassification = ToBeClassified;
             TableRelation = "G/L Account"."No.";
         }
         field(50300; "Filtro proyecto"; Code[20])
         {
+            Caption = 'Filtro proyecto';
+            ToolTip = 'Specifies the value of the Filtro proyecto field.';
             FieldClass = FlowFilter;
             TableRelation = Job;
         }
         field(50301; "Existe Coste real"; Boolean)
         {
+            Caption = 'Existe Coste real';
+            ToolTip = 'Specifies the value of the Existe Coste real field.';
             Editable = false;
         }
         field(50500; "Grupo Nota 1"; Text[50])
         {
+            Caption = 'Grupo Nota 1';
+            ToolTip = 'Specifies the value of the Grupo Nota 1 field.';
             TableRelation = "Grupos Nota Balance"."Descripción" WHERE(Nivel = FILTER(A));
         }
         field(50501; "Grupo Nota 2"; Text[50])
         {
+            Caption = 'Grupo Nota 2';
+            ToolTip = 'Specifies the value of the Grupo Nota 2 field.';
             TableRelation = "Grupos Nota Balance"."Descripción" WHERE(Nivel = FILTER(B));
             ValidateTableRelation = false;
         }
         field(50502; "Grupo Nota 3"; Text[100])
         {
+            Caption = 'Grupo Nota 3';
+            ToolTip = 'Specifies the value of the Grupo Nota 3 field.';
             TableRelation = "Grupos Nota Balance"."Descripción" WHERE(Nivel = FILTER(C));
             ValidateTableRelation = false;
         }
         field(50503; "Grupo Informe Costos"; Text[50])
         {
+            Caption = 'Grupo Informe Costos';
+            ToolTip = 'Specifies the value of the Grupo Informe Costos field.';
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('GRUPO COSTOS'));
         }
         field(50504; "Denominación común costos"; Text[50])
         {
+            Caption = 'Denominación común costos';
+            ToolTip = 'Specifies the value of the Denominación común costos field.';
         }
         field(50700; "Cód. retención IVA"; Code[20])
         {
+            Caption = 'Cód. retención IVA';
+            ToolTip = 'Specifies the value of the Cód. retención IVA field.';
             Description = 'Código para la retención de IVA en los pagos';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = CONST(IVA));
         }
         field(50701; "Cód. retención SS"; Code[20])
         {
+            Caption = 'Cód. retención SS';
+            ToolTip = 'Specifies the value of the Cód. retención SS field.';
             Description = 'Código para la retención de Ingresos Brutos en los pagos';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER("Ingresos Brutos"));
         }
         field(50702; "Cód. retencion ganancias"; Code[20])
         {
+            Caption = 'Cód. retencion ganancias';
+            ToolTip = 'Specifies the value of the Cód. retencion ganancias field.';
             Description = 'Código para la retención de ganancias en los pagos';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER(Ganancias));
         }
         field(50703; "Fecha Alta"; Date)
         {
+            Caption = 'Hiring date';
+            ToolTip = 'Specifies the value of the Hiring date field.';
             Description = 'Fecha alta de la cuenta';
         }
         field(50704; "Fecha Baja"; Date)
         {
+            Caption = 'Fecha Baja';
+            ToolTip = 'Specifies the value of the Fecha Baja field.';
             Description = 'Fecha Baja de la cuenta';
         }
         field(50705; Province; Code[10])
         {
+            Caption = 'Province';
+            ToolTip = 'Specifies the value of the Province field.';
             Description = 'Provincia donde se genera el servicio para el calculo de INGRESOS BRUTOS';
         }
         field(50706; "Distribution method"; Option)
         {
             Caption = 'Método de distribución';
+            ToolTip = 'Specifies the value of the Método de distribución field.';
             OptionCaption = ' ,Days,Kilos,Role';
             OptionMembers = " ",Days,Kilos,Role;
         }
         field(50707; "Old account no."; Code[20])
         {
+            Caption = 'Old account no.';
+            ToolTip = 'Specifies the value of the Old account no field.';
             DataClassification = ToBeClassified;
         }
         field(50708; "Old account name"; Text[50])
         {
+            Caption = 'Old account name';
+            ToolTip = 'Specifies the value of the Old account name field.';
             DataClassification = ToBeClassified;
         }
     }

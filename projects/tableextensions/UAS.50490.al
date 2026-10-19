@@ -26,6 +26,7 @@ tableextension 50490 tableextension50490 extends "G/L Acc. Budget Buffer"
         {
             CaptionClass = '1,3,3';
             Caption = 'Global Dimension 3 Filter';
+            ToolTip = 'Specifies the value of the Global Dimension 3 Filter field.';
             FieldClass = FlowFilter;
 
         }
@@ -33,6 +34,7 @@ tableextension 50490 tableextension50490 extends "G/L Acc. Budget Buffer"
         {
             CaptionClass = '1,3,4';
             Caption = 'Global Dimension 4 Filter';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Filter field.';
             FieldClass = FlowFilter;
 
         }
@@ -40,6 +42,7 @@ tableextension 50490 tableextension50490 extends "G/L Acc. Budget Buffer"
         {
             CaptionClass = '1,3,5';
             Caption = 'Global Dimension 5 Filter';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Filter field.';
             FieldClass = FlowFilter;
 
         }
@@ -47,6 +50,7 @@ tableextension 50490 tableextension50490 extends "G/L Acc. Budget Buffer"
         {
             CaptionClass = '1,3,6';
             Caption = 'Global Dimension 6 Filter';
+            ToolTip = 'Specifies the value of the Global Dimension 6 Filter field.';
             FieldClass = FlowFilter;
 
         }
@@ -54,6 +58,7 @@ tableextension 50490 tableextension50490 extends "G/L Acc. Budget Buffer"
         {
             CaptionClass = '1,3,7';
             Caption = 'Global Dimension 7 Filter';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Filter field.';
             FieldClass = FlowFilter;
 
         }

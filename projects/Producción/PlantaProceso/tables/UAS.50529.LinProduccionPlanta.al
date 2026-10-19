@@ -4,25 +4,37 @@ table 50529 "Lin. produccion planta"
     {
         field(1; "Nombre libro diario"; Code[10])
         {
+            Caption = 'Nombre libro diario';
+            ToolTip = 'Specifies the value of the Nombre libro diario field.';
             TableRelation = "Item Journal Template";
         }
         field(2; "Nombre seccion diario"; Code[10])
         {
+            Caption = 'Nombre seccion diario';
+            ToolTip = 'Specifies the value of the Nombre seccion diario field.';
             TableRelation = "Item Journal Batch".Name WHERE("Journal Template Name" = FIELD("Nombre libro diario"));
         }
         field(3; "No. documento"; Code[30])
         {
+            Caption = 'Document No.';
+            ToolTip = 'Specifies the value of the Document No field.';
         }
         field(4; "No. línea"; Integer)
         {
+            Caption = 'Line No.';
+            ToolTip = 'Specifies the value of the Line No field.';
             NotBlank = true;
         }
         field(5; Tipo; Option)
         {
+            Caption = 'Tipo';
+            ToolTip = 'Specifies the value of the Tipo field.';
             OptionMembers = " ",Entrada,Salida;
         }
         field(6; Clasificacion; Code[20])
         {
+            Caption = 'Clasificacion';
+            ToolTip = 'Specifies the value of the Clasificacion field.';
             TableRelation = Item WHERE(Blocked = CONST(false),
                                         "Item Category Code" = CONST('PESCA'));
 
@@ -45,9 +57,13 @@ table 50529 "Lin. produccion planta"
         }
         field(7; Descripcion; Text[100])
         {
+            Caption = 'Description';
+            ToolTip = 'Specifies the value of the Description field.';
         }
         field(8; "Unidad medida"; Code[10])
         {
+            Caption = 'Unidad medida';
+            ToolTip = 'Specifies the value of the Unidad medida field.';
             TableRelation = "Item Unit of Measure".Code WHERE("Item No." = FIELD(Clasificacion));
 
             trigger OnValidate()
@@ -57,17 +73,25 @@ table 50529 "Lin. produccion planta"
         }
         field(9; Cantidad; Decimal)
         {
+            Caption = 'Quantity';
+            ToolTip = 'Specifies the value of the Quantity field.';
 
         }
         field(10; "Kilos netos"; Decimal)
         {
+            Caption = 'Kilos netos';
+            ToolTip = 'Specifies the value of the Kilos netos field.';
 
         }
         field(11; "Kilos brutos"; Decimal)
         {
+            Caption = 'Kilos brutos';
+            ToolTip = 'Specifies the value of the Kilos brutos field.';
         }
         field(12; "No. Pallet"; Code[20])
         {
+            Caption = 'Pallet no.';
+            ToolTip = 'Specifies the value of the Pallet no field.';
 
             trigger OnLookup()
             begin
@@ -78,22 +102,35 @@ table 50529 "Lin. produccion planta"
         }
         field(13; "Cod. deposito"; Code[10])
         {
+            Caption = 'Cod. deposito';
+            ToolTip = 'Specifies the value of the Cod. deposito field.';
             TableRelation = Location;
 
         }
         field(14; Buque; Code[10])
         {
+            Caption = 'Buque';
+            ToolTip = 'Specifies the value of the Buque field.';
+            CaptionClass = '1,2,1';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(1));
         }
         field(15; Marea; Code[10])
         {
+            Caption = 'Marea';
+            ToolTip = 'Specifies the value of the Marea field.';
+            CaptionClass = '1,2,2';
+            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(2));
 
         }
         field(16; Puerto; Code[10])
         {
+            Caption = 'Puerto';
+            ToolTip = 'Specifies the value of the Puerto field.';
         }
         field(17; "No. proyecto"; Code[20])
         {
+            Caption = 'Job No.';
+            ToolTip = 'Specifies the value of the Job No field.';
             TableRelation = Job;
 
             trigger OnValidate()
@@ -118,47 +155,74 @@ table 50529 "Lin. produccion planta"
         }
         field(18; Actividad; Code[10])
         {
+            Caption = 'Actividad';
+            ToolTip = 'Specifies the value of the Actividad field.';
+            CaptionClass = '1,2,3';
+            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(3));
         }
         field(19; Familia; Code[10])
         {
+            Caption = 'Family';
+            ToolTip = 'Specifies the value of the Family field.';
             TableRelation = Family;
         }
         field(20; Subfamilia; Code[10])
         {
+            Caption = 'Subfamily';
+            ToolTip = 'Specifies the value of the Subfamily field.';
             TableRelation = "Subfamilia producto".Code WHERE("Family code" = FIELD(Familia));
         }
         field(21; "Buque Tercero"; Code[3])
         {
+            Caption = 'Buque Tercero';
+            ToolTip = 'Specifies the value of the Buque Tercero field.';
         }
         field(22; "Marea Tercero"; Code[7])
         {
+            Caption = 'Marea Tercero';
+            ToolTip = 'Specifies the value of the Marea Tercero field.';
             Editable = true;
         }
         field(23; Tercero; Boolean)
         {
+            Caption = 'Tercero';
+            ToolTip = 'Specifies the value of the Tercero field.';
         }
         field(24; "Lote origen"; Code[20])
         {
+            Caption = 'Lote origen';
+            ToolTip = 'Specifies the value of the Lote origen field.';
         }
         field(25; Registrado; Boolean)
         {
+            Caption = 'Registrado';
+            ToolTip = 'Specifies the value of the Registrado field.';
         }
         field(26; Revertido; Boolean)
         {
+            Caption = 'Reversed';
+            ToolTip = 'Specifies the value of the Reversed field.';
         }
         field(27; "Ultimo pallet"; Code[20])
         {
+            Caption = 'Ultimo pallet';
+            ToolTip = 'Specifies the value of the Ultimo pallet field.';
         }
         field(28; "Cantidad en pallet"; Decimal)
         {
+            Caption = 'Cantidad en pallet';
+            ToolTip = 'Specifies the value of the Cantidad en pallet field.';
         }
         field(29; "No. lote"; Code[30])
         {
+            Caption = 'No. lote';
+            ToolTip = 'Specifies the value of the No. lote field.';
             DataClassification = ToBeClassified;
         }
         field(30; "Dimension Set ID"; Integer)
         {
             Caption = 'Dimension Set ID';
+            ToolTip = 'Specifies the value of the Dimension Set ID field.';
             DataClassification = ToBeClassified;
             Editable = false;
             TableRelation = "Dimension Set Entry";
@@ -171,16 +235,20 @@ table 50529 "Lin. produccion planta"
         field(31; "Lin. tunel"; Integer)
         {
             Caption = 'Lín. túnel';
+            ToolTip = 'Specifies the value of the Lín. túnel field.';
             DataClassification = ToBeClassified;
         }
         field(32; "Cod. relacion costo"; Code[20])
         {
+            Caption = 'Cod. relacion costo';
+            ToolTip = 'Specifies the value of the Cod. relacion costo field.';
             DataClassification = ToBeClassified;
 
         }
         field(33; "Bin code"; Code[20])
         {
             Caption = 'Ubicación';
+            ToolTip = 'Specifies the value of the Ubicación field.';
             DataClassification = ToBeClassified;
             TableRelation = Bin.Code WHERE("Location Code" = FIELD("Cod. deposito"));
         }
@@ -306,8 +374,11 @@ table 50529 "Lin. produccion planta"
                     Validate("No. lote", rstMovProducto."Lot No.");
                     Validate("Lote origen", rstMovProducto."Lote origen");
                     Validate(Cantidad, rstMovProducto."Remaining Quantity");
-                    Validate("Kilos netos", rstMovProducto."Remaining net kilos");
-                    Validate("Kilos brutos", rstMovProducto."Remaining gross kilos");
+                    // Kilos pendientes del movimiento: cantidad pendiente x kilos por unidad.
+                    if rstMovProducto.Quantity <> 0 then begin
+                        Validate("Kilos netos", rstMovProducto."Remaining Quantity" * rstMovProducto."Net kilos" / rstMovProducto.Quantity);
+                        Validate("Kilos brutos", rstMovProducto."Remaining Quantity" * rstMovProducto."Gross kilos" / rstMovProducto.Quantity);
+                    end;
 
                 end;
 

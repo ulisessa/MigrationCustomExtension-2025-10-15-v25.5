@@ -5,13 +5,19 @@ table 50550 "Ruta digitalizacion depto/espe"
     {
         field(1; "No."; Integer)
         {
+            Caption = 'No.';
+            ToolTip = 'Specifies the value of the No field.';
         }
         field(2; Departamento; Code[20])
         {
+            Caption = 'Departamento';
+            ToolTip = 'Specifies the value of the Departamento field.';
             TableRelation = Seguridad;
         }
         field(3; Especifico; Text[250])
         {
+            Caption = 'Especifico';
+            ToolTip = 'Specifies the value of the Especifico field.';
 
             trigger OnValidate()
             begin
@@ -23,26 +29,38 @@ table 50550 "Ruta digitalizacion depto/espe"
         }
         field(4; Documento; Text[250])
         {
+            Caption = 'Documento';
+            ToolTip = 'Specifies the value of the Documento field.';
         }
         field(5; Tabla; Integer)
         {
+            Caption = 'Tabla';
+            ToolTip = 'Specifies the value of the Tabla field.';
             TableRelation = "Table Information"."Table No.";
         }
         field(6; "Nombre tabla"; Text[50])
         {
+            Caption = 'Nombre tabla';
+            ToolTip = 'Specifies the value of the Nombre tabla field.';
             CalcFormula = Lookup("Table Information"."Table Name" WHERE("Table No." = FIELD(Tabla)));
             FieldClass = FlowField;
         }
         field(7; Ruta; Text[250])
         {
+            Caption = 'Ruta';
+            ToolTip = 'Specifies the value of the Ruta field.';
         }
         field(8; "Niveles por ruta"; Integer)
         {
+            Caption = 'Niveles por ruta';
+            ToolTip = 'Specifies the value of the Niveles por ruta field.';
             CalcFormula = Count("Específicos por ruta" WHERE("No." = FIELD("No.")));
             FieldClass = FlowField;
         }
         field(9; "Tipo documento"; Option)
         {
+            Caption = 'Document Type';
+            ToolTip = 'Specifies the value of the Document Type field.';
             OptionMembers = " ",Remito,Factura,"Débito","Crédito",Recibo,"Factura pronto vencimiento","Déb.Vto.";
         }
     }

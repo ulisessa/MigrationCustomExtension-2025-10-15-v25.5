@@ -5,10 +5,14 @@ table 50557 "Lín. ajuste ventas"
     {
         field(2; "No. documento"; Code[30])
         {
+            Caption = 'Document No.';
+            ToolTip = 'Specifies the value of the Document No field.';
             Editable = false;
         }
         field(3; Subfamilia; Code[20])
         {
+            Caption = 'Subfamily';
+            ToolTip = 'Specifies the value of the Subfamily field.';
             Editable = false;
 
             trigger OnLookup()
@@ -32,19 +36,27 @@ table 50557 "Lín. ajuste ventas"
         }
         field(4; "Carpeta exportación"; Code[20])
         {
+            Caption = 'Carpeta exportación';
+            ToolTip = 'Specifies the value of the Carpeta exportación field.';
             Editable = false;
         }
         field(5; "Permiso embarque"; Code[20])
         {
+            Caption = 'Permiso embarque';
+            ToolTip = 'Specifies the value of the Permiso embarque field.';
         }
         field(6; "Línea venta"; Integer)
         {
+            Caption = 'Línea venta';
+            ToolTip = 'Specifies the value of the Línea venta field.';
             Editable = false;
             TableRelation = "Sales Line"."Line No." WHERE("Document No." = FIELD("No. documento"),
                                                            Type = FILTER(Item));
         }
         field(7; "% Ajuste KN"; Decimal)
         {
+            Caption = '% Ajuste KN';
+            ToolTip = 'Specifies the value of the % Ajuste KN field.';
             Editable = false;
 
             trigger OnValidate()
@@ -72,6 +84,8 @@ table 50557 "Lín. ajuste ventas"
         }
         field(8; "% Ajuste KB"; Decimal)
         {
+            Caption = '% Ajuste KB';
+            ToolTip = 'Specifies the value of the % Ajuste KB field.';
             Editable = false;
 
             trigger OnValidate()
@@ -99,6 +113,8 @@ table 50557 "Lín. ajuste ventas"
         }
         field(9; "Kilos netos"; Decimal)
         {
+            Caption = 'Kilos netos';
+            ToolTip = 'Specifies the value of the Kilos netos field.';
             Editable = false;
 
             trigger OnValidate()
@@ -118,6 +134,8 @@ table 50557 "Lín. ajuste ventas"
         }
         field(10; "Kilos brutos"; Decimal)
         {
+            Caption = 'Kilos brutos';
+            ToolTip = 'Specifies the value of the Kilos brutos field.';
             Editable = false;
 
             trigger OnValidate()
@@ -137,14 +155,20 @@ table 50557 "Lín. ajuste ventas"
         }
         field(11; "Ajuste por %"; Boolean)
         {
+            Caption = 'Ajuste por %';
+            ToolTip = 'Specifies the value of the Ajuste por % field.';
             Editable = false;
         }
         field(12; "Ajuste por Kilos"; Boolean)
         {
+            Caption = 'Ajuste por Kilos';
+            ToolTip = 'Specifies the value of the Ajuste por Kilos field.';
             Editable = false;
         }
         field(13; "No. producto"; Code[20])
         {
+            Caption = 'Item No.';
+            ToolTip = 'Specifies the value of the Item No field.';
             Editable = true;
             TableRelation = Item."No." WHERE("Item Category Code" = CONST('PESCA'));
 
@@ -165,6 +189,8 @@ table 50557 "Lín. ajuste ventas"
         }
         field(14; "Kilos Netos en remito"; Decimal)
         {
+            Caption = 'Kilos Netos en remito';
+            ToolTip = 'Specifies the value of the Kilos Netos en remito field.';
             CalcFormula = Sum("Mov. remitos"."Kilos netos" WHERE("No. documento" = FIELD("No. documento"),
                                                                   "No. producto" = FIELD("No. producto"),
                                                                   Buque = FIELD(FILTER(Buque)),
@@ -176,6 +202,8 @@ table 50557 "Lín. ajuste ventas"
         }
         field(15; "Kilos Brutos en remito"; Decimal)
         {
+            Caption = 'Kilos Brutos en remito';
+            ToolTip = 'Specifies the value of the Kilos Brutos en remito field.';
             CalcFormula = Sum("Mov. remitos"."Kilos brutos" WHERE("No. documento" = FIELD("No. documento"),
                                                                    "No. producto" = FIELD("No. producto"),
                                                                    Buque = FIELD(FILTER(Buque)),
@@ -187,6 +215,8 @@ table 50557 "Lín. ajuste ventas"
         }
         field(16; "Kilos Netos a enviar"; Decimal)
         {
+            Caption = 'Net kilos to Ship';
+            ToolTip = 'Specifies the value of the Net kilos to Ship field.';
 
             trigger OnValidate()
             begin
@@ -201,6 +231,8 @@ table 50557 "Lín. ajuste ventas"
         }
         field(17; "Kilos Brutos a enviar"; Decimal)
         {
+            Caption = 'Gross kilos to Ship';
+            ToolTip = 'Specifies the value of the Gross kilos to Ship field.';
 
             trigger OnValidate()
             begin
@@ -214,15 +246,21 @@ table 50557 "Lín. ajuste ventas"
         }
         field(18; "Cód. concepto ajuste"; Code[10])
         {
+            Caption = 'Cód. concepto ajuste';
+            ToolTip = 'Specifies the value of the Cód. concepto ajuste field.';
             Editable = false;
             TableRelation = "AFIP Interface Register";
         }
         field(19; "Descripción"; Text[100])
         {
+            Caption = 'Description';
+            ToolTip = 'Specifies the value of the Description field.';
             Editable = false;
         }
         field(20; "Cantidad en remito"; Decimal)
         {
+            Caption = 'Cantidad en remito';
+            ToolTip = 'Specifies the value of the Cantidad en remito field.';
             CalcFormula = Sum("Mov. remitos".Cantidad WHERE("No. documento" = FIELD("No. documento"),
                                                              "No. producto" = FIELD("No. producto"),
                                                              Buque = FIELD(FILTER(Buque)),
@@ -234,21 +272,34 @@ table 50557 "Lín. ajuste ventas"
         }
         field(21; "Cantidad a enviar"; Decimal)
         {
+            Caption = 'Cantidad a enviar';
+            ToolTip = 'Specifies the value of the Cantidad a enviar field.';
         }
         field(22; "Lote origen"; Code[20])
         {
+            Caption = 'Lote origen';
+            ToolTip = 'Specifies the value of the Lote origen field.';
         }
         field(23; "Cantidad a reservar"; Decimal)
         {
+            Caption = 'Cantidad a reservar';
+            ToolTip = 'Specifies the value of the Cantidad a reservar field.';
         }
         field(24; "Kilos brutos a reservar"; Decimal)
         {
+            Caption = 'Kilos brutos a reservar';
+            ToolTip = 'Specifies the value of the Kilos brutos a reservar field.';
         }
         field(25; "Kilos netos a reservar"; Decimal)
         {
+            Caption = 'Kilos netos a reservar';
+            ToolTip = 'Specifies the value of the Kilos netos a reservar field.';
         }
         field(26; Buque; Code[10])
         {
+            Caption = 'Buque';
+            ToolTip = 'Specifies the value of the Buque field.';
+            CaptionClass = '1,2,1';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(1));
 
             trigger OnValidate()
@@ -268,6 +319,10 @@ table 50557 "Lín. ajuste ventas"
         }
         field(27; Marea; Code[10])
         {
+            Caption = 'Marea';
+            ToolTip = 'Specifies the value of the Marea field.';
+            CaptionClass = '1,2,2';
+            TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(2));
 
 
             trigger OnValidate()
@@ -285,6 +340,8 @@ table 50557 "Lín. ajuste ventas"
         }
         field(28; "Cantidad en pedido"; Decimal)
         {
+            Caption = 'Cantidad en pedido';
+            ToolTip = 'Specifies the value of the Cantidad en pedido field.';
             CalcFormula = Sum("Sales Line".Quantity WHERE("Document No." = FIELD("Documento venta"),
                                                            "No." = FIELD("No. producto"),
                                                            "Shortcut Dimension 1 Code" = FIELD(Buque),
@@ -296,6 +353,8 @@ table 50557 "Lín. ajuste ventas"
         }
         field(29; "Kilos Netos en pedido"; Decimal)
         {
+            Caption = 'Kilos Netos en pedido';
+            ToolTip = 'Specifies the value of the Kilos Netos en pedido field.';
             CalcFormula = Sum("Sales Line"."Net kilos" WHERE("Document No." = FIELD("Documento venta"),
                                                               "No." = FIELD("No. producto"),
                                                               "Shortcut Dimension 1 Code" = FIELD(Buque),
@@ -307,6 +366,8 @@ table 50557 "Lín. ajuste ventas"
         }
         field(30; "Kilos Brutos en pedido"; Decimal)
         {
+            Caption = 'Kilos Brutos en pedido';
+            ToolTip = 'Specifies the value of the Kilos Brutos en pedido field.';
             CalcFormula = Sum("Sales Line"."Gross kilos" WHERE("Document No." = FIELD("Documento venta"),
                                                                 "No." = FIELD("No. producto"),
                                                                 "Shortcut Dimension 1 Code" = FIELD(Buque),
@@ -319,33 +380,48 @@ table 50557 "Lín. ajuste ventas"
         field(31; "Location code"; Code[10])
         {
             Caption = 'Cód. depósito salida';
+            ToolTip = 'Specifies the value of the Cód. depósito salida field.';
             DataClassification = ToBeClassified;
             TableRelation = Location;
         }
         field(100; Cliente; Text[50])
         {
+            Caption = 'Cliente';
+            ToolTip = 'Specifies the value of the Cliente field.';
         }
         field(101; "Tipo documento"; Option)
         {
+            Caption = 'Document Type';
+            ToolTip = 'Specifies the value of the Document Type field.';
             OptionMembers = Oferta,Pedido,Factura,"Nota d/c","Pedido abierto","Nota Débito";
         }
         field(102; "Documento venta"; Code[20])
         {
+            Caption = 'Documento venta';
+            ToolTip = 'Specifies the value of the Documento venta field.';
         }
         field(103; "Cód. unidad medida"; Code[10])
         {
+            Caption = 'Cód. unidad medida';
+            ToolTip = 'Specifies the value of the Cód. unidad medida field.';
             TableRelation = "Unit of Measure";
         }
         field(104; "No. reparto"; Code[20])
         {
+            Caption = 'No. reparto';
+            ToolTip = 'Specifies the value of the No. reparto field.';
             DataClassification = ToBeClassified;
         }
         field(105; "Linea reparto"; Integer)
         {
+            Caption = 'Linea reparto';
+            ToolTip = 'Specifies the value of the Linea reparto field.';
             DataClassification = ToBeClassified;
         }
         field(106; "Seguimiento para trazabilidad"; Option)
         {
+            Caption = 'Seguimiento para trazabilidad';
+            ToolTip = 'Specifies the value of the Seguimiento para trazabilidad field.';
             DataClassification = ToBeClassified;
             OptionMembers = " ","Post-Expo - Controlar contra DCL","No controlar contra DCL","Pre-Expo - Controlar contra DCL";
 
@@ -371,6 +447,7 @@ table 50557 "Lín. ajuste ventas"
         field(107; "DCL application date formula"; Text[30])
         {
             Caption = 'Fórmula de aplicación de fechas de DCL';
+            ToolTip = 'Specifies the value of the Fórmula de aplicación de fechas de DCL field.';
             DataClassification = ToBeClassified;
 
             trigger OnValidate()

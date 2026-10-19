@@ -24,6 +24,8 @@ tableextension 50364 tableextension50364 extends "Gen. Product Posting Group"
         }
         field(50500; Tipo; Option)
         {
+            Caption = 'Tipo';
+            ToolTip = 'Specifies the value of the Tipo field.';
             OptionMembers = Producto,Recurso;
         }
     }

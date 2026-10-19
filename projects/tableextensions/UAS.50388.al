@@ -124,6 +124,8 @@ tableextension 50388 tableextension50388 extends "Bank Acc. Reconciliation Line"
         //end;
         field(50000; "No. cheque interno"; Code[10])
         {
+            Caption = 'No. cheque interno';
+            ToolTip = 'Specifies the value of the No. cheque interno field.';
             CalcFormula = Lookup("Bank Account Ledger Entry"."No. cheque" WHERE("Statement No." = FIELD("Statement No."),
                                                                                 "Statement Line No." = FIELD("Statement Line No.")));
             FieldClass = FlowField;
@@ -132,6 +134,7 @@ tableextension 50388 tableextension50388 extends "Bank Acc. Reconciliation Line"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
             DataClassification = ToBeClassified;
 
 
@@ -144,6 +147,7 @@ tableextension 50388 tableextension50388 extends "Bank Acc. Reconciliation Line"
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
             DataClassification = ToBeClassified;
 
 
@@ -156,6 +160,7 @@ tableextension 50388 tableextension50388 extends "Bank Acc. Reconciliation Line"
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 5 Code field.';
             DataClassification = ToBeClassified;
 
 
@@ -168,6 +173,7 @@ tableextension 50388 tableextension50388 extends "Bank Acc. Reconciliation Line"
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 6 Code field.';
             DataClassification = ToBeClassified;
 
 
@@ -180,6 +186,7 @@ tableextension 50388 tableextension50388 extends "Bank Acc. Reconciliation Line"
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 7 Code field.';
             DataClassification = ToBeClassified;
 
 

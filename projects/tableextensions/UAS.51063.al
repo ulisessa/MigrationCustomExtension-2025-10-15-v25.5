@@ -81,6 +81,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
                                                                 "Lot No." = FIELD("Lot No. Filter"),
                                                                 "Serial No." = FIELD("Serial No. Filter")));
             Caption = 'Quantity';
+            ToolTip = 'Specifies the value of the Quantity field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -95,6 +96,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
                                                                 "Lot No." = FIELD("Lot No. Filter"),
                                                                 "Serial No." = FIELD("Serial No. Filter")));
             Caption = 'Quantity';
+            ToolTip = 'Specifies the value of the Quantity field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -109,6 +111,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
                                                                      "Lot No." = FIELD("Lot No. Filter"),
                                                                      "Serial No." = FIELD("Serial No. Filter")));
             Caption = 'Quantity (Base)';
+            ToolTip = 'Specifies the value of the Quantity (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -123,6 +126,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
                                                                      "Lot No." = FIELD("Lot No. Filter"),
                                                                      "Serial No." = FIELD("Serial No. Filter")));
             Caption = 'Quantity (Base)';
+            ToolTip = 'Specifies the value of the Quantity (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -139,6 +143,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
                                                                                   "Serial No." = FIELD("Serial No. Filter"),
                                                                                   "Assemble to Order" = CONST(false)));
             Caption = 'Pick Qty.';
+            ToolTip = 'Specifies the value of the Pick Qty field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -155,6 +160,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
                                                                                   "Serial No." = FIELD("Serial No. Filter"),
                                                                                   "Assemble to Order" = CONST(false)));
             Caption = 'Pick Qty.';
+            ToolTip = 'Specifies the value of the Pick Qty field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -169,6 +175,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
                                                                                        "Lot No." = FIELD("Lot No. Filter"),
                                                                                        "Serial No." = FIELD("Serial No. Filter")));
             Caption = 'Neg. Adjmt. gross kilos';
+            ToolTip = 'Specifies the value of the Neg. Adjmt. gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -183,6 +190,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
                                                                                        "Lot No." = FIELD("Lot No. Filter"),
                                                                                        "Serial No." = FIELD("Serial No. Filter")));
             Caption = 'Neg. Adjmt. gross kilos';
+            ToolTip = 'Specifies the value of the Neg. Adjmt. gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -198,6 +206,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
                                                                                          "Lot No." = FIELD("Lot No. Filter"),
                                                                                          "Serial No." = FIELD("Serial No. Filter")));
             Caption = 'Put-away gross kilos';
+            ToolTip = 'Specifies the value of the Put-away gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -212,6 +221,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
                                                                                        "Lot No." = FIELD("Lot No. Filter"),
                                                                                        "Serial No." = FIELD("Serial No. Filter")));
             Caption = 'Pos. Adjmt. gross kilos';
+            ToolTip = 'Specifies the value of the Pos. Adjmt. gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -219,12 +229,14 @@ tableextension 51063 tableextension51063 extends "Bin Content"
         field(50010; "Min. net kilos"; Decimal)
         {
             Caption = 'Min. Qty.';
+            ToolTip = 'Specifies the value of the Min. Qty field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
         }
         field(50011; "Max. net kilos"; Decimal)
         {
             Caption = 'Max. Qty.';
+            ToolTip = 'Specifies the value of the Max. Qty field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -232,12 +244,14 @@ tableextension 51063 tableextension51063 extends "Bin Content"
         field(50012; "Min. gross kilos"; Decimal)
         {
             Caption = 'Min. Qty.';
+            ToolTip = 'Specifies the value of the Min. Qty field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
         }
         field(50013; "Max. gross kilos"; Decimal)
         {
             Caption = 'Max. Qty.';
+            ToolTip = 'Specifies the value of the Max. Qty field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -252,6 +266,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
                                                                                        "Lot No." = FIELD("Lot No. Filter"),
                                                                                        "Serial No." = FIELD("Serial No. Filter")));
             Caption = 'Neg. Adjmt. gross kilos';
+            ToolTip = 'Specifies the value of the Neg. Adjmt. gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -266,6 +281,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
                                                                                        "Lot No." = FIELD("Lot No. Filter"),
                                                                                        "Serial No." = FIELD("Serial No. Filter")));
             Caption = 'Neg. Adjmt. gross kilos';
+            ToolTip = 'Specifies the value of the Neg. Adjmt. gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -281,6 +297,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
                                                                                          "Lot No." = FIELD("Lot No. Filter"),
                                                                                          "Serial No." = FIELD("Serial No. Filter")));
             Caption = 'Put-away gross kilos';
+            ToolTip = 'Specifies the value of the Put-away gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -295,6 +312,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
                                                                                        "Lot No." = FIELD("Lot No. Filter"),
                                                                                        "Serial No." = FIELD("Serial No. Filter")));
             Caption = 'Pos. Adjmt. gross kilos';
+            ToolTip = 'Specifies the value of the Pos. Adjmt. gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -303,6 +321,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
         {
             CaptionClass = '1,2,1';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
             DataClassification = ToBeClassified;
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(1));
         }
@@ -310,6 +329,7 @@ tableextension 51063 tableextension51063 extends "Bin Content"
         {
             CaptionClass = '1,2,2';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
             DataClassification = ToBeClassified;
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(2));
         }
@@ -317,11 +337,14 @@ tableextension 51063 tableextension51063 extends "Bin Content"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
             DataClassification = ToBeClassified;
 
         }
         field(50503; "Lote origen"; Code[10])
         {
+            Caption = 'Lote origen';
+            ToolTip = 'Specifies the value of the Lote origen field.';
             DataClassification = ToBeClassified;
         }
     }

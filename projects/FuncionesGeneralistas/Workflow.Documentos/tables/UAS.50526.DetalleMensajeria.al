@@ -4,15 +4,23 @@ table 50526 "Detalle mensajería"
     {
         field(1; "No. mensaje"; Code[30])
         {
+            Caption = 'No. mensaje';
+            ToolTip = 'Specifies the value of the No. mensaje field.';
         }
         field(2; "No. linea"; Integer)
         {
+            Caption = 'No. linea';
+            ToolTip = 'Specifies the value of the No. linea field.';
         }
         field(3; Mensaje; Text[120])
         {
+            Caption = 'Mensaje';
+            ToolTip = 'Specifies the value of the Mensaje field.';
         }
         field(4; Usuario; Code[50])
         {
+            Caption = 'User ID';
+            ToolTip = 'Specifies the value of the User ID field.';
             TableRelation = User."User Name";
         }
     }

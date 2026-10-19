@@ -136,32 +136,43 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
         //end;
         field(50000; "Global Dimension 3 Code"; Code[10])
         {
+            Caption = 'Global Dimension 3 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 3 Code field.';
             CaptionClass = '1,2,3';
 
         }
         field(50001; "Global Dimension 4 Code"; Code[10])
         {
+            Caption = 'Global Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
         }
         field(50002; "Global Dimension 5 Code"; Code[10])
         {
+            Caption = 'Global Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
         }
         field(50003; "Global Dimension 6 Code"; Code[10])
         {
+            Caption = 'Global Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
         }
         field(50004; "Global Dimension 7 Code"; Code[20])
         {
+            Caption = 'Global Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
         }
         field(50010; "Net kilos"; Decimal)
         {
             Caption = 'Net kilos';
+            ToolTip = 'Specifies the value of the Net kilos field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -169,6 +180,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
         field(50011; "Finished net kilos"; Decimal)
         {
             Caption = 'Finished net kilos';
+            ToolTip = 'Specifies the value of the Finished net kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             MinValue = 0;
@@ -176,6 +188,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
         field(50012; "Remaining net kilos"; Decimal)
         {
             Caption = 'Remaining net kilos';
+            ToolTip = 'Specifies the value of the Remaining net kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             MinValue = 0;
@@ -183,6 +196,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
         field(50013; "Gross kilos"; Decimal)
         {
             Caption = 'Gross kilos';
+            ToolTip = 'Specifies the value of the Gross kilos field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -190,6 +204,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
         field(50014; "Finished gross kilos"; Decimal)
         {
             Caption = 'Finished gross kilos';
+            ToolTip = 'Specifies the value of the Finished gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             MinValue = 0;
@@ -197,6 +212,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
         field(50015; "Remaining gross kilos"; Decimal)
         {
             Caption = 'Remaining gross kilos';
+            ToolTip = 'Specifies the value of the Remaining gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             MinValue = 0;
@@ -211,6 +227,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
                                                                      "Source Prod. Order Line" = FIELD("Line No."),
                                                                      "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved net kilos';
+            ToolTip = 'Specifies the value of the Reserved net kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -224,6 +241,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
                                                                        "Source Prod. Order Line" = FIELD("Line No."),
                                                                        "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved gross kilos';
+            ToolTip = 'Specifies the value of the Reserved gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -231,6 +249,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
         field(50018; "Net kilos (Base)"; Decimal)
         {
             Caption = 'Net kilos (Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -244,6 +263,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
         field(50019; "Gross kilos (Base)"; Decimal)
         {
             Caption = 'Gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -257,24 +277,28 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
         field(50020; "Finished net kilos (Base)"; Decimal)
         {
             Caption = 'Finished net kilos (Base)';
+            ToolTip = 'Specifies the value of the Finished net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50021; "Finished gross kilos (Base)"; Decimal)
         {
             Caption = 'Finished gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Finished gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50022; "Remaining net kilos (Base)"; Decimal)
         {
             Caption = 'Remaining net kilos (Base)';
+            ToolTip = 'Specifies the value of the Remaining net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50023; "Remaining gross kilos (Base)"; Decimal)
         {
             Caption = 'Remaining gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Remaining gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
@@ -287,6 +311,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
                                                                             "Source Prod. Order Line" = FIELD("Line No."),
                                                                             "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved net kilos (Base)';
+            ToolTip = 'Specifies the value of the Reserved net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -300,6 +325,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
                                                                               "Source Prod. Order Line" = FIELD("Line No."),
                                                                               "Reservation Status" = CONST(Reservation)));
             Caption = 'Reserved gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Reserved gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -312,6 +338,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
                                                                     "Routing Reference No." = FIELD("Routing Reference No."),
                                                                     "Ending Date" = FIELD("Date Filter")));
             Caption = 'Total Exp. Oper. Output (Nk)';
+            ToolTip = 'Specifies the value of the Total Exp. Oper. Output (Nk) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -324,6 +351,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
                                                                       "Routing Reference No." = FIELD("Routing Reference No."),
                                                                       "Ending Date" = FIELD("Date Filter")));
             Caption = 'Total Exp. Oper. Output (Gk)';
+            ToolTip = 'Specifies the value of the Total Exp. Oper. Output (Gk) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -332,6 +360,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()
@@ -343,6 +372,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
 
             trigger OnValidate()
@@ -354,6 +384,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()
@@ -365,6 +396,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
 
             trigger OnValidate()
@@ -376,6 +408,7 @@ tableextension 50734 tableextension50734 extends "Prod. Order Line"
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()

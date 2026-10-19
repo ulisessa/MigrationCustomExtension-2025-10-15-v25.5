@@ -6,6 +6,7 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         {
             CaptionClass = '1,2,3';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()
@@ -21,6 +22,7 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         {
             CaptionClass = '1,2,4';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
 
             trigger OnValidate()
@@ -36,6 +38,7 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         {
             CaptionClass = '1,2,5';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()
@@ -51,6 +54,7 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         {
             CaptionClass = '1,2,6';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 2 Code field.';
 
 
             trigger OnValidate()
@@ -66,6 +70,7 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         {
             CaptionClass = '1,2,7';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.';
 
 
             trigger OnValidate()
@@ -80,6 +85,7 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         field(50005; "Concepto proyecto"; Code[10])
         {
             Caption = 'Concepto proyecto compra';
+            ToolTip = 'Specifies the value of the Concepto proyecto compra field.';
             TableRelation = "Concepto proyecto";
 
             trigger OnValidate()
@@ -89,6 +95,8 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         }
         field(50006; "Fecha Embarque"; Date)
         {
+            Caption = 'Fecha Embarque';
+            ToolTip = 'Specifies the value of the Fecha Embarque field.';
 
             trigger OnValidate()
             var
@@ -109,55 +117,70 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         }
         field(50007; "Carpeta de Importación"; Code[20])
         {
+            Caption = 'Carpeta de Importación';
+            ToolTip = 'Specifies the value of the Carpeta de Importación field.';
             TableRelation = "Carpeta por OC" WHERE("No. documento" = FIELD("No."));
             ValidateTableRelation = false;
 
         }
         field(50008; "Lugar de Pago"; Option)
         {
+            Caption = 'Lugar de Pago';
+            ToolTip = 'Specifies the value of the Lugar de Pago field.';
             OptionMembers = " ",BUE,CRV,PD,MDQ;
 
         }
         field(50009; "Payment block"; Boolean)
         {
             Caption = 'Pago bloqueado';
+            ToolTip = 'Specifies the value of the Pago bloqueado field.';
             DataClassification = ToBeClassified;
 
         }
         field(50010; "Payment blocked by"; Code[10])
         {
             Caption = 'Pago bloqueado por';
+            ToolTip = 'Specifies the value of the Pago bloqueado por field.';
             DataClassification = ToBeClassified;
             Editable = false;
             TableRelation = Seguridad.Grupo;
         }
-        field(50011; Usuario; Code[20])
+        field(50011; Usuario; Code[50])
         {
+            Caption = 'User ID';
+            ToolTip = 'Specifies the value of the User ID field.';
             TableRelation = "User Setup";
 
         }
         field(50013; "No. Despacho Importación"; Code[30])
         {
+            Caption = 'No. Despacho Importación';
+            ToolTip = 'Specifies the value of the No. Despacho Importación field.';
 
         }
         field(50014; "Officialization date"; Date)
         {
             Caption = 'Fecha oficialización';
+            ToolTip = 'Specifies the value of the Fecha oficialización field.';
         }
         field(50015; "GI withholding code"; Code[10])
         {
             Caption = 'GI retention code';
+            ToolTip = 'Specifies the value of the GI retention code field.';
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER("Ingresos Brutos"));
 
         }
         field(50016; "Winnings withholding code"; Code[10])
         {
             Caption = 'Cód. retención Ganancias';
+            ToolTip = 'Specifies the value of the Cód. retención Ganancias field.';
             FieldClass = FlowFilter;
             TableRelation = "Withholding codes"."Cod. retencion" WHERE("Tipo impuesto retencion" = FILTER(Ganancias));
         }
         field(50017; "Documento aduanero SIM"; Code[30])
         {
+            Caption = 'Documento aduanero SIM';
+            ToolTip = 'Specifies the value of the Documento aduanero SIM field.';
             DataClassification = ToBeClassified;
             trigger OnValidate()
             var
@@ -170,17 +193,25 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         }
         field(50500; "Aprobada p/ Sector Solicitante"; Boolean)
         {
+            Caption = 'Aprobada p/ Sector Solicitante';
+            ToolTip = 'Specifies the value of the Aprobada p/ Sector Solicitante field.';
 
         }
         field(50501; "Autorizada p/ Gerencia"; Boolean)
         {
+            Caption = 'Autorizada p/ Gerencia';
+            ToolTip = 'Specifies the value of the Autorizada p/ Gerencia field.';
 
         }
         field(50502; "Lleva remitos"; Boolean)
         {
+            Caption = 'Lleva remitos';
+            ToolTip = 'Specifies the value of the Lleva remitos field.';
         }
         field(50503; "Archivo vinculado"; Text[250])
         {
+            Caption = 'Archivo vinculado';
+            ToolTip = 'Specifies the value of the Archivo vinculado field.';
             CalcFormula = Lookup("Documentos digitalizados".Archivo WHERE("Nivel 8" = FIELD("No."),
                                                                            "Nivel 4" = FIELD("Buy-from Vendor No.")));
             FieldClass = FlowField;
@@ -188,14 +219,20 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         }
         field(50504; "Departamento de pago"; Code[10])
         {
+            Caption = 'Departamento de pago';
+            ToolTip = 'Specifies the value of the Departamento de pago field.';
             TableRelation = Seguridad;
         }
         field(50505; "CAI-CAE"; Code[14])
         {
+            Caption = 'CAI-CAE';
+            ToolTip = 'Specifies the value of the CAI-CAE field.';
 
         }
         field(50506; "Tipo documento AFIP"; Code[3])
         {
+            Caption = 'Tipo documento AFIP';
+            ToolTip = 'Specifies the value of the Tipo documento AFIP field.';
 
             trigger OnLookup()
             var
@@ -231,11 +268,14 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
                                                                            Type = FILTER(<> " "),
                                                                            "Location Code" = FIELD("Location Filter")));
             Caption = 'Completely Invoiced';
+            ToolTip = 'Specifies the value of the Completely Invoiced field.';
             Editable = false;
             FieldClass = FlowField;
         }
         field(50508; "Actividad AFIP"; Code[10])
         {
+            Caption = 'Actividad AFIP';
+            ToolTip = 'Specifies the value of the Actividad AFIP field.';
             DataClassification = ToBeClassified;
             TableRelation = "Actividad proveedor"."No. actividad" WHERE("No. proveedor" = FIELD("Buy-from Vendor No."));
 
@@ -246,6 +286,8 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         }
         field(50510; "Solicitud vinculada"; Code[30])
         {
+            Caption = 'Solicitud vinculada';
+            ToolTip = 'Specifies the value of the Solicitud vinculada field.';
             DataClassification = ToBeClassified;
             TableRelation = Solicitud."No. documento" WHERE("Currency Code" = FIELD("Currency Code"),
                                                              Estado = FILTER(<> 'Abierto' | <> 'A aprobar' | <> 'Aprobado' | <> 'Rechazado' | <> 'Anulado'),
@@ -258,6 +300,8 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         }
         field(50511; "Importe segun solicitud"; Decimal)
         {
+            Caption = 'Importe segun solicitud';
+            ToolTip = 'Specifies the value of the Importe segun solicitud field.';
             CalcFormula = Sum("Lín. solicitud"."Importe neto" WHERE("No. Documento" = FIELD("Solicitud vinculada"),
                                                                      Revertido = CONST(false),
                                                                      Aprobado = CONST(true)));
@@ -265,11 +309,15 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         }
         field(50512; "Divisa solicitud"; Code[10])
         {
+            Caption = 'Divisa solicitud';
+            ToolTip = 'Specifies the value of the Divisa solicitud field.';
             CalcFormula = Lookup(Solicitud."Currency Code" WHERE("No. documento" = FIELD("Solicitud vinculada")));
             FieldClass = FlowField;
         }
         field(50513; "Importe en OC"; Decimal)
         {
+            Caption = 'Importe en OC';
+            ToolTip = 'Specifies the value of the Importe en OC field.';
             CalcFormula = Sum("Purchase Line".Amount WHERE("Document Type" = FIELD("Document Type"),
                                                             "Document No." = FIELD("No."),
                                                             "No. Cab. Solicitud" = FIELD("Solicitud vinculada")));
@@ -278,31 +326,41 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         field(50514; "AFIP currency code"; Code[10])
         {
             Caption = 'Currency Code';
+            ToolTip = 'Specifies the value of the Currency Code field.';
             DataClassification = ToBeClassified;
             TableRelation = Currency.Code;
         }
         field(50594; "Current security group"; Code[10])
         {
             Caption = 'Grupo seguridad actual';
+            ToolTip = 'Specifies the value of the Grupo seguridad actual field.';
         }
         field(50595; "Tipo documento mensajeria"; Text[40])
         {
+            Caption = 'Tipo documento mensajeria';
+            ToolTip = 'Specifies the value of the Tipo documento mensajeria field.';
             CalcFormula = Lookup(Mensajeria."Tipo Documento" WHERE("No. documento" = FIELD("No.")));
             FieldClass = FlowField;
         }
         field(50596; Estado; Text[50])
         {
+            Caption = 'Estado';
+            ToolTip = 'Specifies the value of the Estado field.';
             CalcFormula = Lookup(Mensajeria.Estado WHERE("No. documento" = FIELD("No.")));
             FieldClass = FlowField;
         }
         field(50597; "Fecha ultimo seguimiento"; Date)
         {
+            Caption = 'Fecha ultimo seguimiento';
+            ToolTip = 'Specifies the value of the Fecha ultimo seguimiento field.';
             CalcFormula = Max("Seguimiento Documentos".Fecha WHERE("No. documento" = FIELD("No."),
                                                                     "Tipo Documento" = Field("Tipo documento mensajeria")));
             FieldClass = FlowField;
         }
         field(50702; "Tipo Fiscal"; Code[20])
         {
+            Caption = 'Fiscal Type';
+            ToolTip = 'Specifies the value of the Fiscal Type field.';
             TableRelation = "Dimension Value".Code WHERE("Dimension Code" = CONST('TIPO FISCAL'));
             ObsoleteTag = '12/2025';
             ObsoleteState = Pending;
@@ -311,12 +369,16 @@ tableextension 38 "ExtensionName" extends "Purchase Header" //OriginalId
         }
         field(50703; Province; Code[20])
         {
+            Caption = 'Province';
+            ToolTip = 'Specifies the value of the Province field.';
             TableRelation = Area;
 
 
         }
         field(50704; "Tipo factura"; Option)
         {
+            Caption = 'Tipo factura';
+            ToolTip = 'Specifies the value of the Tipo factura field.';
             OptionMembers = Factura,"Nota Débito";
 
         }

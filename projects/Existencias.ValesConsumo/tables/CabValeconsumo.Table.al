@@ -6,6 +6,8 @@ table 50102 "Cab. Vale consumo"
     {
         field(1; "Nombre Libro Consumo"; Code[20])
         {
+            Caption = 'Nombre Libro Consumo';
+            ToolTip = 'Specifies the value of the Nombre Libro Consumo field.';
             NotBlank = true;
             TableRelation = "Req. Wksh. Template";
 
@@ -27,24 +29,36 @@ table 50102 "Cab. Vale consumo"
         }
         field(2; "No. documento"; Code[30])
         {
+            Caption = 'Document No.';
+            ToolTip = 'Specifies the value of the Document No field.';
             NotBlank = true;
         }
         field(3; "Fecha registro"; Date)
         {
+            Caption = 'Fecha registro';
+            ToolTip = 'Specifies the value of the Fecha registro field.';
         }
         field(4; "Descripción"; Text[199])
         {
+            Caption = 'Description';
+            ToolTip = 'Specifies the value of the Description field.';
         }
         field(5; Usuario; Code[30])
         {
+            Caption = 'User ID';
+            ToolTip = 'Specifies the value of the User ID field.';
             TableRelation = "User Setup";
         }
         field(6; "No. Serie"; Code[10])
         {
+            Caption = 'No. Serie';
+            ToolTip = 'Specifies the value of the No. Serie field.';
             TableRelation = "No. Series";
         }
         field(7; Estado; Text[50])
         {
+            Caption = 'Estado';
+            ToolTip = 'Specifies the value of the Estado field.';
             CalcFormula = Lookup(Mensajeria.Estado WHERE("No. documento" = FIELD("No. documento"),
                                                           "Tipo Documento" = CONST('Vale de consumo')));
             FieldClass = FlowField;

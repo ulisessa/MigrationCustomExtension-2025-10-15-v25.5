@@ -5,9 +5,13 @@ table 50117 "Seguridad por usuario"
     {
         field(1; Usuario; Code[50])
         {
+            Caption = 'User ID';
+            ToolTip = 'Specifies the value of the User ID field.';
         }
         field(2; Grupo; Code[20])
         {
+            Caption = 'Grupo';
+            ToolTip = 'Specifies the value of the Grupo field.';
             TableRelation = Seguridad.Grupo;
             //This property is currently not supported
             //TestTableRelation = false;
@@ -15,6 +19,8 @@ table 50117 "Seguridad por usuario"
         }
         field(3; "Mostrar documentación"; Boolean)
         {
+            Caption = 'Mostrar documentación';
+            ToolTip = 'Specifies the value of the Mostrar documentación field.';
         }
     }
 
@@ -31,7 +37,7 @@ table 50117 "Seguridad por usuario"
     }
 
     [Scope('OnPrem')]
-    procedure fntSeguridadComparada(codUsuarioA: Code[20]; codUsuarioB: Code[20]): Boolean
+    procedure fntSeguridadComparada(codUsuarioA: Code[50]; codUsuarioB: Code[50]): Boolean
     var
         rstSeguridadUsuarioA: Record "Seguridad por usuario";
         rstSeguridadA: Record Seguridad;
@@ -59,7 +65,7 @@ table 50117 "Seguridad por usuario"
     end;
 
     [Scope('OnPrem')]
-    procedure fntSeguridadPermiso(codUsuario: Code[20]; intCampo: Integer): Boolean
+    procedure fntSeguridadPermiso(codUsuario: Code[50]; intCampo: Integer): Boolean
     var
         rstSeguridad: Record Seguridad;
         rstSeguridadUsuario: Record "Seguridad por usuario";
@@ -586,7 +592,7 @@ table 50117 "Seguridad por usuario"
     end;
 
     [Scope('OnPrem')]
-    procedure fntEstaEnGrupoSeguridad(codUsuarioA: Code[20]; codGrupoSeguridadB: Code[10]): Boolean
+    procedure fntEstaEnGrupoSeguridad(codUsuarioA: Code[50]; codGrupoSeguridadB: Code[10]): Boolean
     var
         rstSeguridadUsuarioA: Record "Seguridad por usuario";
         blnmatch: Boolean;

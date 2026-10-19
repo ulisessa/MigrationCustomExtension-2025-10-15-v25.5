@@ -101,6 +101,7 @@ tableextension 50459 tableextension50459 extends "Reservation Entry"
         field(50010; "Net kilos (Base)"; Decimal)
         {
             Caption = 'Net kilos (Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -113,6 +114,7 @@ tableextension 50459 tableextension50459 extends "Reservation Entry"
         field(50011; "Gross kilos (Base)"; Decimal)
         {
             Caption = 'Gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -125,51 +127,61 @@ tableextension 50459 tableextension50459 extends "Reservation Entry"
         field(50012; "Net kilos"; Decimal)
         {
             Caption = 'Net kilos';
+            ToolTip = 'Specifies the value of the Net kilos field.';
             DecimalPlaces = 0 : 5;
         }
         field(50013; "Gross kilos"; Decimal)
         {
             Caption = 'Gross kilos';
+            ToolTip = 'Specifies the value of the Gross kilos field.';
             DecimalPlaces = 0 : 5;
         }
         field(50014; "Net kilos to Handle (Base)"; Decimal)
         {
             Caption = 'Net kilos to Handle (Base)';
+            ToolTip = 'Specifies the value of the Net kilos to Handle (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50015; "Gross kilos to Handle (Base)"; Decimal)
         {
             Caption = 'Gross kilos to Handle (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos to Handle (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50016; "Net kilos to Invoice (Base)"; Decimal)
         {
             Caption = 'Net kilos to Invoice (Base)';
+            ToolTip = 'Specifies the value of the Net kilos to Invoice (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50017; "Gross kilos to Invoice (Base)"; Decimal)
         {
             Caption = 'Gross kilos to Invoice (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos to Invoice (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50018; "Net kilos Invoiced (Base)"; Decimal)
         {
             Caption = 'Net kilos Invoiced (Base)';
+            ToolTip = 'Specifies the value of the Net kilos Invoiced (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50019; "Gross kilos Invoiced (Base)"; Decimal)
         {
             Caption = 'Gross kilos Invoiced (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos Invoiced (Base) field.';
             DecimalPlaces = 0 : 5;
         }
         field(50020; "Reserved Pick & Ship Nk"; Decimal)
         {
             Caption = 'Reserved Pick & Ship Nk';
+            ToolTip = 'Specifies the value of the Reserved Pick & Ship Nk field.';
             DecimalPlaces = 0 : 5;
         }
         field(50021; "Reserved Pick & Ship Gk"; Decimal)
         {
             Caption = 'Reserved Pick & Ship Gk';
+            ToolTip = 'Specifies the value of the Reserved Pick & Ship Gk field.';
             DecimalPlaces = 0 : 5;
         }
     }

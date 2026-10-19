@@ -74,6 +74,7 @@ tableextension 51079 tableextension51079 extends "Warehouse Shipment Line"
         field(50510; "Net kilos"; Decimal)
         {
             Caption = 'Net kilos';
+            ToolTip = 'Specifies the value of the Net kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             MinValue = 0;
@@ -82,6 +83,7 @@ tableextension 51079 tableextension51079 extends "Warehouse Shipment Line"
         field(50511; "Gross kilos"; Decimal)
         {
             Caption = 'Gross kilos';
+            ToolTip = 'Specifies the value of the Gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             MinValue = 0;
@@ -90,18 +92,21 @@ tableextension 51079 tableextension51079 extends "Warehouse Shipment Line"
         field(50512; "Net kilos (Base)"; Decimal)
         {
             Caption = 'Net kilos (Base)';
+            ToolTip = 'Specifies the value of the Net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50513; "Gross kilos (Base)"; Decimal)
         {
             Caption = 'Gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50514; "Net kilos Outstanding"; Decimal)
         {
             Caption = 'Net kilos Outstanding';
+            ToolTip = 'Specifies the value of the Net kilos Outstanding field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -109,6 +114,7 @@ tableextension 51079 tableextension51079 extends "Warehouse Shipment Line"
         field(50515; "Gross kilos Outstanding"; Decimal)
         {
             Caption = 'Gross kilos Outstanding';
+            ToolTip = 'Specifies the value of the Gross kilos Outstanding field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -116,18 +122,21 @@ tableextension 51079 tableextension51079 extends "Warehouse Shipment Line"
         field(50516; "Net kilos Outstanding (Base)"; Decimal)
         {
             Caption = 'Net kilos Outstanding (Base)';
+            ToolTip = 'Specifies the value of the Net kilos Outstanding (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50517; "Gross kilos Outstanding (Base)"; Decimal)
         {
             Caption = 'Gross kilos Outstanding (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos Outstanding (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50518; "Net kilos to Ship"; Decimal)
         {
             Caption = 'Net kilos to Ship';
+            ToolTip = 'Specifies the value of the Net kilos to Ship field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -135,6 +144,7 @@ tableextension 51079 tableextension51079 extends "Warehouse Shipment Line"
         field(50519; "Gross kilos to Ship"; Decimal)
         {
             Caption = 'Gross kilos to Ship';
+            ToolTip = 'Specifies the value of the Gross kilos to Ship field.';
             DecimalPlaces = 0 : 5;
             MinValue = 0;
 
@@ -142,6 +152,7 @@ tableextension 51079 tableextension51079 extends "Warehouse Shipment Line"
         field(50520; "Net kilos to Ship (Base)"; Decimal)
         {
             Caption = 'Net kilos to Ship (Base)';
+            ToolTip = 'Specifies the value of the Net kilos to Ship (Base) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -152,6 +163,7 @@ tableextension 51079 tableextension51079 extends "Warehouse Shipment Line"
         field(50521; "Gross kilos to Ship (Base)"; Decimal)
         {
             Caption = 'Gross kilos to Ship (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos to Ship (Base) field.';
             DecimalPlaces = 0 : 5;
 
             trigger OnValidate()
@@ -162,6 +174,7 @@ tableextension 51079 tableextension51079 extends "Warehouse Shipment Line"
         field(50522; "Net kilos Picked"; Decimal)
         {
             Caption = 'Net kilos Picked';
+            ToolTip = 'Specifies the value of the Net kilos Picked field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -169,6 +182,7 @@ tableextension 51079 tableextension51079 extends "Warehouse Shipment Line"
         field(50523; "Gross kilos Picked"; Decimal)
         {
             Caption = 'Gross kilos Picked';
+            ToolTip = 'Specifies the value of the Gross kilos Picked field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
 
@@ -176,36 +190,42 @@ tableextension 51079 tableextension51079 extends "Warehouse Shipment Line"
         field(50524; "Net kilos Picked (Base)"; Decimal)
         {
             Caption = 'Net kilos Picked (Base)';
+            ToolTip = 'Specifies the value of the Net kilos Picked (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50525; "Gross kilos Picked (Base)"; Decimal)
         {
             Caption = 'Gross kilos Picked (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos Picked (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50526; "Net kilos Shipped"; Decimal)
         {
             Caption = 'Net kilos Shipped';
+            ToolTip = 'Specifies the value of the Net kilos Shipped field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50527; "Gross kilos Shipped"; Decimal)
         {
             Caption = 'Gross kilos Shipped';
+            ToolTip = 'Specifies the value of the Gross kilos Shipped field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50528; "Net kilos Shipped (Base)"; Decimal)
         {
             Caption = 'Net kilos Shipped (Base)';
+            ToolTip = 'Specifies the value of the Net kilos Shipped (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
         field(50529; "Gross kilos Shipped (Base)"; Decimal)
         {
             Caption = 'Gross kilos Shipped (Base)';
+            ToolTip = 'Specifies the value of the Gross kilos Shipped (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
         }
@@ -220,6 +240,7 @@ tableextension 51079 tableextension51079 extends "Warehouse Shipment Line"
                                                                                   "Original Breakbulk" = CONST(false),
                                                                                   "Breakbulk No." = CONST(0)));
             Caption = 'Pick net kilos';
+            ToolTip = 'Specifies the value of the Pick net kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -235,6 +256,7 @@ tableextension 51079 tableextension51079 extends "Warehouse Shipment Line"
                                                                                   "Original Breakbulk" = CONST(false),
                                                                                   "Breakbulk No." = CONST(0)));
             Caption = 'Pick gross kilos';
+            ToolTip = 'Specifies the value of the Pick gross kilos field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -249,6 +271,7 @@ tableextension 51079 tableextension51079 extends "Warehouse Shipment Line"
                                                                                          "Original Breakbulk" = CONST(false),
                                                                                          "Breakbulk No." = CONST(0)));
             Caption = 'Pick net kilos (Base)';
+            ToolTip = 'Specifies the value of the Pick net kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -263,6 +286,7 @@ tableextension 51079 tableextension51079 extends "Warehouse Shipment Line"
                                                                                          "Original Breakbulk" = CONST(false),
                                                                                          "Breakbulk No." = CONST(0)));
             Caption = 'Pick gross kilos (Base)';
+            ToolTip = 'Specifies the value of the Pick gross kilos (Base) field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;

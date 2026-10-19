@@ -52,42 +52,62 @@ tableextension 50302 tableextension50302 extends "Res. Journal Template"
         }
         field(50000; "Cód. procedencia mov."; Code[20])
         {
+            Caption = 'Source No.';
+            ToolTip = 'Specifies the value of the Source No field.';
             TableRelation = IF ("Tipo procedencia mov." = CONST(Cliente)) Customer
             ELSE
             IF ("Tipo procedencia mov." = CONST(Proveedor)) Vendor;
         }
         field(50001; "Grupo contable origen"; Code[10])
         {
+            Caption = 'Grupo contable origen';
+            ToolTip = 'Specifies the value of the Grupo contable origen field.';
             TableRelation = IF ("Tipo procedencia mov." = CONST(Cliente)) Customer
             ELSE
             IF ("Tipo procedencia mov." = CONST(Proveedor)) Vendor;
         }
         field(50002; "Tipo procedencia mov."; Option)
         {
+            Caption = 'Tipo procedencia mov.';
+            ToolTip = 'Specifies the value of the Tipo procedencia mov field.';
             OptionMembers = " ",Cliente,Proveedor;
         }
         field(50003; "xBorrar al contab."; Boolean)
         {
+            Caption = 'xBorrar al contab.';
+            ToolTip = 'Specifies the value of the xBorrar al contab field.';
             BlankZero = true;
             InitValue = true;
         }
         field(50004; "Marea/Mes/Ciudad"; Code[10])
         {
+            Caption = 'Marea/Mes/Ciudad';
+            ToolTip = 'Specifies the value of the Marea/Mes/Ciudad field.';
         }
         field(50005; "Subdepartamento tierra"; Code[10])
         {
+            Caption = 'Subdepartamento tierra';
+            ToolTip = 'Specifies the value of the Subdepartamento tierra field.';
         }
         field(50006; "Concepto imputación"; Code[10])
         {
+            Caption = 'Concepto imputación';
+            ToolTip = 'Specifies the value of the Concepto imputación field.';
         }
         field(50007; "Item Presupuestario"; Code[10])
         {
+            Caption = 'Item Presupuestario';
+            ToolTip = 'Specifies the value of the Item Presupuestario field.';
         }
         field(50008; "Mes costo/Tramo"; Code[20])
         {
+            Caption = 'Mes costo/Tramo';
+            ToolTip = 'Specifies the value of the Mes costo/Tramo field.';
         }
         field(50500; "Fecha registro desde"; Date)
         {
+            Caption = 'Fecha registro desde';
+            ToolTip = 'Specifies the value of the Fecha registro desde field.';
 
             trigger OnValidate()
             begin
@@ -101,6 +121,8 @@ tableextension 50302 tableextension50302 extends "Res. Journal Template"
         }
         field(50501; "Fecha registro hasta"; Date)
         {
+            Caption = 'Fecha registro hasta';
+            ToolTip = 'Specifies the value of the Fecha registro hasta field.';
 
             trigger OnValidate()
             begin

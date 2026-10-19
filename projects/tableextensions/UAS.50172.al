@@ -154,25 +154,32 @@ tableextension 50172 "Location Ext." extends Location
         }
         field(50000; Grupo; Code[20])
         {
+            Caption = 'Grupo';
+            ToolTip = 'Specifies the value of the Grupo field.';
             TableRelation = Seguridad;
         }
         field(50001; "Default bin"; Code[20])
         {
+            Caption = 'Default bin';
+            ToolTip = 'Specifies the value of the Default bin field.';
             TableRelation = Bin.Code;
         }
         field(50002; "Default item posting group"; Code[10])
         {
             Caption = 'Grupo contable predefinido';
+            ToolTip = 'Specifies the value of the Grupo contable predefinido field.';
             TableRelation = "Gen. Product Posting Group";
         }
         field(50003; "Don't check item qt per pallet"; Boolean)
         {
             Caption = 'No verificar bultos por pallet';
+            ToolTip = 'Specifies the value of the No verificar bultos por pallet field.';
             DataClassification = ToBeClassified;
         }
         field(50004; "Don't require pallet no."; Boolean)
         {
             Caption = 'No requerir número de pallet';
+            ToolTip = 'Specifies the value of the No requerir número de pallet field.';
             DataClassification = ToBeClassified;
         }
     }

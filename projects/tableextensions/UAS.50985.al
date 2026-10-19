@@ -31,6 +31,12 @@ tableextension 50985 tableextension50985 extends "Lot No. Information"
         {
             Caption = 'Bin Filter';
         }
+        field(25; "Lote origen"; Code[10])
+        {
+            Caption = 'Source Lot';
+            ToolTip = 'Specifies the lot number of the product''s source.';
+            Editable = false;
+        }
     }
 }
 

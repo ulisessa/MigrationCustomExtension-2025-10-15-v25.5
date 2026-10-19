@@ -15,13 +15,19 @@ table 50103 "Lín. vale consumo"
     {
         field(1; "No. documento"; Code[30])
         {
+            Caption = 'Document No.';
+            ToolTip = 'Specifies the value of the Document No field.';
         }
         field(2; "No. línea"; Integer)
         {
+            Caption = 'Line No.';
+            ToolTip = 'Specifies the value of the Line No field.';
             AutoIncrement = true;
         }
         field(3; "No."; Code[30])
         {
+            Caption = 'No.';
+            ToolTip = 'Specifies the value of the No field.';
             TableRelation = IF (Tipo = CONST(Producto)) Item WHERE("Tipo producto" = CONST(Consumo))
             ELSE
             IF (Tipo = CONST(Recurso)) Resource WHERE(Type = FILTER(Expense | Sale));
@@ -77,16 +83,24 @@ table 50103 "Lín. vale consumo"
         }
         field(4; "Descripción"; Text[199])
         {
+            Caption = 'Description';
+            ToolTip = 'Specifies the value of the Description field.';
         }
         field(5; Cantidad; Decimal)
         {
+            Caption = 'Quantity';
+            ToolTip = 'Specifies the value of the Quantity field.';
             MinValue = 0;
         }
         field(6; "Descripción 2"; Text[50])
         {
+            Caption = 'Description 2';
+            ToolTip = 'Specifies the value of the Description 2 field.';
         }
         field(7; Tipo; Option)
         {
+            Caption = 'Tipo';
+            ToolTip = 'Specifies the value of the Tipo field.';
             InitValue = Producto;
             OptionMembers = " ",Producto,Recurso,Cuenta;
         }
@@ -94,16 +108,20 @@ table 50103 "Lín. vale consumo"
         {
             CaptionClass = '1,1,1';
             Caption = 'Global Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 1 Code field.';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(1));
         }
         field(9; "Shortcut Dimension 2 Code"; Code[20])
         {
             CaptionClass = '1,1,2';
             Caption = 'Global Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 2 Code field.';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(2));
         }
         field(10; "Shortcut Dimension 3 Code"; Code[10])
         {
+            Caption = 'Shortcut Dimension 3 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 3 Code field.';
             CaptionClass = '1,2,3';
 
 
@@ -114,30 +132,42 @@ table 50103 "Lín. vale consumo"
         }
         field(11; "Shortcut Dimension 4 Code"; Code[10])
         {
+            Caption = 'Shortcut Dimension 4 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 4 Code field.';
             CaptionClass = '1,2,4';
 
         }
         field(12; "Shortcut Dimension 5 Code"; Code[10])
         {
+            Caption = 'Shortcut Dimension 5 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 5 Code field.';
             CaptionClass = '1,2,5';
 
         }
         field(13; "Shortcut Dimension 6 Code"; Code[20])
         {
+            Caption = 'Shortcut Dimension 6 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 6 Code field.';
             CaptionClass = '1,2,6';
 
         }
         field(14; "Shortcut Dimension 7 Code"; Code[20])
         {
+            Caption = 'Shortcut Dimension 7 Code';
+            ToolTip = 'Specifies the value of the Shortcut Dimension 7 Code field.';
             CaptionClass = '1,2,7';
 
         }
         field(15; "Concepto proyecto"; Code[10])
         {
+            Caption = 'Job concept';
+            ToolTip = 'Specifies the value of the Job concept field.';
             TableRelation = "Concepto proyecto";
         }
         field(16; "Cód. unidad medida"; Code[10])
         {
+            Caption = 'Cód. unidad medida';
+            ToolTip = 'Specifies the value of the Cód. unidad medida field.';
             TableRelation = "Item Unit of Measure".Code WHERE("Item No." = FIELD("No."));
 
             trigger OnValidate()
@@ -148,6 +178,8 @@ table 50103 "Lín. vale consumo"
         }
         field(17; "Cód. depósito"; Code[10])
         {
+            Caption = 'Cód. depósito';
+            ToolTip = 'Specifies the value of the Cód. depósito field.';
             TableRelation = Location;
 
             trigger OnValidate()
@@ -158,10 +190,14 @@ table 50103 "Lín. vale consumo"
         }
         field(18; Usuario; Code[30])
         {
+            Caption = 'User ID';
+            ToolTip = 'Specifies the value of the User ID field.';
             TableRelation = "User Setup";
         }
         field(19; "No. proyecto"; Code[20])
         {
+            Caption = 'Job No.';
+            ToolTip = 'Specifies the value of the Job No field.';
             TableRelation = Job;
 
             trigger OnValidate()
@@ -191,10 +227,13 @@ table 50103 "Lín. vale consumo"
         }
         field(20; Revertido; Boolean)
         {
+            Caption = 'Reversed';
+            ToolTip = 'Specifies the value of the Reversed field.';
         }
         field(21; "Lot No."; Code[30])
         {
             Caption = 'Lot No.';
+            ToolTip = 'Specifies the value of the Lot No field.';
             Editable = false;
 
             trigger OnLookup()
@@ -204,6 +243,8 @@ table 50103 "Lín. vale consumo"
         }
         field(22; "Precio unitario"; Decimal)
         {
+            Caption = 'Precio unitario';
+            ToolTip = 'Specifies the value of the Precio unitario field.';
             CalcFormula = Lookup(Item."Unit Cost" WHERE("No." = FIELD("No.")));
             FieldClass = FlowField;
         }
@@ -212,6 +253,7 @@ table 50103 "Lín. vale consumo"
             CalcFormula = Sum("Item Ledger Entry".Quantity WHERE("Item No." = FIELD("No."),
                                                                   "Location Code" = FIELD("Cód. depósito")));
             Caption = 'Inventory';
+            ToolTip = 'Specifies the value of the Inventory field.';
             DecimalPlaces = 0 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -219,6 +261,7 @@ table 50103 "Lín. vale consumo"
         field(24; "Bin code"; Code[20])
         {
             Caption = 'Ubicación';
+            ToolTip = 'Specifies the value of the Ubicación field.';
             DataClassification = ToBeClassified;
             TableRelation = Bin.Code WHERE("Location Code" = FIELD("Cód. depósito"),
                                             Empty = FILTER(false));

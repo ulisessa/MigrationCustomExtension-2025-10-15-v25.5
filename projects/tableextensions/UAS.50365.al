@@ -460,6 +460,8 @@ tableextension 50365 tableextension50365 extends "General Posting Setup"
         //end;
         field(50000; "Cta. provisión compras"; Code[20])
         {
+            Caption = 'Cta. provisión compras';
+            ToolTip = 'Specifies the value of the Cta. provisión compras field.';
             DataClassification = ToBeClassified;
             TableRelation = "G/L Account"."No.";
 

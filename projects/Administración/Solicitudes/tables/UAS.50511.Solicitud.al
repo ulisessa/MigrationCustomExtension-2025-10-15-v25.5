@@ -19,19 +19,26 @@ table 50511 Solicitud
     {
         field(1; "Nombre Libro Solicitud"; Code[10])
         {
+            Caption = 'Nombre Libro Solicitud';
+            ToolTip = 'Specifies the value of the Nombre Libro Solicitud field.';
             NotBlank = true;
             TableRelation = "Req. Wksh. Template";
         }
         field(2; "Tipo documento"; Text[50])
         {
+            Caption = 'Document Type';
+            ToolTip = 'Specifies the value of the Document Type field.';
             TableRelation = "Tipos documento" WHERE("No. form" = CONST(50512));
         }
         field(3; "Descripción"; Text[199])
         {
+            Caption = 'Description';
+            ToolTip = 'Specifies the value of the Description field.';
         }
         field(100; "Currency Code"; Code[10])
         {
             Caption = 'Currency Code';
+            ToolTip = 'Specifies the value of the Currency Code field.';
             TableRelation = Currency.Code;
 
             trigger OnValidate()
@@ -44,6 +51,7 @@ table 50511 Solicitud
         field(101; "Currency Factor"; Decimal)
         {
             Caption = 'Currency Factor';
+            ToolTip = 'Specifies the value of the Currency Factor field.';
             DecimalPlaces = 0 : 15;
             Editable = false;
             MinValue = 0;
@@ -56,6 +64,8 @@ table 50511 Solicitud
         }
         field(50000; "No. documento"; Code[30])
         {
+            Caption = 'Document No.';
+            ToolTip = 'Specifies the value of the Document No field.';
 
             trigger OnValidate()
             begin
@@ -64,10 +74,14 @@ table 50511 Solicitud
         }
         field(50001; Aprobado; Boolean)
         {
+            Caption = 'Aprobado';
+            ToolTip = 'Specifies the value of the Aprobado field.';
 
         }
         field(50002; "Fecha registro"; Date)
         {
+            Caption = 'Fecha registro';
+            ToolTip = 'Specifies the value of the Fecha registro field.';
 
             trigger OnValidate()
             begin
@@ -76,22 +90,28 @@ table 50511 Solicitud
         }
         field(50003; Usuario; Code[50])
         {
+            Caption = 'User ID';
+            ToolTip = 'Specifies the value of the User ID field.';
             TableRelation = User."User Name";
         }
         field(50004; "Global Dimension 1"; Code[20])
         {
             CaptionClass = '1,1,1';
             Caption = 'Global Dimension 1 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 1 Code field.';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(1));
         }
         field(50005; "Global Dimension 2"; Code[20])
         {
             CaptionClass = '1,1,2';
             Caption = 'Global Dimension 2 Code';
+            ToolTip = 'Specifies the value of the Global Dimension 2 Code field.';
             TableRelation = "Dimension Value".Code WHERE("Global Dimension No." = CONST(2));
         }
         field(50006; "Global Dimension 3"; Code[10])
         {
+            Caption = 'Global Dimension 3';
+            ToolTip = 'Specifies the value of the Global Dimension 3 field.';
             CaptionClass = '1,2,3';
 
 
@@ -102,30 +122,42 @@ table 50511 Solicitud
         }
         field(50007; "Global Dimension 4"; Code[10])
         {
+            Caption = 'Global Dimension 4';
+            ToolTip = 'Specifies the value of the Global Dimension 4 field.';
             CaptionClass = '1,2,4';
 
         }
         field(50008; "Global Dimension 5"; Code[10])
         {
+            Caption = 'Global Dimension 5';
+            ToolTip = 'Specifies the value of the Global Dimension 5 field.';
             CaptionClass = '1,2,5';
 
         }
         field(50009; "Global Dimension 6"; Code[10])
         {
+            Caption = 'Global Dimension 6';
+            ToolTip = 'Specifies the value of the Global Dimension 6 field.';
             CaptionClass = '1,2,6';
 
         }
         field(50010; "Global Dimension 7"; Code[10])
         {
+            Caption = 'Global Dimension 7';
+            ToolTip = 'Specifies the value of the Global Dimension 7 field.';
             CaptionClass = '1,2,7';
 
         }
         field(50011; "No. Serie"; Code[10])
         {
+            Caption = 'No. Serie';
+            ToolTip = 'Specifies the value of the No. Serie field.';
             TableRelation = "No. Series";
         }
         field(50012; "Fecha Entrega"; Date)
         {
+            Caption = 'Fecha Entrega';
+            ToolTip = 'Specifies the value of the Fecha Entrega field.';
 
             trigger OnValidate()
             begin
@@ -134,6 +166,8 @@ table 50511 Solicitud
         }
         field(50013; Importancia; Option)
         {
+            Caption = 'Importancia';
+            ToolTip = 'Specifies the value of the Importancia field.';
             OptionMembers = Normal,Urgente;
 
             trigger OnValidate()
@@ -143,6 +177,8 @@ table 50511 Solicitud
         }
         field(50014; Procedencia; Option)
         {
+            Caption = 'Procedencia';
+            ToolTip = 'Specifies the value of the Procedencia field.';
             OptionMembers = Importado,Nacional;
 
             trigger OnValidate()
@@ -152,6 +188,8 @@ table 50511 Solicitud
         }
         field(50016; Observaciones; Text[250])
         {
+            Caption = 'Observaciones';
+            ToolTip = 'Specifies the value of the Observaciones field.';
 
             trigger OnValidate()
             begin
@@ -160,6 +198,8 @@ table 50511 Solicitud
         }
         field(50017; "Rechazado por motivo"; Text[250])
         {
+            Caption = 'Rechazado por motivo';
+            ToolTip = 'Specifies the value of the Rechazado por motivo field.';
 
             trigger OnValidate()
             begin
@@ -172,41 +212,59 @@ table 50511 Solicitud
         }
         field(50018; "Fecha pedido"; Date)
         {
+            Caption = 'Fecha pedido';
+            ToolTip = 'Specifies the value of the Fecha pedido field.';
         }
         field(50019; "Fecha aprobacion"; Date)
         {
+            Caption = 'Fecha aprobacion';
+            ToolTip = 'Specifies the value of the Fecha aprobacion field.';
         }
         field(50020; Estado; Text[50])
         {
+            Caption = 'Estado';
+            ToolTip = 'Specifies the value of the Estado field.';
             CalcFormula = Lookup(Mensajeria.Estado WHERE("No. documento" = FIELD("No. documento")));
             FieldClass = FlowField;
         }
         field(50021; "Concepto proyecto"; Code[10])
         {
+            Caption = 'Job concept';
+            ToolTip = 'Specifies the value of the Job concept field.';
             TableRelation = "Concepto proyecto";
         }
         field(50022; "Usuario Aprobacion"; Code[20])
         {
+            Caption = 'Usuario Aprobacion';
+            ToolTip = 'Specifies the value of the Usuario Aprobacion field.';
             DataClassification = ToBeClassified;
         }
         field(50023; "Importe Solicitud"; Decimal)
         {
+            Caption = 'Importe Solicitud';
+            ToolTip = 'Specifies the value of the Importe Solicitud field.';
             CalcFormula = Sum("Lín. solicitud"."Importe neto" WHERE("Nombre libro Solicitud" = FIELD("Nombre Libro Solicitud"),
                                                                      "No. Documento" = FIELD("No. documento")));
             FieldClass = FlowField;
         }
         field(50024; "Importe OC"; Decimal)
         {
+            Caption = 'Importe OC';
+            ToolTip = 'Specifies the value of the Importe OC field.';
             CalcFormula = Sum("Purchase Line"."Line Amount" WHERE("Document Type" = FILTER(Order),
                                                                    "No. Cab. Solicitud" = FIELD("No. documento")));
             FieldClass = FlowField;
         }
         field(50025; "Importe FC"; Decimal)
         {
+            Caption = 'Importe FC';
+            ToolTip = 'Specifies the value of the Importe FC field.';
             DataClassification = ToBeClassified;
         }
         field(50026; "Importe NC"; Decimal)
         {
+            Caption = 'Importe NC';
+            ToolTip = 'Specifies the value of the Importe NC field.';
             CalcFormula = Sum("Purch. Cr. Memo Line"."Line Amount" WHERE("No. Cab. Solicitud" = FIELD("No. documento")));
             FieldClass = FlowField;
         }
